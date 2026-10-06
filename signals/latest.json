@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261006-112149-MS",
-  "generated_at": "2026-10-06T11:21:49.847110-04:00",
-  "spy_day_pct": 0.8206769294295281,
+  "signal_id": "20261006-112414-MS",
+  "generated_at": "2026-10-06T11:24:14.273707-04:00",
+  "spy_day_pct": 0.8342258410002862,
   "candidates": [
     {
       "ticker": "MS",
       "signal": "BUY",
-      "ltp": 191.68,
-      "stop": 190.77,
-      "target": 193.95,
+      "ltp": 191.86,
+      "stop": 190.95,
+      "target": 194.13,
       "qty": 208,
       "indicators": {
         "rsi": 51.29,
         "atr": 0.6049,
         "vol_ratio": 2.12
       },
-      "scout_reason": "SPY +0.82% aligns with BUY",
+      "scout_reason": "SPY +0.83% aligns with BUY",
       "candles_5m": [
         [
           "09:45",
@@ -172,10 +172,10 @@
         [
           "11:20",
           191.79,
-          191.8,
+          191.91,
           191.78,
-          191.78,
-          905
+          191.82,
+          5047
         ]
       ]
     }
