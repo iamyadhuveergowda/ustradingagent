@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261006-102820-AMZN",
-  "generated_at": "2026-10-06T10:28:20.481378-04:00",
-  "spy_day_pct": 0.5458275804224703,
+  "signal_id": "20261006-103025-AMZN",
+  "generated_at": "2026-10-06T10:30:25.049402-04:00",
+  "spy_day_pct": 0.5432468353613589,
   "candidates": [
     {
       "ticker": "AMZN",
       "signal": "BUY",
-      "ltp": 253.75,
-      "stop": 252.4,
-      "target": 257.12,
+      "ltp": 254.0,
+      "stop": 252.65,
+      "target": 257.37,
       "qty": 157,
       "indicators": {
         "rsi": 59.81,
         "atr": 0.8979,
         "vol_ratio": 1.68
       },
-      "scout_reason": "SPY +0.55% aligns with BUY",
+      "scout_reason": "SPY +0.54% aligns with BUY",
       "candles_5m": [
         [
           "15:20",
@@ -172,26 +172,26 @@
         [
           "10:25",
           253.68,
-          253.74,
+          254.09,
           253.53,
-          253.68,
-          6786
+          254.06,
+          20087
         ]
       ]
     },
     {
       "ticker": "HD",
       "signal": "BUY",
-      "ltp": 284.09,
-      "stop": 282.79,
-      "target": 287.33,
+      "ltp": 283.71,
+      "stop": 282.42,
+      "target": 286.96,
       "qty": 140,
       "indicators": {
         "rsi": 59.46,
         "atr": 0.8645,
         "vol_ratio": 1.21
       },
-      "scout_reason": "SPY +0.55% aligns with BUY",
+      "scout_reason": "SPY +0.54% aligns with BUY",
       "candles_5m": [
         [
           "15:20",
@@ -349,9 +349,9 @@
           "10:25",
           283.91,
           284.22,
-          283.91,
-          284.14,
-          1232
+          283.72,
+          283.72,
+          3297
         ]
       ]
     }
