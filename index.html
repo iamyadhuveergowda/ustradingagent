@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="180">
+<title>US Intraday Agent v1</title>
+<style>
+body{background:#14141f;color:#e8e8f0;font-family:'Segoe UI',system-ui,sans-serif;margin:0;padding:16px}
+h1{font-size:20px;margin:0}.ver{color:#8b93ff;font-size:14px}.mode{background:#2c2c44;color:#ffd166;border:1px solid #ffd166;border-radius:4px;font-size:11px;padding:2px 6px;margin-left:8px}
+.updated{color:#9aa0b4;font-size:11px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:12px}
+.card{background:#22222e;border-radius:6px;padding:8px 10px}
+.lbl{color:#9aa0b4;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+.big{font-size:17px;font-weight:600;margin-top:2px}
+.pos{color:#34d17b}.neg{color:#ff6b6b}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#1b1b27;border-radius:8px;overflow:hidden}
+th{background:#26263a;color:#8b93ff;text-align:left;padding:8px;white-space:nowrap}
+td{padding:8px;border-top:1px solid #2a2a3d}
+.buy{color:#34d17b;font-weight:600}.sell{color:#ff6b6b;font-weight:600}
+.rat{max-width:280px;color:#c9c9d6;font-size:11px}
+.empty{text-align:center;color:#9aa0b4;padding:20px}
+</style></head><body>
+<h1>US Intraday Agent <span class="ver">v1</span><span class="mode">PAPER</span></h1>
+<div class="updated">Updated 2026-10-06 04:29 ET &middot; auto-refresh 3min</div>
+<div class="grid">
+<div class="card"><div class="lbl">MTM Equity</div><div class="big">$100,000.00</div></div>
+<div class="card"><div class="lbl">Available</div><div class="big">$100,000.00</div></div>
+<div class="card"><div class="lbl">Realized</div><div class="big pos">$0.00</div></div>
+<div class="card"><div class="lbl">Today P&amp;L</div><div class="big pos">$0.00</div></div>
+<div class="card"><div class="lbl">Today's Trades</div><div class="big">0</div></div>
+<div class="card"><div class="lbl">Wins / Losses</div><div class="big"><span class="pos">0</span> / <span class="neg">0</span></div></div>
+<div class="card"><div class="lbl">Win Rate</div><div class="big">0.0%</div></div>
+</div>
+<table><thead><tr><th>Date</th><th>Time (ET)</th><th>Ticker</th><th>Action</th><th>Qty</th><th>Rem</th><th>Entry</th><th>SL</th><th>TGT</th><th>Last</th><th>Status</th><th>Net P&amp;L</th><th>Rationale</th></tr></thead>
+<tbody><tr><td colspan="13" class="empty">No trades today.</td></tr></tbody></table>
+</body></html>
