@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261007-125237-MSFT",
-  "generated_at": "2026-10-07T12:52:37.030947-04:00",
-  "spy_day_pct": -0.3195995379283801,
+  "signal_id": "20261007-125454-MSFT",
+  "generated_at": "2026-10-07T12:54:54.871387-04:00",
+  "spy_day_pct": -0.35040431266846594,
   "candidates": [
     {
       "ticker": "MSFT",
       "signal": "SELL",
-      "ltp": 527.65,
-      "stop": 529.76,
-      "target": 522.37,
+      "ltp": 527.53,
+      "stop": 529.65,
+      "target": 522.26,
       "qty": 75,
       "indicators": {
         "rsi": 48.37,
         "atr": 1.3228,
         "vol_ratio": 1.37
       },
-      "scout_reason": "SPY -0.32% aligns with SELL",
+      "scout_reason": "SPY -0.35% aligns with SELL",
       "candles_5m": [
         [
           "11:15",
@@ -172,10 +172,10 @@
         [
           "12:50",
           527.67,
-          527.67,
-          527.61,
-          527.65,
-          201
+          527.71,
+          527.54,
+          527.54,
+          886
         ]
       ]
     }
