@@ -1,0 +1,124 @@
+[
+  {
+    "trade_id": "20261006111709-AXP",
+    "date": "2026-10-06",
+    "ticker": "AXP",
+    "action": "BUY",
+    "qty": 130,
+    "remaining_qty": 0,
+    "locked_margin_per_share": 305.8575,
+    "partial_booked": false,
+    "entry": 305.857461,
+    "sl": 304.6,
+    "initial_sl": 304.6,
+    "tgt": 308.88,
+    "open": 305.09,
+    "high": 305.8,
+    "low": 305.09,
+    "close": 304.48,
+    "time": "11:17:09",
+    "status": "LOSS 🔴",
+    "exit_price": 304.33,
+    "net_pnl": -205.14,
+    "rationale": "All hard gates cleared (target 3.06 ≤ 4.5 ATR = 3.28, qty 130 ≥ 1, entry 0.6% from prev close, stop below entry, macro SPY 0.8 > 0.25 does not block BUY). No judgment vetoes: entry 0.02 above VWAP (within 1.5 ATR), no chase, no exhaustion, no distribution, stop not in repeated price zone, and no news conflict. Target sits 1.57 away from session high, well outside 0.5 ATR wall. Hence trade is acceptable.",
+    "events": [
+      {
+        "time": "2026-10-06T11:17:09-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 130 @ $305.86"
+      },
+      {
+        "time": "2026-10-06T12:49:24-04:00",
+        "type": "EXIT",
+        "text": "Stop hit: 130 @ $304.33, net $-205.14"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 304.33,
+    "atr": 0.728,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5674,
+      "total": 6.5674
+    },
+    "pnl_by_date": {
+      "2026-10-06": -205.14
+    },
+    "orders": {
+      "entry": {
+        "id": "ead8c387-5a5d-4a18-b183-5d3a834f0549",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-06 15:16:55.676493+00:00"
+      },
+      "stop": {
+        "id": "aa84bef9-65db-4ac8-8a4c-a6bccb606766",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 305.91,
+    "exit_time": "2026-10-06T12:49:24-04:00"
+  },
+  {
+    "trade_id": "20261006112655-MS",
+    "date": "2026-10-06",
+    "ticker": "MS",
+    "action": "BUY",
+    "qty": 208,
+    "remaining_qty": 0,
+    "locked_margin_per_share": 191.99,
+    "partial_booked": false,
+    "entry": 191.99,
+    "sl": 191.03,
+    "initial_sl": 191.03,
+    "tgt": 194.2,
+    "open": 191.79,
+    "high": 191.97,
+    "low": 191.76,
+    "close": 190.94,
+    "time": "11:26:55",
+    "status": "LOSS 🔴",
+    "exit_price": 190.84,
+    "net_pnl": -245.79,
+    "rationale": "All hard gates clear (TARGET_CAP: target 2.26 < 4.5×ATR 2.72; GHOST: qty 208≥1; CORRUPT_QUOTE: entry 0.95% from prev close; WRONG_SIDE_STOP: stop below entry) and no judgment vetoes fire (CHASE: entry 0.04 below VWAP, not beyond 1.5×ATR; EXHAUSTION, DISTRIBUTION, INTO_WALL, NEWS_CONTRADICTION, STOP_IN_NOISE, LUNCH_CHOP all absent). Risk‑reward ≈3.7:1 (target 3.7 ATR, stop 0.91 ATR) supports approval.",
+    "events": [
+      {
+        "time": "2026-10-06T11:26:55-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 208 @ $191.99"
+      },
+      {
+        "time": "2026-10-06T12:30:52-04:00",
+        "type": "EXIT",
+        "text": "Stop hit: 208 @ $190.84, net $-245.79"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 190.84,
+    "atr": 0.6049,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5893,
+      "total": 6.5893
+    },
+    "pnl_by_date": {
+      "2026-10-06": -245.79
+    },
+    "orders": {
+      "entry": {
+        "id": "eb7e2619-1971-4ee1-82fa-54db9752f7df",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-06 15:26:40.816515+00:00"
+      },
+      "stop": {
+        "id": "75477dd2-c1c5-43b0-a07e-e6bbce72ed04",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 192.02,
+    "exit_time": "2026-10-06T12:30:52-04:00"
+  }
+]
