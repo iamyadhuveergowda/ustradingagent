@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261007-120850-SBUX",
-  "generated_at": "2026-10-07T12:08:50.364720-04:00",
-  "spy_day_pct": -0.3202413040687979,
+  "signal_id": "20261007-121011-SBUX",
+  "generated_at": "2026-10-07T12:10:11.242791-04:00",
+  "spy_day_pct": -0.33307662687716943,
   "candidates": [
     {
       "ticker": "SBUX",
@@ -15,7 +15,7 @@
         "atr": 0.3774,
         "vol_ratio": 1.76
       },
-      "scout_reason": "SPY -0.32% aligns with SELL",
+      "scout_reason": "SPY -0.33% aligns with SELL",
       "candles_5m": [
         [
           "10:30",
