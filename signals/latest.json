@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261008-114757-META",
-  "generated_at": "2026-10-08T11:47:57.640573-04:00",
-  "spy_day_pct": -0.33519912500804455,
+  "signal_id": "20261008-115204-META",
+  "generated_at": "2026-10-08T11:52:04.610070-04:00",
+  "spy_day_pct": -0.32426172553560856,
   "candidates": [
     {
       "ticker": "META",
       "signal": "SELL",
-      "ltp": 719.92,
-      "stop": 723.52,
-      "target": 710.91,
+      "ltp": 719.87,
+      "stop": 723.47,
+      "target": 710.86,
       "qty": 55,
       "indicators": {
-        "rsi": 42.78,
+        "rsi": 42.09,
         "atr": 2.4026,
         "vol_ratio": 1.33
       },
-      "scout_reason": "SPY -0.34% aligns with SELL",
+      "scout_reason": "SPY -0.32% aligns with SELL",
       "candles_5m": [
         [
           "10:10",
@@ -174,8 +174,8 @@
           720.23,
           720.23,
           719.48,
-          719.74,
-          2099
+          720.08,
+          9242
         ]
       ]
     }
