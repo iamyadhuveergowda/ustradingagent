@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261016-120752-INTU",
-  "generated_at": "2026-10-16T12:07:52.894721-04:00",
-  "spy_day_pct": -0.6076940020990633,
+  "signal_id": "20261016-120958-INTU",
+  "generated_at": "2026-10-16T12:09:58.225180-04:00",
+  "spy_day_pct": -0.5953846353188161,
   "candidates": [
     {
       "ticker": "INTU",
       "signal": "SELL",
-      "ltp": 323.24,
-      "stop": 326.21,
-      "target": 315.81,
+      "ltp": 323.55,
+      "stop": 326.52,
+      "target": 316.11,
       "qty": 123,
       "indicators": {
         "rsi": 38.31,
         "atr": 1.982,
         "vol_ratio": 1.59
       },
-      "scout_reason": "SPY -0.61% aligns with SELL",
+      "scout_reason": "SPY -0.60% aligns with SELL",
       "candles_5m": [
         [
           "10:30",
@@ -174,8 +174,8 @@
           323.24,
           323.71,
           323.24,
-          323.63,
-          485
+          323.55,
+          1909
         ]
       ]
     }
