@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-134734-AAPL",
-  "generated_at": "2026-10-21T13:47:34.903549-04:00",
-  "spy_day_pct": 0.6247643318727262,
+  "signal_id": "20261021-135003-AAPL",
+  "generated_at": "2026-10-21T13:50:03.906895-04:00",
+  "spy_day_pct": 0.6416674251387933,
   "candidates": [
     {
       "ticker": "AAPL",
       "signal": "BUY",
-      "ltp": 344.5,
-      "stop": 343.12,
-      "target": 347.94,
+      "ltp": 344.58,
+      "stop": 343.2,
+      "target": 348.03,
       "qty": 115,
       "indicators": {
         "rsi": 64.9,
         "atr": 0.8408,
         "vol_ratio": 1.34
       },
-      "scout_reason": "SPY +0.62% aligns with BUY",
+      "scout_reason": "SPY +0.64% aligns with BUY",
       "candles_5m": [
         [
           "12:10",
@@ -173,9 +173,9 @@
           "13:45",
           344.69,
           344.73,
-          344.69,
-          344.72,
-          486
+          344.45,
+          344.57,
+          2946
         ]
       ]
     }
