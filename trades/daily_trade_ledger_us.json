@@ -169,5 +169,54 @@
       }
     },
     "breakeven_price": 51.07
+  },
+  {
+    "trade_id": "20261021135256-AXP",
+    "date": "2026-10-21",
+    "ticker": "AXP",
+    "action": "BUY",
+    "qty": 122,
+    "remaining_qty": 122,
+    "locked_margin_per_share": 324.34,
+    "partial_booked": false,
+    "entry": 324.34,
+    "sl": 323.01,
+    "initial_sl": 323.01,
+    "tgt": 327.55,
+    "open": 324.17,
+    "high": 324.42,
+    "low": 324.14,
+    "close": 324.35,
+    "time": "13:52:56",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 324.28 is 0.85 ATR (0.67) below the session high 325.135 and 0.85 ATR above the VWAP 323.43, giving a bullish bias. Target is 3.24 above entry = 4.11 ATR (≤4.5 ATR cap) and stop is 1.30 below entry = 1.65 ATR, yielding ~1:4.2 RR. The last 6 five‑minute bars show upward momentum (closes 324.27→324.12→324.27→325.13) and the heaviest volume (2,179) occurs on an up bar, indicating buying pressure. Positive news headlines about new American Express credit cards reinforce the BUY. No hard‑gate o",
+    "events": [
+      {
+        "time": "2026-10-21T13:52:56-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 122 @ $324.34"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 324.34,
+    "atr": 0.7876,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "83b68697-34d5-46ef-b4a1-bd3534a36592",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-21 17:52:43.722275+00:00"
+      },
+      "stop": {
+        "id": "f4664b2b-6183-4b11-b39f-a6c49f437b41",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 324.39
   }
 ]
