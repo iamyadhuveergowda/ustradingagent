@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-120815-BAC",
-  "generated_at": "2026-10-21T12:08:15.618784-04:00",
-  "spy_day_pct": 0.4329792352000321,
+  "signal_id": "20261021-121054-BAC",
+  "generated_at": "2026-10-21T12:10:54.259967-04:00",
+  "spy_day_pct": 0.42257733165169226,
   "candidates": [
     {
       "ticker": "BAC",
       "signal": "BUY",
-      "ltp": 50.97,
-      "stop": 50.72,
-      "target": 51.6,
+      "ltp": 50.96,
+      "stop": 50.71,
+      "target": 51.59,
       "qty": 781,
       "indicators": {
         "rsi": 60.44,
         "atr": 0.169,
         "vol_ratio": 1.49
       },
-      "scout_reason": "SPY +0.43% aligns with BUY",
+      "scout_reason": "SPY +0.42% aligns with BUY",
       "candles_5m": [
         [
           "10:30",
@@ -173,9 +173,9 @@
           "12:05",
           51.0,
           51.0,
-          50.97,
-          50.97,
-          2957
+          50.95,
+          50.96,
+          7970
         ]
       ]
     },
@@ -191,7 +191,7 @@
         "atr": 0.5762,
         "vol_ratio": 1.42
       },
-      "scout_reason": "SPY +0.43% aligns with BUY",
+      "scout_reason": "SPY +0.42% aligns with BUY",
       "candles_5m": [
         [
           "10:30",
