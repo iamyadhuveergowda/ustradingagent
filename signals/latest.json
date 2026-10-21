@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-123756-CRM",
-  "generated_at": "2026-10-21T12:37:56.883472-04:00",
-  "spy_day_pct": 0.41867661782105,
+  "signal_id": "20261021-124051-CRM",
+  "generated_at": "2026-10-21T12:40:51.852268-04:00",
+  "spy_day_pct": 0.477187325280521,
   "candidates": [
     {
       "ticker": "CRM",
       "signal": "BUY",
-      "ltp": 242.07,
-      "stop": 240.52,
-      "target": 245.96,
+      "ltp": 242.28,
+      "stop": 240.65,
+      "target": 246.36,
       "qty": 164,
       "indicators": {
         "rsi": 50.66,
-        "atr": 1.0362,
+        "atr": 1.0884,
         "vol_ratio": 1.78
       },
-      "scout_reason": "SPY +0.42% aligns with BUY",
+      "scout_reason": "SPY +0.48% aligns with BUY",
       "candles_5m": [
         [
           "11:00",
@@ -173,9 +173,9 @@
           "12:35",
           242.35,
           242.35,
-          242.07,
-          242.07,
-          861
+          242.0,
+          242.0,
+          1351
         ]
       ]
     }
