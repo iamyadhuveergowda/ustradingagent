@@ -120,5 +120,54 @@
     },
     "breakeven_price": 192.02,
     "exit_time": "2026-10-06T12:30:52-04:00"
+  },
+  {
+    "trade_id": "20261021133856-BAC",
+    "date": "2026-10-21",
+    "ticker": "BAC",
+    "action": "BUY",
+    "qty": 780,
+    "remaining_qty": 780,
+    "locked_margin_per_share": 51.06,
+    "partial_booked": false,
+    "entry": 51.06,
+    "sl": 50.85,
+    "initial_sl": 50.85,
+    "tgt": 51.56,
+    "open": 51.06,
+    "high": 51.09,
+    "low": 51.05,
+    "close": 51.09,
+    "time": "13:38:56",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "TARGET_CAP passed: target‑entry = 0.51 which is 3.8× ATR (0.133), below the 4.5× limit; WRONG_SIDE_STOP passed: stop 50.84 is below entry 51.04; entry 51.04 is just above VWAP 50.88 (within 1.5× ATR) and is supported by a sequence of higher closes from 12:00 (51.00) to 13:35 (51.05) with increasing volume on the up‑bars, showing buying pressure; no contradictory news, no upcoming event, macro regime lock does not reject BUYs; all hard gates and vetoes cleared.",
+    "events": [
+      {
+        "time": "2026-10-21T13:38:56-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 780 @ $51.06"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 51.06,
+    "atr": 0.133,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "f0f3c2b8-d5e9-4e0b-b8f3-f6d51c0a865b",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-21 17:38:43.401032+00:00"
+      },
+      "stop": {
+        "id": "3f98879a-472c-46cd-bcdc-a56356431809",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 51.07
   }
 ]
