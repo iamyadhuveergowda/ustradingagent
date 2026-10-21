@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261021-125215-BA",
-  "generated_at": "2026-10-21T12:52:15.179811-04:00",
-  "spy_day_pct": 0.538298508627077,
+  "signal_id": "20261021-125442-BA",
+  "generated_at": "2026-10-21T12:54:42.000754-04:00",
+  "spy_day_pct": 0.5487004121754169,
   "candidates": [
     {
       "ticker": "BA",
       "signal": "BUY",
-      "ltp": 192.51,
-      "stop": 191.15,
-      "target": 195.91,
+      "ltp": 192.38,
+      "stop": 191.02,
+      "target": 195.79,
       "qty": 206,
       "indicators": {
         "rsi": 62.3,
         "atr": 0.907,
         "vol_ratio": 1.3
       },
-      "scout_reason": "SPY +0.54% aligns with BUY",
+      "scout_reason": "SPY +0.55% aligns with BUY",
       "candles_5m": [
         [
           "11:15",
@@ -173,9 +173,9 @@
           "12:50",
           192.57,
           192.57,
-          192.51,
-          192.51,
-          715
+          192.38,
+          192.38,
+          1800
         ]
       ]
     }
