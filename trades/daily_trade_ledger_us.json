@@ -127,7 +127,7 @@
     "ticker": "BAC",
     "action": "BUY",
     "qty": 780,
-    "remaining_qty": 780,
+    "remaining_qty": 0,
     "locked_margin_per_share": 51.06,
     "partial_booked": false,
     "entry": 51.06,
@@ -137,26 +137,37 @@
     "open": 51.06,
     "high": 51.09,
     "low": 51.05,
-    "close": 50.86,
+    "close": 50.83,
     "time": "13:38:56",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 50.79,
+    "net_pnl": -217.18,
     "rationale": "TARGET_CAP passed: target‑entry = 0.51 which is 3.8× ATR (0.133), below the 4.5× limit; WRONG_SIDE_STOP passed: stop 50.84 is below entry 51.04; entry 51.04 is just above VWAP 50.88 (within 1.5× ATR) and is supported by a sequence of higher closes from 12:00 (51.00) to 13:35 (51.05) with increasing volume on the up‑bars, showing buying pressure; no contradictory news, no upcoming event, macro regime lock does not reject BUYs; all hard gates and vetoes cleared.",
     "events": [
       {
         "time": "2026-10-21T13:38:56-04:00",
         "type": "ENTRY",
         "text": "PAPER BUY 780 @ $51.06"
+      },
+      {
+        "time": "2026-10-21T14:59:34-04:00",
+        "type": "EXIT",
+        "text": "Stop hit: 780 @ $50.79, net $-217.18"
       }
     ],
     "mode": "PAPER",
-    "last_price": 50.86,
+    "last_price": 50.79,
     "atr": 0.133,
     "breakeven_set": false,
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5763,
+      "total": 6.5763
+    },
+    "pnl_by_date": {
+      "2026-10-21": -217.18
+    },
     "orders": {
       "entry": {
         "id": "f0f3c2b8-d5e9-4e0b-b8f3-f6d51c0a865b",
@@ -168,7 +179,8 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 51.07
+    "breakeven_price": 51.07,
+    "exit_time": "2026-10-21T14:59:34-04:00"
   },
   {
     "trade_id": "20261021135256-AXP",
@@ -176,7 +188,7 @@
     "ticker": "AXP",
     "action": "BUY",
     "qty": 122,
-    "remaining_qty": 122,
+    "remaining_qty": 0,
     "locked_margin_per_share": 324.34,
     "partial_booked": false,
     "entry": 324.34,
@@ -186,26 +198,37 @@
     "open": 324.17,
     "high": 324.42,
     "low": 324.14,
-    "close": 323.2,
+    "close": 323.01,
     "time": "13:52:56",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 322.77,
+    "net_pnl": -198.08,
     "rationale": "Entry 324.28 is 0.85 ATR (0.67) below the session high 325.135 and 0.85 ATR above the VWAP 323.43, giving a bullish bias. Target is 3.24 above entry = 4.11 ATR (≤4.5 ATR cap) and stop is 1.30 below entry = 1.65 ATR, yielding ~1:4.2 RR. The last 6 five‑minute bars show upward momentum (closes 324.27→324.12→324.27→325.13) and the heaviest volume (2,179) occurs on an up bar, indicating buying pressure. Positive news headlines about new American Express credit cards reinforce the BUY. No hard‑gate o",
     "events": [
       {
         "time": "2026-10-21T13:52:56-04:00",
         "type": "ENTRY",
         "text": "PAPER BUY 122 @ $324.34"
+      },
+      {
+        "time": "2026-10-21T14:59:35-04:00",
+        "type": "EXIT",
+        "text": "Stop hit: 122 @ $322.77, net $-198.08"
       }
     ],
     "mode": "PAPER",
-    "last_price": 323.2,
+    "last_price": 322.77,
     "atr": 0.7876,
     "breakeven_set": false,
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5367,
+      "total": 6.5367
+    },
+    "pnl_by_date": {
+      "2026-10-21": -198.08
+    },
     "orders": {
       "entry": {
         "id": "83b68697-34d5-46ef-b4a1-bd3534a36592",
@@ -217,6 +240,7 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 324.39
+    "breakeven_price": 324.39,
+    "exit_time": "2026-10-21T14:59:35-04:00"
   }
 ]
