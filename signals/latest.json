@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261022-122727-GOOGL",
-  "generated_at": "2026-10-22T12:27:27.700023-04:00",
-  "spy_day_pct": -0.9726695381113114,
+  "signal_id": "20261022-122959-GOOGL",
+  "generated_at": "2026-10-22T12:29:59.396469-04:00",
+  "spy_day_pct": -1.000478574107849,
   "candidates": [
     {
       "ticker": "GOOGL",
       "signal": "SELL",
-      "ltp": 327.78,
-      "stop": 329.44,
-      "target": 323.64,
-      "qty": 120,
+      "ltp": 327.56,
+      "stop": 329.23,
+      "target": 323.39,
+      "qty": 121,
       "indicators": {
         "rsi": 44.67,
-        "atr": 1.1051,
+        "atr": 1.1112,
         "vol_ratio": 1.41
       },
-      "scout_reason": "SPY -0.97% aligns with SELL",
+      "scout_reason": "SPY -1.00% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -173,25 +173,25 @@
           "12:25",
           327.71,
           327.84,
-          327.65,
-          327.82,
-          1086
+          327.47,
+          327.54,
+          3031
         ]
       ]
     },
     {
       "ticker": "CSCO",
       "signal": "SELL",
-      "ltp": 104.53,
-      "stop": 105.17,
-      "target": 102.94,
+      "ltp": 104.41,
+      "stop": 105.05,
+      "target": 102.82,
       "qty": 379,
       "indicators": {
         "rsi": 48.75,
         "atr": 0.4251,
         "vol_ratio": 2.51
       },
-      "scout_reason": "SPY -0.97% aligns with SELL",
+      "scout_reason": "SPY -1.00% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -349,9 +349,9 @@
           "12:25",
           104.5,
           104.55,
-          104.5,
-          104.55,
-          1066
+          104.41,
+          104.41,
+          3272
         ]
       ]
     }
