@@ -249,7 +249,7 @@
     "ticker": "AMZN",
     "action": "SELL",
     "qty": 157,
-    "remaining_qty": 79,
+    "remaining_qty": 0,
     "locked_margin_per_share": 252.09,
     "partial_booked": true,
     "entry": 252.09,
@@ -259,11 +259,11 @@
     "open": 253.05,
     "high": 253.25,
     "low": 252.62,
-    "close": 248.79,
+    "close": 248.98,
     "time": "12:33:31",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 142.99,
+    "status": "WIN 🟢",
+    "exit_price": 249.33,
+    "net_pnl": 357.72,
     "rationale": "Entry 252.32 is below VWAP 253.15, target 247.99 is 4.33 points away (<4.5*ATR = 5.20), and stop‑loss 254.06 is correctly placed above entry. Recent 5‑min candles show downward momentum (e.g., closes 252.26 → 251.46 → 251.52 → 251.78) with no pull‑back, no heavy‑volume bar against the sell side, and entry/tgt are >0.5*ATR away from session high/low. All hard gates and vetoes are clear.",
     "events": [
       {
@@ -280,20 +280,25 @@
         "time": "2026-10-22T13:58:06-04:00",
         "type": "PARTIAL",
         "text": "+1R reached; stop at $252.05"
+      },
+      {
+        "time": "2026-10-22T15:25:53-04:00",
+        "type": "EXIT",
+        "text": "Stop hit: 79 @ $249.33, net $214.73"
       }
     ],
     "mode": "PAPER",
-    "last_price": 248.79,
+    "last_price": 249.33,
     "atr": 1.1553,
     "breakeven_set": true,
     "entry_brokerage_remaining": 0.0,
     "charges": {
       "brokerage": 0.0,
-      "sec_fee": 3.2641,
-      "total": 3.2641
+      "sec_fee": 6.57,
+      "total": 6.57
     },
     "pnl_by_date": {
-      "2026-10-22": 142.99
+      "2026-10-22": 357.72
     },
     "orders": {
       "entry": {
@@ -307,6 +312,7 @@
       }
     },
     "breakeven_price": 252.05,
-    "live_atr": 0.9124
+    "live_atr": 0.9124,
+    "exit_time": "2026-10-22T15:25:53-04:00"
   }
 ]
