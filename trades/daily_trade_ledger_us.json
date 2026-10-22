@@ -249,36 +249,52 @@
     "ticker": "AMZN",
     "action": "SELL",
     "qty": 157,
-    "remaining_qty": 157,
+    "remaining_qty": 79,
     "locked_margin_per_share": 252.09,
-    "partial_booked": false,
+    "partial_booked": true,
     "entry": 252.09,
-    "sl": 253.9,
+    "sl": 251.17,
     "initial_sl": 253.9,
     "tgt": 247.83,
     "open": 253.05,
     "high": 253.25,
     "low": 252.62,
-    "close": 250.58,
+    "close": 250.16,
     "time": "12:33:31",
     "status": "OPEN ⏳",
     "exit_price": null,
-    "net_pnl": 0.0,
+    "net_pnl": 142.99,
     "rationale": "Entry 252.32 is below VWAP 253.15, target 247.99 is 4.33 points away (<4.5*ATR = 5.20), and stop‑loss 254.06 is correctly placed above entry. Recent 5‑min candles show downward momentum (e.g., closes 252.26 → 251.46 → 251.52 → 251.78) with no pull‑back, no heavy‑volume bar against the sell side, and entry/tgt are >0.5*ATR away from session high/low. All hard gates and vetoes are clear.",
     "events": [
       {
         "time": "2026-10-22T12:33:31-04:00",
         "type": "ENTRY",
         "text": "PAPER SELL 157 @ $252.09"
+      },
+      {
+        "time": "2026-10-22T13:58:05-04:00",
+        "type": "EXIT",
+        "text": "+1R partial booked: 78 @ $250.22, net $142.99"
+      },
+      {
+        "time": "2026-10-22T13:58:06-04:00",
+        "type": "PARTIAL",
+        "text": "+1R reached; stop at $252.05"
       }
     ],
     "mode": "PAPER",
-    "last_price": 250.58,
+    "last_price": 250.16,
     "atr": 1.1553,
-    "breakeven_set": false,
+    "breakeven_set": true,
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 3.2641,
+      "total": 3.2641
+    },
+    "pnl_by_date": {
+      "2026-10-22": 142.99
+    },
     "orders": {
       "entry": {
         "id": "d7368239-0bb0-4d62-afad-993d5c5dea4f",
@@ -286,10 +302,11 @@
         "submitted_at": "2026-10-22 16:33:18.175234+00:00"
       },
       "stop": {
-        "id": "28e36207-5914-4fa2-9dc4-d22a05dd5049",
+        "id": "cada7f4b-0191-4fdf-97c1-d48ef2363bcf",
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 252.05
+    "breakeven_price": 252.05,
+    "live_atr": 1.015
   }
 ]
