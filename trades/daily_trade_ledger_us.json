@@ -242,5 +242,54 @@
     },
     "breakeven_price": 324.39,
     "exit_time": "2026-10-21T14:59:35-04:00"
+  },
+  {
+    "trade_id": "20261022123331-AMZN",
+    "date": "2026-10-22",
+    "ticker": "AMZN",
+    "action": "SELL",
+    "qty": 157,
+    "remaining_qty": 157,
+    "locked_margin_per_share": 252.09,
+    "partial_booked": false,
+    "entry": 252.09,
+    "sl": 253.9,
+    "initial_sl": 253.9,
+    "tgt": 247.83,
+    "open": 253.05,
+    "high": 253.25,
+    "low": 252.62,
+    "close": 252.62,
+    "time": "12:33:31",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 252.32 is below VWAP 253.15, target 247.99 is 4.33 points away (<4.5*ATR = 5.20), and stop‑loss 254.06 is correctly placed above entry. Recent 5‑min candles show downward momentum (e.g., closes 252.26 → 251.46 → 251.52 → 251.78) with no pull‑back, no heavy‑volume bar against the sell side, and entry/tgt are >0.5*ATR away from session high/low. All hard gates and vetoes are clear.",
+    "events": [
+      {
+        "time": "2026-10-22T12:33:31-04:00",
+        "type": "ENTRY",
+        "text": "PAPER SELL 157 @ $252.09"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 252.09,
+    "atr": 1.1553,
+    "breakeven_set": false,
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "d7368239-0bb0-4d62-afad-993d5c5dea4f",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-22 16:33:18.175234+00:00"
+      },
+      "stop": {
+        "id": "28e36207-5914-4fa2-9dc4-d22a05dd5049",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 252.05
   }
 ]
