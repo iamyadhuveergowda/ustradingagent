@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261022-125751-AVGO",
-  "generated_at": "2026-10-22T12:57:51.777719-04:00",
-  "spy_day_pct": -1.267574664028036,
+  "signal_id": "20261022-130031-AVGO",
+  "generated_at": "2026-10-22T13:00:31.481861-04:00",
+  "spy_day_pct": -1.2235975838474817,
   "candidates": [
     {
       "ticker": "AVGO",
       "signal": "SELL",
-      "ltp": 324.45,
-      "stop": 327.11,
-      "target": 317.8,
+      "ltp": 324.52,
+      "stop": 327.18,
+      "target": 317.87,
       "qty": 122,
       "indicators": {
         "rsi": 38.37,
         "atr": 1.7721,
         "vol_ratio": 1.34
       },
-      "scout_reason": "SPY -1.27% aligns with SELL",
+      "scout_reason": "SPY -1.22% aligns with SELL",
       "candles_5m": [
         [
           "11:20",
@@ -172,10 +172,10 @@
         [
           "12:55",
           324.12,
-          324.48,
+          324.7,
           324.11,
-          324.45,
-          6817
+          324.7,
+          12723
         ]
       ]
     }
