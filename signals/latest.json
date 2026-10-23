@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-142226-INTU",
-  "generated_at": "2026-10-23T14:22:26.884110-04:00",
-  "spy_day_pct": -0.403779956284429,
+  "signal_id": "20261023-142428-INTU",
+  "generated_at": "2026-10-23T14:24:28.380522-04:00",
+  "spy_day_pct": -0.40705207910684316,
   "candidates": [
     {
       "ticker": "INTU",
       "signal": "SELL",
-      "ltp": 345.89,
-      "stop": 348.07,
-      "target": 340.44,
+      "ltp": 345.67,
+      "stop": 347.85,
+      "target": 340.22,
       "qty": 115,
       "indicators": {
         "rsi": 46.96,
         "atr": 1.4536,
         "vol_ratio": 1.55
       },
-      "scout_reason": "SPY -0.40% aligns with SELL",
+      "scout_reason": "SPY -0.41% aligns with SELL",
       "candles_5m": [
         [
           "12:45",
@@ -173,25 +173,25 @@
           "14:20",
           345.87,
           345.89,
-          345.87,
-          345.89,
-          250
+          345.81,
+          345.81,
+          440
         ]
       ]
     },
     {
       "ticker": "MS",
       "signal": "SELL",
-      "ltp": 180.61,
-      "stop": 181.57,
-      "target": 178.22,
+      "ltp": 180.55,
+      "stop": 181.51,
+      "target": 178.16,
       "qty": 220,
       "indicators": {
         "rsi": 43.84,
         "atr": 0.6384,
         "vol_ratio": 3.02
       },
-      "scout_reason": "SPY -0.40% aligns with SELL",
+      "scout_reason": "SPY -0.41% aligns with SELL",
       "candles_5m": [
         [
           "12:45",
@@ -349,9 +349,9 @@
           "14:20",
           180.66,
           180.69,
-          180.61,
-          180.61,
-          2231
+          180.49,
+          180.49,
+          4326
         ]
       ]
     }
