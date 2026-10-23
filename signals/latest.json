@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261023-122652-ADBE",
-  "generated_at": "2026-10-23T12:26:52.173730-04:00",
-  "spy_day_pct": -0.31150609269269475,
+  "signal_id": "20261023-122854-ADBE",
+  "generated_at": "2026-10-23T12:28:54.380876-04:00",
+  "spy_day_pct": -0.31608706464405373,
   "candidates": [
     {
       "ticker": "ADBE",
       "signal": "SELL",
-      "ltp": 264.8,
-      "stop": 266.93,
-      "target": 259.45,
+      "ltp": 264.75,
+      "stop": 266.89,
+      "target": 259.41,
       "qty": 150,
       "indicators": {
         "rsi": 46.51,
         "atr": 1.4242,
         "vol_ratio": 1.54
       },
-      "scout_reason": "SPY -0.31% aligns with SELL",
+      "scout_reason": "SPY -0.32% aligns with SELL",
       "candles_5m": [
-        [
-          "10:45",
-          263.96,
-          264.62,
-          263.82,
-          264.22,
-          1123
-        ],
         [
           "10:50",
           264.31,
@@ -176,22 +168,30 @@
           264.8,
           264.8,
           1698
+        ],
+        [
+          "12:25",
+          264.8,
+          264.8,
+          264.75,
+          264.75,
+          136
         ]
       ]
     },
     {
       "ticker": "MA",
       "signal": "SELL",
-      "ltp": 622.02,
-      "stop": 625.04,
-      "target": 614.48,
+      "ltp": 621.94,
+      "stop": 624.96,
+      "target": 614.4,
       "qty": 63,
       "indicators": {
         "rsi": 44.92,
         "atr": 2.0114,
         "vol_ratio": 1.32
       },
-      "scout_reason": "SPY -0.31% aligns with SELL",
+      "scout_reason": "SPY -0.32% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -349,9 +349,9 @@
           "12:25",
           622.02,
           622.02,
-          622.02,
-          622.02,
-          105
+          621.81,
+          621.94,
+          617
         ]
       ]
     }
