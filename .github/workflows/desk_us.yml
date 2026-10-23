@@ -1,0 +1,46 @@
+name: US Assistant Desk (advisory)
+
+# Judges new signal batches from signals/latest.json during the US session.
+# The script itself checks ET session hours and signal freshness, so this
+# UTC window only needs to cover 09:30-16:00 ET across DST (13:30-21:00 UTC).
+on:
+  schedule:
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: us-desk
+  cancel-in-progress: false
+
+jobs:
+  desk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Judge new candidates
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 .github/scripts/assistant_desk_us.py
+      - name: Commit desk outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for f in desk_verdict.json desk_history.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --staged --quiet; then
+            echo "No desk changes to commit"
+          else
+            git commit -m "US desk verdict update [skip ci]"
+            git pull --rebase origin ${{ github.ref_name }}
+            git push
+          fi
