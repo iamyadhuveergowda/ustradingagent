@@ -1,18 +1,18 @@
 {
-  "signal_id": "20261023-142648-INTU",
-  "generated_at": "2026-10-23T14:26:48.081115-04:00",
-  "spy_day_pct": -0.42406711778333434,
+  "signal_id": "20261023-142915-INTU",
+  "generated_at": "2026-10-23T14:29:15.992187-04:00",
+  "spy_day_pct": -0.41752287213852085,
   "candidates": [
     {
       "ticker": "INTU",
       "signal": "SELL",
       "ltp": 345.69,
       "stop": 347.87,
-      "target": 340.24,
+      "target": 340.23,
       "qty": 115,
       "indicators": {
         "rsi": 44.86,
-        "atr": 1.4536,
+        "atr": 1.4558,
         "vol_ratio": 1.32
       },
       "scout_reason": "SPY -0.42% aligns with SELL",
@@ -182,13 +182,13 @@
     {
       "ticker": "TSLA",
       "signal": "SELL",
-      "ltp": 371.65,
-      "stop": 374.95,
-      "target": 363.41,
+      "ltp": 371.63,
+      "stop": 374.96,
+      "target": 363.33,
       "qty": 107,
       "indicators": {
         "rsi": 48.1,
-        "atr": 2.1971,
+        "atr": 2.2154,
         "vol_ratio": 1.8
       },
       "scout_reason": "SPY -0.42% aligns with SELL",
@@ -349,22 +349,22 @@
           "14:25",
           371.8,
           371.84,
-          371.65,
-          371.65,
-          766
+          371.59,
+          371.59,
+          3054
         ]
       ]
     },
     {
       "ticker": "WMT",
       "signal": "SELL",
-      "ltp": 119.3,
-      "stop": 119.78,
-      "target": 118.11,
+      "ltp": 119.36,
+      "stop": 119.84,
+      "target": 118.17,
       "qty": 333,
       "indicators": {
         "rsi": 39.75,
-        "atr": 0.3143,
+        "atr": 0.3178,
         "vol_ratio": 1.42
       },
       "scout_reason": "SPY -0.42% aligns with SELL",
@@ -524,10 +524,10 @@
         [
           "14:25",
           119.33,
-          119.33,
+          119.39,
           119.3,
-          119.3,
-          242
+          119.39,
+          1782
         ]
       ]
     },
@@ -702,8 +702,8 @@
           180.54,
           180.54,
           180.52,
-          180.52,
-          706
+          180.54,
+          1488
         ]
       ]
     }
