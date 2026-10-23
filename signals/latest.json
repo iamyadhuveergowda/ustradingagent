@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-140823-NVDA",
-  "generated_at": "2026-10-23T14:08:23.294189-04:00",
-  "spy_day_pct": -0.4005078334620297,
+  "signal_id": "20261023-141053-NVDA",
+  "generated_at": "2026-10-23T14:10:53.386115-04:00",
+  "spy_day_pct": -0.4332290616860523,
   "candidates": [
     {
       "ticker": "NVDA",
       "signal": "SELL",
-      "ltp": 211.93,
-      "stop": 213.1,
-      "target": 209.01,
+      "ltp": 211.8,
+      "stop": 212.97,
+      "target": 208.88,
       "qty": 187,
       "indicators": {
         "rsi": 46.21,
         "atr": 0.7787,
         "vol_ratio": 1.99
       },
-      "scout_reason": "SPY -0.40% aligns with SELL",
+      "scout_reason": "SPY -0.43% aligns with SELL",
       "candles_5m": [
         [
           "12:30",
@@ -172,26 +172,26 @@
         [
           "14:05",
           211.75,
-          211.95,
+          212.0,
           211.72,
-          211.94,
-          6361
+          211.76,
+          16912
         ]
       ]
     },
     {
       "ticker": "PG",
       "signal": "SELL",
-      "ltp": 161.02,
-      "stop": 161.7,
-      "target": 159.31,
-      "qty": 247,
+      "ltp": 161.13,
+      "stop": 161.81,
+      "target": 159.42,
+      "qty": 246,
       "indicators": {
         "rsi": 43.22,
         "atr": 0.4565,
         "vol_ratio": 1.85
       },
-      "scout_reason": "SPY -0.40% aligns with SELL",
+      "scout_reason": "SPY -0.43% aligns with SELL",
       "candles_5m": [
         [
           "12:30",
@@ -351,23 +351,23 @@
           161.21,
           160.99,
           161.21,
-          549
+          1527
         ]
       ]
     },
     {
       "ticker": "AXP",
       "signal": "SELL",
-      "ltp": 312.81,
-      "stop": 315.01,
-      "target": 307.29,
+      "ltp": 312.76,
+      "stop": 314.97,
+      "target": 307.24,
       "qty": 127,
       "indicators": {
         "rsi": 45.1,
         "atr": 1.472,
         "vol_ratio": 1.27
       },
-      "scout_reason": "SPY -0.40% aligns with SELL",
+      "scout_reason": "SPY -0.43% aligns with SELL",
       "candles_5m": [
         [
           "12:30",
@@ -524,10 +524,10 @@
         [
           "14:05",
           312.7,
-          312.97,
+          313.0,
           312.7,
-          312.97,
-          452
+          312.86,
+          1388
         ]
       ]
     }
