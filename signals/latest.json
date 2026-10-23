@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-134314-MA",
-  "generated_at": "2026-10-23T13:43:14.074370-04:00",
-  "spy_day_pct": -0.43584675994397176,
+  "signal_id": "20261023-134605-MA",
+  "generated_at": "2026-10-23T13:46:05.960915-04:00",
+  "spy_day_pct": -0.492127272489299,
   "candidates": [
     {
       "ticker": "MA",
       "signal": "SELL",
-      "ltp": 621.29,
-      "stop": 623.81,
-      "target": 614.98,
+      "ltp": 621.36,
+      "stop": 623.94,
+      "target": 614.92,
       "qty": 64,
       "indicators": {
         "rsi": 49.72,
-        "atr": 1.6825,
+        "atr": 1.7168,
         "vol_ratio": 1.59
       },
-      "scout_reason": "SPY -0.44% aligns with SELL",
+      "scout_reason": "SPY -0.49% aligns with SELL",
       "candles_5m": [
         [
           "12:05",
@@ -173,25 +173,25 @@
           "13:40",
           621.51,
           621.6,
-          621.29,
-          621.29,
-          595
+          621.26,
+          621.31,
+          1350
         ]
       ]
     },
     {
       "ticker": "TMO",
       "signal": "SELL",
-      "ltp": 668.95,
-      "stop": 673.14,
-      "target": 658.48,
+      "ltp": 669.1,
+      "stop": 673.29,
+      "target": 658.63,
       "qty": 59,
       "indicators": {
         "rsi": 49.98,
         "atr": 2.7907,
         "vol_ratio": 2.25
       },
-      "scout_reason": "SPY -0.44% aligns with SELL",
+      "scout_reason": "SPY -0.49% aligns with SELL",
       "candles_5m": [
         [
           "12:05",
@@ -350,8 +350,8 @@
           668.84,
           669.1,
           668.84,
-          669.1,
-          743
+          668.93,
+          901
         ]
       ]
     }
