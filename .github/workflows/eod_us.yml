@@ -1,0 +1,47 @@
+name: US EOD Summary
+
+# 21:15 UTC is after the 16:00 ET close in both EDT (17:15 ET) and
+# EST (16:15 ET). The script scores the day's desk verdicts against
+# post-signal Alpaca bars and writes outcomes back into desk_history.json
+# — this commit step is what the NIFTY pipeline was missing.
+on:
+  schedule:
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: us-eod
+  cancel-in-progress: false
+
+jobs:
+  eod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compute EOD stats, score desk verdicts, notify
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: python3 .github/scripts/eod_summary_us.py
+      - name: Commit scored desk history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f desk_history.json ] && git add desk_history.json
+          if git diff --staged --quiet; then
+            echo "No scoring changes to commit"
+          else
+            git commit -m "US EOD: desk outcomes scored [skip ci]"
+            git pull --rebase origin ${{ github.ref_name }}
+            git push
+          fi
