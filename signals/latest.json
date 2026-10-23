@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261023-140308-MA",
-  "generated_at": "2026-10-23T14:03:08.879504-04:00",
-  "spy_day_pct": -0.41490517388060144,
+  "signal_id": "20261023-140529-MA",
+  "generated_at": "2026-10-23T14:05:29.489831-04:00",
+  "spy_day_pct": -0.44762640210462407,
   "candidates": [
     {
       "ticker": "MA",
       "signal": "SELL",
-      "ltp": 621.36,
-      "stop": 623.89,
-      "target": 615.04,
-      "qty": 64,
+      "ltp": 621.85,
+      "stop": 624.38,
+      "target": 615.53,
+      "qty": 63,
       "indicators": {
         "rsi": 49.29,
         "atr": 1.6863,
         "vol_ratio": 1.23
       },
-      "scout_reason": "SPY -0.41% aligns with SELL",
+      "scout_reason": "SPY -0.45% aligns with SELL",
       "candles_5m": [
         [
           "12:25",
@@ -174,8 +174,8 @@
           621.4,
           621.85,
           621.36,
-          621.85,
-          184
+          621.59,
+          269
         ]
       ]
     }
