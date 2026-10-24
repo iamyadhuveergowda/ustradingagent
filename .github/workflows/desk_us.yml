@@ -3,9 +3,29 @@ name: US Assistant Desk (advisory)
 # Judges new signal batches from signals/latest.json during the US session.
 # The script itself checks ET session hours and signal freshness, so this
 # UTC window only needs to cover 09:30-16:00 ET across DST (13:30-21:00 UTC).
+# Two triggers, by design:
+#  * push on signals/latest.json — the primary trigger. Every time the Oracle
+#    agent pushes a new batch, a run starts within ~a minute. This is what
+#    makes it near-real-time; scheduled runs alone are best-effort on GitHub
+#    and can be delayed or skipped (Oct 23 saw only 3 scheduled runs).
+#  * schedule every 3 min in the session window — a backup, in case a push
+#    run is missed or delayed. A run that finds the batch already judged
+#    exits in seconds with no Gemini call and no commit (see dedupe below).
+# Marking done: the script appends every judged batch's signal_id to
+# desk_history.json and commits it (commit message carries [skip ci], so
+# the desk's own commit does NOT retrigger this workflow). On the next run,
+# if that signal_id is already in desk_history.json, the script prints
+# "already judged; skipping" and stops — it never re-judges the same batch,
+# and the next new signal_id is what gets picked up.
+# The concurrency group queues runs instead of cancelling them, so a cron
+# run that starts while a push run is still judging will wait, then see
+# the new history and skip — no double judging, no double Telegram.
 on:
+  push:
+    branches: [main]
+    paths: ["signals/latest.json"]
   schedule:
-    - cron: "*/15 13-21 * * 1-5"
+    - cron: "*/3 13-21 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
