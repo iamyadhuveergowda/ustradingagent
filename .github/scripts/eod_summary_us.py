@@ -40,7 +40,7 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 WIN, LOSS, EXPIRED = "WIN 🟢", "LOSS 🔴", "EXPIRED ⚪"
 
 
