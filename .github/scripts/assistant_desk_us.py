@@ -29,6 +29,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, time as dtime
@@ -38,6 +39,31 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 FRESH_MINUTES = float(os.getenv("DESK_FRESH_MINUTES", "30"))
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
+
+def gemini_post_with_retry(req, timeout=90, attempts=3):
+    """POST to Gemini with retries on timeouts / 5xx only.
+
+    A 4xx (e.g. 404 bad model) fails fast -- retrying cannot fix it.
+    A timeout, like the Oct 24 mock run, is retried: 90s per attempt,
+    10s then 20s backoff, max ~5 min total. Raises the last error.
+    """
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8")
+        except urllib.error.HTTPError as exc:
+            if 400 <= exc.code < 500:
+                raise
+            last_exc = exc
+        except Exception as exc:
+            last_exc = exc
+        if attempt < attempts:
+            print(f"Gemini attempt {attempt} failed ({last_exc}); retrying...",
+                  file=sys.stderr)
+            time.sleep(10 * attempt)
+    raise last_exc
+
 
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
@@ -111,8 +137,7 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
         headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    data = json.loads(gemini_post_with_retry(req))
     text = data["candidates"][0]["content"]["parts"][0]["text"]
     parsed = json.loads(text)
     verdicts = parsed.get("verdicts", [])
