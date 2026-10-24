@@ -37,8 +37,7 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 FRESH_MINUTES = float(os.getenv("DESK_FRESH_MINUTES", "30"))
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
-
+GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
