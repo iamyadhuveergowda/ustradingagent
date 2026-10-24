@@ -38,6 +38,47 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 FRESH_MINUTES = float(os.getenv("DESK_FRESH_MINUTES", "30"))
+DEDUP_WINDOW_MINUTES = 120  # old Muse rule: same ticker+direction within 2h = same setup
+
+def _parse_dt(s):
+    try:
+        dt = datetime.fromisoformat(str(s))
+        return dt
+    except Exception:
+        return None
+
+def filter_deduped(candidates, history, gen_dt):
+    """Return (kept, skipped_tickers) applying the 2h ticker+direction rule.
+
+    A candidate is skipped if history already holds the same ticker and
+    action with a signal_time 0-120 min before this batch's signal_time.
+    signal_id dedupe (in main) still runs first; this is in addition to it.
+    """
+    kept, skipped = [], []
+    for c in candidates:
+        tick = str(c.get("ticker", "")).upper()
+        act = str(c.get("signal", ""))
+        dup = False
+        for r in history:
+            if not isinstance(r, dict):
+                continue
+            if str(r.get("ticker", "")).upper() != tick or str(r.get("action", "")) != act:
+                continue
+            sig_dt = _parse_dt(r.get("signal_time") or r.get("judged_at"))
+            if sig_dt is None:
+                continue
+            # normalise naive datetimes to the batch timezone
+            if sig_dt.tzinfo is None and gen_dt.tzinfo is not None:
+                sig_dt = sig_dt.replace(tzinfo=gen_dt.tzinfo)
+            delta_min = (gen_dt - sig_dt).total_seconds() / 60.0
+            if 0 <= delta_min <= DEDUP_WINDOW_MINUTES:
+                dup = True
+                break
+        if dup:
+            skipped.append(tick)
+        else:
+            kept.append(c)
+    return kept, skipped
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
 def gemini_post_with_retry(req, timeout=90, attempts=3):
@@ -123,7 +164,10 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
         "day move; (4) timing — entries after 14:30 ET have little room, midday entries need "
         "stronger structure. Be selective: a SKIP costs nothing.\n\n"
         "Return ONLY this JSON: {\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
-        "\"confidence\": int 0-100, \"notes\": {\"technical\": str, \"macro\": str, \"risk\": str}}]} "
+        "\"confidence\": int 0-100, \"trigger\": str, \"notes\": {\"technical\": str, \"macro\": str, \"risk\": str}}]} "
+        "trigger is the price condition that makes the verdict actionable: for GO, "
+        "the entry condition; for SKIP, the condition that would make it valid "
+        "(e.g. 'Valid only on a break below 1183.60'), or '' if none exists in-session. "
         "— one entry per candidate, citing concrete numbers from the payload in the notes.\n\n"
         f"Candidates: {json.dumps(features)}"
     )
@@ -146,7 +190,7 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
     for c in candidates:
         v = by_ticker.get(c["ticker"].upper())
         if v is None:
-            out.append({"ticker": c["ticker"], "verdict": "SKIP", "confidence": 0,
+            out.append({"ticker": c["ticker"], "verdict": "SKIP", "confidence": 0, "trigger": "",
                         "notes": {"technical": "desk returned no verdict for this ticker",
                                   "macro": "", "risk": "fail-closed default"}})
             continue
@@ -158,7 +202,7 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
         except (TypeError, ValueError):
             conf = 0
         notes = v.get("notes") if isinstance(v.get("notes"), dict) else {"technical": str(v.get("notes", ""))}
-        out.append({"ticker": c["ticker"], "verdict": verdict, "confidence": conf, "notes": notes})
+        out.append({"ticker": c["ticker"], "verdict": verdict, "confidence": conf, "trigger": str(v.get("trigger", "")).strip(), "notes": notes})
     return out
 
 
@@ -216,13 +260,20 @@ def main() -> int:
         print(f"Signal {signal_id} already judged; skipping.")
         return 0
 
+    kept, skipped = filter_deduped(latest["candidates"], history, gen_et)
+    if skipped:
+        print(f"Deduped (same ticker+direction within 2h, skipping): {', '.join(skipped)}")
+    if not kept:
+        print("All candidates deduped; skipping (no Gemini call, no commit).")
+        return 0
+
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
         return 0
 
     spy_pct = latest.get("spy_day_pct")
     try:
-        verdicts = gemini_judge(latest["candidates"], spy_pct, gen_et.strftime("%H:%M"))
+        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"))
     except Exception as exc:
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
         return 0
@@ -239,7 +290,7 @@ def main() -> int:
             "ticker": v["ticker"], "action": c["signal"],
             "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
             "qty": c.get("qty", 0),
-            "verdict": v["verdict"], "confidence": v["confidence"], "notes": v["notes"],
+            "verdict": v["verdict"], "confidence": v["confidence"], "trigger": v.get("trigger", ""), "notes": v["notes"],
             "outcome": None, "outcome_r": None, "outcome_at": None,
         })
     history.extend(records)
@@ -254,9 +305,15 @@ def main() -> int:
     for r in records:
         icon = "GO ✅" if r["verdict"] == "GO" else "SKIP ⛔"
         tech = (r["notes"] or {}).get("technical", "")
+        risk = (r["notes"] or {}).get("risk", "")
         lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → {icon} ({r['confidence']})")
+        lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
+        if r.get("trigger"):
+            lines.append(f"  Trigger: {r['trigger'][:160]}")
         if tech:
-            lines.append(f"  {tech[:220]}")
+            lines.append(f"  {tech[:160]}")
+        if risk:
+            lines.append(f"  Key risk: {risk[:160]}")
     lines.append("Advisory only — the agent does not see this verdict.")
     send_telegram("\n".join(lines))
     print(f"Judged {len(records)} candidate(s) from {signal_id}.")
