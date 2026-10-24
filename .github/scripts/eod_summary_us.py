@@ -32,8 +32,10 @@ import json
 import os
 import statistics
 import sys
+import time
 import urllib.parse
 import urllib.request
+import urllib.error
 from datetime import datetime, time as dtime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -41,6 +43,31 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
+
+def gemini_post_with_retry(req, timeout=90, attempts=3):
+    """POST to Gemini with retries on timeouts / 5xx only.
+
+    A 4xx (e.g. 404 bad model) fails fast -- retrying cannot fix it.
+    A timeout, like the Oct 24 mock run, is retried: 90s per attempt,
+    10s then 20s backoff, max ~5 min total. Raises the last error.
+    """
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8")
+        except urllib.error.HTTPError as exc:
+            if 400 <= exc.code < 500:
+                raise
+            last_exc = exc
+        except Exception as exc:
+            last_exc = exc
+        if attempt < attempts:
+            print(f"Gemini attempt {attempt} failed ({last_exc}); retrying...",
+                  file=sys.stderr)
+            time.sleep(10 * attempt)
+    raise last_exc
+
 WIN, LOSS, EXPIRED = "WIN 🟢", "LOSS 🔴", "EXPIRED ⚪"
 
 
@@ -216,8 +243,7 @@ def narrate(stats: dict) -> str:
         headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
         method="POST")
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+        data = json.loads(gemini_post_with_retry(req))
         return data["candidates"][0]["content"]["parts"][0]["text"].strip()
     except Exception as exc:
         print(f"Narration failed: {exc}", file=sys.stderr)
