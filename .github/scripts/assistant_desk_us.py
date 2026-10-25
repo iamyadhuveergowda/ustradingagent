@@ -8,6 +8,13 @@ server and pushed to this repo), judges EVERY candidate with Gemini, and:
   * appends to desk_history.json      (permanent record the EOD scorer uses)
   * sends one Telegram message per new signal batch
 
+FEASIBILITY (draft patch, Oct 2026, step 2 alone; 1 and 4 deferred):
+a deterministic flag, not a hard reject — INFEASIBLE if target >=5.5 ATR
+with <=60 min to the 16:00 ET close, or >=4.5 ATR with <=30 min; TIGHT
+for >=5.5 ATR with <=120 min or >=4.5 ATR with <=60 min. Stored, shown
+on Telegram, and injected into the prompt. Gemini may still GO, but
+must justify it explicitly.
+
 The desk has NO connection to the trading agent: nothing here can place,
 block, or modify a trade. It is an advice log whose accuracy the EOD
 script measures. (Designed 2026-10-23; the NIFTY tradetracker desk's known
@@ -106,6 +113,24 @@ def gemini_post_with_retry(req, timeout=90, attempts=3):
     raise last_exc
 
 
+
+def feasibility_flag(target_atr, minutes_left) -> str:
+    if target_atr is None or minutes_left is None:
+        return ""
+    try:
+        atr = float(target_atr); mins = int(minutes_left)
+    except Exception:
+        return ""
+    if (mins <= 60 and atr >= 5.5) or (mins <= 30 and atr >= 4.5):
+        return f"INFEASIBLE: target {atr:.2f} ATR with {mins} min to close"
+    if (mins <= 120 and atr >= 5.5) or (mins <= 60 and atr >= 4.5):
+        return f"TIGHT: target {atr:.2f} ATR with {mins} min to close"
+    return ""
+
+
+def minutes_to_close_us(gen_dt) -> int:
+    return (16*60) - (gen_dt.hour*60 + gen_dt.minute)
+
 def repo_root() -> Path:
     override = os.getenv("DESK_REPO_ROOT")
     if override:
@@ -125,7 +150,7 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[dict]:
+def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_left=None) -> list[dict]:
     """One Gemini call judging all candidates. Returns one verdict dict per
     candidate (ticker-matched). Raises on transport/API failure."""
     api_key = os.environ["GEMINI_API_KEY"]
@@ -145,6 +170,7 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
             "target_distance_atr": round(abs(tgt - entry) / atr, 2) if atr > 0 else None,
             "reward_to_risk": round(abs(tgt - entry) / risk, 2) if risk > 0 else None,
             "scout_reason": c.get("scout_reason", ""),
+            "feasibility": feasibility_flag(round(abs(tgt - entry) / atr, 2) if atr > 0 else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
         })
     prompt = (
@@ -157,6 +183,11 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str) -> list[d
         "Volume comes from the IEX feed only (~2-4% of consolidated tape): treat vol_ratio "
         "as directional evidence, never as exact. There is no news feed and no VWAP in this "
         "payload — judge structure and geometry only, and say so if that limits you.\n\n"
+        "FEASIBILITY: each candidate carries a feasibility field computed from "
+        "target_distance_atr and minutes left to the 16:00 ET close, NOT from Gemini. "
+        "If it starts INFEASIBLE, mention it and default to SKIP unless the structure "
+        "is exceptional and you say why; if TIGHT, weigh it in risk. If empty, do not "
+        "invent a feasibility problem.\n\n"
         "For EACH candidate decide GO or SKIP. Weigh: (1) candle structure — is the pullback "
         "orderly with a directional close, or is price extended/exhausted into the entry; "
         "(2) geometry — stop distance in ATR, reward:risk, and whether the target is realistic "
@@ -273,7 +304,7 @@ def main() -> int:
 
     spy_pct = latest.get("spy_day_pct")
     try:
-        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"))
+        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"), minutes_left=minutes_to_close_us(gen_et))
     except Exception as exc:
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
         return 0
@@ -291,6 +322,7 @@ def main() -> int:
             "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
             "qty": c.get("qty", 0),
             "verdict": v["verdict"], "confidence": v["confidence"], "trigger": v.get("trigger", ""), "notes": v["notes"],
+            "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_to_close_us(gen_et)),
             "outcome": None, "outcome_r": None, "outcome_at": None,
         })
     history.extend(records)
@@ -310,6 +342,8 @@ def main() -> int:
         lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
         if r.get("trigger"):
             lines.append(f"  Trigger: {r['trigger'][:160]}")
+        if r.get("feasibility"):
+            lines.append(f"  Feasibility: {r['feasibility']}")
         if tech:
             lines.append(f"  {tech[:160]}")
         if risk:
