@@ -314,5 +314,61 @@
     "breakeven_price": 252.05,
     "live_atr": 0.9124,
     "exit_time": "2026-10-22T15:25:53-04:00"
+  },
+  {
+    "trade_id": "20261026141822-TMO",
+    "date": "2026-10-26",
+    "ticker": "TMO",
+    "action": "BUY",
+    "qty": 58,
+    "remaining_qty": 58,
+    "locked_margin_per_share": 680.18,
+    "partial_booked": false,
+    "entry": 680.18,
+    "sl": 676.92,
+    "initial_sl": 676.92,
+    "tgt": 687.0,
+    "open": 679.37,
+    "high": 679.93,
+    "low": 679.37,
+    "close": 679.8,
+    "time": "14:18:22",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 679.8 is 0.14 above VWAP (679.66), well within 0.5 ATR; stop 676.92 is 2.88 below entry (~1.5 ATR) giving a solid risk‑reward; target 687.0 is 7.2 above entry (~3.75 ATR) below the 4.5 ATR TARGET_CAP limit; qty 58 ≥ 1, stop correctly placed (sl<entry), macro regime lock does not apply to BUY, and there are no adverse news, events, or vetoes.",
+    "events": [
+      {
+        "time": "2026-10-26T14:18:22-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 58 @ $680.18"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 680.18,
+    "atr": 1.9203,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 0.75,
+    "vol_ratio": 2.11,
+    "rvol": 0.83,
+    "rule_version": "us_v2.4",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "53e489b3-87e9-4b66-8b1d-422b9a9571f8",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-26 18:18:09.587609+00:00"
+      },
+      "stop": {
+        "id": "283817da-a8dd-4e9f-b3cf-76477addbe1e",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 680.29
   }
 ]
