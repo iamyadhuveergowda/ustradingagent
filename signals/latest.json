@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261026-113157-ABT",
-  "generated_at": "2026-10-26T11:31:57.354600-04:00",
-  "spy_day_pct": 0.9212587026045299,
+  "signal_id": "20261026-113341-ABT",
+  "generated_at": "2026-10-26T11:33:41.568106-04:00",
+  "spy_day_pct": 0.8988852769698389,
   "candidates": [
     {
       "ticker": "ABT",
       "signal": "BUY",
-      "ltp": 104.9,
-      "stop": 104.24,
-      "target": 106.55,
+      "ltp": 104.79,
+      "stop": 104.13,
+      "target": 106.44,
       "qty": 379,
       "indicators": {
         "rsi": 62.17,
         "atr": 0.4397,
         "vol_ratio": 1.28
       },
-      "scout_reason": "SPY +0.92% aligns with BUY",
+      "scout_reason": "SPY +0.90% aligns with BUY",
       "candles_5m": [
         [
           "09:55",
