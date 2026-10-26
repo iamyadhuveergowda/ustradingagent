@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261026-115635-MCD",
-  "generated_at": "2026-10-26T11:56:35.264342-04:00",
-  "spy_day_pct": 0.7896503165181685,
+  "signal_id": "20261026-115910-MCD",
+  "generated_at": "2026-10-26T11:59:10.482229-04:00",
+  "spy_day_pct": 0.7330587105010247,
   "candidates": [
     {
       "ticker": "MCD",
       "signal": "BUY",
-      "ltp": 250.2,
-      "stop": 249.03,
-      "target": 253.11,
+      "ltp": 250.1,
+      "stop": 248.93,
+      "target": 253.01,
       "qty": 159,
       "indicators": {
         "rsi": 52.1,
         "atr": 0.7772,
         "vol_ratio": 1.65
       },
-      "scout_reason": "SPY +0.79% aligns with BUY",
+      "scout_reason": "SPY +0.73% aligns with BUY",
       "candles_5m": [
         [
           "10:20",
@@ -173,9 +173,9 @@
           "11:55",
           250.2,
           250.2,
-          250.09,
-          250.09,
-          83
+          249.98,
+          249.98,
+          947
         ]
       ]
     }
