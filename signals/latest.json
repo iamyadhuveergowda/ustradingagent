@@ -1,7 +1,7 @@
 {
-  "signal_id": "20261026-111645-NKE",
-  "generated_at": "2026-10-26T11:16:45.161916-04:00",
-  "spy_day_pct": 0.9429740863087748,
+  "signal_id": "20261026-111920-NKE",
+  "generated_at": "2026-10-26T11:19:20.182455-04:00",
+  "spy_day_pct": 0.9699538054564842,
   "candidates": [
     {
       "ticker": "NKE",
@@ -15,7 +15,7 @@
         "atr": 0.206,
         "vol_ratio": 1.17
       },
-      "scout_reason": "SPY +0.94% aligns with BUY",
+      "scout_reason": "SPY +0.97% aligns with BUY",
       "candles_5m": [
         [
           "09:40",
@@ -172,10 +172,10 @@
         [
           "11:15",
           37.91,
-          37.91,
+          37.93,
           37.89,
-          37.9,
-          5303
+          37.91,
+          9485
         ]
       ]
     }
