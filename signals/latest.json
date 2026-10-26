@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261026-134740-INTC",
-  "generated_at": "2026-10-26T13:47:40.110542-04:00",
-  "spy_day_pct": 0.6909440269533974,
+  "signal_id": "20261026-135013-INTC",
+  "generated_at": "2026-10-26T13:50:13.775597-04:00",
+  "spy_day_pct": 0.6271139597015104,
   "candidates": [
     {
       "ticker": "INTC",
       "signal": "BUY",
-      "ltp": 91.35,
-      "stop": 90.44,
-      "target": 93.62,
+      "ltp": 91.46,
+      "stop": 90.55,
+      "target": 93.73,
       "qty": 435,
       "indicators": {
         "rsi": 62.04,
         "atr": 0.6065,
         "vol_ratio": 1.31
       },
-      "scout_reason": "SPY +0.69% aligns with BUY",
+      "scout_reason": "SPY +0.63% aligns with BUY",
       "candles_5m": [
         [
           "12:10",
@@ -172,10 +172,10 @@
         [
           "13:45",
           91.36,
-          91.42,
-          91.3,
-          91.42,
-          3498
+          91.52,
+          91.27,
+          91.47,
+          12553
         ]
       ]
     }
