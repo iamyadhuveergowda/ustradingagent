@@ -331,7 +331,7 @@
     "open": 679.37,
     "high": 679.93,
     "low": 679.37,
-    "close": 680.39,
+    "close": 681.52,
     "time": "14:18:22",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -345,7 +345,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 680.39,
+    "last_price": 681.52,
     "atr": 1.9203,
     "breakeven_set": false,
     "mfe_r": 0.566,
