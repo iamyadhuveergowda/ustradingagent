@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261026-121228-BLK",
-  "generated_at": "2026-10-26T12:12:28.073942-04:00",
-  "spy_day_pct": 0.7291104589184375,
+  "signal_id": "20261026-121513-BLK",
+  "generated_at": "2026-10-26T12:15:13.013350-04:00",
+  "spy_day_pct": 0.743587381387939,
   "candidates": [
     {
       "ticker": "BLK",
       "signal": "BUY",
-      "ltp": 1129.35,
-      "stop": 1124.47,
-      "target": 1141.56,
+      "ltp": 1129.58,
+      "stop": 1124.7,
+      "target": 1141.79,
       "qty": 35,
       "indicators": {
         "rsi": 51.31,
         "atr": 3.2563,
         "vol_ratio": 1.44
       },
-      "scout_reason": "SPY +0.73% aligns with BUY",
+      "scout_reason": "SPY +0.74% aligns with BUY",
       "candles_5m": [
-        [
-          "10:15",
-          1131.38,
-          1133.72,
-          1131.38,
-          1133.72,
-          125
-        ],
         [
           "10:20",
           1132.25,
@@ -176,6 +168,14 @@
           1128.81,
           1129.35,
           591
+        ],
+        [
+          "12:10",
+          1129.58,
+          1129.58,
+          1129.58,
+          1129.58,
+          125
         ]
       ]
     },
@@ -183,15 +183,15 @@
       "ticker": "ABT",
       "signal": "BUY",
       "ltp": 104.61,
-      "stop": 104.0,
-      "target": 106.13,
+      "stop": 103.98,
+      "target": 106.18,
       "qty": 380,
       "indicators": {
         "rsi": 53.5,
-        "atr": 0.4062,
+        "atr": 0.4183,
         "vol_ratio": 1.26
       },
-      "scout_reason": "SPY +0.73% aligns with BUY",
+      "scout_reason": "SPY +0.74% aligns with BUY",
       "candles_5m": [
         [
           "10:35",
@@ -350,8 +350,8 @@
           104.69,
           104.69,
           104.56,
-          104.59,
-          3370
+          104.67,
+          18772
         ]
       ]
     }
