@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261026-133723-MSFT",
-  "generated_at": "2026-10-26T13:37:23.157333-04:00",
-  "spy_day_pct": 0.7620125554400278,
+  "signal_id": "20261026-134015-MSFT",
+  "generated_at": "2026-10-26T13:40:15.168318-04:00",
+  "spy_day_pct": 0.7383230459444894,
   "candidates": [
     {
       "ticker": "MSFT",
       "signal": "BUY",
-      "ltp": 530.45,
-      "stop": 528.13,
-      "target": 536.24,
+      "ltp": 530.55,
+      "stop": 528.23,
+      "target": 536.34,
       "qty": 75,
       "indicators": {
         "rsi": 57.8,
         "atr": 1.5446,
         "vol_ratio": 1.29
       },
-      "scout_reason": "SPY +0.76% aligns with BUY",
+      "scout_reason": "SPY +0.74% aligns with BUY",
       "candles_5m": [
         [
           "12:00",
@@ -172,26 +172,26 @@
         [
           "13:35",
           530.53,
-          530.54,
-          530.47,
-          530.47,
-          483
+          530.55,
+          530.34,
+          530.55,
+          2882
         ]
       ]
     },
     {
       "ticker": "MU",
       "signal": "BUY",
-      "ltp": 912.76,
-      "stop": 903.42,
-      "target": 936.14,
+      "ltp": 911.17,
+      "stop": 901.82,
+      "target": 934.54,
       "qty": 43,
       "indicators": {
         "rsi": 62.34,
         "atr": 6.233,
         "vol_ratio": 2.64
       },
-      "scout_reason": "SPY +0.76% aligns with BUY",
+      "scout_reason": "SPY +0.74% aligns with BUY",
       "candles_5m": [
         [
           "12:00",
@@ -349,25 +349,25 @@
           "13:35",
           912.67,
           913.26,
-          912.16,
-          912.26,
-          2486
+          910.6,
+          911.3,
+          4242
         ]
       ]
     },
     {
       "ticker": "AMZN",
       "signal": "BUY",
-      "ltp": 249.84,
-      "stop": 248.64,
-      "target": 252.85,
+      "ltp": 249.68,
+      "stop": 248.47,
+      "target": 252.68,
       "qty": 159,
       "indicators": {
         "rsi": 58.75,
         "atr": 0.8019,
         "vol_ratio": 2.29
       },
-      "scout_reason": "SPY +0.76% aligns with BUY",
+      "scout_reason": "SPY +0.74% aligns with BUY",
       "candles_5m": [
         [
           "12:00",
@@ -525,9 +525,9 @@
           "13:35",
           249.89,
           249.91,
-          249.69,
-          249.7,
-          10399
+          249.6,
+          249.66,
+          25270
         ]
       ]
     }
