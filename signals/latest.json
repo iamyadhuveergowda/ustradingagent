@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261027-124244-CAT",
-  "generated_at": "2026-10-27T12:42:44.071914-04:00",
-  "spy_day_pct": 0.5808749060733688,
+  "signal_id": "20261027-124527-CAT",
+  "generated_at": "2026-10-27T12:45:27.696426-04:00",
+  "spy_day_pct": 0.539057140056846,
   "candidates": [
     {
       "ticker": "CAT",
       "signal": "BUY",
-      "ltp": 711.12,
-      "stop": 706.67,
-      "target": 722.22,
+      "ltp": 710.4,
+      "stop": 705.96,
+      "target": 721.5,
       "qty": 56,
       "indicators": {
         "rsi": 61.32,
         "atr": 2.9612,
         "vol_ratio": 1.65
       },
-      "scout_reason": "SPY +0.58% aligns with BUY",
+      "scout_reason": "SPY +0.54% aligns with BUY",
       "candles_5m": [
         [
           "11:05",
@@ -173,9 +173,9 @@
           "12:40",
           711.29,
           711.29,
-          711.12,
-          711.12,
-          80
+          710.4,
+          710.4,
+          347
         ]
       ]
     }
