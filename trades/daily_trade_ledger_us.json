@@ -400,34 +400,44 @@
     "ticker": "TMO",
     "action": "BUY",
     "qty": 57,
-    "remaining_qty": 57,
+    "remaining_qty": 29,
     "locked_margin_per_share": 694.34,
-    "partial_booked": false,
+    "partial_booked": true,
     "entry": 694.34,
-    "sl": 690.63,
+    "sl": 696.38,
     "initial_sl": 690.63,
     "tgt": 703.19,
     "open": 693.21,
     "high": 694.66,
     "low": 693.21,
-    "close": 697.74,
+    "close": 697.95,
     "time": "12:26:59",
     "status": "OPEN ⏳",
     "exit_price": null,
-    "net_pnl": 0.0,
+    "net_pnl": 112.25,
     "rationale": "Entry 693.84 is 2.75 above VWAP (691.09), well within 1.5 × ATR (3.59) indicating a reasonable price level; stop 690.25 sits 3.59 below entry (~1.5 × ATR) giving a clear risk buffer; target 702.81 is 8.97 above entry (~3.75 × ATR) and below the 4.5 × ATR fantasy cap; ATR 2.3931 and RSI 58.5 show moderate volatility and neutral momentum; recent 5‑min candles display higher highs and higher lows with increasing volume, confirming an emerging uptrend; no contradictory news, no upcoming event, and m",
     "events": [
       {
         "time": "2026-10-27T12:26:59-04:00",
         "type": "ENTRY",
         "text": "PAPER BUY 57 @ $694.34"
+      },
+      {
+        "time": "2026-10-27T13:50:43-04:00",
+        "type": "EXIT",
+        "text": "+1R partial booked: 28 @ $698.47, net $112.25"
+      },
+      {
+        "time": "2026-10-27T13:50:43-04:00",
+        "type": "PARTIAL",
+        "text": "+1R reached; stop at $694.46"
       }
     ],
     "mode": "PAPER",
-    "last_price": 697.74,
+    "last_price": 697.95,
     "atr": 2.3931,
-    "breakeven_set": false,
-    "mfe_r": 0.978,
+    "breakeven_set": true,
+    "mfe_r": 1.112,
     "mae_r": -0.353,
     "spy_pct": 0.67,
     "vol_ratio": 2.77,
@@ -435,8 +445,14 @@
     "rule_version": "us_v2.4",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 3.2465,
+      "total": 3.2465
+    },
+    "pnl_by_date": {
+      "2026-10-27": 112.25
+    },
     "orders": {
       "entry": {
         "id": "56c626ef-9d5e-4857-b183-cef1d28515a6",
@@ -444,10 +460,11 @@
         "submitted_at": "2026-10-27 16:26:46.402718+00:00"
       },
       "stop": {
-        "id": "234ea4f2-390d-4dfe-95f6-6afee62ecc38",
+        "id": "f8f515c6-8ad2-48f9-99e9-76e205f8cd1d",
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 694.46
+    "breakeven_price": 694.46,
+    "live_atr": 2.0804
   }
 ]
