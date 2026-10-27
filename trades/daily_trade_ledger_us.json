@@ -393,5 +393,61 @@
     "breakeven_price": 680.29,
     "live_atr": 1.8223,
     "exit_time": "2026-10-26T15:55:17-04:00"
+  },
+  {
+    "trade_id": "20261027122659-TMO",
+    "date": "2026-10-27",
+    "ticker": "TMO",
+    "action": "BUY",
+    "qty": 57,
+    "remaining_qty": 57,
+    "locked_margin_per_share": 694.34,
+    "partial_booked": false,
+    "entry": 694.34,
+    "sl": 690.63,
+    "initial_sl": 690.63,
+    "tgt": 703.19,
+    "open": 693.21,
+    "high": 694.66,
+    "low": 693.21,
+    "close": 693.84,
+    "time": "12:26:59",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 693.84 is 2.75 above VWAP (691.09), well within 1.5 × ATR (3.59) indicating a reasonable price level; stop 690.25 sits 3.59 below entry (~1.5 × ATR) giving a clear risk buffer; target 702.81 is 8.97 above entry (~3.75 × ATR) and below the 4.5 × ATR fantasy cap; ATR 2.3931 and RSI 58.5 show moderate volatility and neutral momentum; recent 5‑min candles display higher highs and higher lows with increasing volume, confirming an emerging uptrend; no contradictory news, no upcoming event, and m",
+    "events": [
+      {
+        "time": "2026-10-27T12:26:59-04:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 57 @ $694.34"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 694.34,
+    "atr": 2.3931,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 0.67,
+    "vol_ratio": 2.77,
+    "rvol": 0.67,
+    "rule_version": "us_v2.4",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "56c626ef-9d5e-4857-b183-cef1d28515a6",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-10-27 16:26:46.402718+00:00"
+      },
+      "stop": {
+        "id": "234ea4f2-390d-4dfe-95f6-6afee62ecc38",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 694.46
   }
 ]
