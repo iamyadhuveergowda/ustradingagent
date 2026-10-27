@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261027-141709-WFC",
-  "generated_at": "2026-10-27T14:17:09.378561-04:00",
-  "spy_day_pct": 0.5527785945310226,
+  "signal_id": "20261027-141940-WFC",
+  "generated_at": "2026-10-27T14:19:40.808534-04:00",
+  "spy_day_pct": 0.5560456075010611,
   "candidates": [
     {
       "ticker": "WFC",
       "signal": "BUY",
-      "ltp": 82.69,
-      "stop": 82.36,
-      "target": 83.52,
+      "ltp": 82.75,
+      "stop": 82.42,
+      "target": 83.58,
       "qty": 483,
       "indicators": {
         "rsi": 52.34,
         "atr": 0.1878,
         "vol_ratio": 1.71
       },
-      "scout_reason": "SPY +0.55% aligns with BUY",
+      "scout_reason": "SPY +0.56% aligns with BUY",
       "candles_5m": [
         [
           "12:40",
@@ -174,8 +174,8 @@
           82.75,
           82.75,
           82.69,
-          82.69,
-          1016
+          82.75,
+          2760
         ]
       ]
     }
