@@ -404,13 +404,13 @@
     "locked_margin_per_share": 694.34,
     "partial_booked": true,
     "entry": 694.34,
-    "sl": 698.92,
+    "sl": 699.0,
     "initial_sl": 690.63,
     "tgt": 703.19,
     "open": 693.21,
     "high": 694.66,
     "low": 693.21,
-    "close": 700.76,
+    "close": 700.46,
     "time": "12:26:59",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -434,7 +434,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 700.76,
+    "last_price": 700.46,
     "atr": 2.3931,
     "breakeven_set": true,
     "mfe_r": 1.73,
@@ -465,6 +465,6 @@
       }
     },
     "breakeven_price": 694.46,
-    "live_atr": 1.8367
+    "live_atr": 1.7408
   }
 ]
