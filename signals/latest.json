@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261027-105308-BLK",
-  "generated_at": "2026-10-27T10:53:08.381915-04:00",
-  "spy_day_pct": 0.3502237903884413,
+  "signal_id": "20261027-105550-BLK",
+  "generated_at": "2026-10-27T10:55:50.173829-04:00",
+  "spy_day_pct": 0.39726877715704056,
   "candidates": [
     {
       "ticker": "BLK",
       "signal": "BUY",
-      "ltp": 1134.04,
-      "stop": 1129.13,
-      "target": 1146.32,
+      "ltp": 1134.33,
+      "stop": 1129.42,
+      "target": 1146.61,
       "qty": 35,
       "indicators": {
         "rsi": 54.59,
         "atr": 3.2753,
         "vol_ratio": 1.35
       },
-      "scout_reason": "SPY +0.35% aligns with BUY",
+      "scout_reason": "SPY +0.40% aligns with BUY",
       "candles_5m": [
         [
           "15:45",
@@ -172,10 +172,10 @@
         [
           "10:50",
           1132.89,
-          1134.04,
+          1134.33,
           1132.89,
-          1134.04,
-          365
+          1134.33,
+          1185
         ]
       ]
     }
