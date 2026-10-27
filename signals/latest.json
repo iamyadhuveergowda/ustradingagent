@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261027-143203-TSLA",
-  "generated_at": "2026-10-27T14:32:03.803614-04:00",
-  "spy_day_pct": 0.5181482570485846,
+  "signal_id": "20261027-143443-TSLA",
+  "generated_at": "2026-10-27T14:34:43.666064-04:00",
+  "spy_day_pct": 0.5135744388905158,
   "candidates": [
     {
       "ticker": "TSLA",
       "signal": "BUY",
-      "ltp": 406.05,
-      "stop": 403.59,
-      "target": 412.2,
+      "ltp": 405.89,
+      "stop": 403.43,
+      "target": 412.04,
       "qty": 98,
       "indicators": {
         "rsi": 52.49,
         "atr": 1.6387,
         "vol_ratio": 2.33
       },
-      "scout_reason": "SPY +0.52% aligns with BUY",
+      "scout_reason": "SPY +0.51% aligns with BUY",
       "candles_5m": [
         [
           "12:55",
@@ -173,9 +173,9 @@
           "14:30",
           405.95,
           406.14,
-          405.89,
-          406.05,
-          7726
+          405.78,
+          405.84,
+          10942
         ]
       ]
     }
