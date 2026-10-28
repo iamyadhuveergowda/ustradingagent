@@ -184,12 +184,15 @@ def mistral_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_
             "scout_reason": c.get("scout_reason", ""),
             "feasibility": feasibility_flag(round(abs(tgt - entry) / atr, 2) if atr > 0 else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
+            "minutes_left": minutes_left,
         })
     prompt = (
         "You are the senior analyst desk for a US intraday paper-trading system. "
         "This is an ADVISORY review: your verdict is logged and your accuracy is "
         "scored at end of day; you do not place trades.\n\n"
         f"Session context: signal time {signal_time_et} ET (regular session 09:30-16:00 ET). "
+        f"Minutes remaining to the 16:00 ET close: {minutes_left} — use THIS number for all "
+        "time-to-close reasoning; do not recompute it from the signal time. "
         f"SPY day move: {spy_pct if spy_pct is not None else 'unknown'}%. "
         "Candles are regular-session 5-minute bars [time, open, high, low, close, volume]. "
         "Volume comes from the IEX feed only (~2-4% of consolidated tape): treat vol_ratio "
@@ -205,7 +208,8 @@ def mistral_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_
         "(2) geometry — stop distance in ATR, reward:risk, and whether the target is realistic "
         "for the remaining session; (3) regime — does the trade direction agree with the SPY "
         "day move; (4) timing — entries after 14:30 ET have little room, midday entries need "
-        "stronger structure. Be selective: a SKIP costs nothing.\n\n"
+        "stronger structure. Be selective: a SKIP costs nothing. "
+        "CONFIDENCE: confidence is your conviction in the verdict you just gave for that candidate (GO or SKIP), as an integer. A verdict you stand behind is 50-95; a SKIP you believe in is 60-90. Never output 0 and never omit the confidence field — 0 means you have no opinion, not low conviction, and is not a valid confidence for a verdict. "
         "Return ONLY this JSON: {\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
         "\"confidence\": int 0-100, \"trigger\": str, \"notes\": {\"technical\": str, \"macro\": str, \"risk\": str}}]} "
         "trigger is the price condition that makes the verdict actionable: for GO, "
