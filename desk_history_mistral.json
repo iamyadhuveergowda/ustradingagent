@@ -44,5 +44,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261028-130311-XOM",
+    "signal_time": "2026-10-28T13:03:11-04:00",
+    "judged_at": "2026-10-28T13:03:34-04:00",
+    "ticker": "XOM",
+    "action": "BUY",
+    "entry": 183.2,
+    "stop": 182.44,
+    "target": 185.11,
+    "qty": 218,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "Valid only on a break above 183.62 with volume confirmation",
+    "notes": {
+      "technical": "Price is currently in a choppy, low-volume range (183.28-183.62) with no clear directional momentum. The 12:50 candle shows a sharp drop to 182.60, but the 12:55 and 13:00 candles attempt to recover, closing near the highs. The entry at 183.20 is below the recent range and lacks confirmation of a higher-timeframe breakout. The pullback from 183.62 (12:25 high) to 182.60 (12:50 low) is disorderly and does not align with a clean pullback structure. The RSI (55.18) is neutral, and the volume spike at 12:50 (19,036) suggests exhaustion rather than accumulation.",
+      "macro": "SPY's +0.26% day move is bullish, but XOM's lack of participation in the broader market rally (stuck in a tight range) raises caution. Without a clear breakout or higher-low confirmation, the trade lacks macro alignment.",
+      "risk": "Feasibility is TIGHT due to the target_distance_atr (3.76) and limited time (177 minutes). The stop at 182.44 is 1.5 ATR away, but the risk of a false breakout into the entry is high given the current structure. The reward:risk (2.51) is mathematically appealing, but the lack of structural clarity undermines confidence."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
