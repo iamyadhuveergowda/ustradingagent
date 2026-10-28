@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261028-130311-XOM",
-  "generated_at": "2026-10-28T13:03:11.176677-04:00",
-  "spy_day_pct": 0.26243991165388875,
+  "signal_id": "20261028-130558-XOM",
+  "generated_at": "2026-10-28T13:05:58.952904-04:00",
+  "spy_day_pct": 0.27413277900479405,
   "candidates": [
     {
       "ticker": "XOM",
       "signal": "BUY",
-      "ltp": 183.2,
-      "stop": 182.44,
-      "target": 185.11,
+      "ltp": 183.25,
+      "stop": 182.49,
+      "target": 185.16,
       "qty": 218,
       "indicators": {
         "rsi": 55.18,
         "atr": 0.5081,
         "vol_ratio": 3.23
       },
-      "scout_reason": "SPY +0.26% aligns with BUY",
+      "scout_reason": "SPY +0.27% aligns with BUY",
       "candles_5m": [
         [
           "11:25",
@@ -174,8 +174,8 @@
           183.08,
           183.34,
           183.08,
-          183.34,
-          1717
+          183.25,
+          3264
         ]
       ]
     }
