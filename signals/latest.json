@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261029-110610-UNH",
-  "generated_at": "2026-10-29T11:06:10.886230-04:00",
-  "spy_day_pct": -0.384575542549338,
+  "signal_id": "20261029-110849-UNH",
+  "generated_at": "2026-10-29T11:08:49.474855-04:00",
+  "spy_day_pct": -0.4078831511886851,
   "candidates": [
     {
       "ticker": "UNH",
       "signal": "SELL",
-      "ltp": 406.88,
-      "stop": 409.52,
-      "target": 400.28,
+      "ltp": 406.69,
+      "stop": 409.32,
+      "target": 400.09,
       "qty": 98,
       "indicators": {
         "rsi": 42.66,
         "atr": 1.7591,
         "vol_ratio": 1.21
       },
-      "scout_reason": "SPY -0.38% aligns with SELL",
+      "scout_reason": "SPY -0.41% aligns with SELL",
       "candles_5m": [
-        [
-          "15:55",
-          407.56,
-          407.56,
-          406.73,
-          407.05,
-          12043
-        ],
         [
           "09:30",
           414.36,
@@ -176,12 +168,20 @@
           406.06,
           406.88,
           3597
+        ],
+        [
+          "11:05",
+          407.01,
+          407.01,
+          406.69,
+          406.69,
+          1579
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 0.815 above session low 406.065, within 0.5*ATR (0.8796)",
-      "outcome_at": "2026-10-29T11:06:16.276166-04:00"
+      "outcome": "dropped_unrecorded",
+      "outcome_reason": "",
+      "outcome_at": "2026-10-29T11:08:49.912756-04:00"
     }
   ]
 }
