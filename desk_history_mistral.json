@@ -251,5 +251,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-143411-ORCL",
+    "signal_time": "2026-10-29T14:34:11-04:00",
+    "judged_at": "2026-10-29T14:34:25-04:00",
+    "ticker": "ORCL",
+    "action": "SELL",
+    "entry": 138.2,
+    "stop": 140.04,
+    "target": 133.6,
+    "qty": 289,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a late-session pullback into the entry at 138.20, but the structure is weak: the 14:25 candle (138.38-137.91) is a long-legged doji with a directional close lower, yet the 14:30 candle (138.06-138.26) is a bullish engulfing pattern, signaling potential exhaustion of the downside momentum. The stop at 140.04 is too far from current price (138.20) to be practical for a SELL entry, and the target (133.6) is 3.75 ATR away—unrealistic for the remaining 86 minutes (SPY -0.71% suggests intraday weakness, but ORCL’s late-session structure lacks conviction).",
+      "macro": "SPY’s -0.71% day move aligns with the SELL thesis, but ORCL’s late-session rally (137.51 → 138.27) suggests intraday strength, not exhaustion. No macro catalyst is provided, so we rely solely on structure.",
+      "risk": "Feasibility is TIGHT: target_distance_atr (3.75) is aggressive for 86 minutes left. Stop placement (140.04) is 1.8 ATR above entry, which is too wide for a late-session trade. Volume spike at 14:25 (35,964) is directional but not confirmatory for a SELL."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
