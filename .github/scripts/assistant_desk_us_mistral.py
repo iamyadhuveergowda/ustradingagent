@@ -259,24 +259,41 @@ def mistral_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_
     return out
 
 
-def send_telegram(text: str) -> None:
-    token = os.getenv("TELEGRAM_BOT_TOKEN", "")
-    chat = os.getenv("TELEGRAM_CHAT_ID", "")
+def _split_chunks(text, limit=3900):
+    chunks = []
+    cur = ''
+    for line in text.splitlines():
+        if cur and len(cur) + len(line) + 1 > limit:
+            chunks.append(cur)
+            cur = ''
+        while len(line) > limit:
+            chunks.append(line[:limit])
+            line = line[limit:]
+        cur = cur + line + chr(10) if cur else line + chr(10)
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
+def send_telegram(text):
+    token = os.getenv('TELEGRAM_BOT_TOKEN', '')
+    chat = os.getenv('TELEGRAM_CHAT_ID', '')
     if not token or not chat:
-        print("Telegram not configured; message was:\n" + text)
+        print('Telegram not configured; message was:' + chr(10) + text)
         return
-    req = urllib.request.Request(
-        f"https://api.telegram.org/bot{token}/sendMessage",
-        data=json.dumps({"chat_id": chat, "text": text}).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            if resp.status != 200:
-                print(f"Telegram send failed: HTTP {resp.status}", file=sys.stderr)
-    except Exception as exc:  # fail-soft: never fail the run over an alert
-        print(f"Telegram send failed: {exc}", file=sys.stderr)
+    for i, chunk in enumerate(_split_chunks(text), start=1):
+        req = urllib.request.Request(
+            'https://api.telegram.org/bot' + token + '/sendMessage',
+            data=json.dumps({'chat_id': chat, 'text': chunk}).encode('utf-8'),
+            headers={'Content-Type': 'application/json'},
+            method='POST',
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                if resp.status != 200:
+                    print('Telegram send failed: HTTP %s (chunk %d)' % (resp.status, i), file=sys.stderr)
+        except Exception as exc:
+            print('Telegram send failed: %s (chunk %d)' % (exc, i), file=sys.stderr)
 
 
 def main() -> int:
@@ -360,17 +377,16 @@ def main() -> int:
         icon = "GO ✅" if r["verdict"] == "GO" else "SKIP ⛔"
         tech = (r["notes"] or {}).get("technical", "")
         risk = (r["notes"] or {}).get("risk", "")
-        lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → {icon} ({r['confidence']})")
+        lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → {icon} ({r['confidence']}%)")
         lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
         if r.get("trigger"):
-            lines.append(f"  Trigger: {r['trigger'][:160]}")
+            lines.append(f"  Trigger: {r['trigger']}")
         if r.get("feasibility"):
             lines.append(f"  Feasibility: {r['feasibility']}")
         if tech:
-            lines.append(f"  {tech[:160]}")
+            lines.append(f"  {tech}")
         if risk:
-            lines.append(f"  Key risk: {risk[:160]}")
-    lines.append("Advisory only — the agent does not see this verdict.")
+            lines.append(f"  Key risk: {risk}")
     send_telegram("\n".join(lines))
     print(f"Judged {len(records)} candidate(s) from {signal_id}.")
     return 0
