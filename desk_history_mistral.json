@@ -90,5 +90,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-114210-MU",
+    "signal_time": "2026-10-29T11:42:10-04:00",
+    "judged_at": "2026-10-29T11:42:24-04:00",
+    "ticker": "MU",
+    "action": "SELL",
+    "entry": 949.28,
+    "stop": 960.67,
+    "target": 920.81,
+    "qty": 42,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional exhaustion into the entry (949.28). The 11:35 candle closed near its low (949.69) with high volume (9591), but the 11:40 candle closed near its high (949.78), lacking a definitive pullback close. The RSI (39.56) is neutral, not extreme, and does not support a SELL. The 12-candle sequence lacks a clean retest or rejection of a key level, and the pullback is not orderly (e.g., 11:25 candle closed near its low but 11:30/11:35 candles failed to extend lower).",
+      "macro": "SPY's -0.28% day move aligns with the SELL thesis, but without a news feed or VWAP, we cannot assess broader regime strength. The lack of directional clarity in MU's structure outweighs the SPY alignment.",
+      "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (920.81) is **3.75 ATR** away with **258 minutes left**, which is aggressive for an intraday trade. The stop (960.67) is **1.5 ATR** above entry, but the lack of a clear breakdown or exhaustion pattern makes this a high-risk setup. The vol_ratio (1.64) is mildly bullish, conflicting with the SELL signal."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
