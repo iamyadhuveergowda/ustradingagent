@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261029-141731-NVDA",
-  "generated_at": "2026-10-29T14:17:31.580289-04:00",
-  "spy_day_pct": -0.5982286217434097,
+  "signal_id": "20261029-142009-NVDA",
+  "generated_at": "2026-10-29T14:20:09.185649-04:00",
+  "spy_day_pct": -0.6176516289428682,
   "candidates": [
     {
       "ticker": "NVDA",
       "signal": "SELL",
-      "ltp": 212.84,
-      "stop": 213.98,
-      "target": 209.99,
+      "ltp": 212.78,
+      "stop": 213.92,
+      "target": 209.94,
       "qty": 187,
       "indicators": {
         "rsi": 38.21,
         "atr": 0.7596,
         "vol_ratio": 1.11
       },
-      "scout_reason": "SPY -0.60% aligns with SELL",
+      "scout_reason": "SPY -0.62% aligns with SELL",
       "candles_5m": [
         [
           "12:40",
@@ -173,15 +173,15 @@
           "14:15",
           212.84,
           212.88,
-          212.81,
-          212.84,
-          3403
+          212.62,
+          212.78,
+          15841
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-29T14:17:31.990429-04:00"
+      "outcome_at": "2026-10-29T14:20:09.611166-04:00"
     }
   ]
 }
