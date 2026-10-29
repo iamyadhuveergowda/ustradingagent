@@ -136,5 +136,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-124328-COP",
+    "signal_time": "2026-10-29T12:43:28-04:00",
+    "judged_at": "2026-10-29T12:43:46-04:00",
+    "ticker": "COP",
+    "action": "SELL",
+    "entry": 149.13,
+    "stop": 149.8,
+    "target": 147.45,
+    "qty": 267,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 149.13, with the last 12 candles showing a tight range (148.72-149.38) and a directional close only in the 12:35 candle (149.07). The pullback from 149.38 to 149.13 is abrupt and lacks an orderly structure, with no clear exhaustion or reversal signal. The RSI (47.17) is neutral, not confirming a sell setup. The 12:40 candle closed at 149.13, the entry level, but with minimal volume (877) and no follow-through momentum.",
+      "macro": "SPY's -0.43% day move aligns with the SELL thesis, but the lack of broader market context (e.g., sector rotation, macroeconomic data) limits confidence in a directional trade.",
+      "risk": "Feasibility is TIGHT due to the target_distance_atr (3.74) relative to the 197 minutes left. The stop at 149.80 is 1.49 ATR away, which is wide but leaves little room for error given the late-hour timing (12:43 ET). The reward:risk (2.51) is mathematically favorable, but the structure is weak for a SELL entry."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
