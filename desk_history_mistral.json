@@ -159,5 +159,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-131819-UNH",
+    "signal_time": "2026-10-29T13:18:19-04:00",
+    "judged_at": "2026-10-29T13:18:33-04:00",
+    "ticker": "UNH",
+    "action": "SELL",
+    "entry": 406.71,
+    "stop": 409.04,
+    "target": 400.89,
+    "qty": 98,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 406.71 after a sharp drop from 408.23 (12:20) to 405.23 (12:20 low). The 12:50-13:10 candles show erratic, low-volume structure with no clear directional close, and the 13:15 candle closes at the low (406.57) with minimal volume (199). The pullback lacks order, and the entry is near the low of the last 12 candles, suggesting exhaustion rather than a fresh setup. Stop at 409.04 is too far from current price (406.71) to be practical for an intraday trade with only 162 minutes left.",
+      "macro": "SPY day move (-0.51%) aligns with the SELL thesis, but the lack of a clear pullback structure negates the macro alignment.",
+      "risk": "Feasibility is TIGHT due to target_distance_atr (3.75) and time left (162 minutes). The reward:risk (2.5) is attractive, but the entry is not structurally sound for a short. Risk of a false break or a late-day reversal is high."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
