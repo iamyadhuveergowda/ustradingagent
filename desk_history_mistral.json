@@ -18,9 +18,9 @@
       "risk": "Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR away) may be overly optimistic given the late session timing (179 minutes left) and the lack of momentum. Feasibility is not explicitly flagged, but the geometry is stretched for intraday execution."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T21:13:09-04:00"
   },
   {
     "signal_id": "20261028-130110-INTU",
@@ -41,9 +41,9 @@
       "risk": "Stop distance (1.6 ATR) is tight but justified by the structure. The target (3.99 ATR away) is ambitious but feasible given the remaining session time (179 minutes) and HD's liquidity. Feasibility is not flagged, and the reward:risk (2.49) is favorable. Entry requires confirmation on the 12:55 close with volume."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T21:13:09-04:00"
   },
   {
     "signal_id": "20261028-130311-XOM",
@@ -64,8 +64,8 @@
       "risk": "Feasibility is TIGHT due to the target_distance_atr (3.76) and limited time (177 minutes). The stop at 182.44 is 1.5 ATR away, but the risk of a false breakout into the entry is high given the current structure. The reward:risk (2.51) is mathematically appealing, but the lack of structural clarity undermines confidence."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-28T21:13:09-04:00"
   }
 ]
