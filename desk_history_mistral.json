@@ -113,5 +113,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-122754-PANW",
+    "signal_time": "2026-10-29T12:27:54-04:00",
+    "judged_at": "2026-10-29T12:28:14-04:00",
+    "ticker": "PANW",
+    "action": "SELL",
+    "entry": 375.0,
+    "stop": 380.55,
+    "target": 361.13,
+    "qty": 106,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 375.0, with the last 12 candles showing a choppy, sideways-to-higher structure. The 12:25 candle closed at 375.0 (entry level), but the 12:20 candle closed at 374.58, indicating exhaustion rather than a clean pullback. The RSI (39.75) is neutral, not suggesting overbought/sold conditions. Volume ratio (1.63) is slightly elevated but not decisive.",
+      "macro": "SPY's -0.40% day move aligns with the SELL thesis, but the lack of a clear pullback structure weakens conviction. No macro context is provided, limiting analysis to pure structure.",
+      "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (361.13) is 13.87 points away (~3.75 ATR), which is aggressive for 213 minutes remaining. Stop at 380.55 is 5.55 points above entry (~1.5 ATR), which is wide but not unreasonable. However, the lack of a clean pullback and proximity to session close reduce risk-reward appeal."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
