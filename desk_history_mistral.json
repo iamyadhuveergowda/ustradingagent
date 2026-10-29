@@ -205,5 +205,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-134322-XOM",
+    "signal_time": "2026-10-29T13:43:22-04:00",
+    "judged_at": "2026-10-29T13:43:41-04:00",
+    "ticker": "XOM",
+    "action": "SELL",
+    "entry": 182.04,
+    "stop": 182.84,
+    "target": 180.03,
+    "qty": 219,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 182.04 with a choppy, indecisive structure. The last 5-minute candle (13:40) closed at 182.08, just above the entry, but with a low of 182.03 and a directional close below the prior candle's high. The pullback from 182.44 (13:05 high) to 181.91 (13:15 low) was sharp and lacked clear follow-through, suggesting exhaustion rather than a healthy retracement. The RSI (48.73) is neutral, not confirming a strong bearish momentum.",
+      "macro": "SPY's -0.56% day move aligns with the SELL thesis, but the intraday structure lacks conviction for a short entry at this juncture. No macro catalyst is provided to override the weak technical setup.",
+      "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (180.03) is 3.76 ATR away, which is aggressive for the remaining 137 minutes (16:00 ET close). The stop at 182.84 (1.5 ATR) is tight, and the reward:risk (2.51) is only marginally favorable. The vol_ratio (1.8) suggests some bearish interest, but the structure is not orderly enough to justify risking capital."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
