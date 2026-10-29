@@ -67,5 +67,28 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-10-28T21:13:09-04:00"
+  },
+  {
+    "signal_id": "20261029-110610-UNH",
+    "signal_time": "2026-10-29T11:06:10-04:00",
+    "judged_at": "2026-10-29T11:06:30-04:00",
+    "ticker": "UNH",
+    "action": "SELL",
+    "entry": 406.88,
+    "stop": 409.52,
+    "target": 400.28,
+    "qty": 98,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback to the entry at **406.88** is disorderly: the last two candles (10:55 and 11:00) show extreme volatility (high-low range of **1.91** and **1.87**, respectively) and a directional close only in the 11:00 candle. The 10:55 candle closed **407.71** (above entry) with a high of **408.50**, suggesting exhaustion rather than a structured pullback. The RSI (42.66) is neutral, but the lack of a clear retracement pattern (e.g., 50% Fib or prior support) weakens the case. Volume surged in the 10:55 and 11:00 candles (**2779** and **3597**), but this is likely distribution-driven, not accumulation.",
+      "macro": "SPY’s **-0.38%** day move aligns with the SELL thesis, but UNH’s structure is too chaotic to rely on for an intraday trade. The lack of a clear regime (e.g., higher-timeframe downtrend or mean-reversion setup) further reduces conviction.",
+      "risk": "The **stop_distance_atr (1.5)** is reasonable, but the **target_distance_atr (3.75)** assumes a sharp move in **294 minutes (4.9 hours)**, which is aggressive for a stock with limited liquidity relative to SPY. The reward:risk (2.5) is mathematically appealing, but the entry’s disorderly nature invalidates the assumption of a clean trade. Feasibility is **TIGHT** due to time constraints, and the trade would require an immediate, sharp reversal—unlikely given the current structure."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
