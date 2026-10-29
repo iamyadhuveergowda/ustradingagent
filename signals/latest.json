@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261029-114210-MU",
-  "generated_at": "2026-10-29T11:42:10.304162-04:00",
-  "spy_day_pct": -0.27710156937897995,
+  "signal_id": "20261029-114508-MU",
+  "generated_at": "2026-10-29T11:45:08.910653-04:00",
+  "spy_day_pct": -0.30235147873827145,
   "candidates": [
     {
       "ticker": "MU",
       "signal": "SELL",
-      "ltp": 949.28,
-      "stop": 960.67,
-      "target": 920.81,
+      "ltp": 949.41,
+      "stop": 961.04,
+      "target": 920.33,
       "qty": 42,
       "indicators": {
         "rsi": 39.56,
-        "atr": 7.5933,
+        "atr": 7.7537,
         "vol_ratio": 1.64
       },
-      "scout_reason": "SPY -0.28% aligns with SELL",
+      "scout_reason": "SPY -0.30% aligns with SELL",
       "candles_5m": [
         [
           "10:05",
@@ -172,16 +172,16 @@
         [
           "11:40",
           949.61,
-          949.8,
-          949.36,
-          949.78,
-          709
+          949.86,
+          947.54,
+          949.05,
+          3513
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_unrecorded",
       "outcome_reason": "",
-      "outcome_at": "2026-10-29T11:42:11.121849-04:00"
+      "outcome_at": "2026-10-29T11:45:12.159717-04:00"
     }
   ]
 }
