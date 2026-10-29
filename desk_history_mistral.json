@@ -182,5 +182,28 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261029-133718-CSCO",
+    "signal_time": "2026-10-29T13:37:18-04:00",
+    "judged_at": "2026-10-29T13:37:32-04:00",
+    "ticker": "CSCO",
+    "action": "SELL",
+    "entry": 108.61,
+    "stop": 109.18,
+    "target": 107.2,
+    "qty": 367,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 108.61 with a choppy, erratic structure. The last 12 candles show a lack of clear directional momentum: the 13:10 candle (108.72 → 108.41) is a sharp drop but closes near its low, followed by a recovery attempt that stalls at 108.61. The RSI (38.76) is neutral, and the volume spike at 13:10 (5621) suggests exhaustion rather than continuation. The stop at 109.18 is 1.51 ATR away, but the target (107.2) is 3.73 ATR away, which is aggressive for the remaining 143 minutes (16:00 ET close). The pullback lacks orderliness, and the directional close is weak.",
+      "macro": "SPY day move (-0.52%) aligns with the SELL thesis, but the intraday structure does not support a high-conviction entry at this juncture. No macro context is provided to override the technical concerns.",
+      "risk": "Feasibility is not explicitly marked as infeasible, but the reward:risk (2.47) is skewed by the aggressive target distance. The stop is tight (1.51 ATR), and the lack of follow-through on the 13:10 drop increases the risk of a false break. Timing is poor for a midday entry; waiting for clearer structure closer to 14:30 ET would be preferable."
+    },
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
