@@ -674,5 +674,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-141632-CRM",
+    "signal_time": "2026-10-30T14:16:32-04:00",
+    "judged_at": "2026-10-30T14:16:51-04:00",
+    "age_min": 0.3,
+    "ticker": "CRM",
+    "action": "SELL",
+    "entry": 229.75,
+    "stop": 231.42,
+    "target": 225.56,
+    "qty": 173,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional exhaustion into the SELL entry at 229.75. The last 12 candles (13:15–14:10) lack a decisive break or rejection pattern, and the 14:05–14:10 candles form a tight range (229.53–229.87) with no follow-through. The RSI (44.68) is neutral, not overbought or oversold, and volume ratio (1.69) does not confirm exhaustion. The stop (231.42) is 1.5 ATR away, but the target (225.56) is 3.75 ATR away—feasible given 104 minutes left, but the lack of structure weakens conviction. The 14:10 close (229.75) is at the entry, but no momentum or rejection is visible.",
+      "macro": "SPY’s -2.13% day move aligns with the SELL thesis, but CRM’s intraday structure does not reflect broader market weakness. No macro catalyst is visible to override the technical SKIP.",
+      "risk": "No earnings risk today/tomorrow. However, the trade’s reward:risk (2.51) is attractive only if the setup improves (e.g., break below 229.40 with volume). Current structure is inconclusive."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
