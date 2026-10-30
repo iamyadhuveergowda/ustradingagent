@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261030-123250-ORCL",
-  "generated_at": "2026-10-30T12:32:50.679687-04:00",
-  "spy_day_pct": -1.5828665739645822,
+  "signal_id": "20261030-123538-ORCL",
+  "generated_at": "2026-10-30T12:35:38.778938-04:00",
+  "spy_day_pct": -1.60106044263084,
   "candidates": [
     {
       "ticker": "ORCL",
       "signal": "SELL",
-      "ltp": 131.78,
-      "stop": 133.63,
-      "target": 127.14,
+      "ltp": 131.8,
+      "stop": 133.61,
+      "target": 127.27,
       "qty": 303,
       "indicators": {
         "rsi": 40.91,
-        "atr": 1.2362,
+        "atr": 1.2081,
         "vol_ratio": 1.49
       },
-      "scout_reason": "SPY -1.58% aligns with SELL",
+      "scout_reason": "SPY -1.60% aligns with SELL",
       "candles_5m": [
         [
           "10:55",
@@ -173,29 +173,29 @@
           "12:30",
           131.89,
           131.9,
-          131.79,
-          131.84,
-          2710
+          131.68,
+          131.85,
+          8918
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "NEWS_CONTRADICTION: headline 'Red Clay Consulting Named 2026 Oracle Industry Partner Award Winner' suggests bullish catalyst for ORCL, contradicting SELL",
-      "outcome_at": "2026-10-30T12:32:56.633723-04:00"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-10-30T12:35:39.851754-04:00"
     },
     {
       "ticker": "WFC",
       "signal": "SELL",
       "ltp": 83.73,
-      "stop": 84.18,
-      "target": 82.62,
+      "stop": 84.15,
+      "target": 82.67,
       "qty": 477,
       "indicators": {
         "rsi": 49.14,
-        "atr": 0.2964,
+        "atr": 0.2831,
         "vol_ratio": 1.44
       },
-      "scout_reason": "SPY -1.58% aligns with SELL",
+      "scout_reason": "SPY -1.60% aligns with SELL",
       "candles_5m": [
         [
           "10:55",
@@ -353,29 +353,29 @@
           "12:30",
           83.74,
           83.75,
-          83.73,
-          83.75,
-          2132
+          83.7,
+          83.72,
+          4245
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T12:32:56.633746-04:00"
+      "outcome_at": "2026-10-30T12:35:39.851776-04:00"
     },
     {
       "ticker": "GE",
       "signal": "SELL",
-      "ltp": 305.33,
-      "stop": 307.13,
-      "target": 300.85,
+      "ltp": 305.15,
+      "stop": 306.9,
+      "target": 300.78,
       "qty": 130,
       "indicators": {
         "rsi": 41.88,
-        "atr": 1.1971,
+        "atr": 1.1641,
         "vol_ratio": 1.64
       },
-      "scout_reason": "SPY -1.58% aligns with SELL",
+      "scout_reason": "SPY -1.60% aligns with SELL",
       "candles_5m": [
         [
           "10:55",
@@ -532,16 +532,16 @@
         [
           "12:30",
           305.33,
-          305.33,
-          305.24,
-          305.33,
-          831
+          305.47,
+          305.01,
+          305.19,
+          2688
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T12:32:56.633754-04:00"
+      "outcome_at": "2026-10-30T12:35:39.851783-04:00"
     }
   ]
 }
