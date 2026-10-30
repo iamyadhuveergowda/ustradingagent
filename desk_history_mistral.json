@@ -499,5 +499,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-132750-AVGO",
+    "signal_time": "2026-10-30T13:27:50-04:00",
+    "judged_at": "2026-10-30T13:28:07-04:00",
+    "age_min": 0.3,
+    "ticker": "AVGO",
+    "action": "SELL",
+    "entry": 323.59,
+    "stop": 326.42,
+    "target": 316.52,
+    "qty": 123,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a sharp breakdown from 12:45 (323.21 low) to 13:05 (323.18 low), but the pullback into the entry at 323.59 lacks clear directional conviction. The 13:25 candle closed near its high (323.63) with minimal volume (2141), suggesting indecision. The stop at 326.42 is **1.5 ATR** above entry, but the target (316.52) is **3.75 ATR** away—feasible given 153 minutes left, but the structure is weak: no clear exhaustion or rejection at higher timeframes. The RSI (35.47) is neutral, not extreme, and the vol_ratio (1.54) is modest. The 13:20 candle's close (323.51) was a doji-like indecision candle, and the 13:25 close (323.63) is a marginal entry point.",
+      "macro": "SPY day move (-1.83%) aligns with the SELL thesis, but intraday momentum is lacking. No macro catalyst is visible in this payload.",
+      "risk": "No earnings risk today/tomorrow. However, the trade lacks a clear trigger for a high-confidence entry. The 13:25 candle's close is too close to the 13:20 low (323.18) to justify a SELL without further breakdown. A valid entry would require a close below 323.18 with follow-through volume."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
