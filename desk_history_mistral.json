@@ -399,5 +399,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-122826-ORCL",
+    "signal_time": "2026-10-30T12:28:26-04:00",
+    "judged_at": "2026-10-30T12:28:56-04:00",
+    "age_min": 0.5,
+    "ticker": "JPM",
+    "action": "SELL",
+    "entry": 338.81,
+    "stop": 340.24,
+    "target": 335.22,
+    "qty": 117,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear exhaustion or momentum into the SELL entry at 338.81. The last 12 candles (11:30–12:25) lack a directional close, oscillating within a narrow 338.41–339.05 range. The 12:25 candle closed at 338.99 (near high), but the 12:20 candle closed at 338.72 (near low), indicating indecision. The RSI (44.81) is neutral, not extreme, and the volume ratio (1.4) does not confirm a strong directional move. The stop (340.24) is 1.5 ATR away, but the target (335.22) is 3.75 ATR away—feasible in time but requires a sharp move in a low-liquidity environment (212 minutes left). The pullback from the 12:00 high (339.05) to the 12:20 low (338.43) was orderly, but the lack of follow-through weakens the SELL thesis.",
+      "macro": "SPY’s -1.59% day move aligns with the SELL action, but intraday momentum is absent. Without a clear catalyst (e.g., news, earnings, or macro event), the trade relies solely on technical structure, which is weak.",
+      "risk": "No earnings or macro risks today/tomorrow for JPM. However, the trade’s reward:risk (2.51) is attractive, but the lack of conviction in the setup outweighs it. The stop is tight (1.5 ATR), and a break above 340.24 would invalidate the thesis entirely. The session’s remaining time (212 minutes) is sufficient for the target, but the structure does not justify the risk."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
