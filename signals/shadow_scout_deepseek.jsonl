@@ -1,0 +1,1 @@
+{"scan_id": "20261030-105115", "timestamp": "2026-10-30T10:52:26-04:00", "signal_id": "20261030-105214-BLK", "qwen_picks": [{"ticker": "BLK", "action": "SELL"}], "deepseek_picks": [], "overlap": [], "deepseek_only": [], "qwen_only": ["BLK:SELL"], "latency_ms": 3720, "deepseek_error": null}
