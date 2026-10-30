@@ -574,5 +574,80 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-134200-MSFT",
+    "signal_time": "2026-10-30T13:42:00-04:00",
+    "judged_at": "2026-10-30T13:42:30-04:00",
+    "age_min": 0.5,
+    "ticker": "MSFT",
+    "action": "SELL",
+    "entry": 520.25,
+    "stop": 523.64,
+    "target": 511.8,
+    "qty": 76,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 520.25 with a choppy, sideways structure in the last 12 candles. The 13:35 candle closed at 520.32, just above the entry, but the low of 519.47 suggests a lack of conviction. The RSI (38.79) is neutral, and the volume ratio (1.81) is elevated but not extreme. The pullback lacks clear directional momentum, and the stop (523.64) is far from current price, reducing the trade's feasibility.",
+      "macro": "SPY's -1.85% day move aligns with the SELL thesis, but MSFT's structure does not reflect a strong intraday pullback.",
+      "risk": "No results risk, but the trade lacks a clear entry trigger and has a wide stop distance (1.5 ATR), making it vulnerable to a quick reversal."
+    },
+    "results_risk": "reported results 2 DAYS AGO (2026-10-28)",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-134200-MSFT",
+    "signal_time": "2026-10-30T13:42:00-04:00",
+    "judged_at": "2026-10-30T13:42:30-04:00",
+    "age_min": 0.5,
+    "ticker": "META",
+    "action": "SELL",
+    "entry": 618.36,
+    "stop": 623.09,
+    "target": 606.52,
+    "qty": 64,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close below 618.36 with a stop at 623.09",
+    "notes": {
+      "technical": "META shows a clearer pullback with a directional close at 618.35 (13:35 candle). The 13:30 candle closed at 618.57, testing the entry level, and the 13:25 candle low was 619.50, indicating a potential breakdown. The RSI (38.31) is neutral, and the volume ratio (1.23) is moderate but rising, suggesting some distribution. The stop (623.09) is 1.5 ATR away, and the target (606.52) offers a 3.75 ATR reward, with a 2.5 reward:risk ratio.",
+      "macro": "SPY's -1.85% day move supports the SELL thesis, and META's structure aligns with the broader market trend.",
+      "risk": "No results risk. The trade is TIGHT but feasible with 138 minutes left to close. The stop is wide relative to current price, but the pullback structure is more convincing than MSFT's."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-134200-MSFT",
+    "signal_time": "2026-10-30T13:42:00-04:00",
+    "judged_at": "2026-10-30T13:42:30-04:00",
+    "age_min": 0.5,
+    "ticker": "HON",
+    "action": "SELL",
+    "entry": 220.87,
+    "stop": 221.9,
+    "target": 218.28,
+    "qty": 180,
+    "verdict": "SKIP",
+    "confidence": 70,
+    "trigger": "Valid only on a break below 220.59 with a stop at 221.90",
+    "notes": {
+      "technical": "HON's structure is extremely weak, with flat candles and minimal volume (e.g., 13:10-13:35 candles have volumes < 1,000). The 13:35 candle closed at 220.85, just above the entry (220.87), with no clear momentum. The RSI (46.03) is slightly overbought, and the volume ratio (1.58) is not meaningful given the low liquidity. The stop (221.90) is 1.49 ATR away, but the target (218.28) is 3.76 ATR away, making the trade's feasibility questionable.",
+      "macro": "SPY's -1.85% day move aligns with the SELL thesis, but HON lacks liquidity and conviction.",
+      "risk": "No results risk, but the trade is INFEASIBLE due to low volume and lack of directional structure. The stop is too far from current price, and the target is speculative given the flat candles."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
