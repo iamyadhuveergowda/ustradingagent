@@ -424,5 +424,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-123250-ORCL",
+    "signal_time": "2026-10-30T12:32:50-04:00",
+    "judged_at": "2026-10-30T12:33:16-04:00",
+    "age_min": 0.4,
+    "ticker": "GE",
+    "action": "SELL",
+    "entry": 305.33,
+    "stop": 307.13,
+    "target": 300.85,
+    "qty": 130,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a tight range-bound structure with no clear exhaustion into the entry at 305.33. The last 12 candles exhibit a gradual ascent with orderly pullbacks, but the close at 12:32 ET (305.33) is not extended or exhausted—it aligns with the high of the 12:25 candle. The RSI (41.88) is neutral, and the volume spike at 12:25 (3693) suggests a potential distribution but lacks confirmation. The stop (307.13) is 1.5 ATR away, which is reasonable, but the target (300.85) is 3.74 ATR away, requiring a significant move in the remaining 208 minutes (16:00 ET). The reward:risk (2.49) is attractive, but the lack of structural exhaustion and the tight timeframe (208 minutes) make this a low-probability setup.",
+      "macro": "SPY day move (-1.58%) aligns with the SELL direction, but the intraday structure lacks urgency. No macro catalyst is visible in the payload to justify a forced entry.",
+      "risk": "No earnings risk identified. However, the tight timeframe and lack of clear exhaustion increase the risk of a false break or a stall before the target."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
