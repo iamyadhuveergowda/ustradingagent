@@ -524,5 +524,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-133241-C",
+    "signal_time": "2026-10-30T13:32:41-04:00",
+    "judged_at": "2026-10-30T13:32:58-04:00",
+    "age_min": 0.3,
+    "ticker": "C",
+    "action": "SELL",
+    "entry": 121.74,
+    "stop": 122.4,
+    "target": 120.08,
+    "qty": 328,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback to the entry at **121.74** is disorderly: the last 5-minute candle (13:30) closed **above** the entry, and the 13:25 candle closed **above** its low, suggesting exhaustion rather than a clean retracement. The **vol_ratio (1.13)** is neutral, but the lack of a directional close (e.g., a close below 121.74) weakens the setup. The **stop (122.40)** is **1.49 ATR** away, which is tight for a SELL in a weakening session, and the **target (120.08)** is **3.76 ATR** away—a reasonable distance, but the structure does not justify the risk given the late timing (148 minutes left). The **RSI (35.93)** is oversold but not extreme, and the **reward:risk (2.52)** is decent, but the entry is not clean.",
+      "macro": "The **SPY day move (-1.86%)** aligns with the SELL thesis, but the intraday structure lacks conviction. No macro overrides are present.",
+      "risk": "No **results_risk** is flagged, but the **feasibility** is **TIGHT** due to the stop distance and time left. A break below **121.60** (13:25 low) with a close below **121.74** would improve the setup, but as-is, the trade is speculative."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
