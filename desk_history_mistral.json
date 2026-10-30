@@ -324,5 +324,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-115740-CSCO",
+    "signal_time": "2026-10-30T11:57:40-04:00",
+    "judged_at": "2026-10-30T11:58:00-04:00",
+    "age_min": 0.3,
+    "ticker": "CSCO",
+    "action": "SELL",
+    "entry": 104.99,
+    "stop": 105.83,
+    "target": 102.89,
+    "qty": 380,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 104.99 lacks clear exhaustion or a directional close. The last 12 candles show a choppy, sideways structure with no definitive breakdown below the 105.00 psychological level. The 11:55 candle closed at 105.00, just above the entry, with a high of 105.05 and low of 104.97, indicating indecision. The RSI (41.47) is neutral, not suggesting overbought/oversold extremes. The stop at 105.83 is 1.5 ATR away, but the target (102.89) is 3.75 ATR away, which is aggressive for the remaining 243 minutes (4.05 hours). The reward:risk of 2.5 is decent, but the lack of a clean breakdown and the proximity to the close limit feasibility.",
+      "macro": "SPY's -1.52% day move aligns with the SELL thesis, but intraday momentum is weak. The trade would require a sharp move to hit the target, which is unlikely with only 4 hours left in the session.",
+      "risk": "No earnings risk today or tomorrow. However, the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and time left (243 minutes). The structure does not justify the risk of a late-session trade with limited room for price to develop."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
