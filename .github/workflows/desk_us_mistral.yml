@@ -4,7 +4,7 @@ name: US Mistral Desk (advisory, shadow)
 # files + concurrency group, so both desks judge every batch independently.
 # Judges new signal batches from signals/latest.json during the US session.
 # The script itself checks ET session hours and signal freshness, so this
-# UTC window only needs to cover 09:30-16:00 ET across DST (13:30-21:00 UTC).
+# UTC window only needs to cover 09:30-16:00 ET across DST (EDT 13:30-21:00 UTC; EST 14:30-21:00 UTC).
 # Two triggers, by design:
 #  * push on signals/latest.json — the primary trigger. Every time the Oracle
 #    agent pushes a new batch, a run starts within ~a minute. This is what
@@ -40,6 +40,7 @@ concurrency:
 jobs:
   desk:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -57,12 +58,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           for f in desk_verdict_mistral.json desk_history_mistral.json; do
-            [ -f "$f" ] && git add "$f"
+            if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --staged --quiet; then
             echo "No desk changes to commit"
           else
             git commit -m "US Mistral desk verdict update [skip ci]"
-            git pull --rebase origin ${{ github.ref_name }}
-            git push
+            for attempt in 1 2 3; do
+              if git pull --rebase origin ${{ github.ref_name }} && git push; then
+                break
+              fi
+              git rebase --abort 2>/dev/null || true
+              echo "Push attempt $attempt failed; retrying..."
+              sleep 5
+              if [ "$attempt" = "3" ]; then echo "ERROR: push failed after 3 attempts" >&2; exit 1; fi
+            done
           fi
