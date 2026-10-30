@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261030-131220-BAC",
-  "generated_at": "2026-10-30T13:12:20.785031-04:00",
-  "spy_day_pct": -1.8206864286735358,
+  "signal_id": "20261030-131502-BAC",
+  "generated_at": "2026-10-30T13:15:02.572380-04:00",
+  "spy_day_pct": -1.853175479863285,
   "candidates": [
     {
       "ticker": "BAC",
       "signal": "SELL",
-      "ltp": 50.11,
-      "stop": 50.35,
-      "target": 49.52,
+      "ltp": 50.1,
+      "stop": 50.34,
+      "target": 49.51,
       "qty": 797,
       "indicators": {
         "rsi": 37.16,
         "atr": 0.1576,
         "vol_ratio": 2.26
       },
-      "scout_reason": "SPY -1.82% aligns with SELL",
+      "scout_reason": "SPY -1.85% aligns with SELL",
       "candles_5m": [
         [
           "11:35",
@@ -172,16 +172,16 @@
         [
           "13:10",
           50.08,
-          50.09,
-          50.07,
-          50.09,
-          10246
+          50.12,
+          50.06,
+          50.1,
+          27980
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T13:12:21.397655-04:00"
+      "outcome_at": "2026-10-30T13:15:03.492285-04:00"
     }
   ]
 }
