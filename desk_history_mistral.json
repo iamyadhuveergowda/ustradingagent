@@ -87,9 +87,9 @@
       "risk": "The **stop_distance_atr (1.5)** is reasonable, but the **target_distance_atr (3.75)** assumes a sharp move in **294 minutes (4.9 hours)**, which is aggressive for a stock with limited liquidity relative to SPY. The reward:risk (2.5) is mathematically appealing, but the entry’s disorderly nature invalidates the assumption of a clean trade. Feasibility is **TIGHT** due to time constraints, and the trade would require an immediate, sharp reversal—unlikely given the current structure."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-114210-MU",
@@ -110,9 +110,9 @@
       "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (920.81) is **3.75 ATR** away with **258 minutes left**, which is aggressive for an intraday trade. The stop (960.67) is **1.5 ATR** above entry, but the lack of a clear breakdown or exhaustion pattern makes this a high-risk setup. The vol_ratio (1.64) is mildly bullish, conflicting with the SELL signal."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.3,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-122754-PANW",
@@ -133,9 +133,9 @@
       "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (361.13) is 13.87 points away (~3.75 ATR), which is aggressive for 213 minutes remaining. Stop at 380.55 is 5.55 points above entry (~1.5 ATR), which is wide but not unreasonable. However, the lack of a clean pullback and proximity to session close reduce risk-reward appeal."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.96,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-124328-COP",
@@ -156,9 +156,9 @@
       "risk": "Feasibility is TIGHT due to the target_distance_atr (3.74) relative to the 197 minutes left. The stop at 149.80 is 1.49 ATR away, which is wide but leaves little room for error given the late-hour timing (12:43 ET). The reward:risk (2.51) is mathematically favorable, but the structure is weak for a SELL entry."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-131819-UNH",
@@ -179,9 +179,9 @@
       "risk": "Feasibility is TIGHT due to target_distance_atr (3.75) and time left (162 minutes). The reward:risk (2.5) is attractive, but the entry is not structurally sound for a short. Risk of a false break or a late-day reversal is high."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-133718-CSCO",
@@ -202,9 +202,9 @@
       "risk": "Feasibility is not explicitly marked as infeasible, but the reward:risk (2.47) is skewed by the aggressive target distance. The stop is tight (1.51 ATR), and the lack of follow-through on the 13:10 drop increases the risk of a false break. Timing is poor for a midday entry; waiting for clearer structure closer to 14:30 ET would be preferable."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.04,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-134322-XOM",
@@ -225,9 +225,9 @@
       "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (180.03) is 3.76 ATR away, which is aggressive for the remaining 137 minutes (16:00 ET close). The stop at 182.84 (1.5 ATR) is tight, and the reward:risk (2.51) is only marginally favorable. The vol_ratio (1.8) suggests some bearish interest, but the structure is not orderly enough to justify risking capital."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-141731-NVDA",
@@ -248,9 +248,9 @@
       "risk": "Feasibility is not explicitly marked as INFEASIBLE, but the target (209.99) is highly aggressive for the remaining session (103 minutes). The stop is far from the entry (212.84), and a break above 213.98 would invalidate the trade with minimal room for error. The timing (14:17 ET) is late in the session, and entries this close to close require exceptionally high conviction, which is lacking here."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.75,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   },
   {
     "signal_id": "20261029-143411-ORCL",
@@ -271,8 +271,8 @@
       "risk": "Feasibility is TIGHT: target_distance_atr (3.75) is aggressive for 86 minutes left. Stop placement (140.04) is 1.8 ATR above entry, which is too wide for a late-session trade. Volume spike at 14:25 (35,964) is directional but not confirmatory for a SELL."
     },
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.75,
+    "outcome_at": "2026-10-29T21:20:50-04:00"
   }
 ]
