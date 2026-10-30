@@ -42,10 +42,12 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
+
+SCORE_WINDOW_DAYS = 10  # older unscored records are closed as NO_DATA (mirrors the NIFTY EODs)
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
 def gemini_post_with_retry(req, timeout=90, attempts=3):
-    """POST to Gemini with retries on timeouts / 5xx only.
+    """POST to Gemini with retries on timeouts / 5xx / 429 only (429 uses 30s/60s backoff, mirroring the desk scripts; other 4xx fail fast).
 
     A 4xx (e.g. 404 bad model) fails fast -- retrying cannot fix it.
     A timeout, like the Oct 24 mock run, is retried: 90s per attempt,
@@ -57,15 +59,21 @@ def gemini_post_with_retry(req, timeout=90, attempts=3):
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read().decode("utf-8")
         except urllib.error.HTTPError as exc:
-            if 400 <= exc.code < 500:
+            if exc.code == 429:
+                last_exc = exc
+            elif 400 <= exc.code < 500:
                 raise
-            last_exc = exc
+            else:
+                last_exc = exc
         except Exception as exc:
             last_exc = exc
         if attempt < attempts:
             print(f"Gemini attempt {attempt} failed ({last_exc}); retrying...",
                   file=sys.stderr)
-            time.sleep(10 * attempt)
+            if isinstance(last_exc, urllib.error.HTTPError) and last_exc.code == 429:
+                time.sleep(30 * attempt)
+            else:
+                time.sleep(10 * attempt)
     raise last_exc
 
 WIN, LOSS, EXPIRED = "WIN 🟢", "LOSS 🔴", "EXPIRED ⚪"
@@ -83,6 +91,22 @@ def load_json(path: Path, default):
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return default
+
+
+def load_json_strict(path: Path, default):
+    """Like load_json, but a present-but-unparseable file is an error.
+
+    A missing file still returns the default. A present file that is not
+    valid JSON must never be silently replaced by an empty list — that
+    would destroy the permanent desk history. Raises RuntimeError; the
+    caller lets it abort the run before anything is written or sent.
+    """
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"{path} exists but is not valid JSON ({exc}); refusing to overwrite it") from exc
 
 
 def save_json(path: Path, data) -> None:
@@ -147,6 +171,7 @@ def fetch_bars(ticker: str, start: datetime, end: datetime) -> list[dict]:
     key = os.getenv("ALPACA_API_KEY", "")
     secret = os.getenv("ALPACA_SECRET_KEY", "")
     if not key or not secret:
+        print("ERROR: ALPACA_API_KEY/ALPACA_SECRET_KEY not set; cannot score bars", file=sys.stderr)
         return []
     bars: list[dict] = []
     token = None
@@ -172,6 +197,27 @@ def fetch_bars(ticker: str, start: datetime, end: datetime) -> list[dict]:
         print(f"Bars fetch failed for {ticker}: {exc}", file=sys.stderr)
         return []
     return bars
+
+
+
+def _bars_from_signal(bars: list[dict], sig_et) -> list[dict]:
+    """Keep only bars at/after the signal time (client-side slice,
+    mirroring the NIFTY slice_from_signal semantics). Bars with a
+    missing/unparseable timestamp are kept, never silently dropped."""
+    out = []
+    for b in bars:
+        t = b.get("t")
+        if t is None:
+            out.append(b)
+            continue
+        try:
+            bt = datetime.fromisoformat(str(t).replace("Z", "+00:00")).astimezone(ET)
+        except Exception:
+            out.append(b)
+            continue
+        if bt >= sig_et:
+            out.append(b)
+    return out
 
 
 def score_record(rec: dict, bars: list[dict]) -> tuple[str, float | None]:
@@ -250,22 +296,40 @@ def narrate(stats: dict) -> str:
         return ""
 
 
+
+def _split_chunks(text, limit=3900):
+    chunks = []
+    cur = ''
+    for line in text.splitlines():
+        if cur and len(cur) + len(line) + 1 > limit:
+            chunks.append(cur)
+            cur = ''
+        while len(line) > limit:
+            chunks.append(line[:limit])
+            line = line[limit:]
+        cur = cur + line + chr(10) if cur else line + chr(10)
+    if cur:
+        chunks.append(cur)
+    return chunks
+
+
 def send_telegram(text: str) -> None:
     token = os.getenv("TELEGRAM_BOT_TOKEN", "")
     chat = os.getenv("TELEGRAM_CHAT_ID", "")
     if not token or not chat:
         print("Telegram not configured; message was:\n" + text)
         return
-    req = urllib.request.Request(
-        f"https://api.telegram.org/bot{token}/sendMessage",
-        data=json.dumps({"chat_id": chat, "text": text}).encode("utf-8"),
-        headers={"Content-Type": "application/json"}, method="POST")
-    try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            if resp.status != 200:
-                print(f"Telegram send failed: HTTP {resp.status}", file=sys.stderr)
-    except Exception as exc:
-        print(f"Telegram send failed: {exc}", file=sys.stderr)
+    for i, chunk in enumerate(_split_chunks(text), start=1):
+        req = urllib.request.Request(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            data=json.dumps({"chat_id": chat, "text": chunk}).encode("utf-8"),
+            headers={"Content-Type": "application/json"}, method="POST")
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                if not (200 <= resp.status < 300):
+                    print(f"ERROR: Telegram send failed: HTTP {resp.status} (chunk {i}) — message NOT delivered via Telegram", file=sys.stderr)
+        except Exception as exc:
+            print(f"ERROR: Telegram send failed: {exc} (chunk {i}) — message NOT delivered via Telegram", file=sys.stderr)
 
 
 def fmt_book(label: str, s: dict) -> str:
@@ -292,18 +356,22 @@ def main() -> int:
     root = repo_root()
     ledger = load_json(root / "trades" / "daily_trade_ledger_us.json", [])
     history_path = root / "desk_history.json"
-    history = load_json(history_path, [])
+    history = load_json_strict(history_path, [])
     if not isinstance(ledger, list):
         ledger = []
     if not isinstance(history, list):
-        history = []
+        raise RuntimeError(f"{history_path} is not a JSON list; refusing to overwrite it")
 
     now_et = datetime.now(ET)
     report_date = args.date or now_et.date().isoformat()
 
     # ---- Score any unscored desk verdicts whose session has ended ---------
     changed = False
-    session_over = now_et.time() >= dtime(16, 5) or now_et.date().isoformat() > report_date
+    # R2: session_over is computed from the current time only, so a
+    # manual --date backfill for a past date is not gated on the
+    # report date; scheduled runs (report_date == today) behave
+    # exactly as before.
+    session_over = now_et.time() >= dtime(16, 5)
     for rec in history:
         if rec.get("outcome") is not None:
             continue
@@ -314,11 +382,21 @@ def main() -> int:
         sig_et = sig.astimezone(ET)
         if sig_et.date().isoformat() > report_date:
             continue
-        if sig_et.date().isoformat() == report_date and not session_over:
+        if sig_et.date().isoformat() == now_et.date().isoformat() and not session_over:
             continue
         close_et = datetime.combine(sig_et.date(), dtime(16, 0), tzinfo=ET)
-        bars = fetch_bars(rec["ticker"], sig_et, close_et)
-        outcome, outcome_r = score_record(rec, bars)
+        bars = _bars_from_signal(fetch_bars(rec["ticker"], sig_et, close_et), sig_et)
+        try:
+            outcome, outcome_r = score_record(rec, bars)
+        except Exception as exc:
+            print(f"Scoring failed for {rec.get('ticker')} {rec.get('signal_time')}: {exc}; marking NO_DATA", file=sys.stderr)
+            rec["outcome"], rec["outcome_r"] = "NO_DATA", None
+            rec["outcome_at"] = now_et.isoformat(timespec="seconds")
+            changed = True
+            continue
+        age_days = (now_et.date() - sig_et.date()).days
+        if outcome == "PENDING" and age_days > SCORE_WINDOW_DAYS:
+            outcome, outcome_r = "NO_DATA", None
         if outcome != "PENDING":
             rec["outcome"], rec["outcome_r"] = outcome, outcome_r
             rec["outcome_at"] = now_et.isoformat(timespec="seconds")
