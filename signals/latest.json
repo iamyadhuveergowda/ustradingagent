@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261030-122826-ORCL",
-  "generated_at": "2026-10-30T12:28:26.675670-04:00",
-  "spy_day_pct": -1.5945626323928812,
+  "signal_id": "20261030-123043-ORCL",
+  "generated_at": "2026-10-30T12:30:43.173055-04:00",
+  "spy_day_pct": -1.5386814643465194,
   "candidates": [
     {
       "ticker": "ORCL",
       "signal": "SELL",
-      "ltp": 131.99,
-      "stop": 133.84,
-      "target": 127.35,
+      "ltp": 132.04,
+      "stop": 133.89,
+      "target": 127.4,
       "qty": 302,
       "indicators": {
         "rsi": 45.9,
         "atr": 1.2362,
         "vol_ratio": 2.91
       },
-      "scout_reason": "SPY -1.59% aligns with SELL",
+      "scout_reason": "SPY -1.54% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -173,29 +173,29 @@
           "12:25",
           132.49,
           132.53,
-          132.21,
-          132.23,
-          8890
+          131.88,
+          131.95,
+          16464
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T12:28:36.157971-04:00"
+      "outcome_at": "2026-10-30T12:30:45.090628-04:00"
     },
     {
       "ticker": "CSCO",
       "signal": "SELL",
-      "ltp": 105.08,
-      "stop": 105.87,
-      "target": 103.09,
-      "qty": 380,
+      "ltp": 105.17,
+      "stop": 105.97,
+      "target": 103.19,
+      "qty": 379,
       "indicators": {
         "rsi": 39.84,
         "atr": 0.5299,
         "vol_ratio": 1.69
       },
-      "scout_reason": "SPY -1.59% aligns with SELL",
+      "scout_reason": "SPY -1.54% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -352,30 +352,30 @@
         [
           "12:25",
           104.86,
-          105.09,
+          105.2,
           104.86,
-          105.09,
-          5707
+          105.12,
+          9906
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume 14825 in last 6 candles at 12:20 showed absorption at lows (low 104.84, close 104.87), opposing SELL direction",
-      "outcome_at": "2026-10-30T12:28:36.157997-04:00"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-10-30T12:30:45.090648-04:00"
     },
     {
       "ticker": "JPM",
       "signal": "SELL",
-      "ltp": 338.81,
-      "stop": 340.24,
-      "target": 335.22,
+      "ltp": 338.73,
+      "stop": 340.16,
+      "target": 335.14,
       "qty": 117,
       "indicators": {
         "rsi": 44.81,
         "atr": 0.9563,
         "vol_ratio": 1.4
       },
-      "scout_reason": "SPY -1.59% aligns with SELL",
+      "scout_reason": "SPY -1.54% aligns with SELL",
       "candles_5m": [
         [
           "10:50",
@@ -532,16 +532,16 @@
         [
           "12:25",
           338.76,
-          338.99,
-          338.74,
-          338.99,
-          2143
+          339.05,
+          338.73,
+          338.73,
+          3731
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T12:28:36.158009-04:00"
+      "outcome_at": "2026-10-30T12:30:45.090655-04:00"
     }
   ]
 }
