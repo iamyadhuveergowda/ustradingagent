@@ -549,5 +549,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-133709-AVGO",
+    "signal_time": "2026-10-30T13:37:09-04:00",
+    "judged_at": "2026-10-30T13:37:38-04:00",
+    "age_min": 0.5,
+    "ticker": "PANW",
+    "action": "SELL",
+    "entry": 361.77,
+    "stop": 365.98,
+    "target": 351.24,
+    "qty": 110,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, erratic structure into the entry at 361.77, with a failed breakout attempt at 13:20-13:25 (high of 363.53) and a subsequent sharp pullback. The 13:35 candle is a single-print spike at the entry level, lacking confirmation or follow-through. Volume ratio (2.53) is elevated but not decisive. The RSI (38.04) is neutral, and the pullback lacks an orderly directional close. Stop distance (1.5 ATR) is tight, and the target (3.75 ATR) is aggressive for the remaining session (143 minutes). The structure is inconsistent with a clean SELL setup.",
+      "macro": "SPY day move (-1.90%) aligns with the SELL thesis, but the intraday structure is too weak to act on. No macro override is present.",
+      "risk": "No earnings risk today/tomorrow. However, the lack of a clear pullback structure and the proximity to the close (143 minutes) make this a high-risk entry. The target (351.24) is 2.5x risk, but the setup lacks conviction."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
