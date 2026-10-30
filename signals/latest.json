@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261030-115740-CSCO",
-  "generated_at": "2026-10-30T11:57:40.559396-04:00",
-  "spy_day_pct": -1.517888471585084,
+  "signal_id": "20261030-120036-CSCO",
+  "generated_at": "2026-10-30T12:00:36.402864-04:00",
+  "spy_day_pct": -1.4983950408712228,
   "candidates": [
     {
       "ticker": "CSCO",
       "signal": "SELL",
-      "ltp": 104.99,
-      "stop": 105.83,
-      "target": 102.89,
+      "ltp": 105.1,
+      "stop": 105.94,
+      "target": 103.0,
       "qty": 380,
       "indicators": {
         "rsi": 41.47,
         "atr": 0.5601,
         "vol_ratio": 1.68
       },
-      "scout_reason": "SPY -1.52% aligns with SELL",
+      "scout_reason": "SPY -1.50% aligns with SELL",
       "candles_5m": [
         [
           "10:20",
@@ -172,16 +172,16 @@
         [
           "11:55",
           105.01,
-          105.05,
+          105.11,
           104.97,
-          105.0,
-          1002
+          105.11,
+          6819
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T11:57:41.380926-04:00"
+      "outcome_at": "2026-10-30T12:00:38.057624-04:00"
     }
   ]
 }
