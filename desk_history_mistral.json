@@ -349,5 +349,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-121205-WFC",
+    "signal_time": "2026-10-30T12:12:05-04:00",
+    "judged_at": "2026-10-30T12:12:27-04:00",
+    "age_min": 0.4,
+    "ticker": "WFC",
+    "action": "SELL",
+    "entry": 83.67,
+    "stop": 84.13,
+    "target": 82.52,
+    "qty": 477,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **83.67** is shallow and lacks clear exhaustion: the last 12 candles show a tight range (83.46–83.77) with no decisive rejection above **83.77** (high of 12:05 bar). The **vol_ratio (2.23)** suggests a directional bias, but the structure is not orderly—price closed **higher** in 7 of the last 12 candles, and the **RSI (46.49)** is neutral, not oversold. The **stop (84.13)** is **1.5 ATR** away, but the target (**82.52**) is **3.75 ATR** distant, requiring a **2.5:1 reward:risk**—unrealistic in the remaining **228 minutes** (SPY -1.62% day move aligns with SELL, but WFC’s structure does not).",
+      "macro": "No macro context provided; relying solely on SPY alignment is insufficient without a clear technical breakdown.",
+      "risk": "No earnings risk, but the **feasibility is TIGHT** (target_distance_atr: 3.75 in 228 minutes). The lack of exhaustion and weak pullback structure make this a low-probability setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
