@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261030-133709-AVGO",
-  "generated_at": "2026-10-30T13:37:09.391666-04:00",
-  "spy_day_pct": -1.9006094946003196,
+  "signal_id": "20261030-133949-AVGO",
+  "generated_at": "2026-10-30T13:39:49.290138-04:00",
+  "spy_day_pct": -1.862272414196421,
   "candidates": [
     {
       "ticker": "AVGO",
       "signal": "SELL",
-      "ltp": 323.29,
-      "stop": 325.96,
-      "target": 316.63,
+      "ltp": 323.3,
+      "stop": 326.02,
+      "target": 316.47,
       "qty": 123,
       "indicators": {
         "rsi": 36.73,
-        "atr": 1.7769,
+        "atr": 1.8187,
         "vol_ratio": 1.5
       },
-      "scout_reason": "SPY -1.90% aligns with SELL",
+      "scout_reason": "SPY -1.86% aligns with SELL",
       "candles_5m": [
         [
           "12:00",
@@ -173,29 +173,29 @@
           "13:35",
           323.46,
           323.64,
-          323.19,
-          323.29,
-          3406
+          322.98,
+          323.1,
+          7539
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T13:37:17.569535-04:00"
+      "outcome_at": "2026-10-30T13:39:53.362606-04:00"
     },
     {
       "ticker": "PANW",
       "signal": "SELL",
       "ltp": 361.77,
-      "stop": 365.98,
-      "target": 351.24,
+      "stop": 366.28,
+      "target": 350.49,
       "qty": 110,
       "indicators": {
         "rsi": 38.04,
-        "atr": 2.8081,
+        "atr": 3.0074,
         "vol_ratio": 2.53
       },
-      "scout_reason": "SPY -1.90% aligns with SELL",
+      "scout_reason": "SPY -1.86% aligns with SELL",
       "candles_5m": [
         [
           "12:00",
@@ -360,8 +360,8 @@
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CORRUPT_QUOTE: entry 361.77 is 4.9% away from prev_close 380.35 (|361.77-380.35|/380.35 = 0.049 > 0.10). Quote mismatch or corrupt feed.",
-      "outcome_at": "2026-10-30T13:37:17.569609-04:00"
+      "outcome_reason": "CHASE: entry 361.77 is 7.55 below VWAP 369.32, exceeding 1.5*ATR (4.51) with no base or retest visible in recent 5‑min candles",
+      "outcome_at": "2026-10-30T13:39:53.362630-04:00"
     }
   ]
 }
