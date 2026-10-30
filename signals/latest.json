@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261030-141632-CRM",
-  "generated_at": "2026-10-30T14:16:32.577733-04:00",
-  "spy_day_pct": -2.133231101118918,
+  "signal_id": "20261030-141823-CRM",
+  "generated_at": "2026-10-30T14:18:23.164668-04:00",
+  "spy_day_pct": -2.211854604998113,
   "candidates": [
     {
       "ticker": "CRM",
       "signal": "SELL",
-      "ltp": 229.75,
-      "stop": 231.42,
-      "target": 225.56,
-      "qty": 173,
+      "ltp": 229.4,
+      "stop": 231.07,
+      "target": 225.21,
+      "qty": 174,
       "indicators": {
         "rsi": 44.68,
         "atr": 1.1165,
         "vol_ratio": 1.69
       },
-      "scout_reason": "SPY -2.13% aligns with SELL",
+      "scout_reason": "SPY -2.21% aligns with SELL",
       "candles_5m": [
-        [
-          "12:35",
-          231.19,
-          231.19,
-          230.62,
-          230.62,
-          3897
-        ],
         [
           "12:40",
           230.69,
@@ -176,12 +168,20 @@
           229.66,
           229.75,
           3867
+        ],
+        [
+          "14:15",
+          229.5,
+          229.51,
+          229.5,
+          229.51,
+          481
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-10-30T14:16:33.133974-04:00"
+      "outcome_at": "2026-10-30T14:18:23.668813-04:00"
     }
   ]
 }
