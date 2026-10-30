@@ -299,5 +299,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-113440-BAC",
+    "signal_time": "2026-10-30T11:34:40-04:00",
+    "judged_at": "2026-10-30T11:35:00-04:00",
+    "age_min": 0.3,
+    "ticker": "BAC",
+    "action": "SELL",
+    "entry": 50.22,
+    "stop": 50.49,
+    "target": 49.52,
+    "qty": 795,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 50.22 is shallow and lacks clear exhaustion. The last 12 candles show a choppy but directional decline, with the 11:30 candle closing at 50.20 (below entry) but failing to decisively break lower. The RSI (37.67) is neutral, not extreme, and the volume ratio (1.38) suggests modest conviction. The stop at 50.49 is 1.45 ATR away, which is reasonable, but the target (49.52) is 3.75 ATR away—aggressive for the remaining 266 minutes (16:00 ET close). The structure is not exhausted enough for a high-conviction SELL, and the reward:risk (2.59) is skewed by the tight stop. Geometry favors a wait for a clearer breakdown or a higher-probability setup.",
+      "macro": "SPY’s -1.46% day move aligns with the SELL thesis, but intraday momentum is weak. No macro catalyst is visible to override the lack of structural exhaustion.",
+      "risk": "No earnings risk today/tomorrow. However, the trade’s feasibility is TIGHT due to the target’s distance (3.75 ATR) and time left (266 minutes). A GO would require a more decisive breakdown or a higher-probability entry (e.g., a close below 50.18 with volume confirmation)."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
