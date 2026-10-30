@@ -23,7 +23,7 @@ and verdict records without prices — are deliberately avoided here.)
 
 Env (GitHub Actions secrets):
   GEMINI_API_KEY     required for verdicts
-  GEMINI_MODEL       optional, default "gemini-2.5-flash"
+  GEMINI_MODEL       optional, default "gemini-3.8-flash"
   TELEGRAM_BOT_TOKEN optional (no Telegram if unset)
   TELEGRAM_CHAT_ID   optional
 
@@ -44,7 +44,10 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
-FRESH_MINUTES = float(os.getenv("DESK_FRESH_MINUTES", "30"))
+try:
+    FRESH_MINUTES = float(os.getenv("DESK_FRESH_MINUTES", "30"))
+except (TypeError, ValueError):
+    FRESH_MINUTES = 30.0
 DEDUP_WINDOW_MINUTES = 120  # old Muse rule: same ticker+direction within 2h = same setup
 
 def _parse_dt(s):
@@ -154,14 +157,114 @@ def load_json(path: Path, default):
         return default
 
 
+def load_json_strict(path: Path, default):
+    """Like load_json, but a present-but-unparseable file is an error.
+
+    A missing file still returns the default. A present file that is not
+    valid JSON must never be silently replaced by an empty list — that
+    would destroy the permanent desk history. Raises RuntimeError; the
+    caller lets it abort the run before anything is written or sent.
+    """
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"{path} exists but is not valid JSON ({exc}); refusing to overwrite it") from exc
+
+
 def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_left=None) -> list[dict]:
+
+def _norm_ticker(tick) -> str:
+    return str(tick or "").upper().replace("-", "").replace(" ", "")
+
+
+def load_earnings_calendar_us(root: Path) -> dict:
+    """{normalised ticker: {ISO dates}} from earnings_calendar_us.json.
+
+    Flag only, never blocks a verdict. Fail-open: a missing or
+    malformed file disables the results-risk flag with one log line.
+    STALENESS WARNING: this calendar is a snapshot (Oct 2026 US
+    earnings dates). It goes stale and needs a refresh route before
+    it is relied on long-term; a stale calendar cannot invent dates,
+    but it can miss new ones.
+    """
+    path = root / "earnings_calendar_us.json"
+    out = {}
+    if not path.exists():
+        print("No earnings_calendar_us.json; results-risk flag inactive")
+        return out
+    try:
+        rows = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"earnings_calendar_us.json unreadable ({exc}); results-risk flag OFF")
+        return {}
+    if not isinstance(rows, list):
+        print("earnings_calendar_us.json is not a list; results-risk flag OFF")
+        return {}
+    for row in rows:
+        try:
+            d = datetime.fromisoformat(str(row["date"])).date().isoformat()
+            out.setdefault(_norm_ticker(row["ticker"]), set()).add(d)
+        except Exception:
+            print(f"Skipping bad earnings calendar row: {row!r}")
+            continue
+    return out
+
+
+def results_flag(calendar: dict, ticker, signal_date) -> str:
+    """One-line flag, or '' if no results date is near the signal date.
+
+    Window: reports today, tomorrow, yesterday, 2 days ago, or 3 days
+    ago (Friday results flagged on Monday). Anything else is not
+    flagged, so a stale calendar cannot spam every verdict.
+    """
+    dates = calendar.get(_norm_ticker(ticker)) or set()
+    if not dates or signal_date is None:
+        return ""
+    for d in sorted(dates):
+        try:
+            ed = datetime.fromisoformat(d).date()
+        except Exception:
+            continue
+        delta = (ed - signal_date).days
+        if delta == 0:
+            return f"reports results TODAY ({d})"
+        if delta == 1:
+            return f"reports results TOMORROW ({d})"
+        if delta == -1:
+            return f"reported results YESTERDAY ({d})"
+        if delta == -2:
+            return f"reported results 2 DAYS AGO ({d})"
+        if delta == -3:
+            return f"reported results 3 DAYS AGO ({d})"
+    return ""
+
+
+def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_left=None, calendar=None, signal_date=None) -> list[dict]:
     """One Gemini call judging all candidates. Returns one verdict dict per
     candidate (ticker-matched). Raises on transport/API failure."""
     api_key = os.environ["GEMINI_API_KEY"]
+    # N5: validate per candidate — one malformed candidate must not
+    # kill the whole batch. Skip it with a log line, judge the rest.
+    _valid = []
+    for _c in candidates:
+        try:
+            if not _c.get("ticker") or not _c.get("signal"):
+                raise ValueError("missing ticker/signal")
+            float(_c["ltp"]); float(_c["stop"]); float(_c["target"])
+            if _c.get("indicators") is not None and not isinstance(_c.get("indicators"), dict):
+                raise ValueError("indicators not a dict")
+        except Exception as exc:
+            print(f"Skipping malformed candidate {_c.get('ticker', '?')}: {exc}", file=sys.stderr)
+            continue
+        _valid.append(_c)
+    candidates = _valid
+    if not candidates:
+        raise RuntimeError("All candidates malformed; nothing to judge")
     features = []
     for c in candidates:
         entry, stop, tgt = float(c["ltp"]), float(c["stop"]), float(c["target"])
@@ -178,14 +281,18 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_l
             "target_distance_atr": round(abs(tgt - entry) / atr, 2) if atr > 0 else None,
             "reward_to_risk": round(abs(tgt - entry) / risk, 2) if risk > 0 else None,
             "scout_reason": c.get("scout_reason", ""),
+            "results_risk": results_flag(calendar or {}, c["ticker"], signal_date),
             "feasibility": feasibility_flag(round(abs(tgt - entry) / atr, 2) if atr > 0 else None, minutes_left),
             "candles_5m_last12": (c.get("candles_5m") or [])[-12:],
+            "minutes_left": minutes_left,
         })
     prompt = (
         "You are the senior analyst desk for a US intraday paper-trading system. "
         "This is an ADVISORY review: your verdict is logged and your accuracy is "
         "scored at end of day; you do not place trades.\n\n"
         f"Session context: signal time {signal_time_et} ET (regular session 09:30-16:00 ET). "
+        f"Minutes remaining to the 16:00 ET close: {minutes_left} — use THIS number for all "
+        "time-to-close reasoning; do not recompute it from the signal time. "
         f"SPY day move: {spy_pct if spy_pct is not None else 'unknown'}%. "
         "Candles are regular-session 5-minute bars [time, open, high, low, close, volume]. "
         "Volume comes from the IEX feed only (~2-4% of consolidated tape): treat vol_ratio "
@@ -201,9 +308,11 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_l
         "(2) geometry — stop distance in ATR, reward:risk, and whether the target is realistic "
         "for the remaining session; (3) regime — does the trade direction agree with the SPY "
         "day move; (4) timing — entries after 14:30 ET have little room, midday entries need "
-        "stronger structure. Be selective: a SKIP costs nothing.\n\n"
+        "stronger structure. Be selective: a SKIP costs nothing. "
+        "RESULTS RISK: each candidate carries a results_risk field taken ONLY from earnings_calendar_us.json supplied with this prompt. If it is non-empty, you MUST mention it in risk/notes and weigh pre-/post-results volatility: a GO on a results-today/tomorrow name needs exceptional structure. If it is empty, do NOT invent a results date or claim a company is reporting.\n\n"
+        "CONFIDENCE: confidence is your conviction in the verdict you just gave for that candidate (GO or SKIP), as an integer. A verdict you stand behind is 50-95; a SKIP you believe in is 60-90. Never output 0 and never omit the confidence field — 0 means you have no opinion, not low conviction, and is not a valid confidence for a verdict.\n\n"
         "Return ONLY this JSON: {\"verdicts\": [{\"ticker\": str, \"verdict\": \"GO\"|\"SKIP\", "
-        "\"confidence\": int 0-100, \"trigger\": str, \"notes\": {\"technical\": str, \"macro\": str, \"risk\": str}}]} "
+        "\"confidence\": int 50-95, \"trigger\": str, \"notes\": {\"technical\": str, \"macro\": str, \"risk\": str}}]} "
         "trigger is the price condition that makes the verdict actionable: for GO, "
         "the entry condition; for SKIP, the condition that would make it valid "
         "(e.g. 'Valid only on a break below 1183.60'), or '' if none exists in-session. "
@@ -229,17 +338,16 @@ def gemini_judge(candidates: list[dict], spy_pct, signal_time_et: str, minutes_l
     for c in candidates:
         v = by_ticker.get(c["ticker"].upper())
         if v is None:
-            out.append({"ticker": c["ticker"], "verdict": "SKIP", "confidence": 0, "trigger": "",
-                        "notes": {"technical": "desk returned no verdict for this ticker",
-                                  "macro": "", "risk": "fail-closed default"}})
-            continue
+            raise RuntimeError(f"Gemini returned no verdict for {c['ticker']}")
         verdict = str(v.get("verdict", "SKIP")).upper()
         if verdict not in ("GO", "SKIP"):
             verdict = "SKIP"
         try:
-            conf = max(0, min(100, int(v.get("confidence", 0))))
+            conf = int(v.get("confidence", 0))
         except (TypeError, ValueError):
-            conf = 0
+            raise RuntimeError(f"Invalid confidence for {c['ticker']}: {v.get('confidence')!r}")
+        if conf <= 0 or conf > 100:
+            raise RuntimeError(f"Invalid confidence {conf} for {c['ticker']}: 0 is not a valid confidence")
         notes = v.get("notes") if isinstance(v.get("notes"), dict) else {"technical": str(v.get("notes", ""))}
         out.append({"ticker": c["ticker"], "verdict": verdict, "confidence": conf, "trigger": str(v.get("trigger", "")).strip(), "notes": notes})
     return out
@@ -276,10 +384,10 @@ def send_telegram(text):
         )
         try:
             with urllib.request.urlopen(req, timeout=20) as resp:
-                if resp.status != 200:
-                    print('Telegram send failed: HTTP %s (chunk %d)' % (resp.status, i), file=sys.stderr)
+                if not (200 <= resp.status < 300):
+                    print('ERROR: Telegram send failed: HTTP %s (chunk %d) — verdict saved but NOT delivered via Telegram' % (resp.status, i), file=sys.stderr)
         except Exception as exc:
-            print('Telegram send failed: %s (chunk %d)' % (exc, i), file=sys.stderr)
+            print('ERROR: Telegram send failed: %s (chunk %d) — verdict saved but NOT delivered via Telegram' % (exc, i), file=sys.stderr)
 
 
 def main() -> int:
@@ -294,6 +402,9 @@ def main() -> int:
         return 0
 
     signal_id = str(latest.get("signal_id", ""))
+    if not signal_id:
+        print("latest.json has no signal_id; skipping (cannot dedupe).")
+        return 0
     try:
         gen = datetime.fromisoformat(str(latest["generated_at"]))
     except Exception:
@@ -308,10 +419,13 @@ def main() -> int:
     if now_et.weekday() >= 5 or not (dtime(9, 30) <= now_et.time() <= dtime(16, 5)):
         print(f"Outside ET session ({now_et:%H:%M}); skipping.")
         return 0
+    if not (dtime(9, 30) <= gen_et.time() <= dtime(16, 0)):
+        print(f"Signal generated outside ET session ({gen_et:%H:%M}); skipping.")
+        return 0
 
-    history = load_json(history_path, [])
+    history = load_json_strict(history_path, [])
     if not isinstance(history, list):
-        history = []
+        raise RuntimeError(f"{history_path} is not a JSON list; refusing to overwrite it")
     if any(isinstance(r, dict) and r.get("signal_id") == signal_id for r in history):
         print(f"Signal {signal_id} already judged; skipping.")
         return 0
@@ -323,15 +437,23 @@ def main() -> int:
         print("All candidates deduped; skipping (no Gemini call, no commit).")
         return 0
 
+    calendar = load_earnings_calendar_us(root)
     if not os.getenv("GEMINI_API_KEY"):
         print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
         return 0
 
     spy_pct = latest.get("spy_day_pct")
     try:
-        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"), minutes_left=minutes_to_close_us(gen_et))
+        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"), minutes_left=minutes_to_close_us(gen_et), calendar=calendar, signal_date=gen_et.date())
     except Exception as exc:
         print(f"Gemini judging failed: {exc}", file=sys.stderr)
+        # C7: judging failures are otherwise silent (exit 0, no verdict):
+        # alert loudly, but still write nothing.
+        try:
+            send_telegram(f"DESK judging failed: {exc} — batch {signal_id} NOT judged")
+        except Exception as alert_exc:
+            # C7 nit: a failing alert must not itself be silent.
+            print(f"DESK judging-failure alert failed: {alert_exc}", file=sys.stderr)
         return 0
 
     judged_at = now_et.isoformat(timespec="seconds")
@@ -342,18 +464,18 @@ def main() -> int:
         records.append({
             "signal_id": signal_id,
             "signal_time": gen_et.isoformat(timespec="seconds"),
-            "judged_at": judged_at,
+            "judged_at": judged_at, "age_min": round(age_min, 1),
             "ticker": v["ticker"], "action": c["signal"],
             "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
             "qty": c.get("qty", 0),
-            "verdict": v["verdict"], "confidence": v["confidence"], "trigger": v.get("trigger", ""), "notes": v["notes"],
+            "verdict": v["verdict"], "confidence": v["confidence"], "trigger": v.get("trigger", ""), "notes": v["notes"], "results_risk": results_flag(calendar, v["ticker"], gen_et.date()),
             "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_to_close_us(gen_et)),
             "outcome": None, "outcome_r": None, "outcome_at": None,
         })
     history.extend(records)
     save_json(history_path, history)
     save_json(verdict_path, {
-        "signal_id": signal_id, "judged_at": judged_at,
+        "signal_id": signal_id, "judged_at": judged_at, "age_min": round(age_min, 1),
         "spy_day_pct": spy_pct, "advisory_only": True, "verdicts": records,
     })
 
@@ -367,6 +489,8 @@ def main() -> int:
         lines.append(f"  SL {r['stop']:.2f} / Target {r['target']:.2f}")
         if r.get("trigger"):
             lines.append(f"  Trigger: {r['trigger']}")
+        if r.get("results_risk"):
+            lines.append(f"  Results risk: {r['results_risk']}")
         if r.get("feasibility"):
             lines.append(f"  Feasibility: {r['feasibility']}")
         if tech:
