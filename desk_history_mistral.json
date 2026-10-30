@@ -374,5 +374,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-122137-ORCL",
+    "signal_time": "2026-10-30T12:21:37-04:00",
+    "judged_at": "2026-10-30T12:21:55-04:00",
+    "age_min": 0.3,
+    "ticker": "ORCL",
+    "action": "SELL",
+    "entry": 132.46,
+    "stop": 134.31,
+    "target": 127.82,
+    "qty": 301,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 132.46 lacks clear exhaustion or a directional close. The 12:10 candle closed near its high (132.56), suggesting extension rather than a meaningful retracement. The 12:15 candle shows a tight range (132.28-132.56) with a close at 132.45, which is not a strong reversal signal. The RSI (46.55) is neutral, and the volume ratio (1.41) does not indicate strong conviction in the downside. The stop at 134.31 (1.5 ATR) is too far from the entry to justify the risk, especially with only 219 minutes left in the session. The target (127.82) is 3.75 ATR away, which is aggressive for the remaining time and may not be achievable without a sharp move.",
+      "macro": "The SPY day move (-1.58%) aligns with the SELL thesis, but the intraday structure of ORCL does not support a high-conviction entry at this juncture. The lack of a clear pullback or exhaustion pattern limits the trade's validity.",
+      "risk": "No earnings risk identified. However, the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and time remaining (219 minutes). The reward:risk (2.51) is decent, but the entry structure is not compelling enough to justify the risk in a paper-trading environment."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
