@@ -649,5 +649,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261030-135204-TXN",
+    "signal_time": "2026-10-30T13:52:04-04:00",
+    "judged_at": "2026-10-30T13:52:23-04:00",
+    "age_min": 0.3,
+    "ticker": "TXN",
+    "action": "SELL",
+    "entry": 297.33,
+    "stop": 300.06,
+    "target": 290.51,
+    "qty": 134,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, erratic structure into the 13:52 ET signal, with no clear pullback or exhaustion pattern. The last 5-minute candle (13:45) closed at 297.91, well above the entry level of 297.33, and the high of 298.98 suggests extension rather than exhaustion. The RSI (41.82) is neutral, and the volume ratio (1.16) does not strongly support a directional move. The target (290.51) is 3.75 ATR away, which is aggressive for the remaining 128 minutes (16:00 ET close). The stop (300.06) is 1.5 ATR away, offering a 2.5:1 reward-to-risk ratio, but the lack of a defined pullback or exhaustion limits conviction.",
+      "macro": "SPY's -2.00% day move aligns with the SELL thesis, but the intraday structure of TXN does not reflect a clear regime-driven pullback. Without a stronger macro catalyst or a more defined technical setup, the trade lacks conviction.",
+      "risk": "No earnings or results risk identified. However, the lack of a clear pullback or exhaustion pattern increases the risk of a false break or a continuation of the recent choppy trend. The target appears ambitious for the remaining session time."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
