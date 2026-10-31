@@ -296,9 +296,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-113440-BAC",
@@ -321,9 +321,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.78,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-115740-CSCO",
@@ -346,9 +346,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.55,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-121205-WFC",
@@ -371,9 +371,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.52,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-122137-ORCL",
@@ -396,9 +396,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.96,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-122826-ORCL",
@@ -421,9 +421,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.51,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-123250-ORCL",
@@ -446,9 +446,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.49,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-130302-AAPL",
@@ -471,9 +471,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-130302-AAPL",
@@ -496,9 +496,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.39,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-132750-AVGO",
@@ -521,9 +521,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.92,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-133241-C",
@@ -546,9 +546,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-133709-AVGO",
@@ -571,9 +571,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-134200-MSFT",
@@ -596,9 +596,9 @@
     },
     "results_risk": "reported results 2 DAYS AGO (2026-10-28)",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-134200-MSFT",
@@ -621,9 +621,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.74,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-134200-MSFT",
@@ -646,9 +646,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.51,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-135204-TXN",
@@ -671,9 +671,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   },
   {
     "signal_id": "20261030-141632-CRM",
@@ -696,8 +696,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.36,
+    "outcome_at": "2026-10-30T21:01:59-04:00"
   }
 ]
