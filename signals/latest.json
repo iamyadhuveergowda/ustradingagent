@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261102-120719-TXN",
-  "generated_at": "2026-11-02T12:07:19.754364-05:00",
-  "spy_day_pct": 0.5617159794632939,
+  "signal_id": "20261102-120859-TXN",
+  "generated_at": "2026-11-02T12:08:59.667684-05:00",
+  "spy_day_pct": 0.5365743926321852,
   "candidates": [
     {
       "ticker": "TXN",
       "signal": "BUY",
-      "ltp": 309.28,
-      "stop": 306.13,
-      "target": 317.15,
+      "ltp": 309.46,
+      "stop": 306.31,
+      "target": 317.33,
       "qty": 129,
       "indicators": {
         "rsi": 61.08,
         "atr": 2.0998,
         "vol_ratio": 3.4
       },
-      "scout_reason": "SPY +0.56% aligns with BUY",
+      "scout_reason": "SPY +0.54% aligns with BUY",
       "candles_5m": [
         [
           "10:30",
@@ -172,16 +172,16 @@
         [
           "12:05",
           309.28,
+          309.67,
           309.28,
-          309.28,
-          309.28,
-          170
+          309.33,
+          760
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "LUNCH_CHOP: signal time 12:05 within 11:30-14:00 ET and candle range 1.77 < 1.5*ATR (3.1497), flat VWAP chop, no directional conviction",
-      "outcome_at": "2026-11-02T12:07:25.767718-05:00"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-02T12:09:18.776309-05:00"
     }
   ]
 }
