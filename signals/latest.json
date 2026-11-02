@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261102-132235-PANW",
-  "generated_at": "2026-11-02T13:22:35.596729-05:00",
-  "spy_day_pct": 0.4055734928280237,
+  "signal_id": "20261102-132517-PANW",
+  "generated_at": "2026-11-02T13:25:17.965241-05:00",
+  "spy_day_pct": 0.3665378711692137,
   "candidates": [
     {
       "ticker": "PANW",
       "signal": "BUY",
-      "ltp": 363.78,
-      "stop": 359.22,
-      "target": 375.18,
+      "ltp": 363.57,
+      "stop": 359.01,
+      "target": 374.97,
       "qty": 27,
       "indicators": {
         "rsi": 52.83,
         "atr": 3.0413,
         "vol_ratio": 1.86
       },
-      "scout_reason": "SPY +0.41% aligns with BUY",
+      "scout_reason": "SPY +0.37% aligns with BUY",
       "candles_5m": [
         [
           "11:45",
@@ -172,16 +172,16 @@
         [
           "13:20",
           363.88,
-          363.9,
-          363.39,
-          363.39,
-          1424
+          364.14,
+          363.14,
+          363.15,
+          3616
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 363.78 is within 0.5*ATR (1.52065) of recent swing high 364.67",
-      "outcome_at": "2026-11-02T13:22:40.263610-05:00"
+      "outcome_reason": "INTO_WALL: entry 363.57 is within 0.5*ATR (1.52) of recent swing high 364.53",
+      "outcome_at": "2026-11-02T13:25:22.381590-05:00"
     }
   ]
 }
