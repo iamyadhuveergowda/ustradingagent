@@ -699,5 +699,30 @@
     "outcome": "CLOSE",
     "outcome_r": 0.36,
     "outcome_at": "2026-10-30T21:01:59-04:00"
+  },
+  {
+    "signal_id": "20261102-111330-C",
+    "signal_time": "2026-11-02T11:13:30-05:00",
+    "judged_at": "2026-11-02T11:14:00-05:00",
+    "age_min": 0.5,
+    "ticker": "C",
+    "action": "BUY",
+    "entry": 124.0,
+    "stop": 123.21,
+    "target": 125.99,
+    "qty": 322,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a choppy, sideways pullback into the entry at 124.0, with no clear directional close or momentum. The last two candles (11:05 and 11:10) are indecisive, closing near their lows and lacking follow-through. The RSI (62.88) is neutral, not signaling overbought or oversold. The volume ratio (1.24) is slightly bullish but not strong enough to justify a trade. The stop distance (1.49 ATR) is reasonable, but the target (3.76 ATR) feels stretched given the lack of conviction in the structure and the remaining session time (287 minutes). The pullback lacks an orderly, directional close, and the entry is not supported by a clear break or rejection.",
+      "macro": "SPY's +0.67% day move aligns with the BUY thesis, but the intraday structure of C does not reflect this broader trend. Without additional context (e.g., VWAP, news, or sector leadership), the trade lacks macro confirmation.",
+      "risk": "No earnings risk identified. However, the trade's feasibility is TIGHT due to the target distance (3.76 ATR) relative to the remaining session time (287 minutes). The reward:risk (2.52) is mathematically favorable, but the lack of structural conviction outweighs this."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
