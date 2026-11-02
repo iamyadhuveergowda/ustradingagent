@@ -724,5 +724,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-112251-DIS",
+    "signal_time": "2026-11-02T11:22:51-05:00",
+    "judged_at": "2026-11-02T11:23:28-05:00",
+    "age_min": 0.6,
+    "ticker": "DIS",
+    "action": "BUY",
+    "entry": 112.91,
+    "stop": 112.31,
+    "target": 114.42,
+    "qty": 353,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **112.91** is shallow and lacks clear exhaustion, with the last 5-minute candle closing **directionally neutral** (112.91) after a minor dip from 112.93. The **vol_ratio (1.1)** suggests a modest directional bias, but the structure is weak: no clear retest of a prior swing low or higher-timeframe support. The **stop distance (1.49 ATR)** is reasonable, but the **reward:risk (2.52)** is inflated by a **target (114.42)** that feels stretched for the remaining session (278 minutes). The **RSI (57.48)** is neutral, not extreme, and the pullback lacks urgency.",
+      "macro": "The **SPY +0.60%** aligns with the BUY thesis, but intraday momentum is fading: the last 12 candles show a **sideways grind** with no clear breakout. The lack of a defined higher-timeframe structure (e.g., break of a recent high or trendline) limits conviction.",
+      "risk": "No earnings risk today/tomorrow. However, the **target (114.42) is 1.37% above current price**, which may require a late-session rally unlikely given the time left (278 minutes) and the absence of a clear catalyst. The trade would need a **break above 113.15** (10:55 high) to regain validity, but even then, the setup is speculative."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
