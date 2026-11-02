@@ -824,5 +824,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-132235-PANW",
+    "signal_time": "2026-11-02T13:22:35-05:00",
+    "judged_at": "2026-11-02T13:23:00-05:00",
+    "age_min": 0.4,
+    "ticker": "PANW",
+    "action": "BUY",
+    "entry": 363.78,
+    "stop": 359.22,
+    "target": 375.18,
+    "qty": 27,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 363.78, with the last 12 candles showing a choppy, erratic structure. The 12:45 candle printed a high of 363.48 and closed at 363.45, followed by a series of lower-highs and lower-lows until the 13:20 candle closed at 363.39. The pullback lacks an orderly directional close, and the volume spike at 12:45 (3890) suggests exhaustion rather than a healthy retracement. The RSI (52.83) is neutral, and the vol_ratio (1.86) does not confirm a strong directional bias. The target (375.18) is 3.75 ATR away, which is ambitious for the remaining 158 minutes (16:00 ET close). The stop (359.22) is 1.5 ATR away, offering a 2.5 reward-to-risk ratio, but the structure does not justify the risk given the lack of conviction in the pullback.",
+      "macro": "SPY is up +0.41%, which aligns with the BUY direction, but the intraday structure of PANW does not support a high-conviction entry. The broader market alignment is not enough to override the weak candle geometry.",
+      "risk": "No earnings risk for PANW today or tomorrow. However, the lack of a clear pullback structure and the proximity to the close (158 minutes) make this a high-risk entry. The target is tight for the remaining session, and the stop is far enough to limit losses but not close enough to justify the trade given the current setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
