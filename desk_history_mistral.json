@@ -774,5 +774,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261102-120719-TXN",
+    "signal_time": "2026-11-02T12:07:19-05:00",
+    "judged_at": "2026-11-02T12:07:42-05:00",
+    "age_min": 0.4,
+    "ticker": "TXN",
+    "action": "BUY",
+    "entry": 309.28,
+    "stop": 306.13,
+    "target": 317.15,
+    "qty": 129,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **309.28** lacks a clean, orderly structure. The last 5-minute candle (12:05) is a **hammer** with minimal volume (170), suggesting exhaustion rather than a fresh entry. The prior 12:00 candle shows a **strong push higher** (308.62 → 309.75), and the 11:20 candle had a **sharp drop** (308.42 → 307.15) with high volume (10,648), indicating prior volatility. The RSI (61.08) is neutral, but the **vol_ratio (3.4)** suggests a directional bias toward the downside in recent candles, conflicting with the BUY signal. The stop (306.13) is **1.5 ATR (~5.1 ATR hours)** away, which is aggressive for a late-session entry (233 minutes left).",
+      "macro": "SPY’s **+0.56%** day move aligns with the BUY thesis, but the **intraday structure** is weak for a long entry. No macro overrides are present.",
+      "risk": "No earnings risk today/tomorrow for TXN. However, the **lack of a clear pullback** and **high prior volatility** increase the risk of a false breakout. The target (317.15) is **3.75 ATR (~12.3 ATR hours)** away, which is ambitious for the remaining session (233 minutes). The trade would require a **sharp, sustained move** to hit the target, which is unlikely given the current structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
