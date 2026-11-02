@@ -479,7 +479,7 @@
     "ticker": "DIS",
     "action": "BUY",
     "qty": 353,
-    "remaining_qty": 353,
+    "remaining_qty": 0,
     "locked_margin_per_share": 113.11,
     "partial_booked": false,
     "entry": 113.11,
@@ -489,21 +489,26 @@
     "open": 112.86,
     "high": 112.93,
     "low": 112.81,
-    "close": 113.12,
+    "close": 113.3,
     "time": "11:23:11",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 113.3,
+    "net_pnl": 60.43,
     "rationale": "All hard gates cleared: target 1.51 USD is 3.75 ATR (<4.5 ATR), qty 353 ≥ 1, entry 1.76% above prev_close (within 10%), stop 0.60 USD below entry (correct side), macro SPY move (+0.6) does not block BUYs. No judgment vetoes triggered: entry is below VWAP+1.5 ATR (no chase), no 4‑bar exhaustion pattern, highest recent volume bar (6,377) did not show supply into highs, entry/tgt >0.5 ATR away from session highs/lows, news headline is neutral, stop not within 1 ATR of repeatedly tested level, signa",
     "events": [
       {
         "time": "2026-11-02T11:23:11-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 353 @ $113.11"
+      },
+      {
+        "time": "2026-11-02T15:57:04-05:00",
+        "type": "EXIT",
+        "text": "15:55 square-off: 353 @ $113.30, net $60.43"
       }
     ],
     "mode": "PAPER",
-    "last_price": 113.12,
+    "last_price": 113.3,
     "atr": 0.4029,
     "breakeven_set": false,
     "mfe_r": 0.971,
@@ -514,8 +519,14 @@
     "rule_version": "us_v2.6",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.6392,
+      "total": 6.6392
+    },
+    "pnl_by_date": {
+      "2026-11-02": 60.43
+    },
     "orders": {
       "entry": {
         "id": "cea76e4d-e4e3-4fc5-aa10-3f1f1753d2ae",
@@ -527,7 +538,8 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 113.13
+    "breakeven_price": 113.13,
+    "exit_time": "2026-11-02T15:57:04-05:00"
   },
   {
     "trade_id": "20261102120917-TXN",
