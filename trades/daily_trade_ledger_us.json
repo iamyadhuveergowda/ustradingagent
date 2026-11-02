@@ -489,7 +489,7 @@
     "open": 112.86,
     "high": 112.93,
     "low": 112.81,
-    "close": 113.73,
+    "close": 113.75,
     "time": "11:23:11",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -503,10 +503,10 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 113.73,
+    "last_price": 113.75,
     "atr": 0.4029,
     "breakeven_set": false,
-    "mfe_r": 0.912,
+    "mfe_r": 0.971,
     "mae_r": -0.125,
     "spy_pct": 0.6,
     "vol_ratio": 1.1,
@@ -535,7 +535,7 @@
     "ticker": "TXN",
     "action": "BUY",
     "qty": 129,
-    "remaining_qty": 129,
+    "remaining_qty": 0,
     "locked_margin_per_share": 309.46,
     "partial_booked": false,
     "entry": 309.46,
@@ -547,19 +547,24 @@
     "low": 308.62,
     "close": 306.49,
     "time": "12:09:17",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 306.145504,
+    "net_pnl": -434.13,
     "rationale": "All hard gates passed: target distance 7.87 USD (<4.5*ATR = 9.45 USD), qty = 129 ≥ 1, entry 2.8% above prev close (within 10%), stop 306.31 USD < entry (correct side). No vetoes triggered: entry 1.4 ATR above VWAP (not a chase), no heavy‑volume bar against direction, stop not within 1 ATR of repeatedly tested level, news headline is bullish for semis, no upcoming event, no desk veto. Trade meets risk‑reward and price‑action criteria.",
     "events": [
       {
         "time": "2026-11-02T12:09:17-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 129 @ $309.46"
+      },
+      {
+        "time": "2026-11-02T14:05:20-05:00",
+        "type": "EXIT",
+        "text": "Broker stop filled (reconciled): 129 @ $306.15, net $-434.13"
       }
     ],
     "mode": "PAPER",
-    "last_price": 306.49,
+    "last_price": 306.145504,
     "atr": 2.0998,
     "breakeven_set": false,
     "mfe_r": 0.111,
@@ -570,8 +575,14 @@
     "rule_version": "us_v2.6",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5558,
+      "total": 6.5558
+    },
+    "pnl_by_date": {
+      "2026-11-02": -434.13
+    },
     "orders": {
       "entry": {
         "id": "5f54767a-a60c-4293-8255-b2da7c1c7261",
@@ -583,6 +594,7 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 309.51
+    "breakeven_price": 309.51,
+    "exit_time": "2026-11-02T14:05:20-05:00"
   }
 ]
