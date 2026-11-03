@@ -721,9 +721,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   },
   {
     "signal_id": "20261102-112251-DIS",
@@ -746,9 +746,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.38,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   },
   {
     "signal_id": "20261102-115032-WFC",
@@ -771,9 +771,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.53,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   },
   {
     "signal_id": "20261102-120719-TXN",
@@ -796,9 +796,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   },
   {
     "signal_id": "20261102-125059-NOW",
@@ -821,9 +821,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   },
   {
     "signal_id": "20261102-132235-PANW",
@@ -846,8 +846,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-02T22:03:59-05:00"
   }
 ]
