@@ -874,5 +874,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-112310-GE",
+    "signal_time": "2026-11-03T11:23:10-05:00",
+    "judged_at": "2026-11-03T11:23:37-05:00",
+    "age_min": 0.5,
+    "ticker": "GE",
+    "action": "BUY",
+    "entry": 321.78,
+    "stop": 319.28,
+    "target": 328.03,
+    "qty": 123,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **321.78** is disorderly: the 11:00 candle shows a violent drop to **320.66** (low) with a close at the same level, followed by a weak recovery. The 11:10 candle closes at **321.78** (entry) but lacks conviction (low volume: **1154**, vol_ratio **1.15** suggests weak participation). The stop at **319.28** is **1.5 ATR** (~2.5 ATR from the 11:00 low), but the structure is exhausted—price failed to hold **322.00** intraday and is now testing the entry with no clear follow-through. The **target (328.03)** is **3.75 ATR** away, but with **277 minutes left**, the move would require a **0.22% hourly rate**—unlikely in a fading SPY day (+0.45% but already near session highs).",
+      "macro": "SPY’s +0.45% day move aligns with the BUY thesis, but GE’s intraday action is disconnected from broader market strength. The lack of volume on the recovery candles (e.g., **11:10 vol: 1154**) suggests weak institutional interest.",
+      "risk": "No earnings risk today/tomorrow. However, the **results_risk** field is empty, so no additional volatility concerns."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
