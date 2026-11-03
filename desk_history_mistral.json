@@ -1099,5 +1099,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-143805-CSCO",
+    "signal_time": "2026-11-03T14:38:05-05:00",
+    "judged_at": "2026-11-03T14:38:33-05:00",
+    "age_min": 0.5,
+    "ticker": "CSCO",
+    "action": "BUY",
+    "entry": 103.55,
+    "stop": 103.01,
+    "target": 104.88,
+    "qty": 384,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 103.55 with a weak pullback structure. The last 12 candles show a descending trend with lower highs and lower lows, culminating in a rejection at 103.61 (14:30 candle) before the 14:35 candle closed at the low of 103.48. The 14:35 candle's volume spike (1058) is low relative to prior candles, suggesting exhaustion rather than a healthy pullback. The stop at 103.01 (1.52 ATR) is tight, and the target at 104.88 (3.74 ATR) is ambitious given the 82 minutes left in the session. The RSI (54.01) is neutral, not signaling overbought or oversold conditions.",
+      "macro": "SPY's +0.39% day move aligns with the BUY thesis, but the intraday structure lacks conviction for a late-session entry. The lack of a clear breakout or continuation pattern (e.g., higher lows or volume-driven momentum) weakens the case.",
+      "risk": "No earnings risk for CSCO today or tomorrow. However, the late-session timing (82 minutes to close) and the lack of a strong pullback structure increase the risk of being stopped out or missing the move entirely."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
