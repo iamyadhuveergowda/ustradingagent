@@ -924,5 +924,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-122912-UNH",
+    "signal_time": "2026-11-03T12:29:12-05:00",
+    "judged_at": "2026-11-03T12:29:37-05:00",
+    "age_min": 0.4,
+    "ticker": "UNH",
+    "action": "BUY",
+    "entry": 403.17,
+    "stop": 400.89,
+    "target": 408.86,
+    "qty": 98,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **403.17** is disorderly: the 12:15 candle closed at **402.86** (low of the bar) with a **vol_ratio of 2.27**, suggesting exhaustion rather than a healthy retracement. The 12:20 candle attempted a recovery but closed near its high (**403.32**), lacking a directional close. The RSI (**61.35**) is neutral, and the structure does not confirm a low-risk entry. The **reward:risk of 2.5** is attractive, but the **target_distance_atr of 3.75** (≈5.67 points) is aggressive for **211 minutes left**—SPY’s **0.45% day move** is modest, and UNH’s session geometry does not support a tight stop (**400.89**, **1.5 ATR away**) with a far target.",
+      "macro": "No macro context provided; judging purely on structure.",
+      "risk": "No earnings risk. However, the **stop_distance_atr of 1.5** is tight for a midday entry, and the lack of a clean pullback structure increases the chance of a false break. The **vol_ratio spike at 12:15** (2.27) warns of potential short-term exhaustion."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
