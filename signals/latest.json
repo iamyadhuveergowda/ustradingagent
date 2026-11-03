@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261103-143042-MS",
-  "generated_at": "2026-11-03T14:30:42.502121-05:00",
-  "spy_day_pct": 0.4374767299611826,
+  "signal_id": "20261103-143320-MS",
+  "generated_at": "2026-11-03T14:33:20.669733-05:00",
+  "spy_day_pct": 0.3909366523057357,
   "candidates": [
     {
       "ticker": "MS",
       "signal": "BUY",
-      "ltp": 186.47,
-      "stop": 185.72,
-      "target": 188.33,
+      "ltp": 186.46,
+      "stop": 185.71,
+      "target": 188.32,
       "qty": 213,
       "indicators": {
-        "rsi": 57.85,
-        "atr": 0.4915,
-        "vol_ratio": 2.49
+        "rsi": 57.96,
+        "atr": 0.4599,
+        "vol_ratio": 3.33
       },
-      "scout_reason": "SPY +0.44% aligns with BUY",
+      "scout_reason": "SPY +0.39% aligns with BUY",
       "candles_5m": [
-        [
-          "12:50",
-          185.55,
-          185.57,
-          185.44,
-          185.56,
-          1768
-        ],
         [
           "12:55",
           185.55,
@@ -174,14 +166,22 @@
           186.42,
           186.47,
           186.35,
-          186.47,
-          4781
+          186.43,
+          7141
+        ],
+        [
+          "14:30",
+          186.41,
+          186.46,
+          186.41,
+          186.46,
+          1206
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-03T14:30:42.874454-05:00"
+      "outcome_at": "2026-11-03T14:33:21.054463-05:00"
     }
   ]
 }
