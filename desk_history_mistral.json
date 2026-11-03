@@ -849,5 +849,30 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-02T22:03:59-05:00"
+  },
+  {
+    "signal_id": "20261103-104608-JNJ",
+    "signal_time": "2026-11-03T10:46:08-05:00",
+    "judged_at": "2026-11-03T10:46:47-05:00",
+    "age_min": 0.7,
+    "ticker": "JNJ",
+    "action": "BUY",
+    "entry": 270.01,
+    "stop": 268.59,
+    "target": 273.58,
+    "qty": 147,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 270.01 with a tight stop (1.49 ATR) and a pullback that lacks clear directional conviction. The last 12 candles show a choppy, sideways structure with no strong momentum into the entry. The 10:40 candle closed at the high (270.42), suggesting exhaustion rather than a fresh impulse. The RSI (53.13) is neutral, and the volume ratio (1.18) does not strongly confirm the direction. The target (273.58) is 3.75 ATR away, which is aggressive for the remaining 314 minutes (5.23 hours) and may not be achievable in this regime.",
+      "macro": "SPY's +0.43% day move aligns with the BUY thesis, but the intraday structure lacks conviction for a high-conviction entry. No macro or earnings-driven volatility is present.",
+      "risk": "No earnings risk detected. However, the trade's feasibility is TIGHT due to the stop distance (1.49 ATR) and limited time to target (3.75 ATR in 314 minutes). The reward:risk (2.51) is decent but not exceptional given the lack of structural clarity."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
