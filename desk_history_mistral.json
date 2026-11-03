@@ -949,5 +949,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-124229-SBUX",
+    "signal_time": "2026-11-03T12:42:29-05:00",
+    "judged_at": "2026-11-03T12:43:01-05:00",
+    "age_min": 0.5,
+    "ticker": "SBUX",
+    "action": "BUY",
+    "entry": 104.23,
+    "stop": 103.56,
+    "target": 105.91,
+    "qty": 381,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 104.23 with a choppy, sideways structure in the last 12 candles. The 12:40 candle closed at 104.25, just above the entry, but the high of 104.25 is also the high of the last 5 candles, suggesting exhaustion. The pullback from the 12:35 high (104.28) to the 12:40 low (104.22) was orderly, but the volume ratio (1.67) is not strong enough to confirm a meaningful reversal. The RSI (52.3) is neutral, and the stop distance (1.5 ATR) is tight, leaving little room for error. The target (105.91) is 3.76 ATR away, which is ambitious for the remaining 198 minutes (3.3 hours) in the session, especially given the lack of momentum.",
+      "macro": "SPY's +0.36% day move aligns with the BUY thesis, but the intraday structure of SBUX does not reflect broader market strength. The lack of follow-through after the 12:35 high suggests a potential lack of conviction.",
+      "risk": "No earnings risk today or tomorrow. However, the trade's feasibility is questionable due to the tight stop and aggressive target. The reward:risk (2.51) is mathematically appealing, but the structure does not justify the risk given the time left in the session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
