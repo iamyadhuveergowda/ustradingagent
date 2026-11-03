@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261103-124229-SBUX",
-  "generated_at": "2026-11-03T12:42:29.070647-05:00",
-  "spy_day_pct": 0.3630126057124645,
+  "signal_id": "20261103-124445-SBUX",
+  "generated_at": "2026-11-03T12:44:45.373436-05:00",
+  "spy_day_pct": 0.35503430668582425,
   "candidates": [
     {
       "ticker": "SBUX",
       "signal": "BUY",
-      "ltp": 104.23,
-      "stop": 103.56,
-      "target": 105.91,
+      "ltp": 104.25,
+      "stop": 103.58,
+      "target": 105.93,
       "qty": 381,
       "indicators": {
         "rsi": 52.3,
@@ -172,16 +172,16 @@
         [
           "12:40",
           104.25,
-          104.25,
+          104.29,
           104.22,
-          104.25,
-          1062
+          104.28,
+          3214
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (12:35) closed at high 104.28 with volume 2615, indicating supply into highs against BUY",
-      "outcome_at": "2026-11-03T12:42:33.210127-05:00"
+      "outcome_reason": "REGIME_LOCK: SPY +3.6% intraday, no counter-trend BUYs allowed.",
+      "outcome_at": "2026-11-03T12:44:52.348779-05:00"
     }
   ]
 }
