@@ -899,5 +899,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261103-114239-TXN",
+    "signal_time": "2026-11-03T11:42:39-05:00",
+    "judged_at": "2026-11-03T11:43:05-05:00",
+    "age_min": 0.4,
+    "ticker": "TXN",
+    "action": "BUY",
+    "entry": 313.04,
+    "stop": 308.66,
+    "target": 323.99,
+    "qty": 127,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows exhaustion into the entry: the 11:25 candle prints a lower low (312.25) and closes near it (312.94), followed by a 11:30 candle that gaps lower and closes at 311.25. The 11:35 candle attempts a recovery but closes at its high (313.12), with volume surging (13378) on the move. The entry at 313.04 is above the 11:35 high, suggesting a failed retest rather than a pullback. The RSI (54.7) is neutral, but the structure lacks a clear directional close into the entry. Stop distance (1.5 ATR) is tight, and the target (323.99) is 3.75 ATR away—feasible but requires a strong reversal that hasn’t materialized yet.",
+      "macro": "SPY’s +0.38% day move aligns with the BUY thesis, but intraday momentum is weak. No macro context provided to weigh further.",
+      "risk": "No earnings risk today/tomorrow. However, the 11:35 candle’s high (313.12) is the last meaningful resistance before the entry (313.04), and the 11:40 candle prints a doji at 312.91, signaling indecision. The trade lacks a clear breakout or pullback structure, and the remaining session (258 minutes) is too long to hold a trade with this weak setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
