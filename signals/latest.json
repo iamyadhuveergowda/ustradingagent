@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261103-142816-MS",
-  "generated_at": "2026-11-03T14:28:16.559316-05:00",
-  "spy_day_pct": 0.4408010212222827,
+  "signal_id": "20261103-143042-MS",
+  "generated_at": "2026-11-03T14:30:42.502121-05:00",
+  "spy_day_pct": 0.4374767299611826,
   "candidates": [
     {
       "ticker": "MS",
       "signal": "BUY",
-      "ltp": 186.35,
-      "stop": 185.61,
-      "target": 188.22,
+      "ltp": 186.47,
+      "stop": 185.72,
+      "target": 188.33,
       "qty": 213,
       "indicators": {
         "rsi": 57.85,
@@ -172,16 +172,16 @@
         [
           "14:25",
           186.42,
-          186.43,
+          186.47,
           186.35,
-          186.35,
-          3566
+          186.47,
+          4781
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-03T14:28:16.922632-05:00"
+      "outcome_at": "2026-11-03T14:30:42.874454-05:00"
     }
   ]
 }
