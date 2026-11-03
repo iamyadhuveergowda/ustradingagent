@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261103-141852-NOW",
-  "generated_at": "2026-11-03T14:18:52.753122-05:00",
-  "spy_day_pct": 0.46008191053667846,
+  "signal_id": "20261103-142125-NOW",
+  "generated_at": "2026-11-03T14:21:25.772655-05:00",
+  "spy_day_pct": 0.48135737460773426,
   "candidates": [
     {
       "ticker": "NOW",
       "signal": "BUY",
-      "ltp": 108.72,
-      "stop": 107.88,
-      "target": 110.83,
+      "ltp": 108.7,
+      "stop": 107.86,
+      "target": 110.82,
       "qty": 366,
       "indicators": {
         "rsi": 50.32,
         "atr": 0.5632,
         "vol_ratio": 1.49
       },
-      "scout_reason": "SPY +0.46% aligns with BUY",
+      "scout_reason": "SPY +0.48% aligns with BUY",
       "candles_5m": [
         [
           "12:40",
@@ -172,16 +172,16 @@
         [
           "14:15",
           108.72,
-          108.74,
-          108.69,
-          108.74,
-          1901
+          108.78,
+          108.6,
+          108.7,
+          3475
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 108.72 is 1.07 ATR above VWAP (VWAP+1.5ATR=108.49) with no base or retest in recent 5‑min candles; LUNCH_CHOP: candles from 12:40‑14:15 span only 0.78 price range (<1.5 ATR) showing flat ",
-      "outcome_at": "2026-11-03T14:18:58.055206-05:00"
+      "outcome_reason": "CHASE: entry 108.7 is 0.1952 above vwap+1.5*ATR (108.5048) with no base or retest visible in recent 5‑min candles",
+      "outcome_at": "2026-11-03T14:21:30.117672-05:00"
     }
   ]
 }
