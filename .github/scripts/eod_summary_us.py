@@ -167,36 +167,49 @@ def book_stats(trades: list[dict]) -> dict:
 # Desk outcome scoring against post-signal bars
 # ---------------------------------------------------------------------------
 def fetch_bars(ticker: str, start: datetime, end: datetime) -> list[dict]:
-    """Alpaca 1-minute bars (IEX feed). Returns [] on any failure."""
+    """Alpaca 1-minute bars: SIP first (full consolidated tape), IEX fallback.
+
+    SIP on a free key is restricted for the most recent 15 minutes, so a SIP
+    request can 403 when the EOD run sits close to the close (notably the
+    21:15 UTC run in EST = 16:15 ET). On any SIP failure, or empty SIP
+    bars, fall back to IEX rather than scoring nothing. Returns [] only
+    if both feeds fail. Downstream first-hit scoring is unchanged.
+    """
     key = os.getenv("ALPACA_API_KEY", "")
     secret = os.getenv("ALPACA_SECRET_KEY", "")
     if not key or not secret:
         print("ERROR: ALPACA_API_KEY/ALPACA_SECRET_KEY not set; cannot score bars", file=sys.stderr)
         return []
-    bars: list[dict] = []
-    token = None
-    try:
-        for _ in range(4):  # a session is 390 minutes; pages of 10k — 1 is plenty
-            params = {
-                "timeframe": "1Min", "feed": "iex", "adjustment": "split", "limit": 10000,
-                "start": start.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "end": end.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            }
-            if token:
-                params["page_token"] = token
-            url = f"https://data.alpaca.markets/v2/stocks/{ticker}/bars?" + urllib.parse.urlencode(params)
-            req = urllib.request.Request(url, headers={
-                "APCA-API-KEY-ID": key, "APCA-API-SECRET-KEY": secret})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-            bars.extend(data.get("bars", []) or [])
-            token = data.get("next_page_token")
-            if not token:
-                break
-    except Exception as exc:
-        print(f"Bars fetch failed for {ticker}: {exc}", file=sys.stderr)
-        return []
-    return bars
+    for feed in ("sip", "iex"):
+        bars: list[dict] = []
+        token = None
+        try:
+            for _ in range(4):  # a session is 390 minutes; pages of 10k — 1 is plenty
+                params = {
+                    "timeframe": "1Min", "feed": feed, "adjustment": "split", "limit": 10000,
+                    "start": start.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "end": end.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                }
+                if token:
+                    params["page_token"] = token
+                url = f"https://data.alpaca.markets/v2/stocks/{ticker}/bars?" + urllib.parse.urlencode(params)
+                req = urllib.request.Request(url, headers={
+                    "APCA-API-KEY-ID": key, "APCA-API-SECRET-KEY": secret})
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                bars.extend(data.get("bars", []) or [])
+                token = data.get("next_page_token")
+                if not token:
+                    break
+        except Exception as exc:
+            print(f"Bars fetch failed for {ticker} on {feed}: {exc}", file=sys.stderr)
+            continue
+        if bars:
+            if feed == "iex":
+                print(f"Bars for {ticker}: SIP empty/failed, scored on IEX fallback")
+            return bars
+        print(f"Bars fetch for {ticker}: {feed} returned no bars; trying next feed")
+    return []
 
 
 
