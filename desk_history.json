@@ -1,0 +1,27 @@
+[
+  {
+    "signal_id": "20261103-125431-TXN",
+    "signal_time": "2026-11-03T12:54:31-05:00",
+    "judged_at": "2026-11-03T12:55:02-05:00",
+    "age_min": 0.5,
+    "ticker": "TXN",
+    "action": "BUY",
+    "entry": 313.63,
+    "stop": 309.86,
+    "target": 323.05,
+    "qty": 126,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break above 314.50",
+    "notes": {
+      "technical": "Price drifted lower across the hour from 315.47 down to a low of 312.91 at 12:40. Although the 12:45 candle showed strong buying volume (11,382 shares) up to 314.15, the 12:50 candle stalled and closed lower at 313.63, failing to confirm reversal structure.",
+      "macro": "SPY is up +0.49%, providing a supportive broad-market backdrop, but TXN exhibited midday relative weakness against the market.",
+      "risk": "Target of 323.05 requires a 3.75 ATR ($9.42, ~3.0%) expansion within the remaining 186 minutes, which is unrealistic for TXN intraday absent a high-impact catalyst; no results risk."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  }
+]
