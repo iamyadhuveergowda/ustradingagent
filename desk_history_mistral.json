@@ -1474,5 +1474,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-133810-DIS",
+    "signal_time": "2026-11-04T13:38:10-05:00",
+    "judged_at": "2026-11-04T13:38:33-05:00",
+    "age_min": 0.4,
+    "ticker": "DIS",
+    "action": "BUY",
+    "entry": 119.64,
+    "stop": 118.98,
+    "target": 121.32,
+    "qty": 332,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **119.64** is weak: the last 12 candles show a choppy, sideways structure with no clear directional momentum. The 13:35 candle is a doji (open=high=low=close), indicating indecision. The **vol_ratio (1.13)** suggests slightly elevated volume but not enough to confirm a meaningful reversal. The **stop (118.98)** is **1.48 ATR** away, which is reasonable, but the **target (121.32)** at **3.77 ATR** feels stretched given the lack of conviction in the setup. The **reward:risk (2.55)** is decent, but the structure does not justify risking capital on a potential fade into close.",
+      "macro": "SPY is up **+1.82%**, which aligns with the BUY thesis, but intraday momentum is fading. The last 5-minute candle (13:35) closed flat, and the session has **142 minutes left**, reducing the likelihood of a clean run to target without further confirmation.",
+      "risk": "No earnings risk, but the **results_risk** field is empty, so no additional volatility concerns."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
