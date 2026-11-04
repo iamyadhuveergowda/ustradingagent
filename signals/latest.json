@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-133810-DIS",
-  "generated_at": "2026-11-04T13:38:10.085230-05:00",
-  "spy_day_pct": 1.8173864630557592,
+  "signal_id": "20261104-134018-DIS",
+  "generated_at": "2026-11-04T13:40:18.376095-05:00",
+  "spy_day_pct": 1.7729791351838595,
   "candidates": [
     {
       "ticker": "DIS",
       "signal": "BUY",
-      "ltp": 119.64,
-      "stop": 118.98,
-      "target": 121.32,
-      "qty": 332,
+      "ltp": 119.59,
+      "stop": 118.92,
+      "target": 121.26,
+      "qty": 333,
       "indicators": {
         "rsi": 55.11,
         "atr": 0.4461,
         "vol_ratio": 1.13
       },
-      "scout_reason": "SPY +1.82% aligns with BUY",
+      "scout_reason": "SPY +1.77% aligns with BUY",
       "candles_5m": [
         [
           "12:00",
@@ -172,16 +172,16 @@
         [
           "13:35",
           119.64,
-          119.64,
-          119.64,
-          119.64,
-          356
+          119.65,
+          119.62,
+          119.62,
+          1125
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T13:38:13.446771-05:00"
+      "outcome_reason": "LUNCH_CHOP: candles span 12:00‑13:35 ET (within 11:30‑14:00 window) and price range 119.31‑119.86 = 0.55, which is below 1.5*ATR (0.669) showing flat mid‑day chop with no directional conviction",
+      "outcome_at": "2026-11-04T13:40:26.304956-05:00"
     }
   ]
 }
