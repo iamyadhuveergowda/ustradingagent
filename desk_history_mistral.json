@@ -1124,5 +1124,30 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-03T20:38:42-05:00"
+  },
+  {
+    "signal_id": "20261104-104828-C",
+    "signal_time": "2026-11-04T10:48:28-05:00",
+    "judged_at": "2026-11-04T10:48:59-05:00",
+    "age_min": 0.5,
+    "ticker": "C",
+    "action": "BUY",
+    "entry": 124.42,
+    "stop": 122.93,
+    "target": 128.13,
+    "qty": 319,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is currently in a tight range (123.72-124.64) with a directional close at 124.37, but the pullback from the 10:40 high (124.28) to the entry (124.42) is not orderly. The last 5-minute candle (10:45) closed near its high, suggesting exhaustion rather than a clean pullback. The RSI (55.25) is neutral, and the volume ratio (1.16) is not strongly directional. The stop (122.93) is 1.51 ATR away, which is reasonable, but the target (128.13) is 3.75 ATR away, requiring a 2.49:1 reward-to-risk ratio. Given the time left (312 minutes), this is feasible, but the structure lacks conviction for an intraday trade.",
+      "macro": "SPY is up +1.47%, which aligns with the BUY direction, but the lack of a clear pullback structure weakens the case.",
+      "risk": "No earnings risk for C today or tomorrow. However, the trade would require a strong and sustained move to hit the target, which is unlikely given the current tight range and time constraints."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
