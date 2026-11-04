@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-114132-MS",
-  "generated_at": "2026-11-04T11:41:32.569272-05:00",
-  "spy_day_pct": 1.5681751902224397,
+  "signal_id": "20261104-114354-MS",
+  "generated_at": "2026-11-04T11:43:54.274477-05:00",
+  "spy_day_pct": 1.6238500490468994,
   "candidates": [
     {
       "ticker": "MS",
       "signal": "BUY",
-      "ltp": 191.17,
-      "stop": 189.32,
-      "target": 195.79,
+      "ltp": 191.26,
+      "stop": 189.41,
+      "target": 195.88,
       "qty": 208,
       "indicators": {
         "rsi": 59.12,
         "atr": 1.2314,
         "vol_ratio": 1.49
       },
-      "scout_reason": "SPY +1.57% aligns with BUY",
+      "scout_reason": "SPY +1.62% aligns with BUY",
       "candles_5m": [
         [
           "10:05",
@@ -172,30 +172,30 @@
         [
           "11:40",
           190.93,
-          191.17,
+          191.37,
           190.93,
-          191.08,
-          5253
+          191.26,
+          8271
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T11:41:38.724733-05:00"
+      "outcome_at": "2026-11-04T11:43:59.179108-05:00"
     },
     {
       "ticker": "AXP",
       "signal": "BUY",
-      "ltp": 331.95,
-      "stop": 328.78,
-      "target": 339.88,
+      "ltp": 332.46,
+      "stop": 329.29,
+      "target": 340.39,
       "qty": 119,
       "indicators": {
         "rsi": 56.19,
         "atr": 2.1154,
         "vol_ratio": 1.42
       },
-      "scout_reason": "SPY +1.57% aligns with BUY",
+      "scout_reason": "SPY +1.62% aligns with BUY",
       "candles_5m": [
         [
           "10:05",
@@ -352,30 +352,30 @@
         [
           "11:40",
           331.95,
-          331.99,
+          332.55,
           331.82,
-          331.82,
-          515
+          332.46,
+          1758
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 11:30 ET volume 5995, close 330.63 below open 331.24, opposing BUY direction",
-      "outcome_at": "2026-11-04T11:41:38.724755-05:00"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles is at 11:30 with volume 5995, price opened at high 331.24 and closed lower at 330.63, showing supply into highs against the BUY direction",
+      "outcome_at": "2026-11-04T11:43:59.179132-05:00"
     },
     {
       "ticker": "TMO",
       "signal": "BUY",
-      "ltp": 699.95,
-      "stop": 694.33,
-      "target": 714.01,
+      "ltp": 700.41,
+      "stop": 694.79,
+      "target": 714.47,
       "qty": 56,
       "indicators": {
         "rsi": 52.59,
         "atr": 3.7499,
         "vol_ratio": 1.61
       },
-      "scout_reason": "SPY +1.57% aligns with BUY",
+      "scout_reason": "SPY +1.62% aligns with BUY",
       "candles_5m": [
         [
           "10:05",
@@ -532,16 +532,16 @@
         [
           "11:40",
           700.37,
-          700.37,
-          700.37,
-          700.37,
-          201
+          700.79,
+          700.03,
+          700.79,
+          2495
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T11:41:38.724763-05:00"
+      "outcome_at": "2026-11-04T11:43:59.179140-05:00"
     }
   ]
 }
