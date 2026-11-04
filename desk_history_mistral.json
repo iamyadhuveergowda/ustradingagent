@@ -1349,5 +1349,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-130314-UNH",
+    "signal_time": "2026-11-04T13:03:14-05:00",
+    "judged_at": "2026-11-04T13:05:59-05:00",
+    "age_min": 2.8,
+    "ticker": "UNH",
+    "action": "BUY",
+    "entry": 408.78,
+    "stop": 404.9,
+    "target": 418.48,
+    "qty": 97,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a choppy, erratic pullback into the entry at 408.78. The last 12 candles exhibit a lack of clear directional momentum: the 12:40 candle closed at its low (408.30), and the 12:45 candle closed near its low (407.14), indicating exhaustion rather than a healthy pullback. The RSI (60.1) is neutral, and the volume ratio (1.47) does not strongly confirm the pullback. The stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) may be optimistic given the remaining session time (177 minutes) and the lack of a clear trend. The entry is also late in the session (13:03 ET), leaving limited time for the trade to develop.",
+      "macro": "No macro context provided; relying solely on SPY alignment (+1.94%) is insufficient given the weak structure.",
+      "risk": "No earnings risk detected. However, the trade's feasibility is questionable due to the lack of a clean pullback and the late timing in the session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
