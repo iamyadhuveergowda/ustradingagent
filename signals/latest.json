@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-104828-C",
-  "generated_at": "2026-11-04T10:48:28.368083-05:00",
-  "spy_day_pct": 1.4727325750947817,
+  "signal_id": "20261104-105050-C",
+  "generated_at": "2026-11-04T10:50:50.664295-05:00",
+  "spy_day_pct": 1.4608022482038205,
   "candidates": [
     {
       "ticker": "C",
       "signal": "BUY",
-      "ltp": 124.42,
-      "stop": 122.93,
-      "target": 128.13,
-      "qty": 319,
+      "ltp": 124.18,
+      "stop": 122.7,
+      "target": 127.89,
+      "qty": 320,
       "indicators": {
         "rsi": 55.25,
         "atr": 0.9896,
         "vol_ratio": 1.16
       },
-      "scout_reason": "SPY +1.47% aligns with BUY",
+      "scout_reason": "SPY +1.46% aligns with BUY",
       "candles_5m": [
         [
           "15:40",
@@ -174,14 +174,14 @@
           124.16,
           124.64,
           124.11,
-          124.37,
-          8480
+          124.18,
+          9370
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "STOP_IN_NOISE: stop 122.93 sits within 1.0*ATR (0.9896) of repeatedly tested price zone around 122.7‑123.0 (multiple candles 15:40‑15:55, 10:05‑10:15) indicating harvest zone.",
-      "outcome_at": "2026-11-04T10:48:36.106690-05:00"
+      "outcome_reason": "INTO_WALL: entry 124.18 is within 0.5*ATR (0.495) of recent swing high 124.64, risking immediate wall",
+      "outcome_at": "2026-11-04T10:50:54.506305-05:00"
     }
   ]
 }
