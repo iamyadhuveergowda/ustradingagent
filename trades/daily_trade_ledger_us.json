@@ -608,5 +608,61 @@
     },
     "breakeven_price": 309.51,
     "exit_time": "2026-11-02T14:05:20-05:00"
+  },
+  {
+    "trade_id": "20261104132813-SBUX",
+    "date": "2026-11-04",
+    "ticker": "SBUX",
+    "action": "BUY",
+    "qty": 367,
+    "remaining_qty": 367,
+    "locked_margin_per_share": 108.38,
+    "partial_booked": false,
+    "entry": 108.38,
+    "sl": 107.73,
+    "initial_sl": 107.73,
+    "tgt": 109.9,
+    "open": 108.36,
+    "high": 108.61,
+    "low": 108.36,
+    "close": 108.61,
+    "time": "13:28:13",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "All hard gates cleared: target 1.55 USD (3.74 ATR) ≤ 4.5 ATR, qty 366 ≥ 1, entry 3.64 % above prev_close (within 10 %), stop 0.62 USD below entry, macro SPY +1.86 % permits BUY. No vetoes triggered: entry (108.53) is below VWAP + 1.5 ATR (108.84), not chasing; recent 5‑min bars show upward closes and volume not against direction; entry and target are >0.5 ATR away from session high/low; no contradictory news, no upcoming event, no desk veto. Hence trade is approved.",
+    "events": [
+      {
+        "time": "2026-11-04T13:28:13-05:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 367 @ $108.38"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 108.38,
+    "atr": 0.4142,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 1.86,
+    "vol_ratio": 1.39,
+    "rvol": 0.81,
+    "rule_version": "us_v2.6",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "4af968fc-0312-432a-9373-427bf63b7aa6",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-04 18:28:00.943186+00:00"
+      },
+      "stop": {
+        "id": "5bb8c580-3fd4-4e79-a4cc-b233965ce75c",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 108.4
   }
 ]
