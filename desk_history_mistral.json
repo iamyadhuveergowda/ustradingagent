@@ -1624,5 +1624,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-135633-TMO",
+    "signal_time": "2026-11-04T13:56:33-05:00",
+    "judged_at": "2026-11-04T13:57:00-05:00",
+    "age_min": 0.4,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 706.86,
+    "stop": 702.15,
+    "target": 718.65,
+    "qty": 56,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, indecisive structure post-13:10 ET with no clear directional momentum. The 13:15 candle closed at the low (707.37), followed by a series of lower highs and lower lows, indicating exhaustion rather than a pullback. The entry at 706.86 is near the 13:50 high, which lacks conviction for a long entry. The RSI (57.69) is neutral and does not suggest oversold conditions. The vol_ratio (1.7) is mildly bullish but not decisive. Feasibility is not flagged, but the target (718.65) is 3.75 ATR away with only 124 minutes left, which is aggressive for the remaining session.",
+      "macro": "SPY's +1.69% day move aligns with the BUY thesis, but intraday structure overrides this alignment. The lack of a clear pullback or exhaustion pattern in TMO limits the trade's validity.",
+      "risk": "No earnings risk present. However, the trade's reward:risk (2.5) is theoretically attractive, but the lack of a clean entry structure and proximity to close (124 minutes) make it high-risk for intraday execution."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
