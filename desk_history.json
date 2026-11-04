@@ -23,5 +23,80 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-03T20:19:03-05:00"
+  },
+  {
+    "signal_id": "20261104-114132-MS",
+    "signal_time": "2026-11-04T11:41:32-05:00",
+    "judged_at": "2026-11-04T11:42:10-05:00",
+    "age_min": 0.6,
+    "ticker": "MS",
+    "action": "BUY",
+    "entry": 191.17,
+    "stop": 189.32,
+    "target": 195.79,
+    "qty": 208,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a confirmed 5m close above 191.80 session high",
+    "notes": {
+      "technical": "Price bounced off 190.25 support to 191.08, but immediate overhead resistance looms at 191.80 (11:15 high). The 3.75 ATR target at 195.79 requires an aggressive breakout with very little room before supply.",
+      "macro": "SPY +1.57% provides a strong general market tailwind, but MS remains range-bound between 190.25 and 191.80.",
+      "risk": "Stop distance of 1.5 ATR ($1.85) to 189.32 leaves poor realized R:R against the local 191.80 ceiling ($0.63 upside vs $1.85 downside)."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-114132-MS",
+    "signal_time": "2026-11-04T11:41:32-05:00",
+    "judged_at": "2026-11-04T11:42:10-05:00",
+    "age_min": 0.6,
+    "ticker": "AXP",
+    "action": "BUY",
+    "entry": 331.95,
+    "stop": 328.78,
+    "target": 339.88,
+    "qty": 119,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break above 333.50 session resistance",
+    "notes": {
+      "technical": "A sharp bounce from 330.00 printed at 11:35, but AXP spent the prior 45 minutes in a defined lower-high drift from 333.44. Entering at 331.95 runs directly into supply at 332.80-333.44, making the 339.88 (3.75 ATR) target unrealistic.",
+      "macro": "SPY is up +1.57%, yet AXP displayed relative intraday weakness by dropping toward 330.00 during midday trade.",
+      "risk": "Stop at 328.78 (1.5 ATR) risks getting triggered if the bounce is merely a dead-cat reaction within the local downtrend."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-114132-MS",
+    "signal_time": "2026-11-04T11:41:32-05:00",
+    "judged_at": "2026-11-04T11:42:10-05:00",
+    "age_min": 0.6,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 699.95,
+    "stop": 694.33,
+    "target": 714.01,
+    "qty": 56,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a clean breakout and hold above 701.75",
+    "notes": {
+      "technical": "After a volatile spike to 701.72 at 11:10, TMO has stalled in a tight range around 700. Volume has completely dried up (only 201 shares on the 11:40 candle), lacking the impulse needed to drive price 3.75 ATR to 714.01.",
+      "macro": "SPY +1.57% supports long trades generally, but TMO lacks institutional participation to capitalize on broader market strength.",
+      "risk": "Target of 714.01 ($14.06 away) is structurally blocked by resistance at 701.72, creating unfavorable odds for a 1.5 ATR ($5.62) risk."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
