@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261104-121659-MRK",
-  "generated_at": "2026-11-04T12:16:59.071263-05:00",
-  "spy_day_pct": 1.7517696651554961,
+  "signal_id": "20261104-121957-MRK",
+  "generated_at": "2026-11-04T12:19:57.382239-05:00",
+  "spy_day_pct": 1.721943847928101,
   "candidates": [
     {
       "ticker": "MRK",
       "signal": "BUY",
-      "ltp": 148.31,
-      "stop": 147.27,
-      "target": 150.91,
+      "ltp": 148.35,
+      "stop": 147.31,
+      "target": 150.95,
       "qty": 268,
       "indicators": {
         "rsi": 61.49,
         "atr": 0.6944,
         "vol_ratio": 1.96
       },
-      "scout_reason": "SPY +1.75% aligns with BUY",
+      "scout_reason": "SPY +1.72% aligns with BUY",
       "candles_5m": [
-        [
-          "10:35",
-          146.85,
-          147.55,
-          146.85,
-          147.55,
-          8900
-        ],
         [
           "10:40",
           147.49,
@@ -176,12 +168,20 @@
           148.17,
           148.28,
           10556
+        ],
+        [
+          "12:15",
+          148.29,
+          148.4,
+          148.26,
+          148.35,
+          4000
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T12:16:59.449397-05:00"
+      "outcome_at": "2026-11-04T12:20:01.969515-05:00"
     }
   ]
 }
