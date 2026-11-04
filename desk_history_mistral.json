@@ -1599,5 +1599,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-135158-BAC",
+    "signal_time": "2026-11-04T13:51:58-05:00",
+    "judged_at": "2026-11-04T13:52:37-05:00",
+    "age_min": 0.7,
+    "ticker": "C",
+    "action": "BUY",
+    "entry": 124.65,
+    "stop": 123.58,
+    "target": 127.31,
+    "qty": 319,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at 124.65 lacks clear directional conviction. The 13:45 candle closed at 124.65 (entry) but with a low of 124.43, indicating weak follow-through. The 13:30 candle closed at 124.20, a rejection of the 124.35-124.53 range, and the 13:40 candle's close at 124.53 (after a 124.33 low) suggests indecision. The RSI (51.99) is neutral, and the volume spike at 13:25 (3175) was not sustained, hinting at exhaustion rather than accumulation. The stop distance (1.51 ATR) is reasonable, but the target (3.75 ATR) feels stretched given the 129 minutes left and the lack of a strong impulse move post-entry.",
+      "macro": "No macro context provided; relying solely on structure and geometry.",
+      "risk": "No earnings risk today/tomorrow for C. However, the trade direction (BUY) aligns with SPY's +1.75% day move, but the technical setup is not compelling enough to override the lack of follow-through."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
