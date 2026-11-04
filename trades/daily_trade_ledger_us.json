@@ -625,7 +625,7 @@
     "open": 108.36,
     "high": 108.61,
     "low": 108.36,
-    "close": 108.2,
+    "close": 108.15,
     "time": "13:28:13",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -639,11 +639,11 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 108.2,
+    "last_price": 108.15,
     "atr": 0.4142,
     "breakeven_set": false,
     "mfe_r": 0.377,
-    "mae_r": -0.277,
+    "mae_r": -0.354,
     "spy_pct": 1.86,
     "vol_ratio": 1.39,
     "rvol": 0.81,
@@ -664,5 +664,61 @@
       }
     },
     "breakeven_price": 108.4
+  },
+  {
+    "trade_id": "20261104135924-TMO",
+    "date": "2026-11-04",
+    "ticker": "TMO",
+    "action": "BUY",
+    "qty": 56,
+    "remaining_qty": 56,
+    "locked_margin_per_share": 705.89,
+    "partial_booked": false,
+    "entry": 705.89,
+    "sl": 700.91,
+    "initial_sl": 700.91,
+    "tgt": 717.77,
+    "open": 706.41,
+    "high": 706.86,
+    "low": 706.41,
+    "close": 706.86,
+    "time": "13:59:24",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry $705.93 is $4.0 above VWAP $701.94 (within 1.5 ATR), stop $4.8 below entry, target $12.04 above entry = 3.75 ATR (<4.5 ATR), recent 5‑min candles (12:50‑13:55) show a clear upward swing with higher highs and closes, qty 56 ≥ 1, and all hard‑gate limits (TARGET_CAP, GHOST, CORRUPT_QUOTE, WRONG_SIDE_STOP, REGIME_LOCK) are satisfied.",
+    "events": [
+      {
+        "time": "2026-11-04T13:59:24-05:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 56 @ $705.89"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 705.89,
+    "atr": 3.2108,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 1.72,
+    "vol_ratio": 1.7,
+    "rvol": 1.47,
+    "rule_version": "us_v2.6",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "50c41478-8947-489c-985a-465d227ad51d",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-04 18:59:12.089598+00:00"
+      },
+      "stop": {
+        "id": "e8d2f645-d8fd-4dbc-8fe6-1d547bb1142d",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 706.01
   }
 ]

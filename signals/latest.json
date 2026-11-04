@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261104-135633-TMO",
-  "generated_at": "2026-11-04T13:56:33.977064-05:00",
-  "spy_day_pct": 1.6914552347623202,
+  "signal_id": "20261104-135904-TMO",
+  "generated_at": "2026-11-04T13:59:04.266185-05:00",
+  "spy_day_pct": 1.7173042763594,
   "candidates": [
     {
       "ticker": "TMO",
       "signal": "BUY",
-      "ltp": 706.86,
-      "stop": 702.15,
-      "target": 718.65,
+      "ltp": 705.93,
+      "stop": 701.11,
+      "target": 717.97,
       "qty": 56,
       "indicators": {
         "rsi": 57.69,
-        "atr": 3.143,
+        "atr": 3.2108,
         "vol_ratio": 1.7
       },
-      "scout_reason": "SPY +1.69% aligns with BUY",
+      "scout_reason": "SPY +1.72% aligns with BUY",
       "candles_5m": [
-        [
-          "12:15",
-          703.17,
-          703.44,
-          703.17,
-          703.21,
-          4600
-        ],
         [
           "12:20",
           703.02,
@@ -176,12 +168,20 @@
           706.41,
           706.86,
           3007
+        ],
+        [
+          "13:55",
+          705.79,
+          705.93,
+          705.79,
+          705.93,
+          251
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 706.86 is within 0.5*ATR (1.5715) of recent swing high 706.86 (13:50 candle), placing the trade too close to a price wall.",
-      "outcome_at": "2026-11-04T13:56:40.033387-05:00"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-04T13:59:25.445518-05:00"
     }
   ]
 }
