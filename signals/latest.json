@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-131237-AXP",
-  "generated_at": "2026-11-04T13:12:37.672939-05:00",
-  "spy_day_pct": 1.8942707919085824,
+  "signal_id": "20261104-131444-AXP",
+  "generated_at": "2026-11-04T13:14:44.787896-05:00",
+  "spy_day_pct": 1.8823404650176365,
   "candidates": [
     {
       "ticker": "AXP",
       "signal": "BUY",
-      "ltp": 331.74,
-      "stop": 329.14,
-      "target": 338.23,
+      "ltp": 332.05,
+      "stop": 329.45,
+      "target": 338.54,
       "qty": 119,
       "indicators": {
         "rsi": 53.05,
         "atr": 1.7318,
         "vol_ratio": 1.27
       },
-      "scout_reason": "SPY +1.89% aligns with BUY",
+      "scout_reason": "SPY +1.88% aligns with BUY",
       "candles_5m": [
         [
           "11:35",
@@ -172,30 +172,30 @@
         [
           "13:10",
           331.82,
-          331.91,
+          332.14,
           331.7,
-          331.91,
-          576
+          332.05,
+          830
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T13:12:42.497191-05:00"
+      "outcome_at": "2026-11-04T13:14:50.127163-05:00"
     },
     {
       "ticker": "ABBV",
       "signal": "BUY",
-      "ltp": 291.05,
-      "stop": 289.0,
-      "target": 296.18,
+      "ltp": 291.02,
+      "stop": 288.97,
+      "target": 296.15,
       "qty": 136,
       "indicators": {
         "rsi": 62.42,
         "atr": 1.3668,
         "vol_ratio": 1.98
       },
-      "scout_reason": "SPY +1.89% aligns with BUY",
+      "scout_reason": "SPY +1.88% aligns with BUY",
       "candles_5m": [
         [
           "11:35",
@@ -354,14 +354,14 @@
           290.57,
           291.05,
           290.57,
-          290.95,
-          280
+          291.02,
+          324
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 291.05 is 3.40 above VWAP (287.65), exceeding VWAP+1.5*ATR (289.70) with no base or retest visible in recent 5‑min candles",
-      "outcome_at": "2026-11-04T13:12:42.497214-05:00"
+      "outcome_reason": "CHASE: entry 291.02 is 3.37 above VWAP (2.47 ATR), exceeding VWAP+1.5*ATR with no base or retest visible in recent 5‑min candles",
+      "outcome_at": "2026-11-04T13:14:50.127188-05:00"
     }
   ]
 }
