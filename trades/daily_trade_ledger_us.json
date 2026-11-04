@@ -619,13 +619,13 @@
     "locked_margin_per_share": 108.38,
     "partial_booked": true,
     "entry": 108.38,
-    "sl": 109.14,
+    "sl": 109.22,
     "initial_sl": 107.73,
     "tgt": 109.9,
     "open": 108.36,
     "high": 108.61,
     "low": 108.36,
-    "close": 109.34,
+    "close": 109.58,
     "time": "13:28:13",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -649,10 +649,10 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 109.34,
+    "last_price": 109.58,
     "atr": 0.4142,
     "breakeven_set": true,
-    "mfe_r": 1.692,
+    "mfe_r": 1.846,
     "mae_r": -0.562,
     "spy_pct": 1.86,
     "vol_ratio": 1.39,
@@ -680,7 +680,9 @@
       }
     },
     "breakeven_price": 108.4,
-    "live_atr": 0.3436
+    "live_atr": 0.3622,
+    "exit_pending": true,
+    "exit_pending_reason": "15:55 square-off"
   },
   {
     "trade_id": "20261104135924-TMO",
@@ -698,7 +700,7 @@
     "open": 706.41,
     "high": 706.86,
     "low": 706.41,
-    "close": 704.02,
+    "close": 703.44,
     "time": "13:59:24",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -712,7 +714,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 704.02,
+    "last_price": 703.44,
     "atr": 3.2108,
     "breakeven_set": false,
     "mfe_r": 0.564,
@@ -736,6 +738,8 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 706.01
+    "breakeven_price": 706.01,
+    "exit_pending": true,
+    "exit_pending_reason": "15:55 square-off"
   }
 ]
