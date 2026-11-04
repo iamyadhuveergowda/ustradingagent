@@ -615,7 +615,7 @@
     "ticker": "SBUX",
     "action": "BUY",
     "qty": 367,
-    "remaining_qty": 184,
+    "remaining_qty": 0,
     "locked_margin_per_share": 108.38,
     "partial_booked": true,
     "entry": 108.38,
@@ -625,11 +625,11 @@
     "open": 108.36,
     "high": 108.61,
     "low": 108.36,
-    "close": 109.58,
+    "close": 109.71,
     "time": "13:28:13",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 124.79,
+    "status": "WIN 🟢",
+    "exit_price": 109.71,
+    "net_pnl": 366.16,
     "rationale": "All hard gates cleared: target 1.55 USD (3.74 ATR) ≤ 4.5 ATR, qty 366 ≥ 1, entry 3.64 % above prev_close (within 10 %), stop 0.62 USD below entry, macro SPY +1.86 % permits BUY. No vetoes triggered: entry (108.53) is below VWAP + 1.5 ATR (108.84), not chasing; recent 5‑min bars show upward closes and volume not against direction; entry and target are >0.5 ATR away from session high/low; no contradictory news, no upcoming event, no desk veto. Hence trade is approved.",
     "events": [
       {
@@ -646,10 +646,15 @@
         "time": "2026-11-04T15:34:36-05:00",
         "type": "PARTIAL",
         "text": "+1R reached; stop at $108.40"
+      },
+      {
+        "time": "2026-11-04T15:58:05-05:00",
+        "type": "EXIT",
+        "text": "15:55 square-off: 184 @ $109.71, net $241.37"
       }
     ],
     "mode": "PAPER",
-    "last_price": 109.58,
+    "last_price": 109.71,
     "atr": 0.4142,
     "breakeven_set": true,
     "mfe_r": 1.846,
@@ -662,11 +667,11 @@
     "entry_brokerage_remaining": 0.0,
     "charges": {
       "brokerage": 0.0,
-      "sec_fee": 3.3136,
-      "total": 3.3136
+      "sec_fee": 6.6646,
+      "total": 6.6646
     },
     "pnl_by_date": {
-      "2026-11-04": 124.79
+      "2026-11-04": 366.16
     },
     "orders": {
       "entry": {
@@ -681,8 +686,7 @@
     },
     "breakeven_price": 108.4,
     "live_atr": 0.3622,
-    "exit_pending": true,
-    "exit_pending_reason": "15:55 square-off"
+    "exit_time": "2026-11-04T15:58:05-05:00"
   },
   {
     "trade_id": "20261104135924-TMO",
@@ -690,7 +694,7 @@
     "ticker": "TMO",
     "action": "BUY",
     "qty": 56,
-    "remaining_qty": 56,
+    "remaining_qty": 0,
     "locked_margin_per_share": 705.89,
     "partial_booked": false,
     "entry": 705.89,
@@ -700,21 +704,26 @@
     "open": 706.41,
     "high": 706.86,
     "low": 706.41,
-    "close": 703.44,
+    "close": 705.14,
     "time": "13:59:24",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 705.14,
+    "net_pnl": -48.55,
     "rationale": "Entry $705.93 is $4.0 above VWAP $701.94 (within 1.5 ATR), stop $4.8 below entry, target $12.04 above entry = 3.75 ATR (<4.5 ATR), recent 5‑min candles (12:50‑13:55) show a clear upward swing with higher highs and closes, qty 56 ≥ 1, and all hard‑gate limits (TARGET_CAP, GHOST, CORRUPT_QUOTE, WRONG_SIDE_STOP, REGIME_LOCK) are satisfied.",
     "events": [
       {
         "time": "2026-11-04T13:59:24-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 56 @ $705.89"
+      },
+      {
+        "time": "2026-11-04T15:58:45-05:00",
+        "type": "EXIT",
+        "text": "15:55 square-off: 56 @ $705.14, net $-48.55"
       }
     ],
     "mode": "PAPER",
-    "last_price": 703.44,
+    "last_price": 705.14,
     "atr": 3.2108,
     "breakeven_set": false,
     "mfe_r": 0.564,
@@ -725,8 +734,14 @@
     "rule_version": "us_v2.6",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.555,
+      "total": 6.555
+    },
+    "pnl_by_date": {
+      "2026-11-04": -48.55
+    },
     "orders": {
       "entry": {
         "id": "50c41478-8947-489c-985a-465d227ad51d",
@@ -739,7 +754,6 @@
       }
     },
     "breakeven_price": 706.01,
-    "exit_pending": true,
-    "exit_pending_reason": "15:55 square-off"
+    "exit_time": "2026-11-04T15:58:45-05:00"
   }
 ]
