@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-124306-MSFT",
-  "generated_at": "2026-11-04T12:43:06.158910-05:00",
-  "spy_day_pct": 1.8147352793022158,
+  "signal_id": "20261104-124523-MSFT",
+  "generated_at": "2026-11-04T12:45:23.795944-05:00",
+  "spy_day_pct": 1.8584798112357144,
   "candidates": [
     {
       "ticker": "MSFT",
       "signal": "BUY",
-      "ltp": 554.62,
-      "stop": 549.88,
-      "target": 566.47,
+      "ltp": 555.76,
+      "stop": 551.02,
+      "target": 567.61,
       "qty": 71,
       "indicators": {
         "rsi": 58.56,
         "atr": 3.1611,
         "vol_ratio": 2.81
       },
-      "scout_reason": "SPY +1.81% aligns with BUY",
+      "scout_reason": "SPY +1.86% aligns with BUY",
       "candles_5m": [
         [
           "11:05",
@@ -172,22 +172,22 @@
         [
           "12:40",
           554.69,
-          554.69,
+          555.37,
           554.42,
-          554.52,
-          3105
+          555.29,
+          10947
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T12:43:11.803192-05:00"
+      "outcome_at": "2026-11-04T12:45:27.089356-05:00"
     },
     {
       "ticker": "KO",
       "signal": "BUY",
       "ltp": 95.97,
-      "stop": 95.45,
+      "stop": 95.44,
       "target": 97.29,
       "qty": 414,
       "indicators": {
@@ -195,7 +195,7 @@
         "atr": 0.3509,
         "vol_ratio": 2.27
       },
-      "scout_reason": "SPY +1.81% aligns with BUY",
+      "scout_reason": "SPY +1.86% aligns with BUY",
       "candles_5m": [
         [
           "11:05",
@@ -353,29 +353,29 @@
           "12:40",
           96.05,
           96.05,
-          95.94,
-          95.97,
-          11862
+          95.92,
+          95.95,
+          19624
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 95.97 > vwap+1.5*ATR (95.42+0.526=95.946) with no prior base/retest visible in 5‑min candles; DISTRIBUTION: highest volume bar in last 6 candles (38,094 at 12:35) shows strong supply at t",
-      "outcome_at": "2026-11-04T12:43:11.803216-05:00"
+      "outcome_reason": "CHASE: entry 95.97 is 1.57 ATR above VWAP (VWAP+1.5*ATR≈95.95) with no base or retest visible in recent 5‑min candles",
+      "outcome_at": "2026-11-04T12:45:27.089381-05:00"
     },
     {
       "ticker": "HON",
       "signal": "BUY",
-      "ltp": 230.29,
-      "stop": 228.36,
-      "target": 235.12,
+      "ltp": 230.68,
+      "stop": 228.75,
+      "target": 235.51,
       "qty": 172,
       "indicators": {
         "rsi": 60.91,
         "atr": 1.2874,
         "vol_ratio": 1.69
       },
-      "scout_reason": "SPY +1.81% aligns with BUY",
+      "scout_reason": "SPY +1.86% aligns with BUY",
       "candles_5m": [
         [
           "11:05",
@@ -533,15 +533,15 @@
           "12:40",
           230.78,
           230.78,
-          230.78,
-          230.78,
-          203
+          230.68,
+          230.75,
+          405
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-04T12:43:11.803224-05:00"
+      "outcome_at": "2026-11-04T12:45:27.089389-05:00"
     }
   ]
 }
