@@ -1374,5 +1374,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-131237-AXP",
+    "signal_time": "2026-11-04T13:12:37-05:00",
+    "judged_at": "2026-11-04T13:13:06-05:00",
+    "age_min": 0.5,
+    "ticker": "ABBV",
+    "action": "BUY",
+    "entry": 291.05,
+    "stop": 289.0,
+    "target": 296.18,
+    "qty": 136,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry level (291.05) with a choppy, sideways structure in the last 12 candles. The 12:55-13:05 candles show a lack of directional conviction, with closes failing to hold above 291.00 and volume spiking on downside moves (e.g., 12:55 candle). The RSI (62.42) is neutral but not overbought, and the pullback lacks a clear, orderly structure. The target (296.18) is 3.75 ATR away, which is aggressive given the 168 minutes left to close and the current lack of momentum.",
+      "macro": "SPY's +1.89% day move aligns with the BUY thesis, but ABBV's structure does not reflect broader market strength. The stock is trading in a tight range without clear follow-through.",
+      "risk": "No earnings risk today or tomorrow. However, the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and limited time remaining. The reward:risk (2.5) is decent, but the lack of a clean entry setup and choppy volume distribution make it risky."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
