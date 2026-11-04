@@ -1174,5 +1174,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-113659-TMO",
+    "signal_time": "2026-11-04T11:36:59-05:00",
+    "judged_at": "2026-11-04T11:37:21-05:00",
+    "age_min": 0.4,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 700.0,
+    "stop": 694.38,
+    "target": 714.06,
+    "qty": 56,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at 700.0 is disorderly and lacks a clear directional close. The 11:30 candle shows a wide range (699.07-701.05) with a close near the high, suggesting exhaustion rather than a healthy pullback. The 11:35 candle is a doji, indicating indecision. Volume spikes at 11:10-11:30 (vol_ratio > 1.5) suggest momentum, but the lack of a clean retest or orderly structure weakens the setup. Stop distance (1.5 ATR) is tight, and the target (3.75 ATR) is aggressive for the remaining session (264 minutes).",
+      "macro": "SPY's +1.42% day move aligns with the BUY thesis, but the intraday structure does not support a high-conviction entry at this juncture.",
+      "risk": "No earnings risk today/tomorrow. However, the lack of a clean pullback and the disorderly candle geometry increase the risk of a false break or whipsaw into the entry."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
