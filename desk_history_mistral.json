@@ -1424,5 +1424,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-132754-SBUX",
+    "signal_time": "2026-11-04T13:27:54-05:00",
+    "judged_at": "2026-11-04T13:28:34-05:00",
+    "age_min": 0.7,
+    "ticker": "SBUX",
+    "action": "BUY",
+    "entry": 108.53,
+    "stop": 107.91,
+    "target": 110.08,
+    "qty": 366,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 108.53 with a choppy, sideways structure in the last 12 candles. The 13:25 candle closed at 108.53 (entry level) but lacks a clear directional close or follow-through momentum. The pullback from 109.12 (12:30 high) to 108.45 (13:05 low) was disorderly, with no clear retest or exhaustion pattern. Volume ratio (1.39) is neutral, and the RSI (52.43) is not extreme, suggesting no overbought/oversold condition to act as a catalyst. The 15-minute ATR (0.4142) implies a stop at 107.91 is reasonable, but the target (110.08) is 3.74 ATR away, which may be too aggressive given the remaining 153 minutes (2.55 hours) and the lack of a clear impulse move.",
+      "macro": "SPY's +1.86% day move aligns with the BUY thesis, but SBUX's structure does not reflect a high-probability continuation setup. The stock is trading in a tight range without a clear breakout or breakdown.",
+      "risk": "No earnings risk identified. Feasibility is not explicitly marked as INFEASIBLE or TIGHT, but the target distance (3.74 ATR) and time constraints (153 minutes) make this a low-conviction setup without stronger structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-132754-SBUX",
+    "signal_time": "2026-11-04T13:27:54-05:00",
+    "judged_at": "2026-11-04T13:28:34-05:00",
+    "age_min": 0.7,
+    "ticker": "BAC",
+    "action": "BUY",
+    "entry": 51.26,
+    "stop": 50.9,
+    "target": 52.17,
+    "qty": 776,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close above 51.31 with volume confirmation (e.g., 51.28+ close and volume > 20k)",
+    "notes": {
+      "technical": "BAC is showing a more constructive structure than SBUX. The 13:20 candle closed at 51.28 with a high of 51.31, and the 13:25 candle closed at 51.24 but with a high of 51.28, suggesting a potential retest of resistance. The pullback from 51.38 (12:40 high) to 51.17 (12:55 low) was orderly, and the 13:20 candle's close at 51.28 (near the entry) hints at a possible reversal or continuation. Volume ratio (1.47) is slightly elevated, and the RSI (53.7) is neutral. The stop at 50.90 (1.48 ATR) is tight but reasonable, and the target (52.17, 3.75 ATR away) is achievable in the remaining 153 minutes if the broader market trend continues.",
+      "macro": "SPY's +1.86% day move supports the BUY thesis, and BAC's structure aligns with a potential continuation higher. The stock is not showing signs of exhaustion or extension.",
+      "risk": "No earnings risk identified. Feasibility is not explicitly marked as INFEASIBLE or TIGHT, and the target distance (3.75 ATR) is reasonable given the time left and the stock's recent range."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
