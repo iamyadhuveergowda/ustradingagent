@@ -1499,5 +1499,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261104-134234-MA",
+    "signal_time": "2026-11-04T13:42:34-05:00",
+    "judged_at": "2026-11-04T13:42:56-05:00",
+    "age_min": 0.4,
+    "ticker": "MA",
+    "action": "BUY",
+    "entry": 667.39,
+    "stop": 664.05,
+    "target": 675.75,
+    "qty": 59,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry (667.39) is disorderly and lacks a clear directional close. The 13:30 candle shows a spike high at 668.07 but closes near the low end of its range (667.44-668.07), suggesting exhaustion rather than a healthy retracement. Volume ratio (1.22) is neutral, and the RSI (54.99) is not extreme, but the structure does not confirm a low-risk entry. The stop (664.05) is 1.5 ATR away, which is reasonable, but the target (675.75) is 3.75 ATR away—aggressive for the remaining 138 minutes (16:00 ET close). The 13:40 candle closes at 667.53, below the entry, and the session is now in the late afternoon where liquidity thins and moves can reverse sharply.",
+      "macro": "SPY's +1.78% day move aligns with the BUY thesis, but the intraday structure of MA does not support a high-conviction entry at this juncture. Without additional macro catalysts or a clearer technical setup, the trade carries unnecessary risk.",
+      "risk": "No earnings risk detected. However, the trade's reward:risk (2.5) is skewed by the tight timeframe (138 minutes left). A break below 667.02 (13:30 low) would invalidate the setup, but the lack of follow-through volume or a clean retracement pattern makes this a low-probability scenario."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
