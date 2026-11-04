@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261104-105730-WFC",
-  "generated_at": "2026-11-04T10:57:30.298862-05:00",
-  "spy_day_pct": 1.4846629019857427,
+  "signal_id": "20261104-110024-WFC",
+  "generated_at": "2026-11-04T11:00:24.894794-05:00",
+  "spy_day_pct": 1.5257562501656978,
   "candidates": [
     {
       "ticker": "WFC",
       "signal": "BUY",
-      "ltp": 86.55,
-      "stop": 85.68,
-      "target": 88.74,
+      "ltp": 86.58,
+      "stop": 85.71,
+      "target": 88.77,
       "qty": 459,
       "indicators": {
         "rsi": 55.04,
         "atr": 0.5829,
         "vol_ratio": 1.23
       },
-      "scout_reason": "SPY +1.48% aligns with BUY",
+      "scout_reason": "SPY +1.53% aligns with BUY",
       "candles_5m": [
         [
           "15:50",
@@ -172,16 +172,16 @@
         [
           "10:55",
           86.45,
-          86.55,
+          86.59,
           86.44,
           86.55,
-          6081
+          9982
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 86.55 is within 0.5*ATR (0.291) of recent swing high 86.55 at 10:55",
-      "outcome_at": "2026-11-04T10:57:35.551263-05:00"
+      "outcome_reason": "REGIME_LOCK: SPY +1.53% today, rejecting all BUYs in a strong tape; WFC is a rate-sensitive financial stock.",
+      "outcome_at": "2026-11-04T11:00:32.404508-05:00"
     }
   ]
 }
