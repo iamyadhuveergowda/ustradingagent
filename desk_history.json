@@ -45,9 +45,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.52,
+    "outcome_at": "2026-11-04T20:26:52-05:00"
   },
   {
     "signal_id": "20261104-114132-MS",
@@ -70,9 +70,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.22,
+    "outcome_at": "2026-11-04T20:26:52-05:00"
   },
   {
     "signal_id": "20261104-114132-MS",
@@ -95,8 +95,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.1,
+    "outcome_at": "2026-11-04T20:26:52-05:00"
   }
 ]
