@@ -1999,5 +1999,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-140329-CRM",
+    "signal_time": "2026-11-05T14:03:29-05:00",
+    "judged_at": "2026-11-05T14:03:58-05:00",
+    "age_min": 0.5,
+    "ticker": "C",
+    "action": "SELL",
+    "entry": 117.69,
+    "stop": 118.97,
+    "target": 114.5,
+    "qty": 339,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 117.69 is not orderly: the 13:20 candle closed below its open (117.69 → 117.44) and the 13:25 candle showed a choppy, indecisive close (117.43 → 117.78) with no clear directional momentum. The 13:30 candle attempted a push higher but failed to sustain above 117.86, and the 14:00 candle closed near the entry with a weak volume ratio (1.17). The structure lacks a clean retracement or exhaustion signal, and the stop (118.97) is too far from current price (117.69) to be actionable in the remaining 117 minutes. The target (114.5) is 3.75 ATR away, which is aggressive for the time left, especially given the lack of a clear breakdown.",
+      "macro": "SPY’s -4.08% day move aligns with the SELL thesis, but the intraday structure of C does not reflect a high-probability continuation. The lack of a decisive breakdown or exhaustion pattern limits conviction.",
+      "risk": "No earnings risk today/tomorrow. However, the trade’s feasibility is TIGHT due to the 3.75 ATR target distance and only 117 minutes left. The stop is 1.5 ATR away, which is too wide for a paper-trading entry this late in the session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
