@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261105-120249-ORCL",
-  "generated_at": "2026-11-05T12:02:49.303136-05:00",
-  "spy_day_pct": -3.36754789821711,
+  "signal_id": "20261105-120515-ORCL",
+  "generated_at": "2026-11-05T12:05:15.861343-05:00",
+  "spy_day_pct": -3.4034145005412633,
   "candidates": [
     {
       "ticker": "ORCL",
       "signal": "SELL",
-      "ltp": 114.32,
-      "stop": 116.95,
-      "target": 107.75,
+      "ltp": 114.15,
+      "stop": 116.78,
+      "target": 107.58,
       "qty": 349,
       "indicators": {
         "rsi": 40.24,
         "atr": 1.7511,
         "vol_ratio": 1.3
       },
-      "scout_reason": "SPY -3.37% aligns with SELL",
+      "scout_reason": "SPY -3.40% aligns with SELL",
       "candles_5m": [
         [
           "10:25",
@@ -173,29 +173,29 @@
           "12:00",
           114.67,
           114.77,
-          114.52,
-          114.63,
-          3674
+          114.01,
+          114.07,
+          71352
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T12:02:50.253676-05:00"
+      "outcome_at": "2026-11-05T12:05:17.698158-05:00"
     },
     {
       "ticker": "TMO",
       "signal": "SELL",
-      "ltp": 690.59,
-      "stop": 696.19,
-      "target": 676.59,
+      "ltp": 690.73,
+      "stop": 696.33,
+      "target": 676.73,
       "qty": 57,
       "indicators": {
         "rsi": 37.65,
         "atr": 3.7335,
         "vol_ratio": 2.99
       },
-      "scout_reason": "SPY -3.37% aligns with SELL",
+      "scout_reason": "SPY -3.40% aligns with SELL",
       "candles_5m": [
         [
           "10:25",
@@ -354,14 +354,14 @@
           691.08,
           691.45,
           690.28,
-          690.28,
-          813
+          690.73,
+          1133
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T12:02:50.253696-05:00"
+      "outcome_at": "2026-11-05T12:05:17.698178-05:00"
     }
   ]
 }
