@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261105-135830-AVGO",
-  "generated_at": "2026-11-05T13:58:30.965362-05:00",
-  "spy_day_pct": -3.916632973797813,
+  "signal_id": "20261105-140101-AVGO",
+  "generated_at": "2026-11-05T14:01:01.284770-05:00",
+  "spy_day_pct": -3.903590572952677,
   "candidates": [
     {
       "ticker": "AVGO",
       "signal": "SELL",
-      "ltp": 297.57,
-      "stop": 302.53,
-      "target": 285.16,
+      "ltp": 297.76,
+      "stop": 302.72,
+      "target": 285.35,
       "qty": 134,
       "indicators": {
         "rsi": 38.33,
         "atr": 3.3086,
         "vol_ratio": 1.38
       },
-      "scout_reason": "SPY -3.92% aligns with SELL",
+      "scout_reason": "SPY -3.90% aligns with SELL",
       "candles_5m": [
         [
           "12:20",
@@ -172,30 +172,30 @@
         [
           "13:55",
           297.14,
-          297.42,
+          297.75,
           296.81,
-          297.24,
-          1830
+          297.57,
+          4594
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T13:58:31.728592-05:00"
+      "outcome_at": "2026-11-05T14:01:02.465009-05:00"
     },
     {
       "ticker": "MS",
       "signal": "SELL",
-      "ltp": 181.49,
-      "stop": 183.54,
-      "target": 176.34,
-      "qty": 219,
+      "ltp": 181.22,
+      "stop": 183.28,
+      "target": 176.08,
+      "qty": 220,
       "indicators": {
         "rsi": 44.86,
         "atr": 1.3711,
         "vol_ratio": 1.56
       },
-      "scout_reason": "SPY -3.92% aligns with SELL",
+      "scout_reason": "SPY -3.90% aligns with SELL",
       "candles_5m": [
         [
           "12:20",
@@ -353,15 +353,15 @@
           "13:55",
           181.44,
           181.49,
-          181.34,
-          181.34,
-          6222
+          181.22,
+          181.4,
+          8240
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T13:58:31.728614-05:00"
+      "outcome_at": "2026-11-05T14:01:02.465029-05:00"
     }
   ]
 }
