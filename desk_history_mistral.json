@@ -1849,5 +1849,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-125058-KO",
+    "signal_time": "2026-11-05T12:50:58-05:00",
+    "judged_at": "2026-11-05T12:51:27-05:00",
+    "age_min": 0.5,
+    "ticker": "KO",
+    "action": "SELL",
+    "entry": 95.92,
+    "stop": 96.48,
+    "target": 94.51,
+    "qty": 416,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional exhaustion into the entry at 95.92. The last 12 candles exhibit a lack of momentum, with most candles closing near their mid-range and no decisive break or rejection. The 12:10 candle closed at 96.00 after a low of 95.92, but the subsequent candles failed to confirm a bearish continuation, instead forming a tight range around 95.83-96.00. The RSI (37.54) is neutral, not signaling overbought or oversold conditions. The pullback lacks an orderly structure, and the entry is not justified by a clear geometric setup (e.g., break of structure, rejection, or exhaustion).",
+      "macro": "SPY's -3.63% day move aligns with the SELL thesis, but KO's intraday structure does not reflect broader market weakness. The lack of conviction in the pullback and the absence of a clear directional bias make this a low-probability setup.",
+      "risk": "No earnings risk today or tomorrow for KO. However, the trade's feasibility is TIGHT due to the target_distance_atr (3.76) relative to the 190 minutes left in the session. The reward:risk (2.52) is mathematically favorable, but the lack of structural conviction outweighs this."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
