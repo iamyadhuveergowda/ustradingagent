@@ -1974,5 +1974,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-135617-AVGO",
+    "signal_time": "2026-11-05T13:56:17-05:00",
+    "judged_at": "2026-11-05T13:56:46-05:00",
+    "age_min": 0.5,
+    "ticker": "AVGO",
+    "action": "SELL",
+    "entry": 297.1,
+    "stop": 302.06,
+    "target": 284.69,
+    "qty": 134,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional exhaustion into the SELL entry at 297.10. The last 12 candles (12:55-13:50) exhibit a tight range (295.66-298.81) with no definitive breakdown or rejection of higher timeframe resistance. The pullback to entry lacks an orderly close (e.g., a lower low or clear rejection of 297.77), and the 13:50 candle closes near the midpoint of the range, not decisively lower. Volume spikes (e.g., 13:45, 13:50) are not accompanied by a directional close, suggesting indecision rather than momentum. The RSI (38.33) is neutral, not extreme, and does not support a SELL thesis. Stop distance (1.5 ATR) is reasonable, but the target (284.69, 3.75 ATR away) is aggressive for 124 minutes remaining, especially given the lack of a clear breakdown or exhaustion signal.",
+      "macro": "SPY’s -3.98% day move aligns with the SELL action, but intraday structure must override macro alignment for a GO. Here, the lack of a decisive breakdown or exhaustion pattern limits conviction.",
+      "risk": "No earnings risk today/tomorrow for AVGO. However, the trade’s feasibility is **TIGHT** due to the target’s distance (3.75 ATR) and time remaining (124 minutes). A GO would require a clearer breakdown (e.g., close below 296.67 with volume) to justify the risk."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
