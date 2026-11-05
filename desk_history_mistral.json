@@ -1699,5 +1699,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-114827-BA",
+    "signal_time": "2026-11-05T11:48:27-05:00",
+    "judged_at": "2026-11-05T11:48:59-05:00",
+    "age_min": 0.5,
+    "ticker": "BA",
+    "action": "SELL",
+    "entry": 172.16,
+    "stop": 173.67,
+    "target": 168.38,
+    "qty": 231,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 172.16 with a recent high of 172.31 in the 11:45 candle, suggesting exhaustion into the SELL trigger. The pullback from the 11:30 high (172.05) to 11:40 low (171.60) was orderly but shallow, and the 11:45 candle closed near its high (172.15), indicating potential resistance. The RSI (43.33) is neutral, not confirming bearish momentum. The target (168.38) is 3.75 ATR away, which is aggressive for the remaining 252 minutes (4.2 hours) given the current session's SPY decline (-3.13%). The stop (173.67) is 1.5 ATR away, which is tight and could be hit by a minor retracement.",
+      "macro": "No macro context provided; relying solely on structure and geometry.",
+      "risk": "No earnings risk today or tomorrow. However, the trade direction (SELL) aligns with SPY's intraday move, but the timing (252 minutes left) and structure (exhausted pullback) weigh against it. The reward:risk (2.5) is mathematically favorable, but the lack of clear bearish momentum and tight stop reduce conviction."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
