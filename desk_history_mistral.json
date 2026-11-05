@@ -1874,5 +1874,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-132257-CSCO",
+    "signal_time": "2026-11-05T13:22:57-05:00",
+    "judged_at": "2026-11-05T13:23:33-05:00",
+    "age_min": 0.6,
+    "ticker": "SBUX",
+    "action": "SELL",
+    "entry": 107.03,
+    "stop": 107.86,
+    "target": 104.95,
+    "qty": 373,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 107.03 with a choppy, sideways structure in the last 12 candles. The 13:15 candle closed at 107.06, just above the entry, but the pullback from 107.34 (13:10 high) to 106.99 (13:20 low) lacks clear directional momentum. The RSI (37.49) is neutral, and the volume spike at 13:10 (12486) suggests prior exhaustion rather than fresh selling pressure. The stop (107.86) is 1.5 ATR away, but the target (104.95) is 3.75 ATR away, which is aggressive for the remaining 158 minutes. The pullback is orderly but lacks conviction.",
+      "macro": "SPY's -4.05% day move aligns with the SELL thesis, but SBUX's structure does not reflect a strong bearish continuation signal.",
+      "risk": "No earnings risk. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (3.75 ATR) and timing (158 minutes left) make this a high-risk setup without stronger confirmation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-132257-CSCO",
+    "signal_time": "2026-11-05T13:22:57-05:00",
+    "judged_at": "2026-11-05T13:23:33-05:00",
+    "age_min": 0.6,
+    "ticker": "MS",
+    "action": "SELL",
+    "entry": 180.95,
+    "stop": 183.07,
+    "target": 175.66,
+    "qty": 220,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break below 180.92 (13:20 low) with follow-through volume",
+    "notes": {
+      "technical": "MS is in a similar choppy, sideways pattern as SBUX, with the 13:20 candle closing at 180.95 after a failed push to 182.0 (13:10 high). The pullback from 182.0 to 180.92 is shallow, and the RSI (41.27) is slightly overbought but not extreme. The entry at 180.95 is near the 13:20 low, but the lack of a clear breakout or breakdown reduces conviction. The stop (183.07) is 1.5 ATR away, and the target (175.66) is 3.75 ATR away, which is similarly aggressive for the remaining session. The volume spike at 13:00 (12443) suggests prior selling, but the 13:20 candle closed near the low with minimal follow-through.",
+      "macro": "SPY's -4.05% day move aligns with the SELL thesis, but MS's structure lacks a clear bearish continuation signal.",
+      "risk": "No earnings risk. Feasibility is not explicitly marked as INFEASIBLE, but the target distance (3.75 ATR) and timing (158 minutes left) make this a high-risk setup without a stronger breakdown."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
