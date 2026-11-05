@@ -1724,5 +1724,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-115800-NOW",
+    "signal_time": "2026-11-05T11:58:00-05:00",
+    "judged_at": "2026-11-05T11:58:30-05:00",
+    "age_min": 0.5,
+    "ticker": "NOW",
+    "action": "SELL",
+    "entry": 104.45,
+    "stop": 106.0,
+    "target": 100.58,
+    "qty": 382,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback to the entry at **104.45** is disorderly and lacks a clear directional close. The last 12 candles show a choppy, sideways structure with no definitive exhaustion or momentum shift. The 11:55 candle closed **below its open** and **below the 11:50 low (104.65)**, but the volume spike (3258) is not enough to confirm a reversal. The **RSI (41.55)** is neutral, not oversold, and the **vol_ratio (1.49)** suggests a lack of conviction in the downside move. The **stop (106.0)** is **1.5 ATR** away, but the target (**100.58**) is **3.75 ATR** away—a **2.5:1 reward:risk**—which is mathematically appealing but structurally weak given the lack of a clear breakdown or exhaustion signal. The **242 minutes left** allow for some movement, but the **feasibility is TIGHT** due to the target distance and the lack of a strong entry trigger (e.g., a close below a key level like the 11:50 low of **104.65**).",
+      "macro": "The **SPY day move (-3.25%)** aligns with the SELL action, but the intraday structure of NOW does not reflect the broader market's downside momentum. NOW is trading in a tight range with no clear extension or exhaustion, making it a poor candidate for a directional trade.",
+      "risk": "No **results_risk** identified. However, the **lack of a clear breakdown** (e.g., a close below **104.65**) or **exhaustion signal** (e.g., a long upper wick with high volume) makes this a high-risk setup. The **stop is too far from the entry (1.5 ATR)**, increasing the chance of being stopped out in a choppy market. The **target is aggressive for the remaining session**, and the **geometry does not support a high-confidence trade**."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
