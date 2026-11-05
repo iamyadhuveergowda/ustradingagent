@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261105-115304-TMO",
-  "generated_at": "2026-11-05T11:53:04.477879-05:00",
-  "spy_day_pct": -3.1693034053708695,
+  "signal_id": "20261105-115519-TMO",
+  "generated_at": "2026-11-05T11:55:19.674548-05:00",
+  "spy_day_pct": -3.1836500463005186,
   "candidates": [
     {
       "ticker": "TMO",
       "signal": "SELL",
-      "ltp": 691.63,
-      "stop": 697.45,
-      "target": 677.07,
+      "ltp": 691.99,
+      "stop": 697.81,
+      "target": 677.43,
       "qty": 57,
       "indicators": {
         "rsi": 38.97,
         "atr": 3.8822,
         "vol_ratio": 3.24
       },
-      "scout_reason": "SPY -3.17% aligns with SELL",
+      "scout_reason": "SPY -3.18% aligns with SELL",
       "candles_5m": [
         [
           "10:15",
@@ -172,16 +172,16 @@
         [
           "11:50",
           691.81,
-          691.81,
+          692.69,
           691.46,
-          691.63,
-          350
+          691.9,
+          1795
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (3254) in last 6 candles at low 691.92 absorbs lows, opposing SELL direction",
-      "outcome_at": "2026-11-05T11:53:10.305739-05:00"
+      "outcome_reason": "REGIME_LOCK: SPY day % -3.18 < -0.25, rejecting all BUYs; this is a SELL, so no veto. GHOST: qty 57 >= 1, no veto. CORRUPT_QUOTE: |691.99-706.18|/706.18 = 0.020 < 0.10, no veto. WRONG_SIDE_STOP: SELL ",
+      "outcome_at": "2026-11-05T11:55:54.289771-05:00"
     }
   ]
 }
