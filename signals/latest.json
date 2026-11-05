@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261105-143258-ORCL",
-  "generated_at": "2026-11-05T14:32:58.855301-05:00",
-  "spy_day_pct": -4.086184184784741,
+  "signal_id": "20261105-143523-ORCL",
+  "generated_at": "2026-11-05T14:35:23.283371-05:00",
+  "spy_day_pct": -3.9883661784461335,
   "candidates": [
     {
       "ticker": "ORCL",
       "signal": "SELL",
-      "ltp": 114.44,
-      "stop": 116.54,
-      "target": 109.19,
-      "qty": 348,
+      "ltp": 114.86,
+      "stop": 116.96,
+      "target": 109.61,
+      "qty": 347,
       "indicators": {
         "rsi": 42.65,
         "atr": 1.3987,
         "vol_ratio": 1.53
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -172,30 +172,30 @@
         [
           "14:30",
           114.09,
-          114.36,
+          115.08,
           114.09,
-          114.23,
-          4277
+          114.86,
+          13487
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027685-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364141-05:00"
     },
     {
       "ticker": "PANW",
       "signal": "SELL",
-      "ltp": 317.19,
-      "stop": 322.57,
-      "target": 303.72,
+      "ltp": 317.0,
+      "stop": 322.38,
+      "target": 303.54,
       "qty": 125,
       "indicators": {
         "rsi": 43.85,
         "atr": 3.5895,
         "vol_ratio": 3.77
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -352,30 +352,30 @@
         [
           "14:30",
           317.55,
-          317.55,
-          317.13,
-          317.43,
-          1565
+          317.64,
+          316.49,
+          317.17,
+          2682
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027706-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364162-05:00"
     },
     {
       "ticker": "HD",
       "signal": "SELL",
-      "ltp": 349.12,
-      "stop": 351.5,
-      "target": 343.17,
+      "ltp": 349.66,
+      "stop": 352.04,
+      "target": 343.71,
       "qty": 114,
       "indicators": {
         "rsi": 41.98,
         "atr": 1.5869,
         "vol_ratio": 1.69
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -532,30 +532,30 @@
         [
           "14:30",
           349.29,
-          349.4,
+          349.66,
           349.12,
-          349.4,
-          689
+          349.66,
+          1217
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027713-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364170-05:00"
     },
     {
       "ticker": "SBUX",
       "signal": "SELL",
-      "ltp": 107.03,
-      "stop": 107.86,
-      "target": 104.93,
+      "ltp": 107.04,
+      "stop": 107.88,
+      "target": 104.94,
       "qty": 373,
       "indicators": {
         "rsi": 44.65,
         "atr": 0.5593,
         "vol_ratio": 2.98
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -714,28 +714,28 @@
           107.02,
           107.06,
           107.0,
-          107.05,
-          7299
+          107.04,
+          7490
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027720-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364177-05:00"
     },
     {
       "ticker": "WFC",
       "signal": "SELL",
-      "ltp": 84.27,
-      "stop": 84.97,
-      "target": 82.51,
+      "ltp": 84.31,
+      "stop": 85.02,
+      "target": 82.56,
       "qty": 473,
       "indicators": {
         "rsi": 37.8,
         "atr": 0.4689,
         "vol_ratio": 1.2
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -892,30 +892,30 @@
         [
           "14:30",
           84.16,
-          84.3,
+          84.33,
           84.14,
-          84.3,
-          13364
+          84.31,
+          15371
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027726-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364183-05:00"
     },
     {
       "ticker": "GS",
       "signal": "SELL",
-      "ltp": 867.57,
-      "stop": 877.89,
-      "target": 841.77,
-      "qty": 46,
+      "ltp": 868.77,
+      "stop": 879.09,
+      "target": 842.97,
+      "qty": 45,
       "indicators": {
         "rsi": 48.75,
         "atr": 6.8791,
         "vol_ratio": 1.23
       },
-      "scout_reason": "SPY -4.09% aligns with SELL",
+      "scout_reason": "SPY -3.99% aligns with SELL",
       "candles_5m": [
         [
           "12:55",
@@ -1072,16 +1072,16 @@
         [
           "14:30",
           867.23,
-          867.6,
+          868.77,
           867.23,
-          867.57,
-          516
+          868.77,
+          939
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T14:33:01.027732-05:00"
+      "outcome_at": "2026-11-05T14:35:24.364188-05:00"
     }
   ]
 }
