@@ -1749,5 +1749,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-120249-ORCL",
+    "signal_time": "2026-11-05T12:02:49-05:00",
+    "judged_at": "2026-11-05T12:03:26-05:00",
+    "age_min": 0.6,
+    "ticker": "ORCL",
+    "action": "SELL",
+    "entry": 114.32,
+    "stop": 116.95,
+    "target": 107.75,
+    "qty": 349,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is currently in a tight range (114.24-115.74) with a directional close at 114.63, but the pullback from the 115.64 high (11:20 candle) is not orderly. The 11:30 candle shows a sharp drop to 114.22 (low) before recovering, suggesting exhaustion rather than a clean pullback. The RSI (40.24) is neutral, not extreme, and does not support a strong SELL thesis. The proposed entry at 114.32 is near the 114.22 low, which may be too late in the session (238 minutes left) for a meaningful move to the 107.75 target (3.75 ATR away). The stop at 116.95 is 1.5 ATR above entry, which is reasonable but leaves little room for error given the current volatility.",
+      "macro": "SPY's -3.37% day move aligns with the SELL action, but ORCL's structure lacks conviction. The trade direction is regime-aligned, but the lack of a clear pullback or exhaustion signal weakens the case.",
+      "risk": "No earnings risk today/tomorrow. However, the target (107.75) is aggressive for the remaining session (238 minutes), requiring a sharp and sustained move. The reward:risk (2.5) is mathematically favorable, but the geometry and timing are not supportive of a high-confidence trade."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
