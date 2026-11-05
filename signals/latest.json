@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261105-135617-AVGO",
-  "generated_at": "2026-11-05T13:56:17.868312-05:00",
-  "spy_day_pct": -3.9805407379390374,
+  "signal_id": "20261105-135830-AVGO",
+  "generated_at": "2026-11-05T13:58:30.965362-05:00",
+  "spy_day_pct": -3.916632973797813,
   "candidates": [
     {
       "ticker": "AVGO",
       "signal": "SELL",
-      "ltp": 297.1,
-      "stop": 302.06,
-      "target": 284.69,
+      "ltp": 297.57,
+      "stop": 302.53,
+      "target": 285.16,
       "qty": 134,
       "indicators": {
         "rsi": 38.33,
         "atr": 3.3086,
         "vol_ratio": 1.38
       },
-      "scout_reason": "SPY -3.98% aligns with SELL",
+      "scout_reason": "SPY -3.92% aligns with SELL",
       "candles_5m": [
-        [
-          "12:15",
-          301.82,
-          302.61,
-          301.29,
-          302.31,
-          7877
-        ],
         [
           "12:20",
           302.22,
@@ -176,35 +168,35 @@
           296.19,
           297.1,
           12586
+        ],
+        [
+          "13:55",
+          297.14,
+          297.42,
+          296.81,
+          297.24,
+          1830
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T13:56:18.380345-05:00"
+      "outcome_at": "2026-11-05T13:58:31.728592-05:00"
     },
     {
       "ticker": "MS",
       "signal": "SELL",
-      "ltp": 181.33,
-      "stop": 183.39,
-      "target": 176.19,
-      "qty": 220,
+      "ltp": 181.49,
+      "stop": 183.54,
+      "target": 176.34,
+      "qty": 219,
       "indicators": {
         "rsi": 44.86,
         "atr": 1.3711,
         "vol_ratio": 1.56
       },
-      "scout_reason": "SPY -3.98% aligns with SELL",
+      "scout_reason": "SPY -3.92% aligns with SELL",
       "candles_5m": [
-        [
-          "12:15",
-          182.34,
-          182.44,
-          182.03,
-          182.38,
-          3525
-        ],
         [
           "12:20",
           182.3,
@@ -356,12 +348,20 @@
           180.99,
           181.33,
           10315
+        ],
+        [
+          "13:55",
+          181.44,
+          181.49,
+          181.34,
+          181.34,
+          6222
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-05T13:56:18.380379-05:00"
+      "outcome_at": "2026-11-05T13:58:31.728614-05:00"
     }
   ]
 }
