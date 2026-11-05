@@ -1824,5 +1824,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261105-124201-AXP",
+    "signal_time": "2026-11-05T12:42:01-05:00",
+    "judged_at": "2026-11-05T12:42:22-05:00",
+    "age_min": 0.3,
+    "ticker": "AXP",
+    "action": "SELL",
+    "entry": 327.72,
+    "stop": 330.46,
+    "target": 320.87,
+    "qty": 121,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 327.72 with a choppy, sideways structure in the last 12 candles (11:40-12:35 ET). The pullback lacks clear directional momentum, and the 5m candle at 12:35 ET closed near its low (327.40), suggesting exhaustion rather than a fresh sell setup. The RSI (38.75) is neutral, and the volume ratio (2.03) does not confirm a strong directional move. The stop (330.46) is 1.5 ATR away, but the target (320.87) is 3.75 ATR away, which is aggressive given the 198 minutes left in the session and the lack of a clear trend. The SELL action aligns with SPY's -3.79% day move, but the structure is weak for an intraday trade.",
+      "macro": "",
+      "risk": "No earnings risk today/tomorrow. However, the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and time remaining (198 minutes). The lack of a clear pullback structure and the proximity to the entry price make this a low-probability setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
