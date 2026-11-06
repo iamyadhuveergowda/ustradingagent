@@ -2849,5 +2849,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-143110-TSLA",
+    "signal_time": "2026-11-06T14:31:10-05:00",
+    "judged_at": "2026-11-06T14:31:31-05:00",
+    "age_min": 0.4,
+    "ticker": "TSLA",
+    "action": "BUY",
+    "entry": 359.75,
+    "stop": 355.72,
+    "target": 369.84,
+    "qty": 110,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a tight range-bound structure with no clear directional exhaustion or pullback into the entry at 359.75. The last 12 candles exhibit a choppy, sideways pattern with no decisive breakout or breakdown, and the close at 14:25 (359.86) is near the entry level, lacking a directional close. The RSI (55.06) is neutral, not signaling overbought or oversold conditions. Volume ratio (1.19) is not extreme, but the lack of volume spike on the pullback weakens conviction. Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) feels stretched given the remaining session time (89 minutes) and the lack of momentum.",
+      "macro": "SPY's +0.60% day move aligns with the BUY thesis, but TSLA's structure does not reflect a strong intraday trend. The trade direction is regime-aligned, but the technical setup is insufficient for a GO.",
+      "risk": "No earnings risk today or tomorrow. Feasibility is TIGHT due to the target distance (3.75 ATR) and limited time left, but the primary issue is the lack of a clear entry trigger or directional exhaustion."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
