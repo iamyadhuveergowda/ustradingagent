@@ -2774,5 +2774,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-134323-KO",
+    "signal_time": "2026-11-06T13:43:23-05:00",
+    "judged_at": "2026-11-06T13:43:51-05:00",
+    "age_min": 0.5,
+    "ticker": "KO",
+    "action": "BUY",
+    "entry": 96.21,
+    "stop": 95.73,
+    "target": 97.41,
+    "qty": 413,
+    "verdict": "GO",
+    "confidence": 85,
+    "trigger": "Entry on break above 96.23 with volume confirmation",
+    "notes": {
+      "technical": "Price shows a clear ascending structure with higher highs and higher lows since 13:15 ET. The 13:40 candle closed at 96.21, just below the entry level of 96.23, but with a bullish close and volume spike (8869) at the session high. The pullback from 96.31 (13:25 high) to 96.13 (13:30 low) was orderly, and the 13:40 candle closed near the high, suggesting continued buying interest. The RSI (63.64) is neutral, not overbought, and the volume ratio (1.26) supports the directional bias. Stop at 95.73 (1.5 ATR) is reasonable, and the target of 97.41 (3.76 ATR) is achievable in the remaining 137 minutes if momentum persists.",
+      "macro": "SPY's +0.64% day move aligns with the long bias, supporting a sector-wide rally. No macro contradictions are visible.",
+      "risk": "No earnings risk today or tomorrow. Feasibility is TIGHT but acceptable given the strong structure and alignment with SPY."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-134323-KO",
+    "signal_time": "2026-11-06T13:43:23-05:00",
+    "judged_at": "2026-11-06T13:43:51-05:00",
+    "age_min": 0.5,
+    "ticker": "HON",
+    "action": "BUY",
+    "entry": 219.92,
+    "stop": 218.62,
+    "target": 223.18,
+    "qty": 181,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on break above 220.28 with volume > 1000 and close above 220.22",
+    "notes": {
+      "technical": "Price action is erratic and lacks clear directional momentum. The 13:40 candle closed at 219.92, below the entry level of 219.92 (flat close), with minimal volume (155) and no follow-through. The 13:35 candle spiked to 220.28 but closed at 220.27, failing to confirm a breakout. The pullback from 220.29 (13:10 high) to 219.76 (13:25 low) was sharp and unstructured, with no clear retest or volume confirmation. The RSI (64.34) is neutral, but the lack of follow-through and weak volume (vol_ratio 1.38) raises caution. Stop at 218.62 (1.5 ATR) is reasonable, but the target of 223.18 (3.75 ATR) feels ambitious given the weak structure and only 137 minutes left.",
+      "macro": "SPY's +0.64% day move aligns with the long bias, but HON lacks internal confirmation.",
+      "risk": "No earnings risk today or tomorrow. Feasibility is not an issue, but the lack of conviction in the structure outweighs the SPY alignment."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
