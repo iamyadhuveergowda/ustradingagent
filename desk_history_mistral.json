@@ -2824,5 +2824,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-134825-TMO",
+    "signal_time": "2026-11-06T13:48:25-05:00",
+    "judged_at": "2026-11-06T13:48:46-05:00",
+    "age_min": 0.3,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 695.4,
+    "stop": 690.65,
+    "target": 707.28,
+    "qty": 57,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **695.40** is shallow and lacks a clear directional close. The 13:35 candle shows a **7.07 vol_ratio** spike with a **694.89 low**, but the 13:40 candle closes **695.24** (above entry) with a **9549 volume surge**, suggesting exhaustion rather than a fresh impulse. The **1.5 ATR stop (690.65)** is tight, and the **3.75 ATR target (707.28)** assumes a **2.5 R:R** that may not materialize in the remaining **132 minutes**. The **13:45 candle** closes **695.44**, near entry, with no follow-through momentum.",
+      "macro": "SPY’s **+0.68% day move** aligns with the BUY thesis, but TMO’s structure is weak for an intraday play. No macro catalyst is visible to justify a forced entry.",
+      "risk": "No **results_risk** detected, but the **vol_ratio spike at 13:35** could signal short-term exhaustion. The **13:40 volume surge** (9549) may indicate profit-taking or a failed breakout attempt."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
