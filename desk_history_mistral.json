@@ -2549,5 +2549,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-113855-TMO",
+    "signal_time": "2026-11-06T11:38:55-05:00",
+    "judged_at": "2026-11-06T11:39:28-05:00",
+    "age_min": 0.5,
+    "ticker": "HON",
+    "action": "BUY",
+    "entry": 218.44,
+    "stop": 216.65,
+    "target": 222.92,
+    "qty": 182,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Candle structure at entry (11:38 ET) is weak: the last 5-minute candle (11:35) is a doji (open=close=218.44), indicating indecision. The pullback from the 11:10 high (218.87) to the entry (218.44) is shallow (0.43 ATR) and lacks a directional close. Volume ratio (1.63) is elevated but not conclusive. Stop distance (1.5 ATR) is reasonable, but the target (222.92) is 3.75 ATR away, which is aggressive for the remaining 262 minutes (16:00 ET close). The RSI (57.46) is neutral, not extreme, and does not support a strong directional bias.",
+      "macro": "SPY day move (+0.88%) aligns with the BUY thesis, but intraday momentum is lacking. No macro catalyst is visible in the payload.",
+      "risk": "No earnings risk detected. Feasibility is not flagged, but the target is tight for the remaining session time (3.75 ATR in 262 minutes). The trade would require a sharp, sustained move to hit the target, which is unlikely given the current structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
