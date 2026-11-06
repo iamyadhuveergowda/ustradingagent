@@ -2499,5 +2499,30 @@
     "outcome": "CLOSE",
     "outcome_r": 1.04,
     "outcome_at": "2026-11-05T20:47:56-05:00"
+  },
+  {
+    "signal_id": "20261106-101258-BA",
+    "signal_time": "2026-11-06T10:12:58-05:00",
+    "judged_at": "2026-11-06T10:13:28-05:00",
+    "age_min": 0.5,
+    "ticker": "BA",
+    "action": "BUY",
+    "entry": 172.59,
+    "stop": 170.9,
+    "target": 176.81,
+    "qty": 231,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is in a late-session pullback (15:45-15:55) with a directional close at 172.32/172.47, but the entry at 172.59 is above the 15:55 high (172.47) and lacks confirmation. The 15:50 candle closed at its high (172.89), suggesting exhaustion rather than a fresh entry zone. Volume spike at 15:55 (26609) is directional but not enough to override the lack of structure. Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) feels stretched given only 348 minutes left in the session and no clear catalyst. The RSI (54.73) is neutral, not extreme, but the pullback lacks momentum.",
+      "macro": "SPY +0.74% aligns with the BUY thesis, but the late-session timing (15:45 entry) leaves minimal room for the target to be hit before 16:00 ET. Midday entries require stronger structure, and this lacks it.",
+      "risk": "No earnings risk today/tomorrow. Feasibility is empty, but the target (176.81) is 2.2% above current price with only 348 minutes left—highly unlikely to fill without a catalyst. The vol_ratio (1.39) is mildly bullish but not decisive."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
