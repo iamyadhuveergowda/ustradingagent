@@ -2649,5 +2649,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-123510-GE",
+    "signal_time": "2026-11-06T12:35:10-05:00",
+    "judged_at": "2026-11-06T12:35:30-05:00",
+    "age_min": 0.3,
+    "ticker": "GE",
+    "action": "BUY",
+    "entry": 322.24,
+    "stop": 319.41,
+    "target": 329.31,
+    "qty": 123,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, indecisive pullback into the entry at 322.24. The 12:25 candle (last before signal) closed at 322.49, a directional close, but the 12:30 candle (signal time) closed at 322.02, a lower close with a volume spike (774 vs. prior 1046-2940 range). The pullback lacks clear momentum, and the 12:30 candle's low (321.92) suggests exhaustion near the stop (319.41). The RSI (58.77) is neutral, not extreme, but the lack of follow-through volume (vol_ratio 1.95) and the choppy structure weaken the case. The target (329.31) is 3.75 ATR away, which is feasible (205 minutes left), but the entry lacks conviction.",
+      "macro": "SPY's +0.69% day move aligns with the BUY thesis, but GE's intraday structure does not reflect broader market strength. The pullback into the entry is shallow and lacks conviction.",
+      "risk": "No earnings risk today/tomorrow. However, the trade's reward:risk (2.5) is attractive, but the lack of a clear directional candle or follow-through volume makes it speculative. The stop distance (1.5 ATR) is reasonable, but the entry timing (12:35 ET) leaves little room for error in a choppy session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
