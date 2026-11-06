@@ -2524,5 +2524,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-113645-TMO",
+    "signal_time": "2026-11-06T11:36:45-05:00",
+    "judged_at": "2026-11-06T11:37:08-05:00",
+    "age_min": 0.4,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 689.09,
+    "stop": 683.13,
+    "target": 703.98,
+    "qty": 57,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **689.09** is shallow and lacks clear exhaustion, with the last 5-minute candle (11:35) closing near its high (**689.25**) and volume (**318**) not confirming a meaningful reversal. The **RSI (55.83)** is neutral, and the **vol_ratio (1.32)** suggests modest participation. The **stop (683.13)** is **1.5 ATR** away, but the **target (703.98)** is **3.75 ATR**—a **2.5:1 reward:risk**—which is mathematically appealing. However, the **geometry** is weak: the pullback from the 10:50 high (**692.23**) to the 11:35 close (**689.25**) is only **~0.9%**, and the **11:30 candle** (close: **689.09**) shows no follow-through. The **264 minutes left** allow for a move, but the lack of a clear break of structure (e.g., a close below **688.00**) or a higher-timeframe confirmation (e.g., 15m/30m) makes this a low-conviction setup. The **SPY alignment (+1.01%)** is directional but not structural.",
+      "macro": "No macro context provided; judging purely on structure.",
+      "risk": "No earnings risk today/tomorrow for TMO. However, the **stop distance (1.5 ATR)** is tight for a midday entry, and the **target (703.98)** is aggressive given the **SPY day move (1.01%)** and the lack of a clear catalyst. The trade would require a sharp, sustained move to pay off, which is unlikely without additional confirmation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
