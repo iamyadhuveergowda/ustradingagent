@@ -2624,5 +2624,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-121732-QCOM",
+    "signal_time": "2026-11-06T12:17:32-05:00",
+    "judged_at": "2026-11-06T12:18:07-05:00",
+    "age_min": 0.6,
+    "ticker": "QCOM",
+    "action": "BUY",
+    "entry": 165.04,
+    "stop": 161.37,
+    "target": 174.22,
+    "qty": 241,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is currently in a tight range (164.55-167.33) with no clear directional momentum into the entry at 165.04. The last 12 candles show a choppy, sideways structure with no decisive breakout or pullback. The 12:15 candle closed at 165.04 (entry) but did so with minimal volume (3313) and a narrow range (165.02-165.29), suggesting weak conviction. The RSI (53.1) is neutral, and the pullback lacks structural integrity (e.g., no clear lower low/high). The stop at 161.37 (1.5 ATR) is tight, but the target (174.22, 3.75 ATR) feels aggressive given the lack of momentum and the remaining session time (223 minutes).",
+      "macro": "SPY's +0.79% day move aligns with the BUY thesis, but QCOM's structure does not reflect broader market strength. The stock is trading in a narrow band without clear participation.",
+      "risk": "No results risk today/tomorrow, but the stock's recent earnings report (2026-11-04) may have already factored into the current price action. The lack of volume and directional clarity increases the risk of a false breakout or a sharp reversal into the stop."
+    },
+    "results_risk": "reported results 2 DAYS AGO (2026-11-04)",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
