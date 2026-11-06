@@ -2574,5 +2574,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-114123-META",
+    "signal_time": "2026-11-06T11:41:23-05:00",
+    "judged_at": "2026-11-06T11:41:50-05:00",
+    "age_min": 0.5,
+    "ticker": "META",
+    "action": "BUY",
+    "entry": 621.87,
+    "stop": 614.81,
+    "target": 639.53,
+    "qty": 64,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **621.87** lacks a clean, orderly structure. The last 12 candles show a choppy, erratic decline from **624.27** (10:50 high) to **618.91** (11:10 low), with no clear directional close. The **11:35** candle closes at the entry price (**621.87**) but does so with a wide range (**620.24–621.87**) and weak volume (**15,136**), suggesting exhaustion rather than a fresh buying opportunity. The **vol_ratio (2.14)** is elevated but not decisive. Stop placement at **614.81** (1.5 ATR) is reasonable, but the **target (639.53, 3.75 ATR)** feels stretched given the remaining session time (**259 minutes**) and the lack of momentum into the entry. The **RSI (60.97)** is neutral, not extreme, and does not justify a forced entry.",
+      "macro": "No macro context provided; relying solely on structure and geometry.",
+      "risk": "No earnings risk today/tomorrow. However, the trade direction (BUY) aligns with SPY’s **+0.99%** day move, but the lack of conviction in the pullback structure outweighs this alignment."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
