@@ -2599,5 +2599,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-120517-GS",
+    "signal_time": "2026-11-06T12:05:17-05:00",
+    "judged_at": "2026-11-06T12:05:49-05:00",
+    "age_min": 0.5,
+    "ticker": "GS",
+    "action": "BUY",
+    "entry": 878.94,
+    "stop": 870.61,
+    "target": 899.77,
+    "qty": 45,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 12:00 candle closed at 878.94, the entry price, but the structure is weak: the last 5-minute candle shows a doji-like close (878.94) after a sharp spike to 881.71 (11:55 candle). The pullback from the high is disorderly, with no clear directional close or consolidation. The RSI (56.98) is neutral, and the volume ratio (1.52) is not strong enough to confirm momentum. The stop at 870.61 (1.5 ATR) is too far from the entry (878.94) for a tight risk-reward setup, and the target (899.77) is aggressive given the remaining session time (235 minutes). The 11:55 candle's high (881.71) suggests exhaustion rather than continuation.",
+      "macro": "SPY's +0.76% day move aligns with the BUY thesis, but the intraday structure lacks conviction. No macro catalyst is visible in the payload.",
+      "risk": "No earnings risk detected. However, the trade's reward:risk (2.5) is skewed by the distant target (3.75 ATR), which may not be achievable in the remaining session. The stop distance (1.5 ATR) is too wide for a tight setup, increasing risk exposure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
