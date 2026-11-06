@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261106-114123-META",
-  "generated_at": "2026-11-06T11:41:23.477701-05:00",
-  "spy_day_pct": 0.9864608756118531,
+  "signal_id": "20261106-114339-META",
+  "generated_at": "2026-11-06T11:43:39.192147-05:00",
+  "spy_day_pct": 0.936012980107169,
   "candidates": [
     {
       "ticker": "META",
       "signal": "BUY",
-      "ltp": 621.87,
-      "stop": 614.81,
-      "target": 639.53,
+      "ltp": 621.6,
+      "stop": 614.54,
+      "target": 639.26,
       "qty": 64,
       "indicators": {
         "rsi": 60.97,
         "atr": 4.7099,
         "vol_ratio": 2.14
       },
-      "scout_reason": "SPY +0.99% aligns with BUY",
+      "scout_reason": "SPY +0.94% aligns with BUY",
       "candles_5m": [
-        [
-          "10:00",
-          616.27,
-          618.4,
-          615.76,
-          618.08,
-          8930
-        ],
         [
           "10:05",
           618.09,
@@ -176,12 +168,20 @@
           620.24,
           621.87,
           15136
+        ],
+        [
+          "11:40",
+          621.76,
+          621.88,
+          621.22,
+          621.57,
+          2404
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "INTO_WALL: entry 621.87 is within 0.5*ATR (2.35) of recent swing high 623.91 at 10:45, risking immediate wall",
-      "outcome_at": "2026-11-06T11:41:28.292804-05:00"
+      "outcome": "executed",
+      "outcome_reason": "",
+      "outcome_at": "2026-11-06T11:43:58.541912-05:00"
     }
   ]
 }
