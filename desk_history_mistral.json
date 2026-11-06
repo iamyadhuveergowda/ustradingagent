@@ -1671,9 +1671,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.87,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-114058-CSCO",
@@ -1696,9 +1696,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.5,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-114827-BA",
@@ -1721,9 +1721,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.23,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-115800-NOW",
@@ -1746,9 +1746,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.53,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-120249-ORCL",
@@ -1771,9 +1771,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.26,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-123203-ORCL",
@@ -1796,9 +1796,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.92,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-123203-ORCL",
@@ -1821,9 +1821,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.44,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-124201-AXP",
@@ -1846,9 +1846,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.08,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-125058-KO",
@@ -1871,9 +1871,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.34,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-132257-CSCO",
@@ -1896,9 +1896,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.05,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-132257-CSCO",
@@ -1921,9 +1921,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-133647-CRM",
@@ -1946,9 +1946,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.59,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-133647-CRM",
@@ -1971,9 +1971,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.48,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-135617-AVGO",
@@ -1996,9 +1996,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.97,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-140329-CRM",
@@ -2021,9 +2021,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-140804-AAPL",
@@ -2046,9 +2046,9 @@
     },
     "results_risk": "reported results 3 DAYS AGO (2026-11-02)",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-140804-AAPL",
@@ -2071,9 +2071,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.68,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-140804-AAPL",
@@ -2096,9 +2096,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.03,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-140804-AAPL",
@@ -2121,9 +2121,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.47,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-141041-AAPL",
@@ -2146,9 +2146,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.48,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142311-AAPL",
@@ -2171,9 +2171,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.62,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142311-AAPL",
@@ -2196,9 +2196,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.81,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142530-AAPL",
@@ -2221,9 +2221,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.28,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142757-AAPL",
@@ -2246,9 +2246,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.01,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142757-AAPL",
@@ -2271,9 +2271,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.34,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142757-AAPL",
@@ -2296,9 +2296,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.08,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-142757-AAPL",
@@ -2321,9 +2321,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143258-ORCL",
@@ -2346,9 +2346,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143258-ORCL",
@@ -2371,9 +2371,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143258-ORCL",
@@ -2396,9 +2396,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.34,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143258-ORCL",
@@ -2421,9 +2421,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143258-ORCL",
@@ -2446,9 +2446,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.13,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143815-CSCO",
@@ -2471,9 +2471,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.64,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   },
   {
     "signal_id": "20261105-143815-CSCO",
@@ -2496,8 +2496,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.04,
+    "outcome_at": "2026-11-05T20:47:56-05:00"
   }
 ]
