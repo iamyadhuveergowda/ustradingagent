@@ -2699,5 +2699,80 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-133838-MCD",
+    "signal_time": "2026-11-06T13:38:38-05:00",
+    "judged_at": "2026-11-06T13:39:21-05:00",
+    "age_min": 0.7,
+    "ticker": "MCD",
+    "action": "BUY",
+    "entry": 277.5,
+    "stop": 275.94,
+    "target": 281.4,
+    "qty": 143,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is in a tight range (277.22-278.00) with no clear directional momentum into the entry at 277.50. The last 5-minute candle (13:35) closed at 277.50, showing indecision with a low volume (437) and no follow-through. The pullback from the 13:20 low (277.58) to 13:30 (277.35) was abrupt and lacked volume confirmation (vol_ratio = 2.09 is directional but not conclusive). The RSI (54.93) is neutral, and the structure does not justify a BUY at this juncture.",
+      "macro": "SPY's +0.62% day move aligns with the BUY thesis, but intraday structure is weak for a late-session entry (142 minutes left).",
+      "risk": "No results risk, but the lack of conviction in the pullback and proximity to close (142 minutes) make this a low-probability setup."
+    },
+    "results_risk": "reported results 2 DAYS AGO (2026-11-04)",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-133838-MCD",
+    "signal_time": "2026-11-06T13:38:38-05:00",
+    "judged_at": "2026-11-06T13:39:21-05:00",
+    "age_min": 0.7,
+    "ticker": "BLK",
+    "action": "BUY",
+    "entry": 1184.35,
+    "stop": 1176.09,
+    "target": 1205.01,
+    "qty": 33,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close above 1184.35 with a follow-through volume spike (e.g., >300 shares in the next 5m candle)",
+    "notes": {
+      "technical": "BLK is forming a higher-low structure with a breakout attempt at 1184.35 (13:35 candle). The 13:30 candle closed at 1185.37, a strong bullish signal, but the 13:35 candle closed at 1183.11, showing hesitation. However, the 13:30 high (1185.37) is near the entry (1184.35), and the RSI (51.89) is not overbought. The vol_ratio (1.39) suggests some buying interest, and the stop (1176.09) is well below recent lows (1180.42 at 12:50). The target (1205.01) is ambitious but feasible given the remaining session (142 minutes) and the stock's recent volatility (ATR = 5.5091).",
+      "macro": "SPY's +0.62% day move supports the BUY thesis, and BLK's structure aligns with broader market momentum.",
+      "risk": "No results risk. The primary risk is a false breakout, but the stop loss is placed below key support levels."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-133838-MCD",
+    "signal_time": "2026-11-06T13:38:38-05:00",
+    "judged_at": "2026-11-06T13:39:21-05:00",
+    "age_min": 0.7,
+    "ticker": "BA",
+    "action": "BUY",
+    "entry": 173.4,
+    "stop": 172.2,
+    "target": 176.38,
+    "qty": 229,
+    "verdict": "GO",
+    "confidence": 80,
+    "trigger": "Entry on a close above 173.40 with confirmation volume (e.g., >2000 shares in the next 5m candle)",
+    "notes": {
+      "technical": "BA is showing a clear breakout from a tight range (172.21-173.24) with a strong 13:30 candle closing at 173.54 (high of 173.66). The 13:35 candle closed at 173.25, but the volume spike (4192) suggests buying interest. The RSI (63.54) is not overbought, and the vol_ratio (4.2) is the highest among the candidates, indicating strong participation. The stop (172.20) is below the recent lows (172.21 at 12:40), and the target (176.38) is achievable given the remaining session (142 minutes) and the stock's ATR (0.797). The reward:risk (2.48) is favorable.",
+      "macro": "SPY's +0.62% day move aligns with the BUY thesis, and BA's breakout structure is compelling.",
+      "risk": "No results risk. The primary risk is a pullback, but the stop loss is placed below key support levels, and the volume confirms the breakout."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
