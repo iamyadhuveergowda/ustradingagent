@@ -2874,5 +2874,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261106-143546-GE",
+    "signal_time": "2026-11-06T14:35:46-05:00",
+    "judged_at": "2026-11-06T14:36:10-05:00",
+    "age_min": 0.4,
+    "ticker": "GE",
+    "action": "BUY",
+    "entry": 322.96,
+    "stop": 320.74,
+    "target": 328.53,
+    "qty": 123,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 322.96 with a choppy, erratic structure. The 14:25 candle closed at 322.96 (entry level) but showed a wide range (322.94-323.88), indicating indecision. The 14:30 candle closed at the entry level with a low volume (875) and a downward close after a high of 323.79, suggesting exhaustion rather than a clean pullback. The RSI (61.2) is neutral, and the vol_ratio (1.14) does not strongly support a directional move. The stop distance (1.5 ATR) is reasonable, but the target (328.53) requires a 5.57-point move (~1.73% of current price) in 85 minutes, which is aggressive given the late session and lack of clear momentum.",
+      "macro": "SPY's +0.56% day move aligns with the BUY thesis, but the late-session timing (14:35 ET) leaves little room for error. The trade would require a strong, sustained move in the remaining 85 minutes, which is unlikely without additional catalysts.",
+      "risk": "No earnings or macro risks identified for GE today or tomorrow. However, the late-session entry and lack of clear structure make this a high-risk setup for a paper trade."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
