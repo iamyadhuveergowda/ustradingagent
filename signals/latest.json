@@ -1,13 +1,13 @@
 {
-  "signal_id": "20261109-134115-BAC",
-  "generated_at": "2026-11-09T13:41:15.468735-05:00",
-  "spy_day_pct": 2.3116671199347296,
+  "signal_id": "20261109-134414-BAC",
+  "generated_at": "2026-11-09T13:44:14.376132-05:00",
+  "spy_day_pct": 2.326624966004897,
   "candidates": [
     {
       "ticker": "BAC",
       "signal": "BUY",
       "ltp": 50.8,
-      "stop": 50.56,
+      "stop": 50.57,
       "target": 51.38,
       "qty": 782,
       "indicators": {
@@ -15,16 +15,8 @@
         "atr": 0.1549,
         "vol_ratio": 1.32
       },
-      "scout_reason": "SPY +2.31% aligns with BUY",
+      "scout_reason": "SPY +2.33% aligns with BUY",
       "candles_5m": [
-        [
-          "12:00",
-          50.6,
-          50.66,
-          50.59,
-          50.66,
-          14010
-        ],
         [
           "12:05",
           50.66,
@@ -176,35 +168,35 @@
           50.76,
           50.83,
           17911
+        ],
+        [
+          "13:40",
+          50.82,
+          50.82,
+          50.77,
+          50.8,
+          4041
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "scout: invalid R:R",
-      "outcome_at": "2026-11-09T13:41:16.228212-05:00"
+      "outcome_reason": "CHASE: entry 50.8 > vwap+1.5*ATR (50.43+0.232=50.662), no base or retest visible in recent 5‑min candles; DISTRIBUTION: heaviest volume bar (13:05, vol 31904) closed at low (50.83) against BUY directi",
+      "outcome_at": "2026-11-09T13:44:20.363633-05:00"
     },
     {
       "ticker": "WFC",
       "signal": "BUY",
-      "ltp": 86.08,
-      "stop": 85.69,
-      "target": 87.06,
-      "qty": 461,
+      "ltp": 86.0,
+      "stop": 85.61,
+      "target": 86.98,
+      "qty": 462,
       "indicators": {
         "rsi": 58.98,
         "atr": 0.26,
         "vol_ratio": 1.52
       },
-      "scout_reason": "SPY +2.31% aligns with BUY",
+      "scout_reason": "SPY +2.33% aligns with BUY",
       "candles_5m": [
-        [
-          "12:00",
-          85.69,
-          85.76,
-          85.69,
-          85.76,
-          2850
-        ],
         [
           "12:05",
           85.76,
@@ -356,12 +348,20 @@
           85.99,
           86.08,
           6104
+        ],
+        [
+          "13:40",
+          86.01,
+          86.01,
+          85.98,
+          85.99,
+          1848
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T13:41:16.228232-05:00"
+      "outcome_at": "2026-11-09T13:44:20.363658-05:00"
     }
   ]
 }
