@@ -3299,5 +3299,80 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-133626-MU",
+    "signal_time": "2026-11-09T13:36:26-05:00",
+    "judged_at": "2026-11-09T13:37:10-05:00",
+    "age_min": 0.7,
+    "ticker": "MU",
+    "action": "BUY",
+    "entry": 730.36,
+    "stop": 720.01,
+    "target": 756.24,
+    "qty": 54,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is in a choppy, sideways structure with no clear directional momentum into the entry at 730.36. The last 12 candles show a lack of conviction, with multiple failed attempts to break higher or lower, and a directional close only in the 13:30 candle. The pullback from the 13:10 high (729.26) to the 13:20 low (725.59) was disorderly, and the 13:30 candle closed near its low, suggesting exhaustion rather than a healthy pullback. The RSI (51.79) is neutral, and the volume ratio (1.11) does not indicate strong conviction.",
+      "macro": "SPY's +2.30% day move aligns with the BUY thesis, but the lack of intraday structure in MU weakens the case.",
+      "risk": "No earnings risk, but the late-session timing (144 minutes left) and weak structure make this a high-risk entry. The target (756.24) is 3.75 ATR away, which is feasible but requires a strong push in the remaining session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-133626-MU",
+    "signal_time": "2026-11-09T13:36:26-05:00",
+    "judged_at": "2026-11-09T13:37:10-05:00",
+    "age_min": 0.7,
+    "ticker": "TSLA",
+    "action": "BUY",
+    "entry": 377.06,
+    "stop": 373.78,
+    "target": 385.25,
+    "qty": 105,
+    "verdict": "SKIP",
+    "confidence": 80,
+    "trigger": "Valid only on a break above 377.67 with volume confirmation",
+    "notes": {
+      "technical": "TSLA is in a tight, range-bound structure with no clear directional bias. The last 12 candles show a narrow range (376.13-377.74), with the 13:30 candle closing near its high (376.98) but lacking follow-through. The entry at 377.06 is near the upper boundary of the range, and the stop (373.78) is 1.5 ATR away, which is reasonable but leaves little room for error. The RSI (51.69) is neutral, and the volume ratio (1.71) is elevated but not decisive.",
+      "macro": "SPY's +2.30% day move aligns with the BUY thesis, but TSLA's lack of momentum and tight range make this a speculative play.",
+      "risk": "No earnings risk, but the late-session timing (144 minutes left) and lack of clear momentum increase the risk of a false breakout. A break above 377.67 with volume would improve the case, but the current structure is not compelling."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-133626-MU",
+    "signal_time": "2026-11-09T13:36:26-05:00",
+    "judged_at": "2026-11-09T13:37:10-05:00",
+    "age_min": 0.7,
+    "ticker": "GS",
+    "action": "BUY",
+    "entry": 905.46,
+    "stop": 900.28,
+    "target": 918.42,
+    "qty": 43,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close above 905.84 with volume > 2000 shares",
+    "notes": {
+      "technical": "GS shows a clearer pullback structure compared to MU and TSLA. The 13:30 candle closed at 905.46, near its high (905.84), after a pullback from the 12:45 high (909.05). The 13:35 candle (not in the payload but implied by timing) would confirm the entry if it closes above 905.84 with volume > 2000 shares. The RSI (52.67) is slightly bullish, and the volume ratio (2.38) is elevated, suggesting some conviction. The stop (900.28) is 1.5 ATR away, and the target (918.42) is 3.75 ATR away, which is feasible given the remaining session (144 minutes).",
+      "macro": "SPY's +2.30% day move aligns with the BUY thesis, and GS's financial sector exposure benefits from broader market strength.",
+      "risk": "No earnings risk, but the late-session timing requires a strong close to confirm the entry. The target is ambitious but achievable if the broader market continues to rally."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
