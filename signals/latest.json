@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261109-120740-HON",
-  "generated_at": "2026-11-09T12:07:40.500083-05:00",
-  "spy_day_pct": 2.173646994832746,
+  "signal_id": "20261109-121028-HON",
+  "generated_at": "2026-11-09T12:10:28.377107-05:00",
+  "spy_day_pct": 2.238237693772102,
   "candidates": [
     {
       "ticker": "HON",
       "signal": "BUY",
-      "ltp": 227.69,
-      "stop": 226.26,
-      "target": 231.27,
+      "ltp": 228.1,
+      "stop": 226.67,
+      "target": 231.68,
       "qty": 174,
       "indicators": {
         "rsi": 62.22,
         "atr": 0.9544,
         "vol_ratio": 2.57
       },
-      "scout_reason": "SPY +2.17% aligns with BUY",
+      "scout_reason": "SPY +2.24% aligns with BUY",
       "candles_5m": [
-        [
-          "10:05",
-          225.74,
-          225.74,
-          225.74,
-          225.74,
-          201
-        ],
         [
           "10:15",
           227.03,
@@ -176,12 +168,20 @@
           227.37,
           227.69,
           3807
+        ],
+        [
+          "12:05",
+          228.1,
+          228.1,
+          228.1,
+          228.1,
+          278
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T12:07:40.863052-05:00"
+      "outcome_at": "2026-11-09T12:10:28.801266-05:00"
     }
   ]
 }
