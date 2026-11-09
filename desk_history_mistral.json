@@ -3074,5 +3074,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-114309-MCD",
+    "signal_time": "2026-11-09T11:43:09-05:00",
+    "judged_at": "2026-11-09T11:43:37-05:00",
+    "age_min": 0.5,
+    "ticker": "MCD",
+    "action": "BUY",
+    "entry": 280.76,
+    "stop": 279.25,
+    "target": 284.53,
+    "qty": 141,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 280.76 with a choppy, sideways structure in the last 12 candles (10:45-11:40). The pullback from the 11:35 high (281.13) to the 11:40 close (280.76) is orderly but lacks conviction, closing near the low of the candle. Volume ratio (1.4) is neutral, and RSI (64.67) is not extreme. The stop distance (1.5 ATR) is reasonable, but the target (284.53) is **3.75 ATR away**, which is aggressive for the remaining 257 minutes (4.28 hours) given the lack of momentum or clear directional bias. The 11:35 candle's high (281.13) is the closest swing high, and a break above it would be required for a valid GO, but even then, the reward:risk (2.5) is only justified if the structure improves significantly.",
+      "macro": "SPY's +1.97% day move aligns with the BUY thesis, but MCD's intraday structure does not reflect broader market strength. The lack of follow-through on the 11:35 high suggests hesitation rather than participation.",
+      "risk": "No earnings risk today/tomorrow. However, the trade's feasibility is **TIGHT** due to the target distance (3.75 ATR) and time remaining (257 minutes). A GO would require a break above 281.13 with confirmation of higher volume and a directional close, neither of which is present."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
