@@ -840,7 +840,7 @@
     "open": 395.54,
     "high": 396.27,
     "low": 395.54,
-    "close": 396.53,
+    "close": 396.98,
     "time": "11:30:59",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -854,7 +854,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 396.53,
+    "last_price": 396.98,
     "atr": 1.9636,
     "breakeven_set": false,
     "mfe_r": 0.718,
@@ -878,7 +878,9 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 396.45
+    "breakeven_price": 396.45,
+    "exit_pending": true,
+    "exit_pending_reason": "15:55 square-off"
   },
   {
     "trade_id": "20261109140522-NOW",
@@ -896,7 +898,7 @@
     "open": 103.63,
     "high": 103.78,
     "low": 103.63,
-    "close": 103.48,
+    "close": 103.18,
     "time": "14:05:22",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -910,7 +912,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 103.48,
+    "last_price": 103.18,
     "atr": 0.4843,
     "breakeven_set": false,
     "mfe_r": 0.216,
@@ -934,6 +936,8 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 103.59
+    "breakeven_price": 103.59,
+    "exit_pending": true,
+    "exit_pending_reason": "15:55 square-off"
   }
 ]
