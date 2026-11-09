@@ -2974,5 +2974,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-113040-UNH",
+    "signal_time": "2026-11-09T11:30:40-05:00",
+    "judged_at": "2026-11-09T11:31:27-05:00",
+    "age_min": 0.8,
+    "ticker": "UNH",
+    "action": "BUY",
+    "entry": 395.83,
+    "stop": 392.88,
+    "target": 403.19,
+    "qty": 100,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 395.83 with a pullback from a high of 398.72 (10:50 candle) but lacks a clear, orderly structure. The last 12 candles show choppy, low-volume action (vol_ratio: 1.57) with no definitive directional close. The 11:25 candle closed at 395.93, just above the entry, but the low of 395.54 suggests hesitation. The stop at 392.88 (1.5 ATR) is tight, and the target (403.19, 3.75 ATR) may be unrealistic given the remaining 270 minutes (4.5 hours) and SPY's +1.93% day move. The RSI (53.1) is neutral, not extreme, and does not support a high-conviction entry.",
+      "macro": "No macro context provided; relying solely on structure and geometry.",
+      "risk": "No earnings risk today/tomorrow. However, the trade's reward:risk (2.49) is attractive, but the lack of a clean pullback structure and proximity to the close (270 minutes left) make it risky. A breakout above 396.27 (11:25 high) with volume could revisit this, but current conditions are not ideal."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
