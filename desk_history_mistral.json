@@ -3549,5 +3549,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-141320-ORCL",
+    "signal_time": "2026-11-09T14:13:20-05:00",
+    "judged_at": "2026-11-09T14:13:44-05:00",
+    "age_min": 0.4,
+    "ticker": "ORCL",
+    "action": "BUY",
+    "entry": 118.89,
+    "stop": 117.6,
+    "target": 122.12,
+    "qty": 84,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **118.89** is shallow and lacks a clear directional close. The last 12 candles show a choppy, sideways structure with no definitive exhaustion or momentum shift. The 14:10 candle closed at **118.84**, below the entry, and the 14:05 candle closed at **118.91**, failing to hold above the 14:10 low. The **vol_ratio (1.17)** suggests a slight directional bias, but the structure is not orderly enough for a high-conviction entry. The **stop_distance_atr (1.5)** is reasonable, but the **target_distance_atr (3.75)** feels stretched for the remaining **107 minutes** given the lack of momentum.",
+      "macro": "SPY's **+2.36%** day move aligns with the BUY thesis, but ORCL's relative weakness (sideways action) suggests it is not participating meaningfully in the broader market rally. Without a clear breakout or exhaustion signal, the trade lacks macro confirmation.",
+      "risk": "No **results_risk** identified. However, the **reward:risk (2.5)** is attractive, but the lack of structural conviction (e.g., no clear breakout, no exhaustion) makes the trade speculative. The **feasibility** is **TIGHT** due to the **target_distance_atr (3.75)** in the remaining session, but the primary issue is the weak structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
