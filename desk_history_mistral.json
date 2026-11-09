@@ -3249,5 +3249,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-130848-CAT",
+    "signal_time": "2026-11-09T13:08:48-05:00",
+    "judged_at": "2026-11-09T13:09:12-05:00",
+    "age_min": 0.4,
+    "ticker": "CAT",
+    "action": "BUY",
+    "entry": 593.64,
+    "stop": 589.13,
+    "target": 604.92,
+    "qty": 67,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 593.64 with a weak, choppy pullback into the session close (13:05 candle closed at 593.82, low of 593.50). The last 12 candles show a lack of clear directional momentum, with volume drying up significantly after 12:30 ET. The RSI (62.36) is neutral, and the pullback lacks an orderly structure (e.g., no clear higher-low or higher-high formation). The stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) feels stretched given the remaining session time (172 minutes) and the lack of conviction in the setup. The vol_ratio (1.76) suggests some participation but not enough to justify a BUY in this context.",
+      "macro": "SPY's +2.31% day move aligns with the BUY thesis, but the intraday structure of CAT does not reflect this broader market trend. The stock is trading in a tight range without clear follow-through.",
+      "risk": "No earnings or macro risks identified for CAT today or tomorrow. However, the lack of momentum and weak volume profile increases the risk of a false breakout or a sharp reversal into the close."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
