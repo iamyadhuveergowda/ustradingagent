@@ -3224,5 +3224,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-124801-MA",
+    "signal_time": "2026-11-09T12:48:01-05:00",
+    "judged_at": "2026-11-09T12:48:23-05:00",
+    "age_min": 0.4,
+    "ticker": "MA",
+    "action": "BUY",
+    "entry": 658.08,
+    "stop": 655.45,
+    "target": 664.66,
+    "qty": 60,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 658.08 with a weak pullback structure: the 12:35 candle closed near its low (658.09) and the 12:45 candle closed at the low (658.08), indicating exhaustion rather than a healthy retracement. Volume surged at 12:35 (7895) but lacks follow-through, and the RSI (58.8) is neutral. The stop distance (1.56 ATR) is tight, and the target (3.91 ATR) is ambitious for the remaining 192 minutes (3.2 hours). The 12:45 candle's close at 658.08 is the entry, but the lack of a clear directional close (e.g., higher low) and the proximity to the stop (655.45) make this a high-risk setup.",
+      "macro": "SPY's +2.27% day move aligns with the BUY thesis, but the intraday structure is not supportive. No macro overrides are present.",
+      "risk": "No earnings risk detected. However, the trade's feasibility is TIGHT due to the stop distance (1.56 ATR) and the limited timeframe (192 minutes). The reward:risk (2.5) is mathematically favorable, but the structure does not justify the risk given the weak pullback and proximity to the stop."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
