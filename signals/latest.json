@@ -1,15 +1,15 @@
 {
-  "signal_id": "20261109-112630-ORCL",
-  "generated_at": "2026-11-09T11:26:30.780000-05:00",
-  "spy_day_pct": 1.9819146042969875,
+  "signal_id": "20261109-112916-ORCL",
+  "generated_at": "2026-11-09T11:29:16.658485-05:00",
+  "spy_day_pct": 1.9791949959205961,
   "candidates": [
     {
       "ticker": "ORCL",
       "signal": "BUY",
-      "ltp": 119.15,
-      "stop": 117.17,
-      "target": 124.09,
-      "qty": 333,
+      "ltp": 118.83,
+      "stop": 116.85,
+      "target": 123.77,
+      "qty": 334,
       "indicators": {
         "rsi": 62.19,
         "atr": 1.3186,
@@ -17,14 +17,6 @@
       },
       "scout_reason": "SPY +1.98% aligns with BUY",
       "candles_5m": [
-        [
-          "09:45",
-          117.13,
-          119.18,
-          117.11,
-          119.0,
-          23184
-        ],
         [
           "09:50",
           118.94,
@@ -176,12 +168,20 @@
           118.84,
           119.32,
           26447
+        ],
+        [
+          "11:25",
+          119.37,
+          119.37,
+          118.92,
+          118.92,
+          4063
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (11:10) has volume 31692 and printed supply into highs (high 119.26, close 118.83) against BUY direction",
-      "outcome_at": "2026-11-09T11:26:35.224998-05:00"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar (31692) in last 6 candles at 11:10 showed supply into highs, opposing BUY direction",
+      "outcome_at": "2026-11-09T11:29:21.455121-05:00"
     }
   ]
 }
