@@ -3274,5 +3274,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-132147-MS",
+    "signal_time": "2026-11-09T13:21:47-05:00",
+    "judged_at": "2026-11-09T13:23:07-05:00",
+    "age_min": 1.3,
+    "ticker": "MS",
+    "action": "BUY",
+    "entry": 189.25,
+    "stop": 188.13,
+    "target": 192.05,
+    "qty": 210,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional momentum into the entry at 189.25. The last 12 candles exhibit a lack of conviction: the 12:45 candle spikes to 190.09 but closes near the low of the next candle (189.81), indicating exhaustion. The pullback to entry is disorderly, with a close below the 13:00 low (189.60) and no clear retest of higher-timeframe support. Volume spikes at 12:35 and 12:45 (7532, 7619) suggest rejection rather than accumulation. RSI (58.31) is neutral, not extreme, and does not support a strong directional bias. Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) feels stretched given the lack of momentum and time remaining (159 minutes). Geometry favors a tighter stop or smaller target.",
+      "macro": "SPY's +2.28% day move aligns with the BUY thesis, but MS lacks a clear catalyst or regime confirmation. The stock is trading in a narrow range (~189.16-190.13) with no breakout or breakdown, suggesting indecision rather than trend continuation.",
+      "risk": "No earnings or macro risks identified for MS today/tomorrow. However, the lack of structural conviction in the pullback and the proximity to the close (159 minutes) make this a high-risk entry for an intraday trade. The reward:risk (2.5) is mathematically appealing, but the execution risk outweighs it given the current structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
