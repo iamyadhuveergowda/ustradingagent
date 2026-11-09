@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261109-130848-CAT",
-  "generated_at": "2026-11-09T13:08:48.563152-05:00",
-  "spy_day_pct": 2.3143867283111206,
+  "signal_id": "20261109-131059-CAT",
+  "generated_at": "2026-11-09T13:10:59.199902-05:00",
+  "spy_day_pct": 2.300788686429164,
   "candidates": [
     {
       "ticker": "CAT",
       "signal": "BUY",
-      "ltp": 593.64,
-      "stop": 589.13,
-      "target": 604.92,
-      "qty": 67,
+      "ltp": 594.43,
+      "stop": 589.92,
+      "target": 605.72,
+      "qty": 66,
       "indicators": {
         "rsi": 62.36,
         "atr": 3.0087,
         "vol_ratio": 1.76
       },
-      "scout_reason": "SPY +2.31% aligns with BUY",
+      "scout_reason": "SPY +2.30% aligns with BUY",
       "candles_5m": [
         [
           "11:30",
@@ -172,16 +172,16 @@
         [
           "13:05",
           594.25,
-          594.25,
+          594.43,
           593.5,
-          593.82,
-          4364
+          594.43,
+          5580
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T13:08:48.974525-05:00"
+      "outcome_at": "2026-11-09T13:10:59.608008-05:00"
     }
   ]
 }
