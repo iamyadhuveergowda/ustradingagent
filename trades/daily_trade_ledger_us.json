@@ -823,5 +823,61 @@
     },
     "breakeven_price": 621.39,
     "exit_time": "2026-11-09T08:00:08-05:00"
+  },
+  {
+    "trade_id": "20261109113059-UNH",
+    "date": "2026-11-09",
+    "ticker": "UNH",
+    "action": "BUY",
+    "qty": 100,
+    "remaining_qty": 100,
+    "locked_margin_per_share": 396.38,
+    "partial_booked": false,
+    "entry": 396.38,
+    "sl": 392.99,
+    "initial_sl": 392.99,
+    "tgt": 403.3,
+    "open": 395.54,
+    "high": 396.27,
+    "low": 395.54,
+    "close": 395.93,
+    "time": "11:30:59",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "Entry 395.83 is 0.16 above VWAP 395.67 (≈0.08 ATR), stop 392.88 is 2.95 below entry (~1.5 ATR) giving a solid risk buffer, target 403.19 is 7.36 above entry (=3.75 ATR) well under the 4.5 ATR cap, recent 5‑min candles show bullish closes (e.g., 10:15 close 396.45, 10:20 close 397.38) and no heavy supply bars, volume is moderate without a distribution signal, and there are no contradictory news, upcoming events, or desk vetoes.",
+    "events": [
+      {
+        "time": "2026-11-09T11:30:59-05:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 100 @ $396.38"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 396.38,
+    "atr": 1.9636,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 1.93,
+    "vol_ratio": 1.57,
+    "rvol": 0.69,
+    "rule_version": "us_v2.6",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "6e225bbc-69d6-46ad-b65a-fe5cd8a20ba2",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-09 16:30:46.856524+00:00"
+      },
+      "stop": {
+        "id": "39d2936e-4877-468d-9548-52dd42cf97c8",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 396.45
   }
 ]
