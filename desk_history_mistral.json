@@ -3499,5 +3499,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-135533-AVGO",
+    "signal_time": "2026-11-09T13:55:33-05:00",
+    "judged_at": "2026-11-09T13:56:08-05:00",
+    "age_min": 0.6,
+    "ticker": "AMZN",
+    "action": "BUY",
+    "entry": 268.13,
+    "stop": 266.18,
+    "target": 273.01,
+    "qty": 148,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **268.13** lacks clear directional conviction: the 13:45 candle (last before signal) closed at **268.40**, a strong bullish reversal after a 5-minute range of **267.90-268.42**, but the 13:50 candle closed at **268.23** with a lower high (**268.60** vs. **268.42**) and a directional close below the 13:45 high. This suggests exhaustion rather than a fresh pullback. The **vol_ratio (1.57)** is elevated but not decisive. The **stop (266.18)** is **1.5 ATR** away, but the **target (273.01)** is **3.75 ATR**—a **2.5:1 reward:risk**—which is generous, but the structure is weak. The **RSI (52.86)** is neutral, and the **125 minutes left** limit feasibility for a trade requiring a fresh impulse.",
+      "macro": "SPY’s **+2.38%** day move aligns with the BUY thesis, but intraday momentum is fading: the 13:50 candle’s close (**268.23**) is below the 13:45 high (**268.42**), hinting at a potential short-term top. Without a clear breakout or fresh bullish structure, the trade lacks conviction.",
+      "risk": "No earnings risk, but the **lack of a clean pullback** and **exhaustion signs** (lower high in 13:50) make this a low-probability setup. A GO would require a retest of **268.40** with a bullish close and volume confirmation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
