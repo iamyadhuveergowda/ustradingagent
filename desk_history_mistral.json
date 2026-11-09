@@ -3099,5 +3099,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-115259-LLY",
+    "signal_time": "2026-11-09T11:52:59-05:00",
+    "judged_at": "2026-11-09T11:53:26-05:00",
+    "age_min": 0.4,
+    "ticker": "LLY",
+    "action": "BUY",
+    "entry": 1398.54,
+    "stop": 1387.39,
+    "target": 1426.42,
+    "qty": 28,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 1398.54 after a choppy but upward-biased session. The 11:50 candle closed at the entry level (1398.54) with minimal volume (891) and a tight range (1398.54-1399.20), suggesting exhaustion rather than momentum. The pullback from 1400.46 (11:45 high) to 1398.54 is shallow and lacks a clear directional close. The RSI (64.87) is neutral, and the vol_ratio (2.48) is not strong enough to justify a long entry at this late stage (248 minutes left). The target (1426.42) is 3.75 ATR away, which is feasible but requires a strong follow-through that is unlikely given the current structure.",
+      "macro": "SPY's +2.14% day move aligns with the BUY thesis, but LLY's lack of conviction in the last 12 candles weakens the case.",
+      "risk": "No earnings risk. Stop is 1.5 ATR away (1387.39), which is tight but reasonable. However, the trade lacks a high-probability setup given the current candle geometry."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-115259-LLY",
+    "signal_time": "2026-11-09T11:52:59-05:00",
+    "judged_at": "2026-11-09T11:53:26-05:00",
+    "age_min": 0.4,
+    "ticker": "GE",
+    "action": "BUY",
+    "entry": 332.66,
+    "stop": 330.03,
+    "target": 339.25,
+    "qty": 119,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Break above 333.02 with close above 332.85",
+    "notes": {
+      "technical": "GE is showing a clearer structure with a higher-high at 333.60 (11:30) and a pullback to 332.66 (entry). The 11:50 candle closed at 332.66 with a slight upward bias (high at 332.66, low at 332.61), and volume (260) is not overwhelming but not concerning. The RSI (64.61) is neutral, and the vol_ratio (1.7) is modest but directional. The stop (330.03) is 1.5 ATR away, and the target (339.25) is 3.75 ATR away, which is feasible given the 248 minutes left. The 11:45 candle's close (332.87) and the 11:50 candle's high (332.66) suggest a potential breakout opportunity if price can sustain above 333.02.",
+      "macro": "SPY's +2.14% day move aligns with the BUY thesis, reinforcing the directional bias.",
+      "risk": "No earnings risk. The stop is tight but justified by the ATR. The trade requires confirmation on a break above 333.02, which would signal a higher-probability continuation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
