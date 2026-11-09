@@ -2949,5 +2949,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-112630-ORCL",
+    "signal_time": "2026-11-09T11:26:30-05:00",
+    "judged_at": "2026-11-09T11:26:58-05:00",
+    "age_min": 0.5,
+    "ticker": "ORCL",
+    "action": "BUY",
+    "entry": 119.15,
+    "stop": 117.17,
+    "target": 124.09,
+    "qty": 333,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at 119.15 lacks clear orderliness: the 11:20 candle closed near its high (119.32) after a choppy session, suggesting exhaustion rather than a structured retracement. The RSI (62.19) is neutral, not extreme, but the volume spike at 10:40 (43,033) and subsequent erratic candles (e.g., 10:35 low at 118.44) indicate weak follow-through. The target (124.09) is 3.75 ATR away, but with only 274 minutes left, this feels aggressive given the lack of momentum confirmation. The stop (117.17) is 1.5 ATR away, which is reasonable but not compelling given the structure.",
+      "macro": "SPY's +1.98% day move aligns with the BUY thesis, but ORCL’s relative weakness (e.g., failed to hold 119.30 after SPY’s rally) suggests it may not participate meaningfully in late-session strength. The lack of a clear breakout or continuation pattern (e.g., higher highs/lows) further weakens the case.",
+      "risk": "No earnings risk, but the session’s late timing (274 minutes left) and ORCL’s lack of conviction in the pullback make this a high-risk setup. The reward:risk (2.49) is mathematically appealing, but the technical setup does not justify the risk given the time constraints."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
