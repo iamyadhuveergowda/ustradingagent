@@ -3449,5 +3449,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-134637-NOW",
+    "signal_time": "2026-11-09T13:46:37-05:00",
+    "judged_at": "2026-11-09T13:47:03-05:00",
+    "age_min": 0.4,
+    "ticker": "NOW",
+    "action": "BUY",
+    "entry": 103.7,
+    "stop": 102.92,
+    "target": 105.66,
+    "qty": 383,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional momentum into the entry at 103.7. The last 12 candles exhibit a lack of conviction, with highs and lows failing to hold (e.g., 103.83 rejected twice, 103.67 a single-bar spike). The pullback to entry is disorderly, with no orderly retracement or directional close. Volume ratio (1.49) is neutral and does not confirm strength. Stop distance (1.5 ATR) is reasonable, but the target (3.76 ATR) feels stretched given the lack of structural clarity and only 134 minutes left to close. The RSI (51.64) is neutral and does not support a directional bias.",
+      "macro": "SPY's +2.36% day move aligns with the BUY thesis, but NOW's structure does not reflect broader market strength. The trade lacks a clear regime confirmation.",
+      "risk": "No earnings risk, but the trade is exposed to late-session volatility with limited time to unwind. The reward:risk (2.51) is mathematically appealing, but the lack of structural conviction outweighs it."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
