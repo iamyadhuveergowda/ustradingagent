@@ -2899,5 +2899,30 @@
     "outcome": "CLOSE",
     "outcome_r": 0.13,
     "outcome_at": "2026-11-06T20:11:41-05:00"
+  },
+  {
+    "signal_id": "20261109-100310-MRK",
+    "signal_time": "2026-11-09T10:03:10-05:00",
+    "judged_at": "2026-11-09T10:03:35-05:00",
+    "age_min": 0.4,
+    "ticker": "MRK",
+    "action": "BUY",
+    "entry": 146.98,
+    "stop": 146.21,
+    "target": 148.89,
+    "qty": 270,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is in a late-session pullback (15:35-15:55) with a directional close at 146.75 after a high of 147.00, but the structure is weak: the 15:55 candle shows exhaustion (high at 147.00, close at 146.75) and the 15:50 candle's volume spike (11415) suggests a potential rejection. The entry at 146.98 is above the 15:55 low (146.61) and lacks a clear retest of a higher timeframe support. The stop at 146.21 (1.51 ATR) is too far from the entry for the remaining session (357 minutes), and the target at 148.89 (3.74 ATR) is aggressive given the late-hour timing and lack of momentum. The RSI (51.84) is neutral, not confirming a strong pullback.",
+      "macro": "SPY's +1.66% day move aligns with the BUY thesis, but the intraday structure of MRK does not support a high-conviction entry at this stage. The late-session pullback lacks conviction, and the geometry (reward:risk 2.48) is not justified by the current candle geometry.",
+      "risk": "No earnings risk, but the late-session timing (357 minutes left) and weak candle structure make this a high-risk entry. The target is unrealistic for the remaining session unless a strong reversal occurs, which is unlikely given the exhaustion signals."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
