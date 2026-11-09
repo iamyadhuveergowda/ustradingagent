@@ -3474,5 +3474,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-135324-AVGO",
+    "signal_time": "2026-11-09T13:53:24-05:00",
+    "judged_at": "2026-11-09T13:53:51-05:00",
+    "age_min": 0.5,
+    "ticker": "AVGO",
+    "action": "BUY",
+    "entry": 320.1,
+    "stop": 316.71,
+    "target": 328.57,
+    "qty": 124,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 320.10 with a tight stop (316.71, ~1.5 ATR) and a target (328.57, ~3.75 ATR) that may not be achievable in the remaining 127 minutes (SPY +2.40% day move suggests momentum, but AVGO's pullback lacks clear exhaustion). The 13:50 candle closed near its high, but the 13:45 candle's high (319.94) was not decisively broken, and the 13:50 close (320.22) is still above the entry. The structure is not orderly; the pullback from the 13:45 high (319.94) to the 13:50 low (319.58) is shallow and lacks conviction. Volume ratio (1.19) is neutral but not supportive of a breakout. Feasibility is not explicitly flagged, but the target distance (3.75 ATR) in 127 minutes is aggressive for a midday entry.",
+      "macro": "No macro context provided; relying solely on SPY alignment (BUY) is insufficient without broader regime confirmation.",
+      "risk": "No earnings risk today/tomorrow. However, the trade's reward:risk (2.5) is skewed by the tight stop, and the lack of a clear breakout structure increases the risk of a false entry. The 13:50 candle's close near its high does not confirm exhaustion, and the 13:55-14:00 candles (not shown) would be critical for validation. Timing is poor for a midday entry with only 127 minutes left."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
