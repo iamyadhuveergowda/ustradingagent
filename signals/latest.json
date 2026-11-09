@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261109-123758-PEP",
-  "generated_at": "2026-11-09T12:37:58.291769-05:00",
-  "spy_day_pct": 2.3429426162632607,
+  "signal_id": "20261109-123926-PEP",
+  "generated_at": "2026-11-09T12:39:26.759622-05:00",
+  "spy_day_pct": 2.3103073157465337,
   "candidates": [
     {
       "ticker": "PEP",
       "signal": "BUY",
-      "ltp": 142.96,
-      "stop": 142.3,
-      "target": 144.6,
-      "qty": 277,
+      "ltp": 142.84,
+      "stop": 142.19,
+      "target": 144.49,
+      "qty": 278,
       "indicators": {
         "rsi": 55.57,
         "atr": 0.4378,
         "vol_ratio": 1.79
       },
-      "scout_reason": "SPY +2.34% aligns with BUY",
+      "scout_reason": "SPY +2.31% aligns with BUY",
       "candles_5m": [
         [
           "11:00",
@@ -180,8 +180,8 @@
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-09T12:37:58.668701-05:00"
+      "outcome_reason": "INTO_WALL: entry 142.84 is within 0.5*ATR (0.219) of recent swing high 142.87 at 12:20, indicating proximity to wall",
+      "outcome_at": "2026-11-09T12:39:31.268797-05:00"
     }
   ]
 }
