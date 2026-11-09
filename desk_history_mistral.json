@@ -3149,5 +3149,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-120740-HON",
+    "signal_time": "2026-11-09T12:07:40-05:00",
+    "judged_at": "2026-11-09T12:08:01-05:00",
+    "age_min": 0.4,
+    "ticker": "HON",
+    "action": "BUY",
+    "entry": 227.69,
+    "stop": 226.26,
+    "target": 231.27,
+    "qty": 174,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure leading into the entry (12:07 ET) shows a choppy, sideways consolidation with no clear directional momentum. The last 12 candles (11:00–12:00 ET) exhibit a tight range (227.37–228.74), with the final candle (12:00 ET) closing at the entry price (227.69) after a brief spike to 228.02. The pullback into the entry lacks conviction: the low of 227.37 (12:00 ET) is only 0.32 below the entry, and the volume spike at 11:30 ET (7031) does not confirm a breakout. The RSI (62.22) is neutral, and the vol_ratio (2.57) is not extreme, but the lack of a clear breakout or exhaustion pattern weakens the setup. The stop (226.26) is 1.5 ATR away, but the target (231.27) is 3.75 ATR away, which is aggressive for the remaining 233 minutes (16:00 ET close). The geometry is tight (reward:risk 2.5), but the structure is not compelling enough to justify a GO in this late-stage session.",
+      "macro": "The SPY day move (+2.17%) aligns with the BUY thesis, but intraday momentum for HON is lacking. The stock has not participated meaningfully in the broader market rally, and the entry is not supported by a clear breakout or exhaustion pattern.",
+      "risk": "No earnings risk identified. However, the late-session timing (233 minutes to close) and lack of structural conviction increase the risk of a false breakout or a choppy close. The target assumes a strong continuation, which is unlikely without additional catalysts or a clearer breakout."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
