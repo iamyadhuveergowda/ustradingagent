@@ -2999,5 +2999,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-113347-CRM",
+    "signal_time": "2026-11-09T11:33:47-05:00",
+    "judged_at": "2026-11-09T11:34:12-05:00",
+    "age_min": 0.4,
+    "ticker": "CRM",
+    "action": "BUY",
+    "entry": 214.72,
+    "stop": 213.21,
+    "target": 218.49,
+    "qty": 184,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional momentum into the entry at 214.72. The last 12 candles (10:35–11:30) exhibit a tight range (214.34–215.35) and a lack of follow-through on higher-timeframe breaks. The 11:30 candle closed at 214.88, well below the entry trigger (214.72), suggesting exhaustion rather than a fresh impulse. Volume ratio (1.6) is not extreme, but the pullback lacks conviction. Stop distance (1.5 ATR) is reasonable, but the target (3.75 ATR) feels stretched given the remaining session (267 minutes) and the absence of a clear breakout structure. The RSI (52.14) is neutral, not confirming overbought/oversold extremes.",
+      "macro": "SPY’s +1.92% day move aligns with the BUY thesis, but CRM’s relative weakness (sideways with no clear trend) suggests it is not participating meaningfully in the broader market rally. Without a catalyst or a breakout, the trade lacks a structural edge.",
+      "risk": "No earnings or macro risks identified for CRM today/tomorrow. However, the lack of a clear breakout structure and the choppy price action elevate the risk of a false break or a quick reversal into the close. The reward:risk (2.5) is mathematically appealing, but the geometric setup is weak for an intraday trade with 267 minutes remaining."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
