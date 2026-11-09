@@ -3374,5 +3374,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261109-133850-MU",
+    "signal_time": "2026-11-09T13:38:50-05:00",
+    "judged_at": "2026-11-09T13:39:35-05:00",
+    "age_min": 0.8,
+    "ticker": "AXP",
+    "action": "BUY",
+    "entry": 325.61,
+    "stop": 324.12,
+    "target": 329.33,
+    "qty": 122,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, indecisive structure around the entry level (325.61). The last 12 candles exhibit a lack of clear directional momentum: the 13:20 candle closed at 325.31 (below entry) before recovering, and the 13:35 candle is a doji at the entry price, indicating hesitation. The pullback from the 13:30 high (325.93) to the 13:35 close (325.61) is orderly but lacks conviction, with volume not spiking meaningfully on the downside. The stop (324.12) is 1.5 ATR (~0.99) away, which is reasonable, but the target (329.33) is 3.75 ATR away—aggressive for the remaining 142 minutes (16:00 ET close). The reward:risk of 2.5 is mathematically appealing, but the structure does not justify it given the lack of momentum and proximity to close.",
+      "macro": "SPY's +2.32% day move aligns with the BUY thesis, but AXP's intraday structure does not reflect broader market strength. The lack of follow-through on the pullback suggests either exhaustion or a need for a clearer catalyst.",
+      "risk": "No earnings risk identified. However, the proximity to the 16:00 ET close (142 minutes) limits the trade's feasibility, even if the target is theoretically achievable. The doji at entry and weak volume on the pullback further reduce confidence in a successful execution."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
