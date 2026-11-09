@@ -762,7 +762,7 @@
     "ticker": "META",
     "action": "BUY",
     "qty": 64,
-    "remaining_qty": 64,
+    "remaining_qty": 0,
     "locked_margin_per_share": 621.29,
     "partial_booked": false,
     "entry": 621.29,
@@ -774,19 +774,24 @@
     "low": 620.24,
     "close": 614.24,
     "time": "11:43:57",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 613.687031,
+    "net_pnl": -493.11,
     "rationale": "Entry 621.6 is 2.01 above VWAP 619.59 (within 1.5*ATR=7.06), stop 614.54 is 7.06 below entry (>1*ATR) providing a comfortable risk buffer, target 639.26 is 17.66 above entry (<4.5*ATR=21.19) so realistic, ATR 4.7099 supports these levels, no hard‑gate violations (qty≥1, stop below entry, target within ATR cap, prev_close within 10%), no vetoes (price not beyond VWAP+1.5*ATR, no heavy volume bar against direction, stop not in noise, no contradictory news, no upcoming event, macro regime permits B",
     "events": [
       {
         "time": "2026-11-06T11:43:57-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 64 @ $621.29"
+      },
+      {
+        "time": "2026-11-09T08:00:08-05:00",
+        "type": "EXIT",
+        "text": "Broker stop filled (reconciled): 64 @ $613.69, net $-493.11"
       }
     ],
     "mode": "PAPER",
-    "last_price": 614.24,
+    "last_price": 613.687031,
     "atr": 4.7099,
     "breakeven_set": false,
     "mfe_r": 0.126,
@@ -797,8 +802,14 @@
     "rule_version": "us_v2.6",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.5198,
+      "total": 6.5198
+    },
+    "pnl_by_date": {
+      "2026-11-09": -493.11
+    },
     "orders": {
       "entry": {
         "id": "f2a467ed-d8a9-48f5-a356-c9a983e16d78",
@@ -810,6 +821,7 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 621.39
+    "breakeven_price": 621.39,
+    "exit_time": "2026-11-09T08:00:08-05:00"
   }
 ]
