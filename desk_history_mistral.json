@@ -3874,5 +3874,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-132322-JNJ",
+    "signal_time": "2026-11-10T13:23:22-05:00",
+    "judged_at": "2026-11-10T13:23:56-05:00",
+    "age_min": 0.6,
+    "ticker": "JNJ",
+    "action": "SELL",
+    "entry": 281.06,
+    "stop": 282.18,
+    "target": 278.25,
+    "qty": 140,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the SELL entry at 281.06, with the last 12 candles showing a clear breakdown below the 281.10-281.20 range. The 13:15 candle closed at 280.81, well below the entry, and the 13:20 candle closed at 281.04, still below the entry. The structure lacks a pullback with a directional close; instead, it shows exhaustion into the entry. Volume ratio (1.83) is high but not decisive. Stop distance (1.54 ATR) is reasonable, but the target (278.25) is 3.85 ATR away, which is aggressive for the remaining 157 minutes (16:00 ET close). The RSI (40.46) is neutral, not confirming a strong bearish momentum.",
+      "macro": "SPY day move (-0.895%) aligns with the SELL thesis, but the intraday structure is weak for a trade this late in the session (13:23 ET).",
+      "risk": "No earnings risk today/tomorrow for JNJ. However, the trade is SKIPPED due to poor structure and late timing. A valid entry would require a retest of 281.06 with a higher low and a directional close (e.g., a bullish engulfing or hammer candle) to confirm exhaustion."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
