@@ -3899,5 +3899,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-132830-CAT",
+    "signal_time": "2026-11-10T13:28:30-05:00",
+    "judged_at": "2026-11-10T13:28:56-05:00",
+    "age_min": 0.4,
+    "ticker": "CAT",
+    "action": "SELL",
+    "entry": 577.68,
+    "stop": 583.14,
+    "target": 564.04,
+    "qty": 68,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the SELL entry at 577.68, with the last 5-minute candle (13:25) closing near the low (577.68) after a sharp drop from 579.08 in the prior candle (13:20). The pullback lacks an orderly structure, and the volume spike at 13:20 (1999) suggests exhaustion rather than a healthy retracement. The RSI (47.03) is neutral, not confirming a bearish reversal. Geometry is favorable (reward:risk 2.5, target_distance_atr 3.75), but the entry timing (13:28 ET, 152 minutes left) is late for a SELL in a weakening SPY (-0.90%).",
+      "macro": "SPY's intraday move (-0.898%) aligns with the SELL thesis, but the late timing and lack of a clear pullback structure weaken conviction.",
+      "risk": "No earnings risk detected. Feasibility is TIGHT due to late timing and stop distance (1.5 ATR)."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
