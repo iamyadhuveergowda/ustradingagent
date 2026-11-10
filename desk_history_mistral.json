@@ -3949,5 +3949,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-134236-C",
+    "signal_time": "2026-11-10T13:42:36-05:00",
+    "judged_at": "2026-11-10T13:42:56-05:00",
+    "age_min": 0.3,
+    "ticker": "C",
+    "action": "SELL",
+    "entry": 121.98,
+    "stop": 122.61,
+    "target": 120.39,
+    "qty": 323,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a lack of conviction in the SELL direction. The last 12 candles exhibit a tight range (121.80-122.01) with no clear breakdown below the entry level of 121.98. The 13:35 candle closed at 121.90, slightly below the 121.98 entry, but the volume ratio (1.22) is not strong enough to confirm exhaustion. The pullback lacks an orderly structure, and the 13:05 candle (121.81) was a single-bar spike with minimal volume (218), suggesting a potential trap. The stop distance (1.49 ATR) is tight, but the target (120.39) is 3.76 ATR away, which may not be achievable in the remaining 138 minutes given the current lack of momentum.",
+      "macro": "SPY's -0.73% day move aligns with the SELL thesis, but the intraday structure of C does not reflect a strong bearish continuation. Without additional macro catalysts or a clearer breakdown, the trade lacks conviction.",
+      "risk": "No earnings risk detected. However, the trade would require a sharp and sustained move to hit the target, which is unlikely given the current lack of momentum and the late timing (13:42 ET)."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
