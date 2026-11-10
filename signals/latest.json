@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261110-132322-JNJ",
-  "generated_at": "2026-11-10T13:23:22.266224-05:00",
-  "spy_day_pct": -0.8954192794133289,
+  "signal_id": "20261110-132618-JNJ",
+  "generated_at": "2026-11-10T13:26:18.321059-05:00",
+  "spy_day_pct": -0.9007333404187443,
   "candidates": [
     {
       "ticker": "JNJ",
       "signal": "SELL",
-      "ltp": 281.06,
-      "stop": 282.18,
-      "target": 278.25,
+      "ltp": 281.17,
+      "stop": 282.29,
+      "target": 278.36,
       "qty": 140,
       "indicators": {
         "rsi": 40.46,
@@ -172,16 +172,16 @@
         [
           "13:20",
           280.78,
-          281.07,
+          281.17,
           280.74,
-          281.04,
-          1612
+          281.17,
+          2103
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
-      "outcome_reason": "DEBATE: BULL: entry 281.06 sits just below VWAP 281.08, negative SPY macro (-0.9%) supports downside, recent 13:15 close 280.81 shows emerging weakness. BEAR: target 278.25 is 1.96 below the session l",
-      "outcome_at": "2026-11-10T13:23:29.879767-05:00"
+      "outcome_reason": "NEWS_CONTRADICTION: \"Johnson & Johnson Announces Positive Results from Second Phase 3 Study of CAPLYTA for Bipolar Mania\" opposes SELL direction",
+      "outcome_at": "2026-11-10T13:26:22.729991-05:00"
     }
   ]
 }
