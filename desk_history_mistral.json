@@ -3624,5 +3624,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-112651-ADBE",
+    "signal_time": "2026-11-10T11:26:51-05:00",
+    "judged_at": "2026-11-10T11:27:26-05:00",
+    "age_min": 0.6,
+    "ticker": "ADBE",
+    "action": "SELL",
+    "entry": 234.25,
+    "stop": 235.8,
+    "target": 230.38,
+    "qty": 168,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 234.25 with a weak directional close (11:20 candle closed at 234.25 after a high of 234.52 and low of 234.10). The pullback lacks conviction, and the 11:15 candle shows a failed attempt to break above 234.41, suggesting indecision. Volume ratio (1.35) is not strong enough to confirm a meaningful reversal. Stop distance (1.5 ATR) is reasonable, but the target (230.38) feels aggressive given the remaining session time (274 minutes) and the lack of a clear breakdown structure.",
+      "macro": "SPY's -0.67% move aligns with the SELL thesis, but ADBE’s structure does not yet reflect a high-probability short setup.",
+      "risk": "No earnings risk detected. However, the lack of a clear breakdown and weak volume ratio increases the risk of a false signal."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-112651-ADBE",
+    "signal_time": "2026-11-10T11:26:51-05:00",
+    "judged_at": "2026-11-10T11:27:26-05:00",
+    "age_min": 0.6,
+    "ticker": "CAT",
+    "action": "SELL",
+    "entry": 577.36,
+    "stop": 584.12,
+    "target": 560.43,
+    "qty": 68,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Break below 576.40 with a close below 576.00",
+    "notes": {
+      "technical": "CAT shows a clearer breakdown structure with the 11:20 candle closing at 577.36 after a high of 578.31 and a low of 576.54. The 11:25 candle (576.40) is testing support, and a break below this level with a close below 576.00 would confirm a short setup. The volume ratio (1.21) is directional, and the RSI (35.76) suggests oversold conditions. Stop distance (1.5 ATR) is reasonable, and the target (560.43) is achievable given the remaining session time (274 minutes) and the current momentum.",
+      "macro": "SPY's -0.67% move aligns with the SELL thesis, reinforcing the short bias.",
+      "risk": "No earnings risk detected. However, CAT’s volatility (ATR 4.51) increases the risk of a sharp move against the trade if the breakdown fails."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
