@@ -98,5 +98,30 @@
     "outcome": "CLOSE",
     "outcome_r": 1.1,
     "outcome_at": "2026-11-04T20:26:52-05:00"
+  },
+  {
+    "signal_id": "20261110-105222-COP",
+    "signal_time": "2026-11-10T10:52:22-05:00",
+    "judged_at": "2026-11-10T10:53:12-05:00",
+    "age_min": 0.8,
+    "ticker": "COP",
+    "action": "SELL",
+    "entry": 134.62,
+    "stop": 135.75,
+    "target": 131.81,
+    "qty": 294,
+    "verdict": "SKIP",
+    "confidence": 72,
+    "trigger": "Valid only on a break below 134.30",
+    "notes": {
+      "technical": "Candles show overlapping consolidation between 134.30 and 135.34 rather than clean trend momentum. Although 10:45 logged high volume (9,947), the bounce to 134.66 and RSI at 48.0 reflect neutral, choppy action rather than an orderly breakdown.",
+      "macro": "SPY day move of -0.77% provides directional alignment for short exposure, but broad market weakness has not translated into strong downside beta for COP.",
+      "risk": "Target of 131.81 is 3.75 ATR ($2.81) away, requiring nearly triple the current session range ($1.04) across 308 remaining minutes; the 1.51 ATR stop at 135.75 is excessively loose relative to recent 5m structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
