@@ -3974,5 +3974,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-142124-CRM",
+    "signal_time": "2026-11-10T14:21:24-05:00",
+    "judged_at": "2026-11-10T14:21:46-05:00",
+    "age_min": 0.4,
+    "ticker": "CRM",
+    "action": "SELL",
+    "entry": 210.9,
+    "stop": 212.34,
+    "target": 207.3,
+    "qty": 187,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **210.90** lacks conviction: the last 5-minute candle (14:15) closed **below its open (210.93 → 210.90)** but with **high volume (2787)** and a **low of 210.90**, suggesting exhaustion rather than a fresh downside impulse. The **RSI (48.46)** is neutral, and the **vol_ratio (1.83)** is elevated but not extreme. The **stop (212.34)** is **1.5 ATR (~0.96 ATR units)** above entry, which is reasonable, but the **target (207.30, 3.75 ATR away)** is aggressive for **99 minutes left**—even if hit, it leaves little room for a reversal before close. The **reward:risk (2.5)** is mathematically appealing, but the **geometry (extended highs at 211.44 in 14:05, then immediate pullback)** weakens the case. The **SPY day move (-0.58%)** aligns with the SELL thesis, but the **candle structure (flat-topped distribution at 211.00-211.20)** suggests a lack of momentum.",
+      "macro": "No macro context provided; relying solely on structure.",
+      "risk": "No earnings risk today/tomorrow for CRM. However, the **late-session timing (14:21 ET, 99 minutes left)** and **extended highs** increase the risk of a pre-close reversal or gap fill. The trade would require a **sharp, sustained break below 210.90** to avoid being stopped out in choppy conditions."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
