@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261110-133313-GOOGL",
-  "generated_at": "2026-11-10T13:33:13.577181-05:00",
-  "spy_day_pct": -0.7692103305346047,
+  "signal_id": "20261110-133742-GOOGL",
+  "generated_at": "2026-11-10T13:37:42.073187-05:00",
+  "spy_day_pct": -0.7147412052290354,
   "candidates": [
     {
       "ticker": "GOOGL",
       "signal": "SELL",
-      "ltp": 286.07,
-      "stop": 287.81,
-      "target": 281.71,
+      "ltp": 286.09,
+      "stop": 287.83,
+      "target": 281.73,
       "qty": 138,
       "indicators": {
-        "rsi": 39.44,
+        "rsi": 38.07,
         "atr": 1.1616,
-        "vol_ratio": 1.2
+        "vol_ratio": 1.56
       },
-      "scout_reason": "SPY -0.77% aligns with SELL",
+      "scout_reason": "SPY -0.71% aligns with SELL",
       "candles_5m": [
-        [
-          "11:55",
-          287.66,
-          287.66,
-          287.08,
-          287.12,
-          13459
-        ],
         [
           "12:00",
           287.03,
@@ -172,16 +164,24 @@
         [
           "13:30",
           286.02,
-          286.13,
-          285.98,
-          286.07,
-          4639
+          286.21,
+          285.85,
+          285.88,
+          11068
+        ],
+        [
+          "13:35",
+          285.76,
+          285.87,
+          285.76,
+          285.85,
+          597
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-10T13:33:14.079773-05:00"
+      "outcome": "dropped_news",
+      "outcome_reason": "Toxic headline: NHTSA Opens Recall Query Into Waymo Robotaxis For Continued Reports Of Passing Stopped School Buses After 2025 Software Recall",
+      "outcome_at": "2026-11-10T13:37:43.708635-05:00"
     }
   ]
 }
