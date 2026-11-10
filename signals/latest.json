@@ -1,14 +1,14 @@
 {
-  "signal_id": "20261110-134236-C",
-  "generated_at": "2026-11-10T13:42:36.300707-05:00",
-  "spy_day_pct": -0.7293548729939432,
+  "signal_id": "20261110-134441-C",
+  "generated_at": "2026-11-10T13:44:41.370910-05:00",
+  "spy_day_pct": -0.7260335848655585,
   "candidates": [
     {
       "ticker": "C",
       "signal": "SELL",
-      "ltp": 121.98,
-      "stop": 122.61,
-      "target": 120.39,
+      "ltp": 121.95,
+      "stop": 122.58,
+      "target": 120.36,
       "qty": 323,
       "indicators": {
         "rsi": 49.68,
@@ -174,14 +174,14 @@
           121.92,
           121.98,
           121.92,
-          121.98,
-          363
+          121.95,
+          507
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-10T13:42:36.645727-05:00"
+      "outcome_at": "2026-11-10T13:44:41.719429-05:00"
     }
   ]
 }
