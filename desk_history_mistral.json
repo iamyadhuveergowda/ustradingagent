@@ -3749,5 +3749,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-115414-DIS",
+    "signal_time": "2026-11-10T11:54:14-05:00",
+    "judged_at": "2026-11-10T11:54:35-05:00",
+    "age_min": 0.3,
+    "ticker": "DIS",
+    "action": "SELL",
+    "entry": 118.24,
+    "stop": 118.75,
+    "target": 116.96,
+    "qty": 334,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Candle structure shows a choppy, erratic pullback into the 118.24 entry level. The 11:45 candle closed at 118.21 after a wide range (118.14-118.32), suggesting indecision rather than a clean directional pullback. The 11:50 candle closed at 118.24 (entry level) with minimal volume (312) and no clear follow-through, indicating weak conviction. The stop at 118.75 is 1.5 ATR away, but the target (116.96) is 3.74 ATR away, which is aggressive for the remaining 246 minutes (4.1 hours). The reward:risk of 2.51 is decent, but the lack of a clean pullback structure and proximity to close (246 minutes) make this a high-risk setup.",
+      "macro": "SPY day move (-0.76%) aligns with the SELL thesis, but intraday momentum is weak, and the lack of a clear macro catalyst (no news feed) limits conviction.",
+      "risk": "No earnings risk today or tomorrow for DIS. However, the proximity to the 16:00 ET close (246 minutes) and the erratic candle structure increase the risk of a false break or a late-session reversal. The trade would require exceptional structure to justify entry this late in the session."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
