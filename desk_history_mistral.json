@@ -3699,5 +3699,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-114135-TSLA",
+    "signal_time": "2026-11-10T11:41:35-05:00",
+    "judged_at": "2026-11-10T11:41:55-05:00",
+    "age_min": 0.3,
+    "ticker": "TSLA",
+    "action": "SELL",
+    "entry": 376.0,
+    "stop": 379.52,
+    "target": 367.23,
+    "qty": 105,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is in a tight range (375.15-378.30) with a directional close only in the 11:15 candle (376.76), but the pullback from 378.30 (11:05 high) to 376.00 (entry) is disorderly and lacks clear exhaustion. The 11:35 candle closes at 376.00 with a low of 375.15, but the volume spike (10091) suggests a potential short squeeze or exhaustion rather than a structured pullback. The RSI (42.1) is neutral, not extreme, and does not confirm overbought/oversold conditions. The stop (379.52) is 1.5 ATR above entry, but the target (367.23) is 3.75 ATR away, which is aggressive for the remaining 259 minutes (4.3 hours) given the tight range and lack of clear momentum.",
+      "macro": "SPY day move (-0.78%) aligns with the SELL action, but the trade lacks a clear macro catalyst or regime confirmation beyond this alignment. The session is still early, and the trade would require exceptional structure to justify a GO.",
+      "risk": "No earnings risk today or tomorrow for TSLA. However, the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and time remaining (259 minutes). The reward:risk (2.49) is attractive, but the lack of a clear pullback structure and the disorderly price action near the entry make it risky. The vol_ratio (1.79) is slightly elevated but not definitive."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
