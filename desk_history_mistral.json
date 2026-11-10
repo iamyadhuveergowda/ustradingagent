@@ -3924,5 +3924,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-133313-GOOGL",
+    "signal_time": "2026-11-10T13:33:13-05:00",
+    "judged_at": "2026-11-10T13:33:43-05:00",
+    "age_min": 0.5,
+    "ticker": "GOOGL",
+    "action": "SELL",
+    "entry": 286.07,
+    "stop": 287.81,
+    "target": 281.71,
+    "qty": 138,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear exhaustion or momentum into the SELL entry at 286.07. The last 12 candles (12:35–13:30) lack a directional close, oscillating within a tight 285.70–286.39 range. The 13:25 candle closed at 286.02 (below the 13:20 high of 286.33), but the 13:30 candle closed at 286.07 (entry level) with minimal volume (4639) and no follow-through. The RSI (39.44) is neutral, not overbought or oversold, and the pullback lacks conviction. Stop distance (1.5 ATR) is reasonable, but the target (281.71) is 3.75 ATR away—a stretch for 147 minutes left in the session, especially given the lack of momentum.",
+      "macro": "SPY’s -0.77% day move aligns with the SELL thesis, but intraday structure is more important for intraday trades. No macro catalyst is visible in the payload.",
+      "risk": "No earnings risk today/tomorrow for GOOGL. However, the trade’s feasibility is **TIGHT** due to the target’s distance (3.75 ATR) and time left (147 minutes). The lack of directional conviction in the candles and weak volume at entry (13:30) further reduces the risk/reward. A GO would require a break below 285.70 (13:15 low) with follow-through volume to validate exhaustion."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
