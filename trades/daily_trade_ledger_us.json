@@ -959,5 +959,61 @@
     },
     "breakeven_price": 103.59,
     "exit_time": "2026-11-09T15:58:17-05:00"
+  },
+  {
+    "trade_id": "20261110105244-COP",
+    "date": "2026-11-10",
+    "ticker": "COP",
+    "action": "SELL",
+    "qty": 294,
+    "remaining_qty": 294,
+    "locked_margin_per_share": 134.38,
+    "partial_booked": false,
+    "entry": 134.38,
+    "sl": 135.62,
+    "initial_sl": 135.62,
+    "tgt": 131.68,
+    "open": 134.74,
+    "high": 134.78,
+    "low": 134.3,
+    "close": 134.35,
+    "time": "10:52:44",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "BULL: SPY down 0.77% supports SELL; entry sits just 0.715 below the session high (135.335) with target 0.63 above the session low, giving a clear swing trade; expected travel 7.57 > required 2.81 and stop is 1.5 ATR away, RSI neutral, no adverse news. BEAR: price remains above VWAP (134.18) and recent 5‑min bars show slight upward bias, so a bounce could hit the tight 1.13 ATR stop; target sits near the low and may face buying pressure. VERDICT: APPROVE",
+    "events": [
+      {
+        "time": "2026-11-10T10:52:44-05:00",
+        "type": "ENTRY",
+        "text": "PAPER SELL 294 @ $134.38"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 134.38,
+    "atr": 0.7502,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": -0.77,
+    "vol_ratio": 1.18,
+    "rvol": 1.59,
+    "rule_version": "us_v2.7",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "c474f528-b621-48fc-a8fe-da412b6ac5bf",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-10 15:52:31.145137+00:00"
+      },
+      "stop": {
+        "id": "4ce7c2a1-3eca-401b-b2ca-0bf830c8a278",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 134.36
   }
 ]
