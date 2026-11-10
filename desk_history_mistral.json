@@ -3674,5 +3674,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261110-113211-WFC",
+    "signal_time": "2026-11-10T11:32:11-05:00",
+    "judged_at": "2026-11-10T11:32:33-05:00",
+    "age_min": 0.4,
+    "ticker": "WFC",
+    "action": "SELL",
+    "entry": 85.59,
+    "stop": 86.05,
+    "target": 84.45,
+    "qty": 462,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 85.59 lacks clear exhaustion: the 11:30 candle closed near its high (85.62) with volume spike (vol_ratio 2.33), suggesting a potential short squeeze or accumulation. The 11:25 candle's high (85.62) aligns with the entry, but the 11:30 candle's inability to close below 85.59 weakens the bearish case. Stop at 86.05 is 1.51 ATR (~1.5x ATR) away, which is reasonable, but the target (84.45) is 3.75 ATR (~3.75x ATR) away—feasible given 268 minutes left, but the structure is not compelling. The RSI (44.76) is neutral, not extreme, and does not support a forced SELL.",
+      "macro": "SPY's -0.72% day move aligns with the SELL thesis, but WFC's intraday structure does not reflect broader market weakness. The lack of a clear breakdown or exhaustion pattern limits conviction.",
+      "risk": "No earnings risk today/tomorrow. However, the vol_ratio spike at 11:30 suggests potential short-term volatility, which could work against the SELL if the move is a squeeze rather than a reversal."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
