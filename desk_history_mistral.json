@@ -4174,5 +4174,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-121705-TSLA",
+    "signal_time": "2026-11-11T12:17:05-05:00",
+    "judged_at": "2026-11-11T12:17:31-05:00",
+    "age_min": 0.4,
+    "ticker": "TSLA",
+    "action": "BUY",
+    "entry": 392.65,
+    "stop": 389.41,
+    "target": 400.74,
+    "qty": 100,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 392.65, with the last 12 candles showing a choppy, sideways structure since 11:20 ET. The 12:10 candle (391.88-392.63) closed near its high but with a volume spike (17383), suggesting exhaustion rather than a clean pullback. The RSI (57.47) is neutral, and the stop distance (1.5 ATR) is tight for a trade with only 223 minutes left. The target (400.74) is 3.75 ATR away, which is aggressive given the time left and the lack of a clear directional bias in the structure.",
+      "macro": "SPY's +1.37% day move aligns with the BUY thesis, but TSLA's intraday structure lacks conviction. The stock is not showing a clean pullback or a clear break of a higher-timeframe structure.",
+      "risk": "No earnings risk today or tomorrow. However, the trade's reward:risk (2.5) is skewed by the tight stop and aggressive target. The lack of a clear entry trigger (e.g., a break of a key level or a higher-volume pullback) further reduces feasibility."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
