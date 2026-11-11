@@ -1027,5 +1027,61 @@
     },
     "breakeven_price": 134.36,
     "exit_time": "2026-11-10T12:36:19-05:00"
+  },
+  {
+    "trade_id": "20261111120909-GE",
+    "date": "2026-11-11",
+    "ticker": "GE",
+    "action": "BUY",
+    "qty": 115,
+    "remaining_qty": 115,
+    "locked_margin_per_share": 341.28,
+    "partial_booked": false,
+    "entry": 341.28,
+    "sl": 339.47,
+    "initial_sl": 339.47,
+    "tgt": 345.59,
+    "open": 341.25,
+    "high": 341.46,
+    "low": 341.08,
+    "close": 341.46,
+    "time": "12:09:09",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "BULL: Entry at 341.24 sits just below the session high (342.55) with recent upward candles and volume, ATR 1.1664 gives target 4.37 points which is within expected travel 8.79 and stop 339.49 is 1.75 points below entry, providing ~1.5 ATR risk‑reward. / BEAR: Target 345.61 lies 3.06 points above the current session high, requiring a new high in the remaining 226.2 min; any pullback could hit stop 339.49 and upside may be capped by lack of further momentum. / VERDICT: APPROVE",
+    "events": [
+      {
+        "time": "2026-11-11T12:09:09-05:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 115 @ $341.28"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 341.28,
+    "atr": 1.1664,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 1.35,
+    "vol_ratio": 1.56,
+    "rvol": 0.47,
+    "rule_version": "us_v2.9",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "9d864b89-9906-4fb6-8b53-b96d126df8b7",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-11 17:08:56.709621+00:00"
+      },
+      "stop": {
+        "id": "ff4dac53-8397-4fea-b110-9231ce3e6c80",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 341.34
   }
 ]
