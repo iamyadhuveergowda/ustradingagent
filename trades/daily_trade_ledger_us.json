@@ -1044,7 +1044,7 @@
     "open": 341.25,
     "high": 341.46,
     "low": 341.08,
-    "close": 342.4,
+    "close": 342.33,
     "time": "12:09:09",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -1058,7 +1058,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 342.4,
+    "last_price": 342.33,
     "atr": 1.1664,
     "breakeven_set": false,
     "mfe_r": 0.867,
@@ -1090,7 +1090,7 @@
     "ticker": "TSLA",
     "action": "BUY",
     "qty": 100,
-    "remaining_qty": 100,
+    "remaining_qty": 0,
     "locked_margin_per_share": 392.7,
     "partial_booked": false,
     "entry": 392.7,
@@ -1100,33 +1100,44 @@
     "open": 391.88,
     "high": 392.63,
     "low": 391.36,
-    "close": 390.05,
+    "close": 389.49,
     "time": "12:19:42",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "LOSS 🔴",
+    "exit_price": 389.392,
+    "net_pnl": -337.26,
     "rationale": "BULL: Entry just above VWAP (392.47 vs 392.08) with recent upward candles and ATR‑based stop 1.5 ATR away; target 8.1 pts (3.75 ATR) is within expected travel 15.5 pts and ~215 min remaining. BEAR: Target sits 5.2 pts above the session high (395.39), requiring a breakout with no clear catalyst; price has been flat since 11:30 and news is neutral. VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-11T12:19:42-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 100 @ $392.70"
+      },
+      {
+        "time": "2026-11-11T15:51:50-05:00",
+        "type": "EXIT",
+        "text": "Broker stop filled (reconciled): 100 @ $389.39, net $-337.26"
       }
     ],
     "mode": "PAPER",
-    "last_price": 390.05,
+    "last_price": 389.392,
     "atr": 2.1567,
     "breakeven_set": false,
     "mfe_r": 0.565,
-    "mae_r": -0.866,
+    "mae_r": -0.977,
     "spy_pct": 1.4,
     "vol_ratio": 2.58,
     "rvol": 0.7,
     "rule_version": "us_v2.9",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.4639,
+      "total": 6.4639
+    },
+    "pnl_by_date": {
+      "2026-11-11": -337.26
+    },
     "orders": {
       "entry": {
         "id": "880bcca5-8eab-4144-a6f2-ec8acb7b3f4f",
@@ -1138,6 +1149,7 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 392.77
+    "breakeven_price": 392.77,
+    "exit_time": "2026-11-11T15:51:50-05:00"
   }
 ]
