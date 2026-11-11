@@ -3621,9 +3621,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-112651-ADBE",
@@ -3646,9 +3646,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-112651-ADBE",
@@ -3671,9 +3671,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-113211-WFC",
@@ -3696,9 +3696,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-114135-TSLA",
@@ -3721,9 +3721,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-114856-HON",
@@ -3746,9 +3746,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-115414-DIS",
@@ -3771,9 +3771,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-115628-CRM",
@@ -3796,9 +3796,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-122737-META",
@@ -3821,9 +3821,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-124202-META",
@@ -3846,9 +3846,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-125159-NFLX",
@@ -3871,9 +3871,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-132322-JNJ",
@@ -3896,9 +3896,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.25,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-132830-CAT",
@@ -3921,9 +3921,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-133313-GOOGL",
@@ -3946,9 +3946,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-134236-C",
@@ -3971,9 +3971,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.46,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   },
   {
     "signal_id": "20261110-142124-CRM",
@@ -3996,8 +3996,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-10T20:28:20-05:00"
   }
 ]
