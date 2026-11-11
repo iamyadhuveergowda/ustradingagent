@@ -4024,5 +4024,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-101144-NFLX",
+    "signal_time": "2026-11-11T10:11:44-05:00",
+    "judged_at": "2026-11-11T10:12:17-05:00",
+    "age_min": 0.5,
+    "ticker": "NFLX",
+    "action": "BUY",
+    "entry": 63.45,
+    "stop": 63.08,
+    "target": 64.38,
+    "qty": 622,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 63.45 with a weak pullback structure: the 15:55 candle shows a strong volume spike (144490) and a directional close at 63.25, but the 15:40-15:55 candles exhibit erratic lows and a lack of orderly retracement. The RSI (59.88) is neutral, not oversold, and the stop (63.08) is tight (1.49 ATR). The target (64.38) is 3.74 ATR away, but with only 349 minutes left, the trade lacks sufficient time to develop. The 15:55 candle's high (63.28) is already near the entry, suggesting exhaustion rather than a fresh pullback.",
+      "macro": "SPY's +0.79% day move aligns with the BUY thesis, but the late-session timing (15:40-15:55) and weak structure override this. Late entries require stronger confirmation.",
+      "risk": "No earnings risk, but the trade is exposed to late-session volatility and a lack of room for the target to be hit before close. Feasibility is TIGHT due to the short timeframe and ATR-based target distance."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
