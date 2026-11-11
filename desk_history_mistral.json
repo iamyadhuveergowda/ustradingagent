@@ -4049,5 +4049,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-113301-CVX",
+    "signal_time": "2026-11-11T11:33:01-05:00",
+    "judged_at": "2026-11-11T11:33:39-05:00",
+    "age_min": 0.6,
+    "ticker": "CVX",
+    "action": "BUY",
+    "entry": 212.43,
+    "stop": 211.58,
+    "target": 214.55,
+    "qty": 185,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the entry at **212.43** is shallow and lacks clear exhaustion (low at **212.06** in the last 12 candles). The 5-minute candle at **11:30** is a doji (open=high=low=close=**212.43**), suggesting indecision rather than a clean directional entry. Volume ratio (**1.35**) is neutral, and the RSI (**55.44**) is not extreme. The stop (**211.58**) is **1.61 ATR** away, which is reasonable, but the target (**214.55**) is **4.02 ATR** away—a **2.49:1 reward:risk**—though the session has **267 minutes** left, the structure is not compelling enough for a GO. The last 12 candles show a choppy, sideways grind with no clear momentum shift.",
+      "macro": "SPY is **+1.21%** intraday, aligning with the BUY thesis, but CVX’s lack of directional conviction in the pullback weakens the case. No macro risks are present.",
+      "risk": "No earnings or results risks today/tomorrow. Feasibility is not flagged as INFEASIBLE or TIGHT, but the trade lacks a high-conviction setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
