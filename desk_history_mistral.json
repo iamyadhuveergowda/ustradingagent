@@ -4124,5 +4124,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-120628-GE",
+    "signal_time": "2026-11-11T12:06:28-05:00",
+    "judged_at": "2026-11-11T12:06:54-05:00",
+    "age_min": 0.4,
+    "ticker": "GE",
+    "action": "BUY",
+    "entry": 341.46,
+    "stop": 339.71,
+    "target": 345.83,
+    "qty": 115,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 341.46 with a choppy, sideways structure in the last 12 candles (11:10-12:05). The 12:05 candle closed at 341.36, below the entry, and the pullback from the 11:15 high (342.55) to the 12:05 low (341.36) lacks clear directional momentum. The RSI (59.23) is neutral, and the volume ratio (1.56) does not confirm a strong directional move. The stop distance (1.5 ATR) is reasonable, but the target (345.83) is 3.75 ATR away, which is aggressive given the remaining session time (234 minutes) and the lack of a clear breakout structure. The 12:05 candle's close at 341.36 suggests exhaustion rather than a fresh entry opportunity.",
+      "macro": "SPY's +1.41% day move aligns with the BUY thesis, but GE's intraday structure does not reflect this broader trend. The lack of a clear breakout or continuation pattern limits the trade's validity.",
+      "risk": "No earnings risk identified. However, the trade's feasibility is TIGHT due to the target's distance (3.75 ATR) and the limited time remaining (234 minutes). The reward:risk (2.5) is mathematically favorable, but the lack of a clean entry structure makes it unreliable."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
