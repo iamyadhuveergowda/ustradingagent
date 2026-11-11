@@ -1034,7 +1034,7 @@
     "ticker": "GE",
     "action": "BUY",
     "qty": 115,
-    "remaining_qty": 115,
+    "remaining_qty": 0,
     "locked_margin_per_share": 341.28,
     "partial_booked": false,
     "entry": 341.28,
@@ -1044,21 +1044,26 @@
     "open": 341.25,
     "high": 341.46,
     "low": 341.08,
-    "close": 342.33,
+    "close": 342.18,
     "time": "12:09:09",
-    "status": "OPEN ⏳",
-    "exit_price": null,
-    "net_pnl": 0.0,
+    "status": "WIN 🟢",
+    "exit_price": 342.01,
+    "net_pnl": 77.42,
     "rationale": "BULL: Entry at 341.24 sits just below the session high (342.55) with recent upward candles and volume, ATR 1.1664 gives target 4.37 points which is within expected travel 8.79 and stop 339.49 is 1.75 points below entry, providing ~1.5 ATR risk‑reward. / BEAR: Target 345.61 lies 3.06 points above the current session high, requiring a new high in the remaining 226.2 min; any pullback could hit stop 339.49 and upside may be capped by lack of further momentum. / VERDICT: APPROVE",
     "events": [
       {
         "time": "2026-11-11T12:09:09-05:00",
         "type": "ENTRY",
         "text": "PAPER BUY 115 @ $341.28"
+      },
+      {
+        "time": "2026-11-11T15:56:47-05:00",
+        "type": "EXIT",
+        "text": "15:55 square-off: 115 @ $342.01, net $77.42"
       }
     ],
     "mode": "PAPER",
-    "last_price": 342.33,
+    "last_price": 342.01,
     "atr": 1.1664,
     "breakeven_set": false,
     "mfe_r": 0.867,
@@ -1069,8 +1074,14 @@
     "rule_version": "us_v2.9",
     "vol_mode": "ratio",
     "entry_brokerage_remaining": 0.0,
-    "charges": {},
-    "pnl_by_date": {},
+    "charges": {
+      "brokerage": 0.0,
+      "sec_fee": 6.529,
+      "total": 6.529
+    },
+    "pnl_by_date": {
+      "2026-11-11": 77.42
+    },
     "orders": {
       "entry": {
         "id": "9d864b89-9906-4fb6-8b53-b96d126df8b7",
@@ -1082,7 +1093,8 @@
         "status": "OrderStatus.PENDING_NEW"
       }
     },
-    "breakeven_price": 341.34
+    "breakeven_price": 341.34,
+    "exit_time": "2026-11-11T15:56:47-05:00"
   },
   {
     "trade_id": "20261111121942-TSLA",
