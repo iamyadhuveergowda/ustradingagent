@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261111-121155-PANW",
-  "generated_at": "2026-11-11T12:11:55.779438-05:00",
-  "spy_day_pct": 1.3327910604989806,
+  "signal_id": "20261111-121425-PANW",
+  "generated_at": "2026-11-11T12:14:25.503220-05:00",
+  "spy_day_pct": 1.3707946074967112,
   "candidates": [
     {
       "ticker": "PANW",
       "signal": "BUY",
-      "ltp": 339.37,
-      "stop": 335.68,
-      "target": 348.6,
+      "ltp": 339.08,
+      "stop": 335.39,
+      "target": 348.31,
       "qty": 116,
       "indicators": {
         "rsi": 63.08,
         "atr": 2.4611,
         "vol_ratio": 4.36
       },
-      "scout_reason": "SPY +1.33% aligns with BUY",
+      "scout_reason": "SPY +1.37% aligns with BUY",
       "candles_5m": [
         [
           "10:35",
@@ -172,30 +172,30 @@
         [
           "12:10",
           339.26,
-          339.26,
-          339.19,
-          339.25,
-          291
+          339.3,
+          339.08,
+          339.08,
+          904
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar (12:05) printed supply into highs, opposing BUY; LUNCH_CHOP: signal time ~12:12 falls in lunch window and recent candles show flat range (<1.5*ATR) with no directiona",
-      "outcome_at": "2026-11-11T12:12:01.907352-05:00"
+      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles at 12:05 (vol 7317) showed price hitting high 339.76 then closing lower 339.37, supplying into highs against BUY direction",
+      "outcome_at": "2026-11-11T12:14:29.999169-05:00"
     },
     {
       "ticker": "CVX",
       "signal": "BUY",
-      "ltp": 212.32,
-      "stop": 211.47,
-      "target": 214.44,
+      "ltp": 212.42,
+      "stop": 211.57,
+      "target": 214.54,
       "qty": 185,
       "indicators": {
         "rsi": 50.19,
-        "atr": 0.5072,
+        "atr": 0.5179,
         "vol_ratio": 1.52
       },
-      "scout_reason": "SPY +1.33% aligns with BUY",
+      "scout_reason": "SPY +1.37% aligns with BUY",
       "candles_5m": [
         [
           "10:35",
@@ -352,16 +352,16 @@
         [
           "12:10",
           212.34,
+          212.42,
           212.34,
-          212.34,
-          212.34,
-          113
+          212.41,
+          931
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-11T12:12:01.907375-05:00"
+      "outcome_at": "2026-11-11T12:14:29.999191-05:00"
     }
   ]
 }
