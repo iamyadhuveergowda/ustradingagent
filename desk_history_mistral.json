@@ -4199,5 +4199,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-133344-INTC",
+    "signal_time": "2026-11-11T13:33:44-05:00",
+    "judged_at": "2026-11-11T13:34:04-05:00",
+    "age_min": 0.3,
+    "ticker": "INTC",
+    "action": "BUY",
+    "entry": 63.27,
+    "stop": 62.33,
+    "target": 65.62,
+    "qty": 161,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is currently in a tight range (63.02-63.66) with no clear directional momentum. The last 12 candles show a choppy, sideways structure with no decisive breakout or breakdown. The entry at 63.27 is near the mid-range of the session, and the pullback lacks an orderly directional close (e.g., no clear higher-low or lower-high formation). Volume ratio (1.2) is neutral and does not confirm strength. The RSI (56.22) is in a neutral zone, not signaling overbought or oversold conditions. The target (65.62) is 3.75 ATR away, which is aggressive given the remaining session time (147 minutes) and the lack of a clear trend.",
+      "macro": "SPY's +1.63% day move aligns with the BUY thesis, but INTC's structure does not reflect this broader market trend. The stock is not participating meaningfully in the session's momentum.",
+      "risk": "No earnings or macro risks identified for INTC today. However, the lack of a clear structure and the proximity to the close (147 minutes) make this a high-risk entry. The stop (62.33) is 1.5 ATR away, which is reasonable, but the reward:risk (2.5) is not justified by the current setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
