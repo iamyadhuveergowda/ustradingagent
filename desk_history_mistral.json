@@ -4074,5 +4074,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-113756-TMO",
+    "signal_time": "2026-11-11T11:37:56-05:00",
+    "judged_at": "2026-11-11T11:38:28-05:00",
+    "age_min": 0.5,
+    "ticker": "TMO",
+    "action": "BUY",
+    "entry": 724.25,
+    "stop": 720.54,
+    "target": 733.53,
+    "qty": 54,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 724.25 after a sharp rally from 720.55 (10:35 candle low) to 725.17 (11:15 candle high). The 11:20 candle shows a rejection at 725.66 with a close at 724.29, indicating potential exhaustion. The RSI (60.3) is neutral, but the lack of follow-through on the 11:25 candle (close at 723.85) suggests weak momentum. The pullback to entry lacks an orderly structure, and the volume spike at 11:25 (1404) is directional but not confirmatory.",
+      "macro": "SPY's +1.20% day move aligns with the BUY thesis, but intraday momentum for TMO is questionable given the lack of a clear continuation pattern.",
+      "risk": "No earnings risk. Feasibility is TIGHT (target_distance_atr: 3.75, 263 minutes left), but the structure is weak for a midday entry."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261111-113756-TMO",
+    "signal_time": "2026-11-11T11:37:56-05:00",
+    "judged_at": "2026-11-11T11:38:28-05:00",
+    "age_min": 0.5,
+    "ticker": "XOM",
+    "action": "BUY",
+    "entry": 166.41,
+    "stop": 165.71,
+    "target": 168.15,
+    "qty": 237,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close above 166.41 with a follow-through close above 166.47 (11:30 candle high).",
+    "notes": {
+      "technical": "XOM is showing a more orderly pullback into the entry at 166.41, with the 11:30 candle closing at 166.40 (just below entry) and the 11:35 candle closing at 166.35. The 11:25 candle (close at 166.25) and 11:30 candle (close at 166.40) suggest a consolidation phase rather than exhaustion. Volume is strong and directional (vol_ratio: 1.66), and the RSI (63.31) is neutral but not overbought. The structure is tighter than TMO’s, with a clear range-bound pattern.",
+      "macro": "SPY's +1.20% day move supports the BUY thesis, and XOM’s intraday action aligns with broader market direction.",
+      "risk": "No earnings risk. Feasibility is TIGHT (target_distance_atr: 3.73, 263 minutes left), but the trade is higher-probability due to better structure. Stop at 165.71 (1.5 ATR) is conservative given the recent lows."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
