@@ -1,13 +1,13 @@
 {
-  "signal_id": "20261111-101144-NFLX",
-  "generated_at": "2026-11-11T10:11:44.483802-05:00",
-  "spy_day_pct": 0.7920739268998513,
+  "signal_id": "20261111-101420-NFLX",
+  "generated_at": "2026-11-11T10:14:20.162651-05:00",
+  "spy_day_pct": 0.7900737402157626,
   "candidates": [
     {
       "ticker": "NFLX",
       "signal": "BUY",
       "ltp": 63.45,
-      "stop": 63.08,
+      "stop": 63.07,
       "target": 64.38,
       "qty": 622,
       "indicators": {
@@ -17,14 +17,6 @@
       },
       "scout_reason": "SPY +0.79% aligns with BUY",
       "candles_5m": [
-        [
-          "15:00",
-          62.91,
-          62.91,
-          62.81,
-          62.85,
-          11853
-        ],
         [
           "15:05",
           62.83,
@@ -176,12 +168,20 @@
           63.19,
           63.45,
           37267
+        ],
+        [
+          "10:10",
+          63.45,
+          63.47,
+          63.4,
+          63.45,
+          25795
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume bar in last 6 candles (09:40) volume 43571 printed against BUY direction (high 63.75, close 63.34)",
-      "outcome_at": "2026-11-11T10:11:50.172289-05:00"
+      "outcome_reason": "scout: invalid R:R",
+      "outcome_at": "2026-11-11T10:14:20.639255-05:00"
     }
   ]
 }
