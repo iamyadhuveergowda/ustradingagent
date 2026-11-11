@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261111-113301-CVX",
-  "generated_at": "2026-11-11T11:33:01.965464-05:00",
-  "spy_day_pct": 1.2094462149800715,
+  "signal_id": "20261111-113540-CVX",
+  "generated_at": "2026-11-11T11:35:40.374744-05:00",
+  "spy_day_pct": 1.1667755657194672,
   "candidates": [
     {
       "ticker": "CVX",
       "signal": "BUY",
-      "ltp": 212.43,
-      "stop": 211.58,
-      "target": 214.55,
+      "ltp": 212.71,
+      "stop": 211.86,
+      "target": 214.84,
       "qty": 185,
       "indicators": {
         "rsi": 55.44,
         "atr": 0.5272,
         "vol_ratio": 1.35
       },
-      "scout_reason": "SPY +1.21% aligns with BUY",
+      "scout_reason": "SPY +1.17% aligns with BUY",
       "candles_5m": [
         [
           "09:55",
@@ -172,16 +172,16 @@
         [
           "11:30",
           212.43,
+          212.75,
           212.43,
-          212.43,
-          212.43,
-          233
+          212.71,
+          2292
         ]
       ],
       "stop_floor_bound": true,
       "outcome": "dropped_other",
-      "outcome_reason": "DEBATE: BULL: CVX is testing session highs with a retest of 213.06 after a strong push; entry at 212.43 is near VWAP (212.30) with a tight stop (211.58) and a reasonable target (214.55) just 1.12 ATR ",
-      "outcome_at": "2026-11-11T11:33:14.973755-05:00"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-11T11:35:40.734797-05:00"
     }
   ]
 }
