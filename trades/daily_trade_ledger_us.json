@@ -1044,7 +1044,7 @@
     "open": 341.25,
     "high": 341.46,
     "low": 341.08,
-    "close": 341.41,
+    "close": 341.26,
     "time": "12:09:09",
     "status": "OPEN ⏳",
     "exit_price": null,
@@ -1058,7 +1058,7 @@
       }
     ],
     "mode": "PAPER",
-    "last_price": 341.41,
+    "last_price": 341.26,
     "atr": 1.1664,
     "breakeven_set": false,
     "mfe_r": 0.077,
@@ -1083,5 +1083,61 @@
       }
     },
     "breakeven_price": 341.34
+  },
+  {
+    "trade_id": "20261111121942-TSLA",
+    "date": "2026-11-11",
+    "ticker": "TSLA",
+    "action": "BUY",
+    "qty": 100,
+    "remaining_qty": 100,
+    "locked_margin_per_share": 392.7,
+    "partial_booked": false,
+    "entry": 392.7,
+    "sl": 389.41,
+    "initial_sl": 389.41,
+    "tgt": 400.74,
+    "open": 391.88,
+    "high": 392.63,
+    "low": 391.36,
+    "close": 392.62,
+    "time": "12:19:42",
+    "status": "OPEN ⏳",
+    "exit_price": null,
+    "net_pnl": 0.0,
+    "rationale": "BULL: Entry just above VWAP (392.47 vs 392.08) with recent upward candles and ATR‑based stop 1.5 ATR away; target 8.1 pts (3.75 ATR) is within expected travel 15.5 pts and ~215 min remaining. BEAR: Target sits 5.2 pts above the session high (395.39), requiring a breakout with no clear catalyst; price has been flat since 11:30 and news is neutral. VERDICT: APPROVE",
+    "events": [
+      {
+        "time": "2026-11-11T12:19:42-05:00",
+        "type": "ENTRY",
+        "text": "PAPER BUY 100 @ $392.70"
+      }
+    ],
+    "mode": "PAPER",
+    "last_price": 392.7,
+    "atr": 2.1567,
+    "breakeven_set": false,
+    "mfe_r": 0.0,
+    "mae_r": 0.0,
+    "spy_pct": 1.4,
+    "vol_ratio": 2.58,
+    "rvol": 0.7,
+    "rule_version": "us_v2.9",
+    "vol_mode": "ratio",
+    "entry_brokerage_remaining": 0.0,
+    "charges": {},
+    "pnl_by_date": {},
+    "orders": {
+      "entry": {
+        "id": "880bcca5-8eab-4144-a6f2-ec8acb7b3f4f",
+        "status": "OrderStatus.PENDING_NEW",
+        "submitted_at": "2026-11-11 17:19:29.883180+00:00"
+      },
+      "stop": {
+        "id": "258bbc1b-ca83-496e-9450-8e554a3f0224",
+        "status": "OrderStatus.PENDING_NEW"
+      }
+    },
+    "breakeven_price": 392.77
   }
 ]
