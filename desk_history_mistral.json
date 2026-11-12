@@ -4021,9 +4021,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.33,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-101144-NFLX",
@@ -4046,9 +4046,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.51,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-113301-CVX",
@@ -4071,9 +4071,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.92,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-113756-TMO",
@@ -4096,9 +4096,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-113756-TMO",
@@ -4121,9 +4121,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-120628-GE",
@@ -4146,9 +4146,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.74,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-121155-PANW",
@@ -4171,9 +4171,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-121705-TSLA",
@@ -4196,9 +4196,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-133344-INTC",
@@ -4221,9 +4221,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   },
   {
     "signal_id": "20261111-143303-ORCL",
@@ -4246,8 +4246,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.11,
+    "outcome_at": "2026-11-11T21:30:17-05:00"
   }
 ]
