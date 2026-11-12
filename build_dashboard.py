@@ -572,6 +572,45 @@ def svg_hbar(rows, width=340, height=None, pad=8):
     return f'<svg viewBox="0 0 {width} {height}" class="chart" preserveAspectRatio="none">' + "".join(out) + "</svg>"
 
 
+def svg_columns(items, width=760, height=110, pad=8):
+    """items: list of (label, value). Compact horizontal strip: one column
+    per item side by side, value above the column, label below. Positive
+    bars green, negative red. Replaces the tall per-row svg_hbar for the
+    P&L-by-ticker panel — same data, ~110px tall instead of ~256px."""
+    if not items:
+        return ""
+    values = [v for _, v in items]
+    lo, hi = min(values + [0]), max(values + [0])
+    if hi == lo:
+        hi += 1
+    span = (hi - lo) * 1.15 or 1
+    lo -= span * 0.07
+    hi += span * 0.07
+    span = hi - lo
+    top_pad = 16   # room for value labels
+    bot_pad = 16   # room for ticker labels
+    plot_h = height - top_pad - bot_pad
+    zero = top_pad + plot_h * (1 - (0 - lo) / span)
+    bw = max(3.0, (width - 2 * pad) / len(items) - 4)
+    out = []
+    for i, (lbl, val) in enumerate(items):
+        cx = pad + (width - 2 * pad) * ((i + 0.5) / len(items))
+        vy = top_pad + plot_h * (1 - (val - lo) / span)
+        top, h = (vy, zero - vy) if val >= 0 else (zero, vy - zero)
+        cls = "barpos" if val >= 0 else "barneg"
+        out.append(
+            f'<rect x="{cx - bw / 2:.1f}" y="{top:.1f}" width="{bw:.1f}" height="{max(1, h):.1f}" class="{cls}">'
+            f'<title>{esc(lbl)}: {signed_money(val)}</title></rect>'
+        )
+        # Value always above the column's top edge (for negatives that is
+        # just above the zero line), so it never collides with the ticker
+        # labels at the bottom.
+        out.append(f'<text x="{cx:.1f}" y="{top - 4:.1f}" class="ax" text-anchor="middle">{signed_money(val, 0)}</text>')
+        out.append(f'<text x="{cx:.1f}" y="{height - 4}" class="ax" text-anchor="middle">{esc(lbl)}</text>')
+    out.append(f'<line x1="{pad}" y1="{zero:.1f}" x2="{width - pad}" y2="{zero:.1f}" stroke="#5a5f7a" stroke-dasharray="4 4"/>')
+    return f'<svg viewBox="0 0 {width} {height}" preserveAspectRatio="none" class="chart">' + "".join(out) + "</svg>"
+
+
 def sparkline(values, width=120, height=28, up=True):
     if not values:
         return ""
@@ -975,7 +1014,7 @@ def render_html(
     chart_daily = svg_bars(daily)
 
     ticker_rows = sorted(ts["by_ticker"].items(), key=lambda kv: kv[1]["pnl"])
-    chart_ticker = svg_hbar([(t, v["pnl"], "barpos" if v["pnl"] >= 0 else "barneg") for t, v in ticker_rows])
+    chart_ticker = svg_columns([(t, v["pnl"]) for t, v in ticker_rows])
 
     # ------------------------------------------------------- diagnostics
     findings = []
