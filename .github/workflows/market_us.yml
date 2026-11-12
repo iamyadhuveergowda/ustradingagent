@@ -1,0 +1,49 @@
+name: US Market Strip
+
+# Refreshes market_us.json (S&P 500, Dow, Nasdaq, Russell 2000, VIX) every 15 min
+# during US cash hours. The dashboard page re-reads that file in the browser every
+# 60s, so this workflow alone keeps the index levels live. It does NOT touch
+# index.html — the page's static layout is still written by the sync step.
+on:
+  schedule:
+    # 13:00–21:45 UTC covers 09:00–17:45 ET in both EDT and EST
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: us-market
+  cancel-in-progress: false
+
+jobs:
+  market:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch index levels
+        run: python3 fetch_market_us.py
+      - name: Commit market snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add market_us.json
+          if git diff --staged --quiet; then
+            echo "No index changes to commit"
+            exit 0
+          fi
+          git commit -m "market: index snapshot [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin ${{ github.ref_name }} && git push; then
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+            if [ "$attempt" = "3" ]; then echo "ERROR: push failed after 3 attempts" >&2; exit 1; fi
+          done

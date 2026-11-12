@@ -1,0 +1,84 @@
+name: US Dashboard Rebuild
+
+# Rebuilds index.html from the repo's own JSON after anything the page renders
+# has changed. This is what keeps the dashboard alive: the external sync step
+# still writes its own index.html, but this workflow runs right behind it and
+# overwrites that with the generated page, so the new layout always wins.
+#
+# Triggers:
+#  * push on any data file the page reads (including the sync's own index.html)
+#  * push on market_us.json, written by the US Market Strip workflow
+#  * a 10-min safety net across US hours, in case a push run is missed
+#
+# No [skip ci] here on purpose would retrigger this workflow forever, so the
+# commit message carries it. index.html is excluded from the path filter for
+# the same reason.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "trades/**"
+      - "signals/**"
+      - "desk_history.json"
+      - "desk_history_mistral.json"
+      - "desk_verdict.json"
+      - "desk_verdict_mistral.json"
+      - "earnings_calendar_us.json"
+      - "market_us.json"
+      - "index.html"
+      - "build_dashboard.py"
+      - ".github/workflows/dashboard_us.yml"
+  schedule:
+    - cron: "*/10 13-21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      layout:
+        description: "Market strip layout"
+        required: false
+        default: "tiles"
+        type: choice
+        options: [tiles, tape]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: us-dashboard
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild index.html
+        run: |
+          layout="${{ github.event.inputs.layout || 'tiles' }}"
+          python3 build_dashboard.py --layout "$layout"
+          echo "generated $(wc -c < index.html) bytes"
+
+      - name: Commit dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "Dashboard already up to date"
+            exit 0
+          fi
+          git commit -m "dashboard: rebuild from repo data [skip ci]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin ${{ github.ref_name }} && git push; then
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 5
+            if [ "$attempt" = "3" ]; then echo "ERROR: push failed after 3 attempts" >&2; exit 1; fi
+          done
