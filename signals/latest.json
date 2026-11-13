@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261113-114119-QCOM",
-  "generated_at": "2026-11-13T11:41:19.780666-05:00",
-  "spy_day_pct": -0.9502615035131197,
+  "signal_id": "20261113-114331-QCOM",
+  "generated_at": "2026-11-13T11:43:31.583085-05:00",
+  "spy_day_pct": -0.9443182418511249,
   "candidates": [
     {
       "ticker": "QCOM",
       "signal": "SELL",
       "ltp": 169.63,
       "stop": 171.84,
-      "target": 164.11,
+      "target": 164.12,
       "qty": 232,
       "indicators": {
         "rsi": 40.83,
         "atr": 1.471,
         "vol_ratio": 1.44
       },
-      "scout_reason": "SPY -0.95% aligns with SELL",
+      "scout_reason": "SPY -0.94% aligns with SELL",
       "candles_5m": [
-        [
-          "10:00",
-          171.3,
-          171.41,
-          170.7,
-          170.74,
-          7488
-        ],
         [
           "10:05",
           170.64,
@@ -176,35 +168,35 @@
           169.57,
           169.57,
           11300
+        ],
+        [
+          "11:40",
+          169.53,
+          169.78,
+          169.49,
+          169.78,
+          2403
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume in last 6 candles is 16236 at 11:25 (high 170.54, close 170.25) above entry 169.63, showing buying pressure against the SELL setup",
-      "outcome_at": "2026-11-13T11:41:24.626390-05:00"
+      "outcome_reason": "NEWS_CONTRADICTION: Daiwa Securities Raises Qualcomm Price Target to $200 – bullish headline contradicts SELL direction",
+      "outcome_at": "2026-11-13T11:43:36.190121-05:00"
     },
     {
       "ticker": "HON",
       "signal": "SELL",
-      "ltp": 221.34,
-      "stop": 222.27,
-      "target": 219.02,
-      "qty": 177,
+      "ltp": 221.11,
+      "stop": 222.04,
+      "target": 218.79,
+      "qty": 178,
       "indicators": {
         "rsi": 40.33,
         "atr": 0.6199,
         "vol_ratio": 2.16
       },
-      "scout_reason": "SPY -0.95% aligns with SELL",
+      "scout_reason": "SPY -0.94% aligns with SELL",
       "candles_5m": [
-        [
-          "09:45",
-          222.58,
-          222.58,
-          222.58,
-          222.58,
-          221
-        ],
         [
           "09:50",
           222.01,
@@ -356,12 +348,20 @@
           221.33,
           221.34,
           1783
+        ],
+        [
+          "11:40",
+          221.11,
+          221.11,
+          221.11,
+          221.11,
+          100
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T11:41:24.626414-05:00"
+      "outcome_at": "2026-11-13T11:43:36.190146-05:00"
     }
   ]
 }
