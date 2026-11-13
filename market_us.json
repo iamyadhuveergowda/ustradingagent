@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-12T21:33:28Z",
+  "fetched_at_utc": "2026-11-13T02:08:25Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
@@ -9,8 +9,8 @@
       "prev_close": 7619.38,
       "change": -26.98,
       "change_pct": -0.354,
-      "quote_time_utc": "2026-11-12T21:20:01Z",
-      "quote_time_et": "16:20",
+      "quote_time_utc": "2026-11-12T21:58:23Z",
+      "quote_time_et": "16:58",
       "quote_date_et": "2026-11-12",
       "session_open": false,
       "spark": [
@@ -29,8 +29,8 @@
       "prev_close": 52486.49,
       "change": -189.4,
       "change_pct": -0.361,
-      "quote_time_utc": "2026-11-12T21:20:00Z",
-      "quote_time_et": "16:20",
+      "quote_time_utc": "2026-11-12T21:58:18Z",
+      "quote_time_et": "16:58",
       "quote_date_et": "2026-11-12",
       "session_open": false,
       "spark": [
@@ -49,8 +49,8 @@
       "prev_close": 25466.19,
       "change": -100.1,
       "change_pct": -0.393,
-      "quote_time_utc": "2026-11-12T21:33:25Z",
-      "quote_time_et": "16:33",
+      "quote_time_utc": "2026-11-12T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-12",
       "session_open": false,
       "spark": [
@@ -69,8 +69,8 @@
       "prev_close": 2846.26,
       "change": -47.2,
       "change_pct": -1.658,
-      "quote_time_utc": "2026-11-12T21:03:30Z",
-      "quote_time_et": "16:03",
+      "quote_time_utc": "2026-11-12T21:30:04Z",
+      "quote_time_et": "16:30",
       "quote_date_et": "2026-11-12",
       "session_open": false,
       "spark": [
