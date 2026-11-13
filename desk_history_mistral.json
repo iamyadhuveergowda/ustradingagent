@@ -4249,5 +4249,30 @@
     "outcome": "CLOSE",
     "outcome_r": -0.11,
     "outcome_at": "2026-11-11T21:30:17-05:00"
+  },
+  {
+    "signal_id": "20261113-105646-ORCL",
+    "signal_time": "2026-11-13T10:56:46-05:00",
+    "judged_at": "2026-11-13T10:57:19-05:00",
+    "age_min": 0.5,
+    "ticker": "ORCL",
+    "action": "SELL",
+    "entry": 123.5,
+    "stop": 125.25,
+    "target": 119.12,
+    "qty": 318,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a choppy, erratic pullback into the SELL entry at 123.50. The last candle (10:55) closed at 123.54, just above the entry, with a low of 123.33 and a high of 123.65, indicating indecision. The RSI (42.18) is neutral, and the volume ratio (1.29) does not strongly support the SELL thesis. The pullback lacks a clear directional close or orderly structure, and the stop (125.25) is placed well above the recent highs (124.39), which could be triggered by a minor retest. The target (119.12) is 3.75 ATR away, which is aggressive for the remaining 304 minutes (5.07 hours) given the lack of momentum or clear exhaustion.",
+      "macro": "The SPY day move (-0.94%) aligns with the SELL action, but the intraday structure does not reflect a strong bearish regime. The lack of a clear breakdown or momentum shift limits the trade's validity.",
+      "risk": "No results risk identified. However, the stop distance (1.5 ATR) is tight, and the reward:risk (2.5) assumes a smooth decline, which is not supported by the current structure. Feasibility is not explicitly marked as INFEASIBLE, but the trade lacks conviction due to the erratic pullback and lack of directional clarity."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
