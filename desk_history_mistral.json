@@ -4474,5 +4474,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-130719-TXN",
+    "signal_time": "2026-11-13T13:07:19-05:00",
+    "judged_at": "2026-11-13T13:07:40-05:00",
+    "age_min": 0.3,
+    "ticker": "TXN",
+    "action": "SELL",
+    "entry": 299.25,
+    "stop": 302.27,
+    "target": 291.7,
+    "qty": 131,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **299.25** is disorderly: the 13:00 candle closed **299.12** after a sharp drop to **298.56** (lowest in 12 candles), with volume spiking to **2309** (vol_ratio **2.22** suggests exhaustion). The 13:05 candle closed **299.25** (entry) but lacks follow-through; the prior 12:55 candle closed **299.90** (above entry) with a violent drop to **299.90** (low), indicating potential short-term exhaustion. Stop distance (**1.5 ATR**) is tight for a SELL in a weakening session, and the target (**291.70**, **3.75 ATR** away) is aggressive given only **173 minutes** remain. The **2.5:1 reward:risk** is misleading without confirmation of a structured pullback.",
+      "macro": "SPY’s **-0.77%** day move aligns with the SELL thesis, but intraday momentum is fading: the 13:00-13:05 candles show no clear retest of resistance or exhaustion of longs. No macro catalyst is present to override the technical breakdown.",
+      "risk": "No earnings risk, but the **13:00 candle’s violent drop** and **high vol_ratio** suggest a potential trap or failed break. The trade lacks a clear retest of a meaningful level (e.g., prior swing high) and relies on a single candle’s close. Feasibility is **TIGHT** due to time constraints and lack of confirmation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
