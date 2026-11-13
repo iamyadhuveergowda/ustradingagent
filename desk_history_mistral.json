@@ -4424,5 +4424,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-122729-CSCO",
+    "signal_time": "2026-11-13T12:27:29-05:00",
+    "judged_at": "2026-11-13T12:27:49-05:00",
+    "age_min": 0.3,
+    "ticker": "CSCO",
+    "action": "SELL",
+    "entry": 96.11,
+    "stop": 97.31,
+    "target": 93.12,
+    "qty": 409,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **96.11** is weak: the last 12 candles show choppy, non-directional action with no clear exhaustion or momentum. The 12:25 candle closed **96.04** (below entry) but lacks conviction (low volume, no follow-through). The **stop at 97.31** (1.5 ATR) is too far from current price (96.04), reducing reward:risk efficiency. The **target at 93.12** (3.74 ATR) is aggressive for 213 minutes left, especially given the lack of structural breakdown (e.g., no close below 95.83, the 12:00 low).",
+      "macro": "SPY’s **-0.73%** day move aligns with the SELL thesis, but intraday structure is insufficient to override the technical noise.",
+      "risk": "No earnings risk today/tomorrow. However, the **vol_ratio (1.33)** suggests weak participation, and the **RSI (37.71)** is neutral—no overbought/oversold confirmation."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
