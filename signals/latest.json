@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261113-130719-TXN",
-  "generated_at": "2026-11-13T13:07:19.593248-05:00",
-  "spy_day_pct": -0.7660203919911187,
+  "signal_id": "20261113-131004-TXN",
+  "generated_at": "2026-11-13T13:10:04.878625-05:00",
+  "spy_day_pct": -0.7528131438533378,
   "candidates": [
     {
       "ticker": "TXN",
       "signal": "SELL",
-      "ltp": 299.25,
-      "stop": 302.27,
-      "target": 291.7,
+      "ltp": 299.33,
+      "stop": 302.35,
+      "target": 291.78,
       "qty": 131,
       "indicators": {
         "rsi": 42.0,
         "atr": 2.0127,
         "vol_ratio": 2.22
       },
-      "scout_reason": "SPY -0.77% aligns with SELL",
+      "scout_reason": "SPY -0.75% aligns with SELL",
       "candles_5m": [
         [
           "11:30",
@@ -172,16 +172,16 @@
         [
           "13:05",
           299.23,
-          299.42,
+          299.67,
           299.23,
-          299.25,
-          546
+          299.33,
+          988
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T13:07:19.940633-05:00"
+      "outcome_at": "2026-11-13T13:10:05.515070-05:00"
     }
   ]
 }
