@@ -4274,5 +4274,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-111620-C",
+    "signal_time": "2026-11-13T11:16:20-05:00",
+    "judged_at": "2026-11-13T11:16:46-05:00",
+    "age_min": 0.4,
+    "ticker": "C",
+    "action": "SELL",
+    "entry": 123.8,
+    "stop": 124.41,
+    "target": 122.28,
+    "qty": 318,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Candle structure shows a choppy, sideways range-bound session with no clear directional exhaustion or pullback into the entry at 123.8. The last 12 candles (10:15–11:10) lack a decisive close below the 123.8 entry level, and the 11:10 candle closed flat at 123.80, failing to confirm a bearish continuation. The RSI (48.95) is neutral, and the volume ratio (1.1) does not indicate strong distribution. The stop at 124.41 is 1.5 ATR (~0.61 points) away, but the target (122.28) is 3.75 ATR (~1.52 points) away, which is aggressive given the remaining session time (284 minutes). The pullback lacks a clear geometric anchor (e.g., no break of a higher-timeframe structure).",
+      "macro": "SPY’s -1.02% day move aligns with the SELL thesis, but the intraday structure of C does not reflect a high-probability continuation lower. The lack of a clear break or exhaustion pattern limits conviction.",
+      "risk": "No earnings risk today or tomorrow for C. Feasibility is not explicitly marked as INFEASIBLE, but the target (122.28) is a stretch for the remaining session given the current range and lack of momentum."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
