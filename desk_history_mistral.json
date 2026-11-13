@@ -4349,5 +4349,55 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-114119-QCOM",
+    "signal_time": "2026-11-13T11:41:19-05:00",
+    "judged_at": "2026-11-13T11:41:55-05:00",
+    "age_min": 0.6,
+    "ticker": "QCOM",
+    "action": "SELL",
+    "entry": 169.63,
+    "stop": 171.84,
+    "target": 164.11,
+    "qty": 232,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is extended into the entry at 169.63, with the last 12 candles showing a strong upward momentum into the signal time. The 11:25 candle (169.22-170.54) is a clear outlier with a high volume spike (16236), suggesting exhaustion rather than a pullback. The RSI (40.83) is neutral but does not indicate oversold conditions. The stop at 171.84 is 1.5 ATR away, but the target (164.11) is 3.75 ATR away, which is aggressive for the remaining 259 minutes (4.3 hours). The reward:risk ratio of 2.5 is decent, but the structure lacks a clear pullback or consolidation before entry.",
+      "macro": "SPY's -0.95% day move aligns with the SELL action, but the intraday structure of QCOM does not support a short entry at this juncture.",
+      "risk": "No results risk identified. However, the lack of a clear pullback and the extended move into the entry increase the risk of a false break or a sharp reversal."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-114119-QCOM",
+    "signal_time": "2026-11-13T11:41:19-05:00",
+    "judged_at": "2026-11-13T11:41:55-05:00",
+    "age_min": 0.6,
+    "ticker": "HON",
+    "action": "SELL",
+    "entry": 221.34,
+    "stop": 222.27,
+    "target": 219.02,
+    "qty": 177,
+    "verdict": "SKIP",
+    "confidence": 75,
+    "trigger": "Valid only on a break below 221.10 with a follow-through candle closing below 221.00",
+    "notes": {
+      "technical": "HON is trading in a tight range (220.87-221.66) with low volume and minimal volatility (ATR 0.62). The last 12 candles show a lack of directional momentum, with most candles closing near their highs or lows but failing to break out. The entry at 221.34 is near the upper range of the session, and the stop at 222.27 is only 1.5 ATR away, which is tight. The target (219.02) is 3.74 ATR away, but the lack of a clear pullback or exhaustion makes the trade speculative. The reward:risk ratio of 2.49 is decent, but the structure is weak for a short entry.",
+      "macro": "SPY's -0.95% day move aligns with the SELL action, but the intraday structure of HON does not provide a high-conviction setup.",
+      "risk": "No results risk identified. The low volume and tight range increase the risk of a false break or a lack of follow-through on a short entry."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
