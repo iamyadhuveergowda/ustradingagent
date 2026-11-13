@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261113-124748-NFLX",
-  "generated_at": "2026-11-13T12:47:48.586751-05:00",
-  "spy_day_pct": -0.7290400972053439,
+  "signal_id": "20261113-124920-NFLX",
+  "generated_at": "2026-11-13T12:49:20.973800-05:00",
+  "spy_day_pct": -0.6907390776057925,
   "candidates": [
     {
       "ticker": "NFLX",
       "signal": "SELL",
-      "ltp": 62.4,
-      "stop": 62.8,
-      "target": 61.38,
+      "ltp": 62.42,
+      "stop": 62.83,
+      "target": 61.41,
       "qty": 631,
       "indicators": {
         "rsi": 45.96,
         "atr": 0.2719,
         "vol_ratio": 1.37
       },
-      "scout_reason": "SPY -0.73% aligns with SELL",
+      "scout_reason": "SPY -0.69% aligns with SELL",
       "candles_5m": [
         [
           "11:10",
@@ -172,16 +172,16 @@
         [
           "12:45",
           62.41,
-          62.42,
-          62.41,
-          62.41,
-          4136
+          62.46,
+          62.38,
+          62.44,
+          18438
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "CHASE: entry 62.4 is 0.252 below vwap‑1.5*ATR (62.652), beyond allowed range with no base or retest visible; DISTRIBUTION: heaviest volume bar in last 6 (12:30) was an up bar (close 62.45 > open 62.32",
-      "outcome_at": "2026-11-13T12:47:54.817753-05:00"
+      "outcome_reason": "CHASE: entry 62.42 is 0.23 below vwap-1.5*ATR (62.65) with no base or retest visible in recent 5‑minute candles",
+      "outcome_at": "2026-11-13T12:49:26.777067-05:00"
     }
   ]
 }
