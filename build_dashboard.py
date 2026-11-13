@@ -22,7 +22,7 @@ BEFORE it commits. Example (from the sync script):
     html = render_html(
         equity=equity, available=available, realized=realized,
         today_pnl=today_pnl, updated_label="2026-11-11 21:07 IST",
-        mode="PAPER", version="v2.9",
+        mode="PAPER", version="v2.11",
     )
     open("index.html", "w").write(html)
 
@@ -48,6 +48,11 @@ _EASTERN = ZoneInfo("America/New_York")
 _STAMP_RE = re.compile(
     r"(\d{4}-\d{2}-\d{2})[ T](\d{2}):(\d{2})(?::\d{2})?\s*(ET|UTC|IST)?", re.I
 )
+
+# Current live agent version, shown in the page header. Bump this when the
+# agent is upgraded. The old page's version is never carried over (see
+# render_html), so a stale header can never pin an old version again.
+_AGENT_VERSION = "v2.11"
 
 
 def _to_ist_label(raw: str) -> str:
@@ -935,9 +940,20 @@ def render_html(
         available = parsed["available"]
         realized = parsed["realized"]
         today_pnl = parsed["today_pnl"]
-        updated_label = _to_ist_label(updated_label or parsed["updated"])
+        # The rebuild time is the "Updated" stamp: never carry over the old
+        # page's stamp, or the header freezes at whatever the page said
+        # when it was first written (bug: stuck at 2026-11-12 21:16 IST).
+        # An explicit label passed by a caller is still honoured.
+        updated_label = (
+            _to_ist_label(updated_label)
+            if updated_label
+            else datetime.now(_IST).strftime("%Y-%m-%d %H:%M IST")
+        )
         mode = mode or parsed["mode"]
-        version = version or parsed["version"]
+        # Never carry over the old page's version either (bug: header stuck
+        # at v2.10 after the agent moved to v2.11). Explicit arg wins,
+        # otherwise the current agent version above.
+        version = version or _AGENT_VERSION
 
     trades_raw = _load(repo / "trades" / "daily_trade_ledger_us.json", [])
     gemini = _load(repo / "desk_history.json", [])
@@ -968,10 +984,13 @@ def render_html(
         today_pnl = ts["by_date"].get(today, 0.0)
 
     mode = mode or "PAPER"
-    version = version or "v2.9"
+    version = version or _AGENT_VERSION
     mode_cls = "paper" if mode.upper() == "PAPER" else "live"
     if not updated_label:
-        updated_label = datetime.now(_IST).strftime("%Y-%m-%d %H:%M IST") + " · auto-refresh 3min"
+        # No old page and no explicit label: stamp the rebuild time. The
+        # template adds "· auto-refresh 3min" itself, so it is not part
+        # of the label (an earlier version duplicated it here).
+        updated_label = datetime.now(_IST).strftime("%Y-%m-%d %H:%M IST")
 
     earn_dates = {e["date"]: [] for e in earnings if e.get("date")}
     for e in earnings:
