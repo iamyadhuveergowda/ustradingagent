@@ -4299,5 +4299,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-112113-UNH",
+    "signal_time": "2026-11-13T11:21:13-05:00",
+    "judged_at": "2026-11-13T11:21:43-05:00",
+    "age_min": 0.5,
+    "ticker": "UNH",
+    "action": "SELL",
+    "entry": 403.24,
+    "stop": 405.43,
+    "target": 397.75,
+    "qty": 97,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a sharp parabolic move into the entry at 403.24, with the 11:15 candle closing at the low of the range (403.24) after a violent drop from 404.75. This suggests exhaustion rather than a pullback. The 10:45 candle's high (405.31) is near the stop (405.43), indicating a tight stop placement with minimal room for error. The RSI (43.88) is neutral, not confirming overbought conditions, but the volume spike (8.74 vol_ratio) on the 11:15 candle aligns with distribution. Geometry is weak: target_distance_atr (3.75) is high for the remaining session (279 minutes), and the reward:risk (2.51) is misleading due to the lack of a clear pullback structure.",
+      "macro": "SPY day move (-1.03%) aligns with the SELL thesis, but the intraday structure is too aggressive for a reliable entry. No macro overrides are present.",
+      "risk": "No earnings risk detected. However, the lack of a clear pullback and the parabolic move into the entry elevate the risk of a false break or immediate reversal. Feasibility is not explicitly marked as INFEASIBLE, but the tight stop and aggressive price action make this a high-risk setup."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
