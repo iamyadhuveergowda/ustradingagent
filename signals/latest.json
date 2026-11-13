@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261113-112320-UNH",
-  "generated_at": "2026-11-13T11:23:20.690816-05:00",
-  "spy_day_pct": -1.142426963917795,
+  "signal_id": "20261113-112441-UNH",
+  "generated_at": "2026-11-13T11:24:41.065968-05:00",
+  "spy_day_pct": -0.9879021607057978,
   "candidates": [
     {
       "ticker": "UNH",
       "signal": "SELL",
-      "ltp": 402.98,
-      "stop": 405.17,
-      "target": 397.49,
+      "ltp": 402.84,
+      "stop": 405.03,
+      "target": 397.35,
       "qty": 97,
       "indicators": {
         "rsi": 43.88,
         "atr": 1.4632,
         "vol_ratio": 8.74
       },
-      "scout_reason": "SPY -1.14% aligns with SELL",
+      "scout_reason": "SPY -0.99% aligns with SELL",
       "candles_5m": [
         [
           "09:45",
@@ -181,7 +181,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-13T11:23:21.302767-05:00"
+      "outcome_at": "2026-11-13T11:24:41.553480-05:00"
     }
   ]
 }
