@@ -1,30 +1,22 @@
 {
-  "signal_id": "20261113-112113-UNH",
-  "generated_at": "2026-11-13T11:21:13.391303-05:00",
-  "spy_day_pct": -1.0314860795604557,
+  "signal_id": "20261113-112320-UNH",
+  "generated_at": "2026-11-13T11:23:20.690816-05:00",
+  "spy_day_pct": -1.142426963917795,
   "candidates": [
     {
       "ticker": "UNH",
       "signal": "SELL",
-      "ltp": 403.24,
-      "stop": 405.43,
-      "target": 397.75,
+      "ltp": 402.98,
+      "stop": 405.17,
+      "target": 397.49,
       "qty": 97,
       "indicators": {
         "rsi": 43.88,
         "atr": 1.4632,
         "vol_ratio": 8.74
       },
-      "scout_reason": "SPY -1.03% aligns with SELL",
+      "scout_reason": "SPY -1.14% aligns with SELL",
       "candles_5m": [
-        [
-          "09:40",
-          405.19,
-          405.49,
-          403.98,
-          405.0,
-          2900
-        ],
         [
           "09:45",
           405.05,
@@ -176,12 +168,20 @@
           402.78,
           403.24,
           27662
+        ],
+        [
+          "11:20",
+          403.19,
+          403.19,
+          402.82,
+          402.85,
+          1366
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
-      "outcome_reason": "DISTRIBUTION: heaviest volume 27662 at 11:15 with low 402.78, volume concentrated at lows opposing SELL direction",
-      "outcome_at": "2026-11-13T11:21:19.920717-05:00"
+      "outcome_reason": "scout: omitted from LLM output",
+      "outcome_at": "2026-11-13T11:23:21.302767-05:00"
     }
   ]
 }
