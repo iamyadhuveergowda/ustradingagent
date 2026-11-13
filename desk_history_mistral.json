@@ -4324,5 +4324,30 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261113-113156-CAT",
+    "signal_time": "2026-11-13T11:31:56-05:00",
+    "judged_at": "2026-11-13T11:32:17-05:00",
+    "age_min": 0.3,
+    "ticker": "CAT",
+    "action": "SELL",
+    "entry": 592.02,
+    "stop": 596.55,
+    "target": 580.68,
+    "qty": 66,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 592.02 is not orderly: the last 12 candles show a choppy, sideways structure with no clear directional momentum. The 11:30 candle closed at the low (592.02), but the preceding candles lacked conviction (e.g., 11:25 closed near the high, 11:20 closed near the high). The RSI (36.24) is neutral, not extreme, and the volume ratio (1.51) is not strong enough to confirm exhaustion. The stop at 596.55 is 1.5 ATR away, but the target (580.68) is 3.75 ATR away, which is aggressive for the remaining 269 minutes (14:31 ET). The reward:risk (2.5) is mathematically appealing, but the lack of structure undermines confidence in the trade.",
+      "macro": "The SPY day move (-0.85%) aligns with the SELL thesis, but intraday alignment does not justify a trade without stronger structure. The session is still early (269 minutes left), but the lack of momentum makes this a low-probability setup.",
+      "risk": "No earnings risk today or tomorrow. However, the trade's feasibility is TIGHT due to the target being 3.75 ATR away with only 269 minutes left. The stop is 1.5 ATR away, which is reasonable, but the entry lacks conviction."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
