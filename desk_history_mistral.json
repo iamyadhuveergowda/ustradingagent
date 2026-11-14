@@ -4271,9 +4271,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-111620-C",
@@ -4296,9 +4296,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": -0.34,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-112113-UNH",
@@ -4321,9 +4321,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-113156-CAT",
@@ -4346,9 +4346,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-114119-QCOM",
@@ -4371,9 +4371,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-114119-QCOM",
@@ -4396,9 +4396,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-121701-AMZN",
@@ -4421,9 +4421,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-122729-CSCO",
@@ -4446,9 +4446,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.43,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-124748-NFLX",
@@ -4471,9 +4471,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.37,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   },
   {
     "signal_id": "20261113-130719-TXN",
@@ -4496,8 +4496,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "STOP",
+    "outcome_r": -1.0,
+    "outcome_at": "2026-11-13T20:45:21-05:00"
   }
 ]
