@@ -1,104 +1,104 @@
 {
-  "fetched_at_utc": "2026-11-13T20:14:55Z",
+  "fetched_at_utc": "2026-11-14T00:54:58Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "price": 7557.03,
+      "price": 7561.67,
       "prev_close": 7592.4,
-      "change": -35.37,
-      "change_pct": -0.466,
-      "quote_time_utc": "2026-11-13T20:14:54Z",
-      "quote_time_et": "15:14",
+      "change": -30.73,
+      "change_pct": -0.405,
+      "quote_time_utc": "2026-11-13T21:43:19Z",
+      "quote_time_et": "16:43",
       "quote_date_et": "2026-11-13",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         7549.94,
         7520.93,
         7619.38,
         7592.4,
-        7557.03
+        7561.67
       ],
       "stale": false
     },
     {
       "name": "Dow Jones",
       "symbol": "^DJI",
-      "price": 52327.96,
+      "price": 52347.55,
       "prev_close": 52297.09,
-      "change": 30.87,
-      "change_pct": 0.059,
-      "quote_time_utc": "2026-11-13T20:14:54Z",
-      "quote_time_et": "15:14",
+      "change": 50.46,
+      "change_pct": 0.096,
+      "quote_time_utc": "2026-11-13T21:43:26Z",
+      "quote_time_et": "16:43",
       "quote_date_et": "2026-11-13",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         52389.75,
         52231.89,
         52486.49,
         52297.09,
-        52327.96
+        52347.55
       ],
       "stale": false
     },
     {
       "name": "Nasdaq Composite",
       "symbol": "^IXIC",
-      "price": 25139.69,
+      "price": 25136.27,
       "prev_close": 25366.09,
-      "change": -226.4,
-      "change_pct": -0.893,
-      "quote_time_utc": "2026-11-13T20:14:54Z",
-      "quote_time_et": "15:14",
+      "change": -229.82,
+      "change_pct": -0.906,
+      "quote_time_utc": "2026-11-13T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-13",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         25253.14,
         25065.87,
         25466.19,
         25366.09,
-        25139.69
+        25136.27
       ],
       "stale": false
     },
     {
       "name": "Russell 2000",
       "symbol": "^RUT",
-      "price": 2787.55,
+      "price": 2790.49,
       "prev_close": 2799.06,
-      "change": -11.51,
-      "change_pct": -0.411,
-      "quote_time_utc": "2026-11-13T19:59:50Z",
-      "quote_time_et": "14:59",
+      "change": -8.57,
+      "change_pct": -0.306,
+      "quote_time_utc": "2026-11-13T21:30:05Z",
+      "quote_time_et": "16:30",
       "quote_date_et": "2026-11-13",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         2840.81,
         2821.38,
         2846.26,
         2799.06,
-        2787.55
+        2790.49
       ],
       "stale": false
     },
     {
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "price": 18.98,
+      "price": 19.3,
       "prev_close": 18.7,
-      "change": 0.28,
-      "change_pct": 1.497,
-      "quote_time_utc": "2026-11-13T19:59:46Z",
-      "quote_time_et": "14:59",
+      "change": 0.6,
+      "change_pct": 3.209,
+      "quote_time_utc": "2026-11-13T21:15:01Z",
+      "quote_time_et": "16:15",
       "quote_date_et": "2026-11-13",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         19.92,
         19.46,
         17.49,
         18.7,
-        18.98
+        19.3
       ],
       "stale": false
     }
