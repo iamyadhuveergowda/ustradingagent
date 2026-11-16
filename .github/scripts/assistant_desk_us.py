@@ -15,6 +15,12 @@ for >=5.5 ATR with <=120 min or >=4.5 ATR with <=60 min. Stored, shown
 on Telegram, and injected into the prompt. Gemini may still GO, but
 must justify it explicitly.
 
+SELL FILTER + HOLIDAY GATE + HASH DEDUPE (2026-11-16, shadow test):
+desk SELLs are eligible only when SPY day % < -0.25%
+(SELL_FILTER_REGIME; SPY day % read from the judged batch); batches
+generated on a NYSE holiday are refused outright; identical setups
+(same ticker/action/entry/stop/target) are never judged twice in one day.
+
 The desk has NO connection to the trading agent: nothing here can place,
 block, or modify a trade. It is an advice log whose accuracy the EOD
 script measures. (Designed 2026-10-23; the NIFTY tradetracker desk's known
@@ -33,6 +39,7 @@ pushes when a file actually changed.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import sys
@@ -50,6 +57,76 @@ except (TypeError, ValueError):
     FRESH_MINUTES = 30.0
 DEDUP_WINDOW_MINUTES = 120  # old Muse rule: same ticker+direction within 2h = same setup
 
+# --- 2026-11-16: SELL-filter shadow test + holiday handling ---
+# Market holidays 2026 (NYSE/Nasdaq full-day closures, published NYSE
+# calendar). Early closes (27 Nov, 24 Dec, 1:00 PM ET) are NOT listed:
+# the market trades that morning, so the desk runs normally.
+# Add 2027 from the NYSE calendar when published.
+NYSE_HOLIDAYS_2026 = {
+    "2026-01-01": "New Year's Day",
+    "2026-01-19": "Martin Luther King Jr. Day",
+    "2026-02-16": "Washington's Birthday",
+    "2026-04-03": "Good Friday",
+    "2026-05-25": "Memorial Day",
+    "2026-06-19": "Juneteenth",
+    "2026-07-03": "Independence Day (observed)",
+    "2026-09-07": "Labor Day",
+    "2026-11-26": "Thanksgiving Day",
+    "2026-12-25": "Christmas Day",
+}
+
+# SELL-filter shadow test (spec 2026-11-15, 2 weeks from 16 Nov): a desk
+# SELL is eligible ONLY when the index day % is below this threshold.
+# == REGIME_TOL_PCT in both agents; exactly the agent's SELL-permitted
+# region for US, deliberately stricter than the NIFTY agent lock (which
+# has no dead band) — the test measures that strictness.
+SELL_FILTER_REGIME_PCT = -0.25
+
+
+def setup_hash(c) -> str:
+    """Content hash of one candidate's setup: sha1(ticker|action|entry|stop|target).
+
+    Two batches carrying identical levels are the same setup by
+    definition, even when the agent re-issues them under a fresh
+    timestamped signal_id (the 10 Nov 2026 case: TITAN/HDFCLIFE judged
+    3x). Levels are formatted to 4 decimals so the hash is stable
+    across JSON round-trips of the same numbers. Returns "" if the
+    candidate has no usable levels (then only the 120-min window applies).
+    """
+    try:
+        entry = float(c.get("ltp")); stop = float(c.get("stop")); target = float(c.get("target"))
+    except (TypeError, ValueError):
+        return ""
+    key = f"{str(c.get('ticker', '')).upper()}|{str(c.get('signal', ''))}|{entry:.4f}|{stop:.4f}|{target:.4f}"
+    return hashlib.sha1(key.encode("utf-8")).hexdigest()
+
+
+def sell_filter_reason(index_name, index_pct) -> str:
+    """Human-readable reason for a SELL_FILTER_REGIME record."""
+    if index_pct is None:
+        return (f"SELL filtered: {index_name} day % unavailable at judge time — "
+                "SELL ineligible (fail-closed, SELL_FILTER_REGIME shadow test).")
+    return (f"SELL filtered: {index_name} day {index_pct:+.2f}% is not below -0.25% "
+            "(SELL_FILTER_REGIME shadow test).")
+
+
+def apply_sell_filter(candidates, index_pct, index_name):
+    """Split candidates into (to_judge, filtered) by the SELL filter.
+
+    A SELL is eligible ONLY when the index day % is < -0.25% at batch
+    time. A failing SELL costs no LLM call: it is recorded as SKIP with
+    filter SELL_FILTER_REGIME (see main()). index_pct None (missing
+    feed) also fails closed. BUYs are never filtered.
+    """
+    to_judge, filtered = [], []
+    eligible = index_pct is not None and index_pct < SELL_FILTER_REGIME_PCT
+    for c in candidates:
+        if str(c.get("signal", "")).upper() == "SELL" and not eligible:
+            filtered.append(c)
+        else:
+            to_judge.append(c)
+    return to_judge, filtered
+
 def _parse_dt(s):
     try:
         dt = datetime.fromisoformat(str(s))
@@ -58,16 +135,42 @@ def _parse_dt(s):
         return None
 
 def filter_deduped(candidates, history, gen_dt):
-    """Return (kept, skipped_tickers) applying the 2h ticker+direction rule.
+    """Return (kept, skipped_tickers, hash_skipped_tickers).
 
-    A candidate is skipped if history already holds the same ticker and
-    action with a signal_time 0-120 min before this batch's signal_time.
+    Two layers, both must pass:
+    1. Content-hash dedupe (2026-11-16): a candidate whose setup hash
+       (ticker|action|entry|stop|target) was already judged TODAY is
+       skipped, regardless of signal_id or elapsed time. This is the
+       real root cause of the 10 Nov 2026 triple-judging: the agent
+       re-issued identical setups under fresh timestamped signal_ids.
+    2. The 120-minute ticker+direction window (old Muse rule), kept as
+       a second layer — a hash only blocks the *identical* setup; a
+       re-issue with changed levels is judged.
     signal_id dedupe (in main) still runs first; this is in addition to it.
     """
-    kept, skipped = [], []
+    kept, skipped, hash_skipped = [], [], []
     for c in candidates:
         tick = str(c.get("ticker", "")).upper()
         act = str(c.get("signal", ""))
+        # Layer 1: same setup already judged today?
+        h = setup_hash(c)
+        if h:
+            dup_hash = False
+            for r in history:
+                if not isinstance(r, dict) or r.get("setup_hash") != h:
+                    continue
+                rec_dt = _parse_dt(r.get("signal_time") or r.get("judged_at"))
+                if rec_dt is None:
+                    continue
+                if rec_dt.tzinfo is None and gen_dt.tzinfo is not None:
+                    rec_dt = rec_dt.replace(tzinfo=gen_dt.tzinfo)
+                if rec_dt.date() == gen_dt.date():
+                    dup_hash = True
+                    break
+            if dup_hash:
+                hash_skipped.append(tick)
+                continue
+        # Layer 2: 120-minute ticker+direction window (unchanged).
         dup = False
         for r in history:
             if not isinstance(r, dict):
@@ -88,7 +191,7 @@ def filter_deduped(candidates, history, gen_dt):
             skipped.append(tick)
         else:
             kept.append(c)
-    return kept, skipped
+    return kept, skipped, hash_skipped
 GEMINI_MODEL = os.getenv("GEMINI_MODEL") or "gemini-3.8-flash"
 
 def gemini_post_with_retry(req, timeout=90, attempts=3):
@@ -423,6 +526,14 @@ def main() -> int:
         print(f"Signal generated outside ET session ({gen_et:%H:%M}); skipping.")
         return 0
 
+    # Holiday gate (2026-11-16): a batch generated on a market holiday is
+    # a stale re-issue from the agent — refuse to judge it. Exit 0, no LLM
+    # call, no commit, no alert (same as a stale-signal skip).
+    holiday = NYSE_HOLIDAYS_2026.get(gen_et.date().isoformat())
+    if holiday:
+        print(f"Market holiday ({holiday}); skipping.")
+        return 0
+
     history = load_json_strict(history_path, [])
     if not isinstance(history, list):
         raise RuntimeError(f"{history_path} is not a JSON list; refusing to overwrite it")
@@ -430,31 +541,44 @@ def main() -> int:
         print(f"Signal {signal_id} already judged; skipping.")
         return 0
 
-    kept, skipped = filter_deduped(latest["candidates"], history, gen_et)
+    kept, skipped, hash_skipped = filter_deduped(latest["candidates"], history, gen_et)
     if skipped:
         print(f"Deduped (same ticker+direction within 2h, skipping): {', '.join(skipped)}")
+    if hash_skipped:
+        print(f"Hash-deduped (identical setup already judged today, skipping): {', '.join(hash_skipped)}")
     if not kept:
         print("All candidates deduped; skipping (no Gemini call, no commit).")
         return 0
 
-    calendar = load_earnings_calendar_us(root)
-    if not os.getenv("GEMINI_API_KEY"):
-        print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
-        return 0
-
+    # SELL filter (shadow test, 2026-11-16): SELLs are eligible only when
+    # SPY is down more than 0.25% on the day. Index value comes from the
+    # batch itself (spy_day_pct, the same number the agent lock used);
+    # null fails closed. Filtered SELLs cost no LLM call and are
+    # recorded as SKIP below.
     spy_pct = latest.get("spy_day_pct")
-    try:
-        verdicts = gemini_judge(kept, spy_pct, gen_et.strftime("%H:%M"), minutes_left=minutes_to_close_us(gen_et), calendar=calendar, signal_date=gen_et.date())
-    except Exception as exc:
-        print(f"Gemini judging failed: {exc}", file=sys.stderr)
-        # C7: judging failures are otherwise silent (exit 0, no verdict):
-        # alert loudly, but still write nothing.
+    to_judge, filtered = apply_sell_filter(kept, spy_pct, "SPY")
+    if filtered:
+        print(f"SELL-filtered: {', '.join(str(c.get('ticker', '')) for c in filtered)} "
+              f"({sell_filter_reason('SPY', spy_pct)})")
+
+    calendar = load_earnings_calendar_us(root)
+    verdicts = []
+    if to_judge:
+        if not os.getenv("GEMINI_API_KEY"):
+            print("GEMINI_API_KEY not set; cannot judge.", file=sys.stderr)
+            return 0
         try:
-            send_telegram(f"DESK judging failed: {exc} — batch {signal_id} NOT judged")
-        except Exception as alert_exc:
-            # C7 nit: a failing alert must not itself be silent.
-            print(f"DESK judging-failure alert failed: {alert_exc}", file=sys.stderr)
-        return 0
+            verdicts = gemini_judge(to_judge, spy_pct, gen_et.strftime("%H:%M"), minutes_left=minutes_to_close_us(gen_et), calendar=calendar, signal_date=gen_et.date())
+        except Exception as exc:
+            print(f"Gemini judging failed: {exc}", file=sys.stderr)
+            # C7: judging failures are otherwise silent (exit 0, no verdict):
+            # alert loudly, but still write nothing.
+            try:
+                send_telegram(f"DESK judging failed: {exc} — batch {signal_id} NOT judged")
+            except Exception as alert_exc:
+                # C7 nit: a failing alert must not itself be silent.
+                print(f"DESK judging-failure alert failed: {alert_exc}", file=sys.stderr)
+            return 0
 
     judged_at = now_et.isoformat(timespec="seconds")
     cand_by_ticker = {c["ticker"]: c for c in latest["candidates"]}
@@ -468,7 +592,33 @@ def main() -> int:
             "ticker": v["ticker"], "action": c["signal"],
             "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
             "qty": c.get("qty", 0),
+            "setup_hash": setup_hash(c),
+            "index_name": "SPY", "index_day_pct": spy_pct,
             "verdict": v["verdict"], "confidence": v["confidence"], "trigger": v.get("trigger", ""), "notes": v["notes"], "results_risk": results_flag(calendar, v["ticker"], gen_et.date()),
+            "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_to_close_us(gen_et)),
+            "outcome": None, "outcome_r": None, "outcome_at": None,
+        })
+    # Filtered SELLs: recorded as SKIP with the filter flag. No LLM ever
+    # saw them, so confidence is None and raw_verdict is None — the
+    # gate-off arm of the shadow test is scored offline from the stored
+    # entry/stop/target (first-hit outcome of the filtered-out set).
+    for c in filtered:
+        records.append({
+            "signal_id": signal_id,
+            "signal_time": gen_et.isoformat(timespec="seconds"),
+            "judged_at": judged_at, "age_min": round(age_min, 1),
+            "ticker": c["ticker"], "action": c["signal"],
+            "entry": float(c["ltp"]), "stop": float(c["stop"]), "target": float(c["target"]),
+            "qty": c.get("qty", 0),
+            "setup_hash": setup_hash(c),
+            "index_name": "SPY", "index_day_pct": spy_pct,
+            "verdict": "SKIP", "confidence": None,
+            "filter": "SELL_FILTER_REGIME",
+            "raw_verdict": None,
+            "trigger": "",
+            "notes": {"technical": "", "macro": "",
+                      "risk": sell_filter_reason("SPY", spy_pct)},
+            "results_risk": results_flag(calendar, c["ticker"], gen_et.date()),
             "feasibility": feasibility_flag(round(abs(float(c["target"]) - float(c["ltp"])) / (float(c.get("indicators", {}).get("atr") or 0) or 0.0), 2) if float(c.get("indicators", {}).get("atr") or 0) else None, minutes_to_close_us(gen_et)),
             "outcome": None, "outcome_r": None, "outcome_at": None,
         })
@@ -482,6 +632,10 @@ def main() -> int:
     spy_txt = f"{spy_pct:+.2f}%" if isinstance(spy_pct, (int, float)) else "n/a"
     lines = [f"US DESK (advisory) — {gen_et:%H:%M} ET · SPY {spy_txt}"]
     for r in records:
+        if r.get("filter") == "SELL_FILTER_REGIME":
+            lines.append(f"{r['ticker']} {r['action']} @ {r['entry']:.2f} → SKIP ⛔ (SELL filter)")
+            lines.append(f"  {((r['notes'] or {}).get('risk', ''))}")
+            continue
         icon = "GO ✅" if r["verdict"] == "GO" else "SKIP ⛔"
         tech = (r["notes"] or {}).get("technical", "")
         risk = (r["notes"] or {}).get("risk", "")
