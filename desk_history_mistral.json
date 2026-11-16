@@ -4583,5 +4583,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261116-123900-BA",
+    "signal_time": "2026-11-16T12:39:00-05:00",
+    "judged_at": "2026-11-16T12:39:40-05:00",
+    "age_min": 0.7,
+    "ticker": "BA",
+    "action": "SELL",
+    "entry": 167.24,
+    "stop": 168.09,
+    "target": 165.12,
+    "qty": 235,
+    "setup_hash": "73d558a49bc9ea4309b99b473ee19679094e50a3",
+    "index_name": "SPY",
+    "index_day_pct": -1.4649926418921546,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, erratic structure into the entry at 167.24, with a sharp spike to 167.56 in the 12:30 candle followed by a rapid drop to 167.16 in the next. The 12:35 candle closes at the entry level (167.24) but with a low volume ratio (1.29) and no clear directional close. The pullback from the 12:30 high is abrupt and lacks an orderly structure, suggesting exhaustion rather than a meaningful retracement. The stop at 168.09 is 1.5 ATR away, but the target (165.12) is 3.75 ATR away, which may be too aggressive given the remaining 201 minutes (16:00 ET close). The RSI (47.09) is neutral and does not support a strong bearish bias.",
+      "macro": "SPY’s -1.46% day move aligns with the SELL action, but the intraday structure of BA does not reflect a cohesive bearish momentum. The lack of a clear trend or exhaustion signal in the last 12 candles weakens the case for a short entry.",
+      "risk": "No earnings risk identified. However, the abrupt price swings and lack of volume confirmation raise concerns about liquidity and execution risk. The target may not be achievable in the remaining session given the erratic structure."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
