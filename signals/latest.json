@@ -1,19 +1,19 @@
 {
-  "signal_id": "20261116-123452-GE",
-  "generated_at": "2026-11-16T12:34:52.385755-05:00",
-  "spy_day_pct": -1.439802723162795,
+  "signal_id": "20261116-123622-GE",
+  "generated_at": "2026-11-16T12:36:22.261732-05:00",
+  "spy_day_pct": -1.4444429713497795,
   "candidates": [
     {
       "ticker": "GE",
       "signal": "SELL",
-      "ltp": 327.84,
-      "stop": 329.51,
-      "target": 323.66,
+      "ltp": 327.77,
+      "stop": 329.44,
+      "target": 323.59,
       "qty": 120,
       "indicators": {
-        "rsi": 41.96,
+        "rsi": 41.48,
         "atr": 1.1141,
-        "vol_ratio": 1.42
+        "vol_ratio": 2.55
       },
       "scout_reason": "SPY -1.44% aligns with SELL",
       "candles_5m": [
@@ -181,7 +181,7 @@
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-16T12:34:53.160024-05:00"
+      "outcome_at": "2026-11-16T12:36:23.201038-05:00"
     }
   ]
 }
