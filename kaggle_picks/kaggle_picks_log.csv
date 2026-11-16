@@ -1,11 +1,5 @@
 pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason,atr,rsi,ret_20d,atr_pct,outcome,outcome_date,realised_r
-2026-11-15,NIFTY,BHARTIARTL,BHARTIARTL.NS,2106.0,2035.41,2282.46,2122.9,6,above 50d MA; 20d return +17.4%; RSI 70 strong; near 20d high; ATR 2.2% alive,47.06,69.8,0.1735,0.0223,PENDING,,
-2026-11-15,NIFTY,JSWSTEEL,JSWSTEEL.NS,1348.0,1299.96,1468.11,1370.0,6,above 50d MA; 20d return +14.6%; RSI 65 strong; near 20d high; ATR 2.4% alive,32.03,64.6,0.1461,0.0238,PENDING,,
 2026-11-15,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,PENDING,,
 2026-11-15,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,PENDING,,
-2026-11-16,NIFTY,BAJFINANCE,BAJFINANCE.NS,1100.1,1053.2,1217.34,1122.0,6,above 50d MA; 20d return +14.0%; RSI 67 strong; near 20d high; ATR 2.8% alive,31.26,67.3,0.1397,0.0284,PENDING,,
-2026-11-16,NIFTY,ITC,ITC.NS,294.8,283.95,321.92,296.0,6,above 50d MA; 20d return +11.7%; volume 1.2x avg; near 20d high; ATR 2.5% alive,7.23,72.9,0.1171,0.0245,LOSS,2026-11-16,-1.0
-2026-11-16,NIFTY,TATACONSUM,TATACONSUM.NS,1099.5,1058.35,1202.38,1104.1,6,above 50d MA; 20d return +10.9%; RSI 70 strong; near 20d high; ATR 2.5% alive,27.44,69.9,0.109,0.025,PENDING,,
-2026-11-16,NIFTY,ULTRACEMCO,ULTRACEMCO.NS,12290.0,11888.96,13292.59,12532.0,6,above 50d MA; 20d return +13.1%; RSI 67 strong; near 20d high; ATR 2.2% alive,267.36,66.7,0.1315,0.0218,PENDING,,
 2026-11-16,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,PENDING,,
 2026-11-16,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,PENDING,,
