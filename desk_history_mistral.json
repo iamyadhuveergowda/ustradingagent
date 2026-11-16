@@ -4555,5 +4555,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261116-123158-GE",
+    "signal_time": "2026-11-16T12:31:58-05:00",
+    "judged_at": "2026-11-16T12:32:20-05:00",
+    "age_min": 0.4,
+    "ticker": "GE",
+    "action": "SELL",
+    "entry": 327.75,
+    "stop": 329.45,
+    "target": 323.49,
+    "qty": 120,
+    "setup_hash": "df35734aa483205ce526c58561d31bf34925e0c1",
+    "index_name": "SPY",
+    "index_day_pct": -1.4636668566958733,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 327.75 lacks clear exhaustion: the 12:30 candle closed near its low (327.75) but did not reject above the 328.00-328.25 range, which acted as resistance in prior candles (e.g., 12:10-12:25). The RSI (41.96) is neutral, and the volume spike at 12:05-12:25 (vol_ratio 1.42) suggests distribution but not a decisive breakdown. The stop (329.45) is 1.5 ATR away, but the target (323.49) is 3.76 ATR (~4.3 ATR total) in a session with only 209 minutes left—**feasibility is TIGHT** (target_distance_atr/209 ≈ 0.018 ATR/min). The 12:30 close (327.75) is the entry, but the lack of a clear rejection above 328.00 and the proximity to the 16:00 close (209 minutes) make this a low-probability setup.",
+      "macro": "SPY’s -1.46% day move aligns with the SELL thesis, but intraday momentum is weak: GE’s pullback is orderly but not impulsive. No macro catalysts are present to override the technical hesitation.",
+      "risk": "No earnings risk, but the **results_risk** field is empty, so no additional volatility is factored. The reward:risk (2.51) is mathematically attractive, but the **geometry is unrealistic for the time remaining**—a 4.3 ATR move in 209 minutes (~0.018 ATR/min) is aggressive for a pullback trade. Prefer a clearer breakdown or a shorter-term target."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
