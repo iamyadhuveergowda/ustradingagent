@@ -4611,5 +4611,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261116-124603-MRK",
+    "signal_time": "2026-11-16T12:46:03-05:00",
+    "judged_at": "2026-11-16T12:46:27-05:00",
+    "age_min": 0.4,
+    "ticker": "MRK",
+    "action": "SELL",
+    "entry": 146.59,
+    "stop": 147.24,
+    "target": 144.96,
+    "qty": 268,
+    "setup_hash": "64f402f093527ae12a1f248f56a2df67ce3c706f",
+    "index_name": "SPY",
+    "index_day_pct": -1.4623410714995921,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a choppy, erratic decline into the entry at 146.59, with the last candle (12:40) closing at the low (146.59) after a sharp drop from 146.92. This suggests exhaustion rather than a clean pullback. The RSI (38.99) is neutral, and the volume spike (vol_ratio 1.58) aligns with the drop but does not confirm a sustainable reversal. The stop (147.24) is 1.5 ATR away, but the target (144.96) is 3.76 ATR away—feasible in time but requires a strong follow-through in a weakening regime. The SELL aligns with SPY’s -1.46% day move, but the structure lacks conviction.",
+      "macro": "No macro context provided; relying solely on technicals.",
+      "risk": "No earnings risk today/tomorrow. However, the lack of a clear pullback structure and the erratic decline into the entry raise execution risk. The trade would require a sharp, immediate continuation lower to hit the target in the remaining 194 minutes, which is unlikely given the current momentum."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
