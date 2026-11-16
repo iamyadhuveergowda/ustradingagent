@@ -4499,5 +4499,33 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-13T20:45:21-05:00"
+  },
+  {
+    "signal_id": "20261116-115249-META",
+    "signal_time": "2026-11-16T11:52:49-05:00",
+    "judged_at": "2026-11-16T11:53:28-05:00",
+    "age_min": 0.6,
+    "ticker": "META",
+    "action": "SELL",
+    "entry": 629.2,
+    "stop": 635.06,
+    "target": 614.54,
+    "qty": 62,
+    "setup_hash": "bff1ebbf01d2c818dd37ab7c4630802996cf343e",
+    "index_name": "SPY",
+    "index_day_pct": -1.213093454598483,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **629.2** lacks a clean, directional close. The last 12 candles show choppy, erratic structure with no clear exhaustion or momentum shift. The 11:50 candle closed **629.31**, just **0.09 above entry**, with a **low of 629.08** (within 0.12 of entry) and **volume ratio of 1.58** (neutral). The stop at **635.06** is **5.86 above entry (1.5 ATR)**, but the target at **614.54** is **14.66 below (3.75 ATR)**—a **2.5:1 reward:risk**—yet the geometry is unconvincing. The 11:45 candle's **8,689 volume spike** (highest in the last 12) suggests a failed break attempt, not a reversal. The **RSI (45.53)** is neutral, not extreme, and the **SPY day move (-1.21%)** aligns with the SELL thesis, but the micro-structure is weak.",
+      "macro": "No macro context provided; relying solely on structure.",
+      "risk": "No earnings risk today/tomorrow. However, the **feasibility is TIGHT** (target **3.75 ATR** away with **248 minutes left**), and the **stop is 1.5 ATR**—a wide stop for a choppy setup. The lack of a clear entry trigger (e.g., break of structure, volume spike confirmation) makes this a low-probability trade. A GO would require a **break below 628.77 (11:45 low)** with follow-through volume, but even then, the session time is limited."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
