@@ -1,0 +1,3 @@
+pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason,atr,rsi,ret_20d,atr_pct
+2026-11-16,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025
+2026-11-16,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237
