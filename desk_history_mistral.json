@@ -4751,5 +4751,61 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-125743-GS",
+    "signal_time": "2026-11-17T12:57:43-05:00",
+    "judged_at": "2026-11-17T12:58:18-05:00",
+    "age_min": 0.6,
+    "ticker": "GS",
+    "action": "SELL",
+    "entry": 875.82,
+    "stop": 882.16,
+    "target": 859.98,
+    "qty": 44,
+    "setup_hash": "e4dd6c91f733dd8f15572333751fc1378ca15beb",
+    "index_name": "SPY",
+    "index_day_pct": -1.162099345981286,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 875.82 with a tight stop (1.5 ATR) and a target (859.98) that is 3.75 ATR away. The last 5-minute candle (12:50) closed at 875.82, the entry level, but the structure shows exhaustion: the high of 876.59 was made at 12:50, and the low of 875.80 is near the entry. The pullback lacks orderliness, with erratic volume spikes (e.g., 1726 at 12:05) and a lack of clear directional momentum. The RSI (47.1) is neutral, not suggesting overbought or oversold conditions.",
+      "macro": "SPY's -1.16% day move aligns with the SELL action, but the intraday structure of GS does not support a high-conviction trade at this juncture.",
+      "risk": "No results risk identified. However, the stop is tight (1.5 ATR), and the target is ambitious given the remaining session time (183 minutes). The reward:risk ratio (2.5) is attractive, but the structure is not compelling enough to justify risking capital in a crowded close."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-125743-GS",
+    "signal_time": "2026-11-17T12:57:43-05:00",
+    "judged_at": "2026-11-17T12:58:18-05:00",
+    "age_min": 0.6,
+    "ticker": "AXP",
+    "action": "SELL",
+    "entry": 315.21,
+    "stop": 316.66,
+    "target": 311.59,
+    "qty": 124,
+    "setup_hash": "607a1c28f33238ea388742d316445d49686d9533",
+    "index_name": "SPY",
+    "index_day_pct": -1.162099345981286,
+    "verdict": "GO",
+    "confidence": 75,
+    "trigger": "Entry on a close below 315.21 with a stop at 316.66 (1.5 ATR).",
+    "notes": {
+      "technical": "AXP shows a more orderly pullback into the entry at 315.21. The last 5-minute candle (12:55) closed at 315.18, just below the entry, with a low of 315.18 and a high of 315.21. The structure is tighter and more controlled compared to GS, with volume spikes (e.g., 2088 at 12:05) occurring during clear directional moves. The RSI (47.82) is neutral, and the stop (316.66) is placed above recent highs, reducing the risk of being stopped out by noise. The target (311.59) is 3.75 ATR away, which is feasible given the remaining session time (183 minutes).",
+      "macro": "SPY's -1.16% day move aligns with the SELL action, providing a macro backdrop for the trade.",
+      "risk": "No results risk identified. The stop is tight (1.5 ATR), but the structure and timing are more favorable than GS. The reward:risk ratio (2.5) is balanced, and the entry is justified by the orderly pullback and proximity to the close."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
