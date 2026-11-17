@@ -4695,5 +4695,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-122548-PANW",
+    "signal_time": "2026-11-17T12:25:48-05:00",
+    "judged_at": "2026-11-17T12:26:13-05:00",
+    "age_min": 0.4,
+    "ticker": "PANW",
+    "action": "SELL",
+    "entry": 303.96,
+    "stop": 307.92,
+    "target": 294.07,
+    "qty": 129,
+    "setup_hash": "40c31e47dd3c06400f0dc7b76b78d65eb8f72c80",
+    "index_name": "SPY",
+    "index_day_pct": -0.8459002216096415,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, erratic pullback into the SELL entry at 303.96, with no clear directional close or orderly structure. The 12:20 candle closed at 303.96 after a wide range (303.00-304.94), suggesting exhaustion rather than a fresh entry. Volume ratio (3.63) is elevated but not conclusive. The RSI (45.91) is neutral, and the stop (307.92) is 1.5 ATR away, which is tight given the current volatility. The target (294.07) is 3.75 ATR away, but the geometry is questionable due to the lack of a clean pullback and the proximity to the close (215 minutes left).",
+      "macro": "SPY's -0.85% day move aligns with the SELL thesis, but the intraday structure lacks conviction for a trade this late in the session.",
+      "risk": "No earnings risk detected. However, the trade's feasibility is borderline due to the tight stop and the lack of a clear pullback structure. The reward:risk (2.5) is mathematically appealing, but the execution risk outweighs it."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
