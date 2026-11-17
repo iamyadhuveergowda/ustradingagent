@@ -4639,5 +4639,33 @@
     "outcome": "TARGET",
     "outcome_r": 2.51,
     "outcome_at": "2026-11-16T23:10:27-05:00"
+  },
+  {
+    "signal_id": "20261117-120146-CAT",
+    "signal_time": "2026-11-17T12:01:46-05:00",
+    "judged_at": "2026-11-17T12:02:13-05:00",
+    "age_min": 0.4,
+    "ticker": "CAT",
+    "action": "SELL",
+    "entry": 566.32,
+    "stop": 570.98,
+    "target": 554.67,
+    "qty": 69,
+    "setup_hash": "584326323c5fcc6dffd648cbf589558ae1a4853d",
+    "index_name": "SPY",
+    "index_day_pct": -1.2904707853629473,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Candle structure shows a choppy, erratic pullback into the SELL entry at 566.32. The last 12 candles exhibit high volatility with no clear directional close (e.g., 11:55 candle closes at 565.93 after a sharp drop but fails to hold below 566.05). The 11:55 candle's low (564.85) suggests exhaustion rather than a fresh pullback. Stop distance (1.5 ATR) is tight, and the target (554.67) is 3.75 ATR away, which is aggressive given the remaining 239 minutes (16:00 ET close). The vol_ratio (1.4) is not extreme, but the lack of a clean pullback structure weakens the case.",
+      "macro": "SPY day move (-1.29%) aligns with the SELL thesis, but the intraday structure of CAT does not support a high-confidence trade. No macro overrides are present.",
+      "risk": "No earnings risk today/tomorrow. However, the lack of a clean pullback and the erratic candle geometry increase the risk of a false break or a whipsaw into the stop."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
