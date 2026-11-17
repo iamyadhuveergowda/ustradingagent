@@ -4667,5 +4667,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-121615-MSFT",
+    "signal_time": "2026-11-17T12:16:15-05:00",
+    "judged_at": "2026-11-17T12:16:37-05:00",
+    "age_min": 0.4,
+    "ticker": "MSFT",
+    "action": "SELL",
+    "entry": 500.82,
+    "stop": 504.99,
+    "target": 490.39,
+    "qty": 78,
+    "setup_hash": "c6a195c17b7f249694aaa8f1c29caf2a611f089e",
+    "index_name": "SPY",
+    "index_day_pct": -1.047240689692449,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 500.82 lacks clear structural exhaustion. The 12:10 candle closed at 500.32, well above the entry, and the 11:55 candle shows a sharp spike to 500.47 (highest in the last 12 candles) with a directional close. The RSI (40.13) is neutral, not extreme, and the volume ratio (1.44) does not confirm exhaustion. The stop at 504.99 is 1.5 ATR away, but the target (490.39) is 3.75 ATR away, requiring a 224-minute session to play out—unrealistic for a SELL in a weakening SPY (-1.05%). The 12:10 candle's close at 500.32 (below the 12:05 high of 501.9) is a minor pullback, but the lack of follow-through and the absence of a clear breakdown pattern (e.g., lower lows with volume) make this a weak setup. The 11:45-11:50 candles show a failed attempt to break below 497.50, suggesting indecision rather than momentum.",
+      "macro": "SPY's -1.05% day move aligns with the SELL thesis, but the intraday structure of MSFT does not reflect broader market weakness. The lack of a clear breakdown or exhaustion pattern limits conviction.",
+      "risk": "No earnings risk today/tomorrow. However, the trade's feasibility is TIGHT due to the target's distance (3.75 ATR) and time remaining (224 minutes). A GO would require a more decisive breakdown (e.g., close below 499.00 with volume) to justify the risk."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
