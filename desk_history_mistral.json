@@ -4524,9 +4524,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.52,
+    "outcome_at": "2026-11-16T23:10:27-05:00"
   },
   {
     "signal_id": "20261116-122918-JPM",
@@ -4552,9 +4552,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.51,
+    "outcome_at": "2026-11-16T23:10:27-05:00"
   },
   {
     "signal_id": "20261116-123158-GE",
@@ -4580,9 +4580,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.51,
+    "outcome_at": "2026-11-16T23:10:27-05:00"
   },
   {
     "signal_id": "20261116-123900-BA",
@@ -4608,9 +4608,9 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.49,
+    "outcome_at": "2026-11-16T23:10:27-05:00"
   },
   {
     "signal_id": "20261116-124603-MRK",
@@ -4636,8 +4636,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "TARGET",
+    "outcome_r": 2.51,
+    "outcome_at": "2026-11-16T23:10:27-05:00"
   }
 ]
