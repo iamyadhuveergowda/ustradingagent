@@ -4807,5 +4807,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261117-131745-NOW",
+    "signal_time": "2026-11-17T13:17:45-05:00",
+    "judged_at": "2026-11-17T13:18:06-05:00",
+    "age_min": 0.4,
+    "ticker": "NOW",
+    "action": "SELL",
+    "entry": 92.7,
+    "stop": 93.8,
+    "target": 89.96,
+    "qty": 424,
+    "setup_hash": "bed41444a4a599dbb154647efbc79c38706a5acc",
+    "index_name": "SPY",
+    "index_day_pct": -1.186422355548345,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **92.7** is not orderly: the 13:10 candle closed **below its open** (92.78) after a sharp drop from 93.14, suggesting exhaustion rather than a healthy retracement. The 13:15 candle closed **below its high** (92.8) but with a **lower low (92.64)** and **volume spike (6646)**, indicating potential distribution pressure. The stop at **93.8** is **1.5 ATR** away, but the target (**89.96**) is **3.75 ATR** (~$2.75) away—unrealistic for the remaining **163 minutes** (SPY is down **1.19%** intraday, limiting downside follow-through). The **vol_ratio (1.33)** is elevated but not decisive. The **RSI (44.9)** is neutral, not overbought, but the lack of a clear pullback structure weakens the case.",
+      "macro": "No macro context provided; relying solely on structure/geometry.",
+      "risk": "No earnings risk today/tomorrow for NOW. However, the **reward:risk (2.49)** is misleading due to the **unrealistic target distance** for the session. The trade would require a **~2.9% move** in **2.7 hours**, which is improbable given SPY’s current weakness and lack of momentum in NOW’s candles."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
