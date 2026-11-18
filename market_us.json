@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-17T21:28:32Z",
+  "fetched_at_utc": "2026-11-18T03:04:24Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
@@ -9,8 +9,8 @@
       "prev_close": 7416.59,
       "change": -76.06,
       "change_pct": -1.026,
-      "quote_time_utc": "2026-11-17T21:20:01Z",
-      "quote_time_et": "16:20",
+      "quote_time_utc": "2026-11-17T21:42:12Z",
+      "quote_time_et": "16:42",
       "quote_date_et": "2026-11-17",
       "session_open": false,
       "spark": [
@@ -29,8 +29,8 @@
       "prev_close": 51608.17,
       "change": -848.75,
       "change_pct": -1.645,
-      "quote_time_utc": "2026-11-17T21:20:00Z",
-      "quote_time_et": "16:20",
+      "quote_time_utc": "2026-11-17T21:42:18Z",
+      "quote_time_et": "16:42",
       "quote_date_et": "2026-11-17",
       "session_open": false,
       "spark": [
@@ -49,8 +49,8 @@
       "prev_close": 24509.76,
       "change": -181.38,
       "change_pct": -0.74,
-      "quote_time_utc": "2026-11-17T21:28:29Z",
-      "quote_time_et": "16:28",
+      "quote_time_utc": "2026-11-17T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-17",
       "session_open": false,
       "spark": [
@@ -69,8 +69,8 @@
       "prev_close": 2742.94,
       "change": -41.07,
       "change_pct": -1.497,
-      "quote_time_utc": "2026-11-17T21:04:59Z",
-      "quote_time_et": "16:04",
+      "quote_time_utc": "2026-11-17T21:30:12Z",
+      "quote_time_et": "16:30",
       "quote_date_et": "2026-11-17",
       "session_open": false,
       "spark": [
@@ -85,12 +85,12 @@
     {
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "price": 25.52,
+      "price": 25.46,
       "prev_close": 22.91,
-      "change": 2.61,
-      "change_pct": 11.392,
-      "quote_time_utc": "2026-11-17T21:13:16Z",
-      "quote_time_et": "16:13",
+      "change": 2.55,
+      "change_pct": 11.131,
+      "quote_time_utc": "2026-11-17T21:15:01Z",
+      "quote_time_et": "16:15",
       "quote_date_et": "2026-11-17",
       "session_open": false,
       "spark": [
@@ -98,7 +98,7 @@
         18.7,
         19.3,
         22.91,
-        25.52
+        25.46
       ],
       "stale": false
     }
