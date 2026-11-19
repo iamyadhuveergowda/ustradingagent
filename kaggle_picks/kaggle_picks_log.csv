@@ -1,9 +1,11 @@
 pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason,atr,rsi,ret_20d,atr_pct,outcome,outcome_date,realised_r
-2026-11-15,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,PENDING,,
-2026-11-15,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,PENDING,,
-2026-11-16,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,PENDING,,
-2026-11-16,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,PENDING,,
+2026-11-15,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,LOSS,2026-11-18,-1.0
+2026-11-15,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,LOSS,2026-11-18,-1.0
+2026-11-16,US,JNJ,JNJ,285.75,275.05,312.49,288.11,6,above 50d MA; 20d return +11.8%; RSI 66 strong; near 20d high; ATR 2.5% alive,7.13,65.6,0.1181,0.025,LOSS,2026-11-18,-1.0
+2026-11-16,US,PEP,PEP,145.44,140.27,158.36,145.78,6,above 50d MA; 20d return +10.6%; RSI 66 strong; near 20d high; ATR 2.4% alive,3.45,66.3,0.1061,0.0237,LOSS,2026-11-18,-1.0
 2026-11-17,US,DIS,DIS,118.7,114.81,128.42,120.8,7,above 50d MA; 20d return +8.3%; RSI 66 strong; volume 1.2x avg; near 20d high; ATR 2.2% alive,2.59,65.9,0.0831,0.0218,PENDING,,
-2026-11-17,US,HD,HD,347.51,332.58,384.84,362.44,6,above 50d MA; 20d return +12.1%; RSI 63 strong; volume 1.2x avg; ATR 2.9% alive,9.96,62.8,0.1214,0.0286,PENDING,,
-2026-11-18,US,PG,PG,171.72,166.53,184.69,173.59,6,above 50d MA; 20d return +7.8%; RSI 68 strong; near 20d high; ATR 2.0% alive,3.46,68.5,0.0778,0.0201,PENDING,,
+2026-11-17,US,HD,HD,347.51,332.58,384.84,362.44,6,above 50d MA; 20d return +12.1%; RSI 63 strong; volume 1.2x avg; ATR 2.9% alive,9.96,62.8,0.1214,0.0286,LOSS,2026-11-18,-1.0
 2026-11-18,US,HD,HD,339.01,323.26,378.39,362.44,6,above 50d MA; 20d return +7.6%; RSI 55 strong; volume 1.2x avg; ATR 3.1% alive,10.5,55.3,0.0758,0.031,PENDING,,
+2026-11-18,US,PG,PG,171.72,166.53,184.69,173.59,6,above 50d MA; 20d return +7.8%; RSI 68 strong; near 20d high; ATR 2.0% alive,3.46,68.5,0.0778,0.0201,PENDING,,
+2026-11-19,US,DIS,DIS,122.36,117.42,134.71,123.37,7,above 50d MA; 20d return +9.4%; RSI 70 strong; volume 1.2x avg; near 20d high; ATR 2.7% alive,3.29,69.6,0.0942,0.0269,PENDING,,
+2026-11-19,US,PG,PG,170.29,165.14,183.16,173.59,6,above 50d MA; 20d return +8.6%; RSI 65 strong; near 20d high; ATR 2.0% alive,3.43,64.6,0.0858,0.0202,PENDING,,
