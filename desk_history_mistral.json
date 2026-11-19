@@ -4863,5 +4863,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-115854-AAPL",
+    "signal_time": "2026-11-19T11:58:54-05:00",
+    "judged_at": "2026-11-19T12:00:07-05:00",
+    "age_min": 1.2,
+    "ticker": "AAPL",
+    "action": "SELL",
+    "entry": 348.78,
+    "stop": 350.7,
+    "target": 343.97,
+    "qty": 112,
+    "setup_hash": "1136e129b5525e4b7911f4eb3688e8b4c5a552d6",
+    "index_name": "SPY",
+    "index_day_pct": -0.7941615434118916,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, sideways structure with no clear directional exhaustion into the SELL entry at 348.78. The last 12 candles (11:00-11:55 ET) exhibit a tight range (348.08-350.45) with no definitive breakdown or rejection of higher timeframe resistance. The 11:55 candle closed at the low (348.76) but lacks volume confirmation (vol_ratio = 0.97 vs. prior bars) and does not meet the 'orderly pullback with directional close' criterion. The stop at 350.7 is 1.5 ATR away, but the target (343.97) is 3.75 ATR away, which is aggressive for the remaining 242 minutes (4.03 hours) given the lack of momentum or structural breakdown. The RSI (45.09) is neutral, not overbought, but does not support a SELL thesis.",
+      "macro": "SPY's -0.79% day move aligns with the SELL action, but intraday structure must override macro alignment for a GO verdict. The lack of a clear breakdown or exhaustion pattern in AAPL invalidates the trade setup.",
+      "risk": "No earnings or macro risks identified for AAPL today or tomorrow. However, the trade's feasibility is TIGHT due to the target_distance_atr (3.75) and limited time (242 minutes). The reward:risk (2.51) is mathematically appealing, but the lack of structural validity reduces conviction."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
