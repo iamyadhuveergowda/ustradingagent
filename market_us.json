@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-18T21:03:36Z",
+  "fetched_at_utc": "2026-11-19T02:32:39Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
@@ -9,8 +9,8 @@
       "prev_close": 7340.53,
       "change": -16.9,
       "change_pct": -0.23,
-      "quote_time_utc": "2026-11-18T21:03:34Z",
-      "quote_time_et": "16:03",
+      "quote_time_utc": "2026-11-18T21:57:25Z",
+      "quote_time_et": "16:57",
       "quote_date_et": "2026-11-18",
       "session_open": false,
       "spark": [
@@ -25,12 +25,12 @@
     {
       "name": "Dow Jones",
       "symbol": "^DJI",
-      "price": 50198.05,
+      "price": 50198.17,
       "prev_close": 50759.42,
-      "change": -561.37,
+      "change": -561.25,
       "change_pct": -1.106,
-      "quote_time_utc": "2026-11-18T21:03:35Z",
-      "quote_time_et": "16:03",
+      "quote_time_utc": "2026-11-18T21:57:27Z",
+      "quote_time_et": "16:57",
       "quote_date_et": "2026-11-18",
       "session_open": false,
       "spark": [
@@ -38,7 +38,7 @@
         52347.55,
         51608.17,
         50759.42,
-        50198.05
+        50198.17
       ],
       "stale": false
     },
@@ -49,8 +49,8 @@
       "prev_close": 24328.38,
       "change": 101.5,
       "change_pct": 0.417,
-      "quote_time_utc": "2026-11-18T21:03:32Z",
-      "quote_time_et": "16:03",
+      "quote_time_utc": "2026-11-18T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-18",
       "session_open": false,
       "spark": [
@@ -65,12 +65,12 @@
     {
       "name": "Russell 2000",
       "symbol": "^RUT",
-      "price": 2715.35,
+      "price": 2714.31,
       "prev_close": 2701.87,
-      "change": 13.48,
-      "change_pct": 0.499,
-      "quote_time_utc": "2026-11-18T20:48:30Z",
-      "quote_time_et": "15:48",
+      "change": 12.44,
+      "change_pct": 0.46,
+      "quote_time_utc": "2026-11-18T21:30:13Z",
+      "quote_time_et": "16:30",
       "quote_date_et": "2026-11-18",
       "session_open": false,
       "spark": [
@@ -78,27 +78,27 @@
         2790.49,
         2742.94,
         2701.87,
-        2715.35
+        2714.31
       ],
       "stale": false
     },
     {
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "price": 24.65,
+      "price": 24.56,
       "prev_close": 25.46,
-      "change": -0.81,
-      "change_pct": -3.181,
-      "quote_time_utc": "2026-11-18T20:48:31Z",
-      "quote_time_et": "15:48",
+      "change": -0.9,
+      "change_pct": -3.535,
+      "quote_time_utc": "2026-11-18T21:15:01Z",
+      "quote_time_et": "16:15",
       "quote_date_et": "2026-11-18",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         18.7,
         19.3,
         22.91,
         25.46,
-        24.65
+        24.56
       ],
       "stale": false
     }
