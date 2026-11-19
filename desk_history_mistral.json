@@ -4835,5 +4835,33 @@
     "outcome": "STOP",
     "outcome_r": -1.0,
     "outcome_at": "2026-11-17T22:08:02-05:00"
+  },
+  {
+    "signal_id": "20261119-111731-ADBE",
+    "signal_time": "2026-11-19T11:17:31-05:00",
+    "judged_at": "2026-11-19T11:20:09-05:00",
+    "age_min": 2.6,
+    "ticker": "ADBE",
+    "action": "SELL",
+    "entry": 224.94,
+    "stop": 227.27,
+    "target": 219.12,
+    "qty": 175,
+    "setup_hash": "f7e115f2eabcc0555eb084eb8d0e2d95844cf69e",
+    "index_name": "SPY",
+    "index_day_pct": -0.2628948557501503,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a lack of clear exhaustion or momentum into the SELL entry at 224.94. The last two candles (11:05 and 11:10) exhibit a minor pullback but close near the highs of their respective ranges, suggesting indecision rather than a strong reversal. The RSI (46.66) is neutral, not overbought, and does not support a SELL thesis. The volume ratio (1.96) is elevated but not extreme, and the pullback lacks a directional close (e.g., a close below the 11:05 low of 224.56 would strengthen the case). The stop (227.27) is 1.5 ATR away, which is reasonable, but the target (219.12) is 3.75 ATR away, requiring a 2.5:1 reward-to-risk ratio that may be optimistic given the remaining session time (283 minutes). The structure does not align with a high-probability short setup.",
+      "macro": "The SPY day move (-0.26%) aligns with the SELL action, but this is a weak macro signal without additional context (e.g., sector rotation, macroeconomic data). Without a stronger macro narrative or external catalyst, the trade lacks conviction.",
+      "risk": "No earnings risk is present, but the trade's feasibility is TIGHT due to the target distance (3.75 ATR) and time remaining (283 minutes). The reward-to-risk ratio is aggressive for an intraday setup without exceptional structure. The lack of clear exhaustion or momentum into the entry further reduces the risk-reward profile."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
