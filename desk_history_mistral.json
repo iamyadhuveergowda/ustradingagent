@@ -4975,5 +4975,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-130244-BA",
+    "signal_time": "2026-11-19T13:02:44-05:00",
+    "judged_at": "2026-11-19T13:03:53-05:00",
+    "age_min": 1.1,
+    "ticker": "BA",
+    "action": "SELL",
+    "entry": 160.78,
+    "stop": 161.88,
+    "target": 158.0,
+    "qty": 244,
+    "setup_hash": "1e3e588fd40b0b1279ac1614caf4827f512ff70b",
+    "index_name": "SPY",
+    "index_day_pct": -1.124149357139928,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 12:55 candle shows a sharp breakdown to 160.79 (entry level) with a long lower wick and high volume (15196 vs. prior 5m avg ~5000), suggesting exhaustion rather than a healthy pullback. The 13:02 signal candle closes at the entry (160.78) with no follow-through, and the prior 12:50-12:55 move lacks an orderly pullback structure (e.g., no higher lows or clear retest). The stop at 161.88 is 1.1 ATR away, but the target (158.0) is 3.76 ATR, which is aggressive given only 178 minutes left to close. The RSI (43.02) is neutral, not overbought, but the lack of a defined pullback structure weakens the case. Geometry favors a tighter stop (e.g., 161.20) to preserve reward:risk.",
+      "macro": "SPY’s -1.12% day move aligns with the SELL thesis, but BA’s breakdown lacks broader market confirmation (e.g., no clear leadership or sector rotation into defensives).",
+      "risk": "No earnings risk today/tomorrow. However, the abrupt move into the entry and lack of follow-through increase the chance of a false breakdown or a quick reversal, especially with only 178 minutes to close. Feasibility is TIGHT due to target_distance_atr (3.76) and time left."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
