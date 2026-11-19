@@ -4919,5 +4919,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-124250-ORCL",
+    "signal_time": "2026-11-19T12:42:50-05:00",
+    "judged_at": "2026-11-19T12:43:58-05:00",
+    "age_min": 1.1,
+    "ticker": "ORCL",
+    "action": "SELL",
+    "entry": 113.47,
+    "stop": 115.51,
+    "target": 108.36,
+    "qty": 347,
+    "setup_hash": "05c522f24b34543125da8f66f651ef664efecd23",
+    "index_name": "SPY",
+    "index_day_pct": -0.837977352703573,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at 113.47 lacks a clean, orderly structure. The 12:20 candle shows a sharp spike up to 113.06 from 111.47, followed by a choppy consolidation with no clear directional close. The 12:40 candle closes at the entry price (113.47) but with a low volume ratio (1.29) and no confirmation of exhaustion. The stop at 115.51 is 1.5 ATR away, but the target (108.36) is 3.75 ATR below, which is aggressive for the remaining 198 minutes (3.3 hours). The RSI (46.17) is neutral and does not support a bearish thesis. The 12:35 candle's close (113.28) and the 12:40 candle's indecision suggest price is not yet committed to a downside move.",
+      "macro": "SPY's -0.84% day move aligns with the SELL action, but intraday momentum is weak. Without a clear break of the 12:40 low (113.17) or a follow-through sell-off, the trade lacks conviction.",
+      "risk": "No earnings risk, but the target is tight for the remaining session. The reward:risk of 2.5 is theoretically attractive, but the lack of structural confirmation (e.g., a break below 113.17 with volume) makes the trade speculative. Feasibility is not explicitly flagged as INFEASIBLE, but the target distance (3.75 ATR) is aggressive for the time left."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
