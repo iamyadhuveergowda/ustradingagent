@@ -5003,5 +5003,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261119-132231-BLK",
+    "signal_time": "2026-11-19T13:22:31-05:00",
+    "judged_at": "2026-11-19T13:23:40-05:00",
+    "age_min": 1.2,
+    "ticker": "BLK",
+    "action": "SELL",
+    "entry": 1148.07,
+    "stop": 1156.89,
+    "target": 1126.03,
+    "qty": 34,
+    "setup_hash": "b4991240b165adfcc600e800ae78a4041823c0e2",
+    "index_name": "SPY",
+    "index_day_pct": -1.3514438678405658,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The 5-minute candle structure shows a choppy, erratic pullback into the SELL entry at 1148.07. The last 12 candles exhibit no clear directional exhaustion or orderly pullback: the 13:15 candle closed near its low (1147.03) but with a high of 1148.23, indicating indecision. The 13:20 candle closed at 1149.36, a directional close above the entry, suggesting a lack of momentum for a SELL. The RSI (38.12) is neutral, not confirming exhaustion. The stop (1156.89) is 1.5 ATR above entry, but the target (1126.03) is 3.75 ATR away, requiring a 2.5:1 reward-to-risk. Given the erratic structure and lack of clear exhaustion, the setup lacks conviction.",
+      "macro": "The SPY day move (-1.35%) aligns with the SELL action, but the intraday structure does not support a trade at this juncture. The session has 158 minutes left, but the lack of a clean pullback or exhaustion pattern makes this a low-probability entry.",
+      "risk": "No earnings risk detected. However, the volatility profile (ATR 5.8774) suggests the target may be achievable, but the erratic structure and lack of directional clarity make this a high-risk setup for a SELL. The vol_ratio (1.33) is slightly elevated but not conclusive."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
