@@ -5059,5 +5059,33 @@
     "outcome": null,
     "outcome_r": null,
     "outcome_at": null
+  },
+  {
+    "signal_id": "20261120-132604-BA",
+    "signal_time": "2026-11-20T13:26:04-05:00",
+    "judged_at": "2026-11-20T13:27:07-05:00",
+    "age_min": 1.0,
+    "ticker": "BA",
+    "action": "SELL",
+    "entry": 158.21,
+    "stop": 159.44,
+    "target": 155.12,
+    "qty": 248,
+    "setup_hash": "a868a4df75d44992086b76f0773dff50a3b6b18b",
+    "index_name": "SPY",
+    "index_day_pct": -2.0353710326329977,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price action shows a choppy, indecisive structure with no clear directional exhaustion into the entry at 158.21. The last 12 candles exhibit a tight range (157.60-158.40) with no definitive breakout or breakdown, and the entry aligns with a minor pullback rather than a structured pullback. The RSI (35.54) is neutral, not extreme, and the volume spike at 13:20 (21654) is directional but lacks follow-through. The stop at 159.44 is 1.49 ATR away, which is reasonable, but the target (155.12) is 3.75 ATR away, and the reward:risk (2.51) is skewed by the tight stop. The pullback lacks a clear geometric anchor (e.g., a higher low or failed breakout).",
+      "macro": "SPY's -2.04% day move aligns with the SELL thesis, but the intraday structure of BA does not reflect a strong regime-driven momentum play. The lack of a clear directional bias in the candles weakens the trade's validity.",
+      "risk": "No earnings risk, but the trade lacks a high-conviction setup. The time remaining (154 minutes) is sufficient, but the structure is not compelling enough to justify a GO. A break below 157.60 (the low of the last 12 candles) with follow-through volume could validate the SELL, but as-is, the setup is speculative."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
