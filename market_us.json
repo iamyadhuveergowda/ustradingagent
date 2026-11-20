@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-19T21:07:55Z",
+  "fetched_at_utc": "2026-11-20T02:18:01Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
@@ -9,8 +9,8 @@
       "prev_close": 7323.63,
       "change": -147.8,
       "change_pct": -2.018,
-      "quote_time_utc": "2026-11-19T21:07:52Z",
-      "quote_time_et": "16:07",
+      "quote_time_utc": "2026-11-19T21:59:18Z",
+      "quote_time_et": "16:59",
       "quote_date_et": "2026-11-19",
       "session_open": false,
       "spark": [
@@ -29,8 +29,8 @@
       "prev_close": 50198.17,
       "change": -1101.11,
       "change_pct": -2.194,
-      "quote_time_utc": "2026-11-19T21:07:53Z",
-      "quote_time_et": "16:07",
+      "quote_time_utc": "2026-11-19T21:59:13Z",
+      "quote_time_et": "16:59",
       "quote_date_et": "2026-11-19",
       "session_open": false,
       "spark": [
@@ -49,8 +49,8 @@
       "prev_close": 24429.88,
       "change": -550.68,
       "change_pct": -2.254,
-      "quote_time_utc": "2026-11-19T21:07:51Z",
-      "quote_time_et": "16:07",
+      "quote_time_utc": "2026-11-19T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-19",
       "session_open": false,
       "spark": [
@@ -65,12 +65,12 @@
     {
       "name": "Russell 2000",
       "symbol": "^RUT",
-      "price": 2663.5,
+      "price": 2655.11,
       "prev_close": 2714.31,
-      "change": -50.81,
-      "change_pct": -1.872,
-      "quote_time_utc": "2026-11-19T20:52:50Z",
-      "quote_time_et": "15:52",
+      "change": -59.2,
+      "change_pct": -2.181,
+      "quote_time_utc": "2026-11-19T21:30:12Z",
+      "quote_time_et": "16:30",
       "quote_date_et": "2026-11-19",
       "session_open": false,
       "spark": [
@@ -78,27 +78,27 @@
         2742.94,
         2701.87,
         2714.31,
-        2663.5
+        2655.11
       ],
       "stale": false
     },
     {
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "price": 28.03,
+      "price": 28.44,
       "prev_close": 24.56,
-      "change": 3.47,
-      "change_pct": 14.129,
-      "quote_time_utc": "2026-11-19T20:52:46Z",
-      "quote_time_et": "15:52",
+      "change": 3.88,
+      "change_pct": 15.798,
+      "quote_time_utc": "2026-11-19T21:15:01Z",
+      "quote_time_et": "16:15",
       "quote_date_et": "2026-11-19",
-      "session_open": true,
+      "session_open": false,
       "spark": [
         19.3,
         22.91,
         25.46,
         24.56,
-        28.03
+        28.44
       ],
       "stale": false
     }
