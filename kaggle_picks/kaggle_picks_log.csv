@@ -9,3 +9,5 @@ pick_date,market,ticker,yf_symbol,ref_price,stop,target,watch_level,score,reason
 2026-11-18,US,PG,PG,171.72,166.53,184.69,173.59,6,above 50d MA; 20d return +7.8%; RSI 68 strong; near 20d high; ATR 2.0% alive,3.46,68.5,0.0778,0.0201,PENDING,,
 2026-11-19,US,DIS,DIS,122.36,117.42,134.71,123.37,7,above 50d MA; 20d return +9.4%; RSI 70 strong; volume 1.2x avg; near 20d high; ATR 2.7% alive,3.29,69.6,0.0942,0.0269,PENDING,,
 2026-11-19,US,PG,PG,170.29,165.14,183.16,173.59,6,above 50d MA; 20d return +8.6%; RSI 65 strong; near 20d high; ATR 2.0% alive,3.43,64.6,0.0858,0.0202,PENDING,,
+2026-11-20,US,DIS,DIS,120.25,115.24,132.78,123.37,6,above 50d MA; 20d return +6.3%; RSI 63 strong; volume 1.2x avg; ATR 2.8% alive,3.34,62.8,0.0629,0.0278,PENDING,,
+2026-11-20,US,WMT,WMT,126.04,121.32,137.83,131.82,6,above 50d MA; 20d return +4.1%; RSI 60 strong; volume 1.2x avg; ATR 2.5% alive,3.14,59.8,0.0406,0.0249,PENDING,,
