@@ -5056,9 +5056,9 @@
     },
     "results_risk": "reported results 3 DAYS AGO (2026-11-17)",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.23,
+    "outcome_at": "2026-11-20T21:48:59-05:00"
   },
   {
     "signal_id": "20261120-132604-BA",
@@ -5084,8 +5084,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 1.7,
+    "outcome_at": "2026-11-20T21:48:59-05:00"
   }
 ]
