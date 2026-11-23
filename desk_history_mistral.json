@@ -5087,5 +5087,33 @@
     "outcome": "CLOSE",
     "outcome_r": 1.7,
     "outcome_at": "2026-11-20T21:48:59-05:00"
+  },
+  {
+    "signal_id": "20261123-124353-AMD",
+    "signal_time": "2026-11-23T12:43:53-05:00",
+    "judged_at": "2026-11-23T12:44:57-05:00",
+    "age_min": 1.1,
+    "ticker": "AMD",
+    "action": "BUY",
+    "entry": 457.49,
+    "stop": 444.34,
+    "target": 490.34,
+    "qty": 74,
+    "setup_hash": "3529666b319a51adfd7a3ab19bc2ff2d4681a1fe",
+    "index_name": "SPY",
+    "index_day_pct": 4.460821219667583,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "Price is approaching the entry at 457.49 with a pullback from the 12:35 high of 460.54, but the last 5-minute candle (12:40) closed at 457.28 with a low of 456.29, showing exhaustion into the entry zone. The volume spike at 12:35 (13688) suggests a potential short squeeze or profit-taking, but the subsequent drop and low volume (11097) at 12:40 weakens the bullish momentum. The RSI (56.99) is neutral, not extreme, but the lack of follow-through higher after the 12:35 spike is concerning. The stop distance (1.5 ATR) is reasonable, but the target (490.34) requires a 7.2% move in 197 minutes (~3.2 hours), which is aggressive given the current session dynamics and SPY's 4.46% move. The pullback lacks an orderly structure, and the geometry (reward:risk 2.5) is not compelling enough to justify the risk given the late timing (12:43 ET).",
+      "macro": "No macro context provided; relying solely on technical structure.",
+      "risk": "No earnings risk, but the trade direction aligns with SPY's intraday move. The late timing (197 minutes left) and lack of clear follow-through higher increase the risk of a false break or reversal."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
