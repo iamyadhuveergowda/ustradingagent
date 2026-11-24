@@ -5115,5 +5115,33 @@
     "outcome": "CLOSE",
     "outcome_r": -0.27,
     "outcome_at": "2026-11-24T00:29:54-05:00"
+  },
+  {
+    "signal_id": "20261124-111733-COST",
+    "signal_time": "2026-11-24T11:17:33-05:00",
+    "judged_at": "2026-11-24T11:18:38-05:00",
+    "age_min": 1.1,
+    "ticker": "COST",
+    "action": "SELL",
+    "entry": 1091.82,
+    "stop": 1098.33,
+    "target": 1075.54,
+    "qty": 36,
+    "setup_hash": "f87862db0874680dee2fc7e0ac570fa9c5575373",
+    "index_name": "SPY",
+    "index_day_pct": -1.284322409211688,
+    "verdict": "SKIP",
+    "confidence": 85,
+    "trigger": "",
+    "notes": {
+      "technical": "The pullback into the SELL entry at **1091.82** lacks a clean, orderly structure. The last 5-minute candle (11:15) closed **below the entry price (1091.50 < 1091.82)**, indicating price has already moved against the intended direction. The 12-candle sequence shows choppy, erratic action with no clear exhaustion or reversal signal (e.g., no long wicks, no volume spike on the entry candle). The RSI (49.53) is neutral, not confirming overbought/oversold conditions. The stop (1098.33) is **1.5 ATR (~4.34) away**, which is reasonable, but the target (1075.54) is **3.75 ATR away**, requiring a **2.5:1 reward:risk**—a tight ratio for an intraday trade with **283 minutes left** (feasibility: TIGHT). The vol_ratio (1.17) is slightly bullish, not bearish, and the last candle’s close (1091.50) is near the low of the 11:10 candle (1091.44), suggesting weakness but not a high-probability setup.",
+      "macro": "The SPY day move (-1.28%) aligns with the SELL thesis, but intraday momentum is weak. Without a catalyst (e.g., news, VWAP breakdown), the trade relies solely on structure, which is lacking.",
+      "risk": "No earnings risk today/tomorrow for COST (results_risk: empty). However, the trade’s feasibility is TIGHT due to time-to-close (283 minutes) and target distance (3.75 ATR). A GO would require a clearer breakdown (e.g., close below 1091.44 with volume) or a stronger regime signal (e.g., SPY closing near session lows)."
+    },
+    "results_risk": "",
+    "feasibility": "",
+    "outcome": null,
+    "outcome_r": null,
+    "outcome_at": null
   }
 ]
