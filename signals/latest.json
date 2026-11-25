@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261125-112200-JNJ",
-  "generated_at": "2026-11-25T11:22:00.334383-05:00",
-  "spy_day_pct": -2.812591284027196,
+  "signal_id": "20261125-112433-JNJ",
+  "generated_at": "2026-11-25T11:24:33.036348-05:00",
+  "spy_day_pct": -2.6442809252896735,
   "candidates": [
     {
       "ticker": "JNJ",
       "signal": "SELL",
-      "ltp": 274.37,
-      "stop": 275.85,
-      "target": 270.66,
+      "ltp": 274.49,
+      "stop": 275.97,
+      "target": 270.78,
       "qty": 143,
       "indicators": {
         "rsi": 39.26,
         "atr": 0.9899,
         "vol_ratio": 3.26
       },
-      "scout_reason": "SPY -2.81% aligns with SELL",
+      "scout_reason": "SPY -2.64% aligns with SELL",
       "candles_5m": [
         [
           "09:45",
@@ -172,16 +172,16 @@
         [
           "11:20",
           274.23,
-          274.37,
+          274.63,
           274.23,
-          274.37,
-          491
+          274.62,
+          2215
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-25T11:22:01.348828-05:00"
+      "outcome_at": "2026-11-25T11:24:33.820290-05:00"
     }
   ]
 }
