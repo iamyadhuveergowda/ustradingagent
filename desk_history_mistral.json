@@ -5140,8 +5140,8 @@
     },
     "results_risk": "",
     "feasibility": "",
-    "outcome": null,
-    "outcome_r": null,
-    "outcome_at": null
+    "outcome": "CLOSE",
+    "outcome_r": 0.01,
+    "outcome_at": "2026-11-24T23:34:15-05:00"
   }
 ]
