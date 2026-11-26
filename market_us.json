@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-11-25T22:05:53Z",
+  "fetched_at_utc": "2026-11-26T22:04:49Z",
   "source": "Yahoo Finance chart API (unofficial)",
   "indices": [
     {
@@ -49,8 +49,8 @@
       "prev_close": 23733.54,
       "change": -147.74,
       "change_pct": -0.622,
-      "quote_time_utc": "2026-11-25T22:05:51Z",
-      "quote_time_et": "17:05",
+      "quote_time_utc": "2026-11-25T22:15:59Z",
+      "quote_time_et": "17:15",
       "quote_date_et": "2026-11-25",
       "session_open": false,
       "spark": [
@@ -85,20 +85,20 @@
     {
       "name": "CBOE VIX",
       "symbol": "^VIX",
-      "price": 28.29,
-      "prev_close": 26.36,
-      "change": 1.93,
-      "change_pct": 7.322,
-      "quote_time_utc": "2026-11-25T21:15:01Z",
-      "quote_time_et": "16:15",
-      "quote_date_et": "2026-11-25",
+      "price": 26.8,
+      "prev_close": 28.29,
+      "change": -1.49,
+      "change_pct": -5.267,
+      "quote_time_utc": "2026-11-26T16:30:00Z",
+      "quote_time_et": "11:30",
+      "quote_date_et": "2026-11-26",
       "session_open": false,
       "spark": [
-        28.44,
         35.89,
         26.62,
         26.36,
-        28.29
+        28.29,
+        26.8
       ],
       "stale": false
     }
