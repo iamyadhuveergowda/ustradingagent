@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261127-125214-GOOGL",
-  "generated_at": "2026-11-27T12:52:14.926315-05:00",
-  "spy_day_pct": 1.273134422066733,
+  "signal_id": "20261127-125444-GOOGL",
+  "generated_at": "2026-11-27T12:54:44.674553-05:00",
+  "spy_day_pct": 1.3073172092893475,
   "candidates": [
     {
       "ticker": "GOOGL",
       "signal": "BUY",
-      "ltp": 273.3,
-      "stop": 271.11,
-      "target": 278.78,
-      "qty": 144,
+      "ltp": 273.55,
+      "stop": 271.35,
+      "target": 279.02,
+      "qty": 143,
       "indicators": {
         "rsi": 51.26,
         "atr": 1.46,
         "vol_ratio": 1.31
       },
-      "scout_reason": "SPY +1.27% aligns with BUY",
+      "scout_reason": "SPY +1.31% aligns with BUY",
       "candles_5m": [
         [
           "11:15",
@@ -172,16 +172,16 @@
         [
           "12:50",
           273.29,
-          273.33,
+          273.57,
           273.09,
-          273.2,
-          6809
+          273.57,
+          22491
         ]
       ],
       "stop_floor_bound": false,
       "outcome": "dropped_other",
       "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-27T12:52:15.568609-05:00"
+      "outcome_at": "2026-11-27T12:54:45.413571-05:00"
     }
   ]
 }
