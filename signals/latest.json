@@ -1,21 +1,21 @@
 {
-  "signal_id": "20261127-113634-PANW",
-  "generated_at": "2026-11-27T11:36:34.140436-05:00",
-  "spy_day_pct": 1.3959134129071407,
+  "signal_id": "20261127-113905-PANW",
+  "generated_at": "2026-11-27T11:39:05.767303-05:00",
+  "spy_day_pct": 1.323362191046902,
   "candidates": [
     {
       "ticker": "PANW",
       "signal": "BUY",
-      "ltp": 355.92,
-      "stop": 349.85,
-      "target": 371.09,
+      "ltp": 356.14,
+      "stop": 350.07,
+      "target": 371.31,
       "qty": 110,
       "indicators": {
         "rsi": 55.92,
         "atr": 4.0448,
         "vol_ratio": 1.32
       },
-      "scout_reason": "SPY +1.40% aligns with BUY",
+      "scout_reason": "SPY +1.32% aligns with BUY",
       "candles_5m": [
         [
           "10:00",
@@ -172,16 +172,15 @@
         [
           "11:35",
           356.25,
-          356.34,
+          356.52,
           355.81,
-          356.34,
-          1000
+          356.14,
+          1939
         ]
       ],
       "stop_floor_bound": false,
-      "outcome": "dropped_other",
-      "outcome_reason": "scout: omitted from LLM output",
-      "outcome_at": "2026-11-27T11:36:35.310990-05:00"
+      "outcome": null,
+      "outcome_reason": ""
     }
   ]
 }
